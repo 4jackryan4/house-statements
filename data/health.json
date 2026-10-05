@@ -62,7 +62,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -161,7 +161,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 9,
+  "new": 0,
   "latest_date": "2026-09-30"
  },
  {
@@ -183,7 +183,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-09-24"
  },
  {
@@ -304,7 +304,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -326,7 +326,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -579,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -634,7 +634,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -678,7 +678,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -689,7 +689,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -931,7 +931,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-09-28"
  },
  {
@@ -942,8 +942,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
-  "latest_date": "2026-09-14"
+  "new": 5,
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "O000173",
@@ -964,7 +964,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -1371,7 +1371,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -1393,8 +1393,8 @@
   "status": "ok",
   "error": null,
   "count": 28,
-  "new": 1,
-  "latest_date": "2026-10-02"
+  "new": 0,
+  "latest_date": "2026-08-19"
  },
  {
   "bioguide": "J000310",
@@ -1658,7 +1658,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-02"
+  "latest_date": "2026-10-05"
  },
  {
   "bioguide": "G000600",
@@ -1844,7 +1844,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -1910,7 +1910,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-09-25"
  },
  {
@@ -1977,7 +1977,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-01"
+  "latest_date": "2026-09-23"
  },
  {
   "bioguide": "T000481",
@@ -2108,7 +2108,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-05-19"
  },
  {
@@ -2185,7 +2185,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -2230,7 +2230,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-02"
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "D000629",
@@ -2263,7 +2263,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-02"
+  "latest_date": "2026-09-29"
  },
  {
   "bioguide": "T000488",
@@ -2284,7 +2284,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -2406,7 +2406,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-16"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "G000587",
@@ -2482,7 +2482,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-09-24"
  },
  {
@@ -2537,7 +2537,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-02"
  },
  {
@@ -2559,8 +2559,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-09-28"
  },
  {
   "bioguide": "B001324",
