@@ -1,0 +1,2172 @@
+[
+ {
+  "bioguide": "W000832",
+  "label": "Aisha Wahab (D-CA-14)",
+  "scraper": null,
+  "status": "error",
+  "error": "no scraper or RSS feed for this site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "B001328",
+  "label": "Everton Blair Jr. (D-GA-13)",
+  "scraper": null,
+  "status": "error",
+  "error": "no scraper or RSS feed for this site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "L000601",
+  "label": "Greg Landsman (D-OH-01)",
+  "scraper": "landsman",
+  "status": "empty",
+  "error": null,
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "S001211",
+  "label": "Greg Stanton (D-AZ-04)",
+  "scraper": "stanton",
+  "status": "empty",
+  "error": null,
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "M001234",
+  "label": "Kelly Morrison (D-MN-03)",
+  "scraper": "morrison",
+  "status": "empty",
+  "error": null,
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "G000605",
+  "label": "Adam Gray (D-CA-13)",
+  "scraper": "gray",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "S000510",
+  "label": "Adam Smith (D-WA-09)",
+  "scraper": "adamsmith",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000606",
+  "label": "Adelita S. Grijalva (D-AZ-07)",
+  "scraper": "grijalva",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "E000297",
+  "label": "Adriano Espaillat (D-NY-13)",
+  "scraper": "espaillat",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-06-12"
+ },
+ {
+  "bioguide": "G000553",
+  "label": "Al Green (D-TX-09)",
+  "scraper": "algreen",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "O000172",
+  "label": "Alexandria Ocasio-Cortez (D-NY-14)",
+  "scraper": "ocasio-cortez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 2,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "A000370",
+  "label": "Alma S. Adams (D-NC-12)",
+  "scraper": "adams",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "B001287",
+  "label": "Ami Bera (D-CA-06)",
+  "scraper": "bera",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "M001246",
+  "label": "Analilia Mejia (D-NJ-11)",
+  "scraper": "mejia",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "S001226",
+  "label": "Andrea Salinas (D-OR-06)",
+  "scraper": "salinas",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 6,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001072",
+  "label": "Andr\u00e9 Carson (D-IN-07)",
+  "scraper": "carson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "C001119",
+  "label": "Angie Craig (D-MN-02)",
+  "scraper": "craig",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "M001232",
+  "label": "April McClain Delaney (D-MD-06)",
+  "scraper": "mcclaindelaney",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "P000617",
+  "label": "Ayanna Pressley (D-MA-07)",
+  "scraper": "pressley",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "B001318",
+  "label": "Becca Balint (D-VT-AL)",
+  "scraper": "balint",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2027-07-27"
+ },
+ {
+  "bioguide": "T000193",
+  "label": "Bennie G. Thompson (D-MS-02)",
+  "scraper": "benniethompson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001143",
+  "label": "Betty McCollum (D-MN-04)",
+  "scraper": "mccollum",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "F000454",
+  "label": "Bill Foster (D-IL-11)",
+  "scraper": "foster",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-04"
+ },
+ {
+  "bioguide": "W000822",
+  "label": "Bonnie Watson Coleman (D-NJ-12)",
+  "scraper": "watsoncoleman",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "S000344",
+  "label": "Brad Sherman (D-CA-32)",
+  "scraper": "sherman",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "S001190",
+  "label": "Bradley Scott Schneider (D-IL-10)",
+  "scraper": "schneider",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "B001296",
+  "label": "Brendan F. Boyle (D-PA-02)",
+  "scraper": "boyle",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "P000620",
+  "label": "Brittany Pettersen (D-CO-07)",
+  "scraper": "pettersen",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "P000597",
+  "label": "Chellie Pingree (D-ME-01)",
+  "scraper": "pingree",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "P000614",
+  "label": "Chris Pappas (D-NH-01)",
+  "scraper": "pappas",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "H001085",
+  "label": "Chrissy Houlahan (D-PA-06)",
+  "scraper": "houlahan",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001245",
+  "label": "Christian D. Menefee (D-TX-18)",
+  "scraper": "menefee",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "D000530",
+  "label": "Christopher R. Deluzio (D-PA-17)",
+  "scraper": "deluzio",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "F000110",
+  "label": "Cleo Fields (D-LA-06)",
+  "scraper": "fields",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-01"
+ },
+ {
+  "bioguide": "G000599",
+  "label": "Daniel S. Goldman (D-NY-10)",
+  "scraper": "goldman",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "D000096",
+  "label": "Danny K. Davis (D-IL-07)",
+  "scraper": "davis",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-07-15"
+ },
+ {
+  "bioguide": "S001200",
+  "label": "Darren Soto (D-FL-09)",
+  "scraper": "soto",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "M001241",
+  "label": "Dave Min (D-CA-47)",
+  "scraper": "min",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "W000797",
+  "label": "Debbie Wasserman Schultz (D-FL-25)",
+  "scraper": "wassermanschultz",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "R000305",
+  "label": "Deborah K. Ross (D-NC-02)",
+  "scraper": "ross",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "R000617",
+  "label": "Delia C. Ramirez (D-IL-03)",
+  "scraper": "ramirez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "T000491",
+  "label": "Derek Tran (D-CA-45)",
+  "scraper": "tran",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "D000197",
+  "label": "Diana DeGette (D-CO-01)",
+  "scraper": "degette",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "T000468",
+  "label": "Dina Titus (D-NV-01)",
+  "scraper": "titus",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "D000230",
+  "label": "Donald G. Davis (D-NC-01)",
+  "scraper": "dondavis",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 2,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "N000188",
+  "label": "Donald Norcross (D-NJ-01)",
+  "scraper": "norcross",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "B001292",
+  "label": "Donald S. Beyer, Jr. (D-VA-08)",
+  "scraper": "beyer",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "M001163",
+  "label": "Doris O. Matsui (D-CA-07)",
+  "scraper": "matsui",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-15"
+ },
+ {
+  "bioguide": "E000296",
+  "label": "Dwight Evans (D-PA-03)",
+  "scraper": "evans",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-14"
+ },
+ {
+  "bioguide": "C001055",
+  "label": "Ed Case (D-HI-01)",
+  "scraper": "case",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "N000147",
+  "label": "Eleanor Holmes Norton (D-DC-AL)",
+  "scraper": "norton",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "C001061",
+  "label": "Emanuel Cleaver (D-MO-05)",
+  "scraper": "cleaver",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "S001223",
+  "label": "Emilia Strong Sykes (D-OH-13)",
+  "scraper": "sykes",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "R000621",
+  "label": "Emily Randall (D-WA-06)",
+  "scraper": "randall",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-20"
+ },
+ {
+  "bioguide": "S001225",
+  "label": "Eric Sorensen (D-IL-17)",
+  "scraper": "sorensen",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "V000138",
+  "label": "Eugene Simon Vindman (D-VA-07)",
+  "scraper": "vindman",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "M001214",
+  "label": "Frank J. Mrvan (D-IN-01)",
+  "scraper": "mrvan",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "P000034",
+  "label": "Frank Pallone, Jr. (D-NJ-06)",
+  "scraper": "pallone",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "W000808",
+  "label": "Frederica S. Wilson (D-FL-24)",
+  "scraper": "wilson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "A000380",
+  "label": "Gabe Amo (D-RI-01)",
+  "scraper": "amo",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "V000136",
+  "label": "Gabe Vasquez (D-NM-02)",
+  "scraper": "vasquez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 3,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "L000606",
+  "label": "George Latimer (D-NY-16)",
+  "scraper": "latimer",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-03-11"
+ },
+ {
+  "bioguide": "W000830",
+  "label": "George Whitesides (D-CA-27)",
+  "scraper": "whitesides",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "C001123",
+  "label": "Gilbert Ray Cisneros, Jr. (D-CA-31)",
+  "scraper": "cisneros",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "I000058",
+  "label": "Glenn Ivey (D-MD-04)",
+  "scraper": "ivey",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "M001188",
+  "label": "Grace Meng (D-NY-06)",
+  "scraper": "meng",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "C001131",
+  "label": "Greg Casar (D-TX-35)",
+  "scraper": "casar",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "M001137",
+  "label": "Gregory W. Meeks (D-NY-05)",
+  "scraper": "meeks",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-08-20"
+ },
+ {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "J000294",
+  "label": "Hakeem S. Jeffries (D-NY-08)",
+  "scraper": "jeffries",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "S001215",
+  "label": "Haley M. Stevens (D-MI-11)",
+  "scraper": "stevens",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "J000288",
+  "label": "Henry C. \"Hank\" Johnson, Jr. (D-GA-04)",
+  "scraper": "hankjohnson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "C001063",
+  "label": "Henry Cuellar (D-TX-28)",
+  "scraper": "cuellar",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-08-27"
+ },
+ {
+  "bioguide": "C001136",
+  "label": "Herbert C. Conaway, Jr. (D-NJ-03)",
+  "scraper": "conaway",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-07-24"
+ },
+ {
+  "bioguide": "S001221",
+  "label": "Hillary J. Scholten (D-MI-03)",
+  "scraper": "scholten",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "O000173",
+  "label": "Ilhan Omar (D-MN-05)",
+  "scraper": "omar",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "C001110",
+  "label": "J. Luis Correa (D-CA-46)",
+  "scraper": "correa",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "H001081",
+  "label": "Jahana Hayes (D-CT-05)",
+  "scraper": "hayes",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "A000148",
+  "label": "Jake Auchincloss (D-MA-04)",
+  "scraper": "auchincloss",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-15"
+ },
+ {
+  "bioguide": "H001047",
+  "label": "James A. Himes (D-CT-04)",
+  "scraper": "himes",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "C000537",
+  "label": "James E. Clyburn (D-SC-06)",
+  "scraper": "clyburn",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-07-14"
+ },
+ {
+  "bioguide": "M000312",
+  "label": "James P. McGovern (D-MA-02)",
+  "scraper": "mcgovern",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "W000831",
+  "label": "James R. Walkinshaw (D-VA-11)",
+  "scraper": "walkinshaw",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "R000606",
+  "label": "Jamie Raskin (D-MD-08)",
+  "scraper": "raskin",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "B001326",
+  "label": "Janelle S. Bynum (D-OR-05)",
+  "scraper": "bynum",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S001145",
+  "label": "Janice D. Schakowsky (D-IL-09)",
+  "scraper": "schakowsky",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000592",
+  "label": "Jared F. Golden (D-ME-02)",
+  "scraper": "golden",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "H001068",
+  "label": "Jared Huffman (D-CA-02)",
+  "scraper": "huffman",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001217",
+  "label": "Jared Moskowitz (D-FL-23)",
+  "scraper": "moskowitz",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-07-22"
+ },
+ {
+  "bioguide": "C001130",
+  "label": "Jasmine Crockett (D-TX-30)",
+  "scraper": "crockett",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "C001121",
+  "label": "Jason Crow (D-CO-06)",
+  "scraper": "crow",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "M001227",
+  "label": "Jennifer L. McClellan (D-VA-04)",
+  "scraper": "mcclellan",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "N000002",
+  "label": "Jerrold Nadler (D-NY-12)",
+  "scraper": "nadler",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000586",
+  "label": "Jes\u00fas G. \"Chuy\" Garc\u00eda (D-IL-04)",
+  "scraper": "chuygarcia",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "T000487",
+  "label": "Jill N. Tokuda (D-HI-02)",
+  "scraper": "tokuda",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "C001059",
+  "label": "Jim Costa (D-CA-21)",
+  "scraper": "costa",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000585",
+  "label": "Jimmy Gomez (D-CA-34)",
+  "scraper": "gomez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "P000613",
+  "label": "Jimmy Panetta (D-CA-19)",
+  "scraper": "panetta",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "C001091",
+  "label": "Joaquin Castro (D-TX-20)",
+  "scraper": "castro",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001069",
+  "label": "Joe Courtney (D-CT-02)",
+  "scraper": "courtney",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "N000191",
+  "label": "Joe Neguse (D-CO-02)",
+  "scraper": "neguse",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "L000557",
+  "label": "John B. Larson (D-CT-01)",
+  "scraper": "larson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000559",
+  "label": "John Garamendi (D-CA-08)",
+  "scraper": "garamendi",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "M001231",
+  "label": "John W. Mannion (D-NY-22)",
+  "scraper": "mannion",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "O000176",
+  "label": "Johnny Olszewski, Jr. (D-MD-02)",
+  "scraper": "olszewski",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "J000309",
+  "label": "Jonathan L. Jackson (D-IL-01)",
+  "scraper": "jonathanjackson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-08-17"
+ },
+ {
+  "bioguide": "M001206",
+  "label": "Joseph D. Morelle (D-NY-25)",
+  "scraper": "morelle",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "G000583",
+  "label": "Josh Gottheimer (D-NJ-05)",
+  "scraper": "gottheimer",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 1,
+  "latest_date": "2026-10-04"
+ },
+ {
+  "bioguide": "H001090",
+  "label": "Josh Harder (D-CA-09)",
+  "scraper": "harder",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "R000622",
+  "label": "Josh Riley (D-NY-19)",
+  "scraper": "riley",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "B001281",
+  "label": "Joyce Beatty (D-OH-03)",
+  "scraper": "beatty",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-08-25"
+ },
+ {
+  "bioguide": "V000130",
+  "label": "Juan Vargas (D-CA-52)",
+  "scraper": "vargas",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "C001080",
+  "label": "Judy Chu (D-CA-28)",
+  "scraper": "chu",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 2,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "B001285",
+  "label": "Julia Brownley (D-CA-26)",
+  "scraper": "juliabrownley",
+  "status": "ok",
+  "error": null,
+  "count": 18,
+  "new": 0,
+  "latest_date": "2026-08-19"
+ },
+ {
+  "bioguide": "J000310",
+  "label": "Julie Johnson (D-TX-32)",
+  "scraper": "juliejohnson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "C001101",
+  "label": "Katherine M. Clark (D-MA-05)",
+  "scraper": "clark",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "C001066",
+  "label": "Kathy Castor (D-FL-14)",
+  "scraper": "castor",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001225",
+  "label": "Kevin Mullin (D-CA-15)",
+  "scraper": "kevinmullin",
+  "status": "ok",
+  "error": null,
+  "count": 9,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "S001216",
+  "label": "Kim Schrier (D-WA-08)",
+  "scraper": "schrier",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "M001237",
+  "label": "Kristen McDonald Rivet (D-MI-08)",
+  "scraper": "mcdonaldrivet",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "M000687",
+  "label": "Kweisi Mfume (D-MD-07)",
+  "scraper": "mfume",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "M001229",
+  "label": "LaMonica McIver (D-NJ-10)",
+  "scraper": "mciver",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S001231",
+  "label": "Lateefah Simon (D-CA-12)",
+  "scraper": "simon",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "F000483",
+  "label": "Laura Friedman (D-CA-30)",
+  "scraper": "friedman",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "G000602",
+  "label": "Laura Gillen (D-NY-04)",
+  "scraper": "gillen",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "U000040",
+  "label": "Lauren Underwood (D-IL-14)",
+  "scraper": "underwood",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "S001156",
+  "label": "Linda T. S\u00e1nchez (D-CA-38)",
+  "scraper": "lindasanchez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "F000468",
+  "label": "Lizzie Fletcher (D-TX-07)",
+  "scraper": "fletcher",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "D000399",
+  "label": "Lloyd Doggett (D-TX-37)",
+  "scraper": "doggett",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-20"
+ },
+ {
+  "bioguide": "F000462",
+  "label": "Lois Frankel (D-FL-22)",
+  "scraper": "frankel",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "T000482",
+  "label": "Lori Trahan (D-MA-03)",
+  "scraper": "trahan",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001208",
+  "label": "Lucy McBath (D-GA-06)",
+  "scraper": "mcbath",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "R000620",
+  "label": "Luz M. Rivas (D-CA-29)",
+  "scraper": "rivas",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "D000631",
+  "label": "Madeleine Dean (D-PA-04)",
+  "scraper": "dean",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000604",
+  "label": "Maggie Goodlander (D-NH-02)",
+  "scraper": "goodlander",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "V000131",
+  "label": "Marc A. Veasey (D-TX-33)",
+  "scraper": "veasey",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "K000009",
+  "label": "Marcy Kaptur (D-OH-09)",
+  "scraper": "kaptur",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000600",
+  "label": "Marie Gluesenkamp Perez (D-WA-03)",
+  "scraper": "gluesenkampperez",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S001159",
+  "label": "Marilyn Strickland (D-WA-10)",
+  "scraper": "strickland",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "D000623",
+  "label": "Mark DeSaulnier (D-CA-10)",
+  "scraper": "desaulnier",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "P000607",
+  "label": "Mark Pocan (D-WI-02)",
+  "scraper": "pocan",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-07-30"
+ },
+ {
+  "bioguide": "T000472",
+  "label": "Mark Takano (D-CA-39)",
+  "scraper": "takano",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-08"
+ },
+ {
+  "bioguide": "S001205",
+  "label": "Mary Gay Scanlon (D-PA-05)",
+  "scraper": "scanlon",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "D000635",
+  "label": "Maxine Dexter (D-OR-03)",
+  "scraper": "dexter",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "W000187",
+  "label": "Maxine Waters (D-CA-43)",
+  "scraper": "waters",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-08-14"
+ },
+ {
+  "bioguide": "F000476",
+  "label": "Maxwell Frost (D-FL-10)",
+  "scraper": "frost",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "S001218",
+  "label": "Melanie A. Stansbury (D-NM-01)",
+  "scraper": "stansbury",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "L000593",
+  "label": "Mike Levin (D-CA-49)",
+  "scraper": "levin",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "Q000023",
+  "label": "Mike Quigley (D-IL-05)",
+  "scraper": "quigley",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "T000460",
+  "label": "Mike Thompson (D-CA-04)",
+  "scraper": "mikethompson",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "M001220",
+  "label": "Morgan McGarvey (D-KY-03)",
+  "scraper": "mcgarvey",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-08-14"
+ },
+ {
+  "bioguide": "P000197",
+  "label": "Nancy Pelosi (D-CA-11)",
+  "scraper": "pelosi",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "B001300",
+  "label": "Nanette Diaz Barrag\u00e1n (D-CA-44)",
+  "scraper": "barragan",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-07-17"
+ },
+ {
+  "bioguide": "P000621",
+  "label": "Nellie Pou (D-NJ-09)",
+  "scraper": "pou",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "W000788",
+  "label": "Nikema Williams (D-GA-05)",
+  "scraper": "nikemawilliams",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "B001315",
+  "label": "Nikki Budzinski (D-IL-13)",
+  "scraper": "budzinski",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "T000474",
+  "label": "Norma J. Torres (D-CA-35)",
+  "scraper": "torres",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "V000081",
+  "label": "Nydia M. Vel\u00e1zquez (D-NY-07)",
+  "scraper": "velazquez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "H001103",
+  "label": "Pablo Jos\u00e9 Hern\u00e1ndez (D-PR-AL)",
+  "scraper": "hernandez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "R000579",
+  "label": "Patrick Ryan (D-NY-18)",
+  "scraper": "patryan",
+  "status": "ok",
+  "error": null,
+  "count": 9,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "T000469",
+  "label": "Paul Tonko (D-NY-20)",
+  "scraper": "tonko",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "A000371",
+  "label": "Pete Aguilar (D-CA-33)",
+  "scraper": "aguilar",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "J000298",
+  "label": "Pramila Jayapal (D-WA-07)",
+  "scraper": "jayapal",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "K000391",
+  "label": "Raja Krishnamoorthi (D-IL-08)",
+  "scraper": "krishnamoorthi",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "T000481",
+  "label": "Rashida Tlaib (D-MI-12)",
+  "scraper": "tlaib",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "R000599",
+  "label": "Raul Ruiz (D-CA-25)",
+  "scraper": "ruiz",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "N000015",
+  "label": "Richard E. Neal (D-MA-01)",
+  "scraper": "neal",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "L000560",
+  "label": "Rick Larsen (D-WA-02)",
+  "scraper": "larsen",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "T000486",
+  "label": "Ritchie Torres (D-NY-15)",
+  "scraper": "ritchietorres",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-08-13"
+ },
+ {
+  "bioguide": "K000389",
+  "label": "Ro Khanna (D-CA-17)",
+  "scraper": "khanna",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "S000185",
+  "label": "Robert C. \"Bobby\" Scott (D-VA-03)",
+  "scraper": "bobbyscott",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "G000598",
+  "label": "Robert Garcia (D-CA-42)",
+  "scraper": "robertgarcia",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-08-31"
+ },
+ {
+  "bioguide": "M001226",
+  "label": "Robert Menendez (D-NJ-08)",
+  "scraper": "menendez",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "K000385",
+  "label": "Robin L. Kelly (D-IL-02)",
+  "scraper": "robinkelly",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-09"
+ },
+ {
+  "bioguide": "D000216",
+  "label": "Rosa L. DeLauro (D-CT-03)",
+  "scraper": "delauro",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "C001112",
+  "label": "Salud O. Carbajal (D-CA-24)",
+  "scraper": "carbajal",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "L000607",
+  "label": "Sam T. Liccardo (D-CA-16)",
+  "scraper": "liccardo",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "B000490",
+  "label": "Sanford D. Bishop, Jr. (D-GA-02)",
+  "scraper": "bishop",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-11"
+ },
+ {
+  "bioguide": "J000305",
+  "label": "Sara Jacobs (D-CA-51)",
+  "scraper": "sarajacobs",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "E000301",
+  "label": "Sarah Elfreth (D-MD-03)",
+  "scraper": "elfreth",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001238",
+  "label": "Sarah McBride (D-DE-AL)",
+  "scraper": "mcbride",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "P000608",
+  "label": "Scott H. Peters (D-CA-50)",
+  "scraper": "scottpeters",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001117",
+  "label": "Sean Casten (D-IL-06)",
+  "scraper": "casten",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "M001223",
+  "label": "Seth Magaziner (D-RI-02)",
+  "scraper": "magaziner",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "M001196",
+  "label": "Seth Moulton (D-MA-06)",
+  "scraper": "moulton",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "D000629",
+  "label": "Sharice Davids (D-KS-03)",
+  "scraper": "davids",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "F000481",
+  "label": "Shomari Figures (D-AL-02)",
+  "scraper": "figures",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "B001313",
+  "label": "Shontel M. Brown (D-OH-11)",
+  "scraper": "shontelbrown",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "T000488",
+  "label": "Shri Thanedar (D-MI-13)",
+  "scraper": "thanedar",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "P000610",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "scraper": "plaskett",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "H000874",
+  "label": "Steny H. Hoyer (D-MD-05)",
+  "scraper": "hoyer",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "L000562",
+  "label": "Stephen F. Lynch (D-MA-08)",
+  "scraper": "lynch",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "C001068",
+  "label": "Steve Cohen (D-TN-09)",
+  "scraper": "cohen",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "H001066",
+  "label": "Steven Horsford (D-NV-04)",
+  "scraper": "horsford",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "S001230",
+  "label": "Suhas Subramanyam (D-VA-10)",
+  "scraper": "subramanyam",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "L000602",
+  "label": "Summer L. Lee (D-PA-12)",
+  "scraper": "summerlee",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "L000590",
+  "label": "Susie Lee (D-NV-03)",
+  "scraper": "susielee",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "D000617",
+  "label": "Suzan K. DelBene (D-WA-01)",
+  "scraper": "delbene",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "B001278",
+  "label": "Suzanne Bonamici (D-OR-01)",
+  "scraper": "bonamici",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "K000400",
+  "label": "Sydney Kamlager-Dove (D-CA-37)",
+  "scraper": "kamlager-dove",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000587",
+  "label": "Sylvia R. Garcia (D-TX-29)",
+  "scraper": "sylviagarcia",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "L000582",
+  "label": "Ted Lieu (D-CA-36)",
+  "scraper": "lieu",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "L000273",
+  "label": "Teresa Leger Fernandez (D-NM-03)",
+  "scraper": "fernandez",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S001185",
+  "label": "Terri A. Sewell (D-AL-07)",
+  "scraper": "sewell",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "S001201",
+  "label": "Thomas R. Suozzi (D-NY-03)",
+  "scraper": "suozzi",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "K000402",
+  "label": "Timothy M. Kennedy (D-NY-26)",
+  "scraper": "timkennedy",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001125",
+  "label": "Troy A. Carter (D-LA-02)",
+  "scraper": "troycarter",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "H001094",
+  "label": "Val T. Hoyle (D-OR-04)",
+  "scraper": "hoyle",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "F000477",
+  "label": "Valerie P. Foushee (D-NC-04)",
+  "scraper": "foushee",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "E000299",
+  "label": "Veronica Escobar (D-TX-16)",
+  "scraper": "escobar",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000581",
+  "label": "Vicente Gonzalez (D-TX-34)",
+  "scraper": "gonzalez",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "B001324",
+  "label": "Wesley Bell (D-MO-01)",
+  "scraper": "bell",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "K000375",
+  "label": "William R. Keating (D-MA-09)",
+  "scraper": "keating",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-15"
+ },
+ {
+  "bioguide": "A000381",
+  "label": "Yassamin Ansari (D-AZ-03)",
+  "scraper": "ansari",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001067",
+  "label": "Yvette D. Clarke (D-NY-09)",
+  "scraper": "clarke",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "L000397",
+  "label": "Zoe Lofgren (D-CA-18)",
+  "scraper": "lofgren",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ }
+]
