@@ -8,6 +8,7 @@ scrapers (usually after a site redesign) are easy to spot.
 import argparse
 import datetime as dt
 import json
+import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -24,6 +25,7 @@ def utcnow() -> str:
 
 
 STALE_DAYS = 30
+FALLBACK = os.environ.get("FALLBACK_SCRAPER", "0") == "1"
 
 
 def scrape_member(member: dict) -> tuple[list[dict], str | None, str]:
@@ -47,7 +49,7 @@ def scrape_member(member: dict) -> tuple[list[dict], str | None, str]:
     items = [i for i in items if i and i.get("url") and i.get("title")]
     newest = max((iso(i.get("date")) for i in items if i.get("date")), default=None)
     stale_before = (dt.date.today() - dt.timedelta(days=STALE_DAYS)).isoformat()
-    if items and newest and newest >= stale_before:
+    if (items and newest and newest >= stale_before) or (items and not FALLBACK):
         return items, None, "python-statement"
     if items:
         # The scraper works but its newest item is old: the site may have moved its press page.
@@ -58,7 +60,7 @@ def scrape_member(member: dict) -> tuple[list[dict], str | None, str]:
             extra = []
         return items + extra, None, "python-statement+fallback" if extra else "python-statement"
 
-    if member.get("url"):
+    if member.get("url") and FALLBACK:
         try:
             items = scrape_site(member["url"], member.get("rss_url"))
         except Exception as e:
