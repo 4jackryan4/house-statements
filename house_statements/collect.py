@@ -25,14 +25,17 @@ def utcnow() -> str:
 
 
 STALE_DAYS = 30
-FALLBACK = os.environ.get("FALLBACK_SCRAPER", "0") == "1"
+FALLBACK = os.environ.get("FALLBACK_SCRAPER", "1") == "1"
 
 
-def scrape_member(member: dict) -> tuple[list[dict], str | None, str]:
+def scrape_member(
+    member: dict, sweep: bool = False, pages: int = 1, known: list[str] | None = None
+) -> tuple[list[dict], str | None, str]:
     """Return (items, error, method) for one member. Items have url, title, date (date or None).
 
-    Uses the member's python-statement scraper; if there is none, or it returns nothing (new
-    members, redesigned sites), falls back to the generic scraper in fallback.py.
+    Uses the member's python-statement scraper. The generic scraper in fallback.py also runs when
+    there is no scraper, it returns nothing or only old items (new members, redesigned sites), or
+    on a sweep, which checks every site for statements the scrapers miss.
     """
     from python_statement import Feed, Scraper
 
@@ -49,24 +52,23 @@ def scrape_member(member: dict) -> tuple[list[dict], str | None, str]:
     items = [i for i in items if i and i.get("url") and i.get("title")]
     newest = max((iso(i.get("date")) for i in items if i.get("date")), default=None)
     stale_before = (dt.date.today() - dt.timedelta(days=STALE_DAYS)).isoformat()
-    if (items and newest and newest >= stale_before) or (items and not FALLBACK):
-        return items, None, "python-statement"
-    if items:
-        # The scraper works but its newest item is old: the site may have moved its press page.
-        # Check the generic scraper too and keep both (duplicates are dropped by URL).
-        try:
-            extra = scrape_site(member["url"], member.get("rss_url")) if member.get("url") else []
-        except Exception:
-            extra = []
-        return items + extra, None, "python-statement+fallback" if extra else "python-statement"
-
-    if member.get("url") and FALLBACK:
-        try:
-            items = scrape_site(member["url"], member.get("rss_url"))
-        except Exception as e:
-            error = f"fallback {type(e).__name__}: {e}"
+    fresh = bool(items and newest and newest >= stale_before)
+    if not FALLBACK or not member.get("url") or (fresh and not sweep and pages <= 1):
         if items:
-            return items, None, "fallback"
+            return items, None, "python-statement"
+        return [], error or "no statements found on the site", "none"
+
+    try:
+        extra = scrape_site(member["url"], member.get("rss_url"), pages=pages, known=known)
+    except Exception as e:
+        extra = []
+        error = error or f"fallback {type(e).__name__}: {e}"
+    if items and extra:
+        return items + extra, None, "python-statement+fallback"
+    if items:
+        return items, None, "python-statement"
+    if extra:
+        return extra, None, "fallback"
     return [], error or "no statements found on the site", "none"
 
 
@@ -139,21 +141,31 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=12, help="members scraped in parallel")
     parser.add_argument("--max-text", type=int, default=600, help="max pages to fetch text for this run")
-    parser.add_argument("--only", nargs="*", help="limit to these bioguide ids (for testing)")
+    parser.add_argument("--only", nargs="*", help="limit to these bioguide ids")
+    parser.add_argument("--sweep", action="store_true", help="also check every site with the generic scraper")
+    parser.add_argument("--pages", type=int, default=1, help="listing pages to read per site (backfill)")
+    parser.add_argument("--report", help="dry run: write what would be added to this JSON file, save nothing")
     args = parser.parse_args(argv)
 
     members = load_members()
     if args.only:
         members = [m for m in members if m["bioguide"] in set(args.only)]
     records = store.load_all()
+    state = store.load_state()
+    known = state.setdefault("fallback_sources", {})
     now = utcnow()
 
     health, new_ids = [], []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(scrape_member, m): m for m in members}
+        futures = {
+            pool.submit(scrape_member, m, args.sweep, args.pages, known.get(m["bioguide"])): m for m in members
+        }
         for fut in as_completed(futures):
             m = futures[fut]
             items, error, method = fut.result()
+            origins = sorted({i["origin"] for i in items if i.get("origin")})
+            if origins:
+                known[m["bioguide"]] = origins
             added = merge_items(records, m, items, now)
             new_ids.extend(added)
             dates = [iso(i.get("date")) for i in items if i.get("date")]
@@ -169,6 +181,20 @@ def main(argv=None):
                 "latest_date": max(dates) if dates else None,
             })
 
+    if args.report:
+        report = {
+            "health": sorted(health, key=lambda h: h["label"]),
+            "sources": {b: known[b] for b in sorted(known)},
+            "new": [
+                {k: records[sid].get(k) for k in ("bioguide", "date", "title", "url")} for sid in new_ids
+            ],
+        }
+        os.makedirs(os.path.dirname(os.path.abspath(args.report)), exist_ok=True)
+        with open(args.report, "w") as f:
+            json.dump(report, f, indent=1)
+        print(f"collect: dry run, {len(new_ids)} statements would be added; report in {args.report}")
+        return
+
     # Text for new statements first, then retry earlier misses.
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
     todo = (new_ids + retry)[: args.max_text]
@@ -181,6 +207,7 @@ def main(argv=None):
             r["date"], r["date_source"] = r["first_seen"][:10], "first_seen"
 
     store.save_all(records)
+    store.save_state(state)
     health.sort(key=lambda h: (h["status"] == "ok", h["label"]))
     HEALTH_FILE.write_text(json.dumps(health, indent=1) + "\n")
 

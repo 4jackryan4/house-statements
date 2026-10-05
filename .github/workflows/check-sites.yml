@@ -1,0 +1,47 @@
+name: Check member sites
+# Manual dry run: scrapes every member site (or the listed ones) with the generic scraper as well,
+# reading older listing pages, and publishes what would be added to the "probe" branch.
+on:
+  workflow_dispatch:
+    inputs:
+      bioguides:
+        description: "Space-separated bioguide ids (blank = every member)"
+        required: false
+        default: ""
+      pages:
+        description: "Listing pages to read per site"
+        required: false
+        default: "60"
+permissions:
+  contents: write
+env:
+  PYTHON_STATEMENT_REF: 432b04432e359e016a8cea65d8805da92fee1789
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: dwillis/python-statement
+          ref: ${{ env.PYTHON_STATEMENT_REF }}
+          path: .vendor/python-statement
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt ./.vendor/python-statement
+      - name: Dry run
+        run: |
+          only="${{ inputs.bioguides }}"
+          python -m house_statements.collect --sweep --pages "${{ inputs.pages }}" --max-text 0 \
+            --report probe/report.json ${only:+--only $only}
+      - name: Publish the report to the "probe" branch
+        run: |
+          cd probe
+          git init -q -b probe
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -q -m "Site check $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" probe:probe
