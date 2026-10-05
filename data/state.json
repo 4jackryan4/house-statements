@@ -1,3 +1,24 @@
 {
-  "archive_imported_at": "2026-10-05T01:40:23+00:00"
+  "archive_imported_at": "2026-10-05T01:40:23+00:00",
+  "fallback_sources": {
+    "B001285": [
+      "https://juliabrownley.house.gov/feed/"
+    ],
+    "B001300": [
+      "https://barragan.house.gov/feed/"
+    ],
+    "G000598": [
+      "https://robertgarcia.house.gov/media/press-releases"
+    ],
+    "J000309": [
+      "https://jonathanjackson.house.gov/rss.xml"
+    ],
+    "S001211": [
+      "https://stanton.house.gov/media/press-releases",
+      "https://stanton.house.gov/rss.xml"
+    ],
+    "W000187": [
+      "https://waters.house.gov/media-center/press-releases"
+    ]
+  }
 }
