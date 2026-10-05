@@ -74,7 +74,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-24"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "A000370",
@@ -118,7 +118,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-22"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "C001072",
@@ -129,7 +129,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-23"
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "C001119",
@@ -140,7 +140,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-24"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "M001232",
@@ -184,7 +184,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-01"
+  "latest_date": "2026-09-11"
  },
  {
   "bioguide": "M001143",
@@ -283,7 +283,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-29"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "H001085",
@@ -338,7 +338,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-28"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "D000096",
@@ -646,7 +646,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-29"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "L000606",
@@ -833,7 +833,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-22"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "C001110",
@@ -1240,7 +1240,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-30"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "B001285",
@@ -1766,7 +1766,7 @@
   "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-02"
  },
@@ -1812,7 +1812,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-23"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "T000481",
@@ -2054,7 +2054,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-28"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "F000481",
