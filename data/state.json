@@ -1,11 +1,39 @@
 {
   "archive_imported_at": "2026-10-05T01:40:23+00:00",
   "fallback_sources": {
+    "B001281": [
+      "https://beatty.house.gov/media-center/press-releases"
+    ],
     "B001285": [
       "https://juliabrownley.house.gov/feed/"
     ],
     "B001300": [
       "https://barragan.house.gov/feed/"
+    ],
+    "B001328": [
+      "https://blair.house.gov/"
+    ],
+    "C000537": [
+      "https://clyburn.house.gov/feed/"
+    ],
+    "C001063": [
+      "https://cuellar.house.gov/news/"
+    ],
+    "C001136": [
+      "https://conaway.house.gov/media/press-releases"
+    ],
+    "D000096": [
+      "https://davis.house.gov/media/press-releases"
+    ],
+    "E000297": [
+      "https://espaillat.house.gov/",
+      "https://espaillat.house.gov/media/press-releases"
+    ],
+    "F000110": [
+      "https://fields.house.gov/media/press-releases"
+    ],
+    "F000454": [
+      "https://foster.house.gov/media/press-releases"
     ],
     "G000598": [
       "https://robertgarcia.house.gov/media/press-releases"
@@ -13,12 +41,52 @@
     "J000309": [
       "https://jonathanjackson.house.gov/rss.xml"
     ],
+    "L000601": [
+      "https://landsman.house.gov/media/press-releases"
+    ],
+    "L000606": [
+      "https://latimer.house.gov/media/press-releases"
+    ],
+    "M001137": [
+      "https://meeks.house.gov/media/press-releases"
+    ],
+    "M001217": [
+      "https://moskowitz.house.gov/feed"
+    ],
+    "M001220": [
+      "https://mcgarvey.house.gov/rss/feeds/"
+    ],
+    "M001234": [
+      "https://morrison.house.gov/rss/feeds/"
+    ],
+    "P000607": [
+      "https://pocan.house.gov/media-center/press-releases"
+    ],
     "S001211": [
       "https://stanton.house.gov/media/press-releases",
       "https://stanton.house.gov/rss.xml"
     ],
+    "T000486": [
+      "https://ritchietorres.house.gov/feed",
+      "https://ritchietorres.house.gov/press"
+    ],
     "W000187": [
       "https://waters.house.gov/media-center/press-releases"
     ]
+  },
+  "last_collect": {
+    "at": "2026-10-05T02:46:24+00:00",
+    "http": {
+      "200": 313,
+      "301": 2,
+      "302": 3,
+      "404": 8,
+      "410": 1
+    },
+    "sites": {
+      "empty": 0,
+      "error": 1,
+      "ok": 216
+    }
   }
 }

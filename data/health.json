@@ -1,1548 +1,8 @@
 [
  {
-  "bioguide": "S000510",
-  "label": "Adam Smith (D-WA-09)",
-  "scraper": "adamsmith",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "E000297",
-  "label": "Adriano Espaillat (D-NY-13)",
-  "scraper": "espaillat",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000553",
-  "label": "Al Green (D-TX-09)",
-  "scraper": "algreen",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "O000172",
-  "label": "Alexandria Ocasio-Cortez (D-NY-14)",
-  "scraper": "ocasio-cortez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "A000370",
-  "label": "Alma S. Adams (D-NC-12)",
-  "scraper": "adams",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001246",
-  "label": "Analilia Mejia (D-NJ-11)",
-  "scraper": "mejia",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001226",
-  "label": "Andrea Salinas (D-OR-06)",
-  "scraper": "salinas",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001072",
-  "label": "Andr\u00e9 Carson (D-IN-07)",
-  "scraper": "carson",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001119",
-  "label": "Angie Craig (D-MN-02)",
-  "scraper": "craig",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001232",
-  "label": "April McClain Delaney (D-MD-06)",
-  "scraper": "mcclaindelaney",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000617",
-  "label": "Ayanna Pressley (D-MA-07)",
-  "scraper": "pressley",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001318",
-  "label": "Becca Balint (D-VT-AL)",
-  "scraper": "balint",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000193",
-  "label": "Bennie G. Thompson (D-MS-02)",
-  "scraper": "benniethompson",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001143",
-  "label": "Betty McCollum (D-MN-04)",
-  "scraper": "mccollum",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "F000454",
-  "label": "Bill Foster (D-IL-11)",
-  "scraper": "foster",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "W000822",
-  "label": "Bonnie Watson Coleman (D-NJ-12)",
-  "scraper": "watsoncoleman",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001190",
-  "label": "Bradley Scott Schneider (D-IL-10)",
-  "scraper": "schneider",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001296",
-  "label": "Brendan F. Boyle (D-PA-02)",
-  "scraper": "boyle",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000597",
-  "label": "Chellie Pingree (D-ME-01)",
-  "scraper": "pingree",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000614",
-  "label": "Chris Pappas (D-NH-01)",
-  "scraper": "pappas",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "H001085",
-  "label": "Chrissy Houlahan (D-PA-06)",
-  "scraper": "houlahan",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001245",
-  "label": "Christian D. Menefee (D-TX-18)",
-  "scraper": "menefee",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000530",
-  "label": "Christopher R. Deluzio (D-PA-17)",
-  "scraper": "deluzio",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "F000110",
-  "label": "Cleo Fields (D-LA-06)",
-  "scraper": "fields",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000599",
-  "label": "Daniel S. Goldman (D-NY-10)",
-  "scraper": "goldman",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000096",
-  "label": "Danny K. Davis (D-IL-07)",
-  "scraper": "davis",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000624",
-  "label": "Debbie Dingell (D-MI-06)",
-  "scraper": "debbiedingell",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "R000305",
-  "label": "Deborah K. Ross (D-NC-02)",
-  "scraper": "ross",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000468",
-  "label": "Dina Titus (D-NV-01)",
-  "scraper": "titus",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000230",
-  "label": "Donald G. Davis (D-NC-01)",
-  "scraper": "dondavis",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "N000188",
-  "label": "Donald Norcross (D-NJ-01)",
-  "scraper": "norcross",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001292",
-  "label": "Donald S. Beyer, Jr. (D-VA-08)",
-  "scraper": "beyer",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "E000296",
-  "label": "Dwight Evans (D-PA-03)",
-  "scraper": "evans",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001061",
-  "label": "Emanuel Cleaver (D-MO-05)",
-  "scraper": "cleaver",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001223",
-  "label": "Emilia Strong Sykes (D-OH-13)",
-  "scraper": "sykes",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "R000621",
-  "label": "Emily Randall (D-WA-06)",
-  "scraper": "randall",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001225",
-  "label": "Eric Sorensen (D-IL-17)",
-  "scraper": "sorensen",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "V000138",
-  "label": "Eugene Simon Vindman (D-VA-07)",
-  "scraper": "vindman",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001328",
-  "label": "Everton Blair Jr. (D-GA-13)",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001214",
-  "label": "Frank J. Mrvan (D-IN-01)",
-  "scraper": "mrvan",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000034",
-  "label": "Frank Pallone, Jr. (D-NJ-06)",
-  "scraper": "pallone",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "A000380",
-  "label": "Gabe Amo (D-RI-01)",
-  "scraper": "amo",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "V000136",
-  "label": "Gabe Vasquez (D-NM-02)",
-  "scraper": "vasquez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000606",
-  "label": "George Latimer (D-NY-16)",
-  "scraper": "latimer",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "I000058",
-  "label": "Glenn Ivey (D-MD-04)",
-  "scraper": "ivey",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001188",
-  "label": "Grace Meng (D-NY-06)",
-  "scraper": "meng",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001131",
-  "label": "Greg Casar (D-TX-35)",
-  "scraper": "casar",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000601",
-  "label": "Greg Landsman (D-OH-01)",
-  "scraper": "landsman",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001137",
-  "label": "Gregory W. Meeks (D-NY-05)",
-  "scraper": "meeks",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "J000294",
-  "label": "Hakeem S. Jeffries (D-NY-08)",
-  "scraper": "jeffries",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001215",
-  "label": "Haley M. Stevens (D-MI-11)",
-  "scraper": "stevens",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001063",
-  "label": "Henry Cuellar (D-TX-28)",
-  "scraper": "cuellar",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001136",
-  "label": "Herbert C. Conaway, Jr. (D-NJ-03)",
-  "scraper": "conaway",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001221",
-  "label": "Hillary J. Scholten (D-MI-03)",
-  "scraper": "scholten",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "O000173",
-  "label": "Ilhan Omar (D-MN-05)",
-  "scraper": "omar",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "A000148",
-  "label": "Jake Auchincloss (D-MA-04)",
-  "scraper": "auchincloss",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C000537",
-  "label": "James E. Clyburn (D-SC-06)",
-  "scraper": "clyburn",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M000312",
-  "label": "James P. McGovern (D-MA-02)",
-  "scraper": "mcgovern",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "W000831",
-  "label": "James R. Walkinshaw (D-VA-11)",
-  "scraper": "walkinshaw",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "R000606",
-  "label": "Jamie Raskin (D-MD-08)",
-  "scraper": "raskin",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001326",
-  "label": "Janelle S. Bynum (D-OR-05)",
-  "scraper": "bynum",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001145",
-  "label": "Janice D. Schakowsky (D-IL-09)",
-  "scraper": "schakowsky",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000592",
-  "label": "Jared F. Golden (D-ME-02)",
-  "scraper": "golden",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001130",
-  "label": "Jasmine Crockett (D-TX-30)",
-  "scraper": "crockett",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001227",
-  "label": "Jennifer L. McClellan (D-VA-04)",
-  "scraper": "mcclellan",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "N000002",
-  "label": "Jerrold Nadler (D-NY-12)",
-  "scraper": "nadler",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001091",
-  "label": "Joaquin Castro (D-TX-20)",
-  "scraper": "castro",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001231",
-  "label": "John W. Mannion (D-NY-22)",
-  "scraper": "mannion",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "O000176",
-  "label": "Johnny Olszewski, Jr. (D-MD-02)",
-  "scraper": "olszewski",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001206",
-  "label": "Joseph D. Morelle (D-NY-25)",
-  "scraper": "morelle",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000583",
-  "label": "Josh Gottheimer (D-NJ-05)",
-  "scraper": "gottheimer",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "R000622",
-  "label": "Josh Riley (D-NY-19)",
-  "scraper": "riley",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001281",
-  "label": "Joyce Beatty (D-OH-03)",
-  "scraper": "beatty",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "J000310",
-  "label": "Julie Johnson (D-TX-32)",
-  "scraper": "juliejohnson",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001101",
-  "label": "Katherine M. Clark (D-MA-05)",
-  "scraper": "clark",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001234",
-  "label": "Kelly Morrison (D-MN-03)",
-  "scraper": "morrison",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001216",
-  "label": "Kim Schrier (D-WA-08)",
-  "scraper": "schrier",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001237",
-  "label": "Kristen McDonald Rivet (D-MI-08)",
-  "scraper": "mcdonaldrivet",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M000687",
-  "label": "Kweisi Mfume (D-MD-07)",
-  "scraper": "mfume",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001229",
-  "label": "LaMonica McIver (D-NJ-10)",
-  "scraper": "mciver",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000602",
-  "label": "Laura Gillen (D-NY-04)",
-  "scraper": "gillen",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "U000040",
-  "label": "Lauren Underwood (D-IL-14)",
-  "scraper": "underwood",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "F000468",
-  "label": "Lizzie Fletcher (D-TX-07)",
-  "scraper": "fletcher",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000399",
-  "label": "Lloyd Doggett (D-TX-37)",
-  "scraper": "doggett",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000482",
-  "label": "Lori Trahan (D-MA-03)",
-  "scraper": "trahan",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000631",
-  "label": "Madeleine Dean (D-PA-04)",
-  "scraper": "dean",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000604",
-  "label": "Maggie Goodlander (D-NH-02)",
-  "scraper": "goodlander",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "V000131",
-  "label": "Marc A. Veasey (D-TX-33)",
-  "scraper": "veasey",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "K000009",
-  "label": "Marcy Kaptur (D-OH-09)",
-  "scraper": "kaptur",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000600",
-  "label": "Marie Gluesenkamp Perez (D-WA-03)",
-  "scraper": "gluesenkampperez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001159",
-  "label": "Marilyn Strickland (D-WA-10)",
-  "scraper": "strickland",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000607",
-  "label": "Mark Pocan (D-WI-02)",
-  "scraper": "pocan",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001205",
-  "label": "Mary Gay Scanlon (D-PA-05)",
-  "scraper": "scanlon",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000635",
-  "label": "Maxine Dexter (D-OR-03)",
-  "scraper": "dexter",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001218",
-  "label": "Melanie A. Stansbury (D-NM-01)",
-  "scraper": "stansbury",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001220",
-  "label": "Morgan McGarvey (D-KY-03)",
-  "scraper": "mcgarvey",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000621",
-  "label": "Nellie Pou (D-NJ-09)",
-  "scraper": "pou",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001315",
-  "label": "Nikki Budzinski (D-IL-13)",
-  "scraper": "budzinski",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "V000081",
-  "label": "Nydia M. Vel\u00e1zquez (D-NY-07)",
-  "scraper": "velazquez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "H001103",
-  "label": "Pablo Jos\u00e9 Hern\u00e1ndez (D-PR-AL)",
-  "scraper": "hernandez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "R000579",
-  "label": "Patrick Ryan (D-NY-18)",
-  "scraper": "patryan",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000469",
-  "label": "Paul Tonko (D-NY-20)",
-  "scraper": "tonko",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "J000298",
-  "label": "Pramila Jayapal (D-WA-07)",
-  "scraper": "jayapal",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "K000391",
-  "label": "Raja Krishnamoorthi (D-IL-08)",
-  "scraper": "krishnamoorthi",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000481",
-  "label": "Rashida Tlaib (D-MI-12)",
-  "scraper": "tlaib",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "N000015",
-  "label": "Richard E. Neal (D-MA-01)",
-  "scraper": "neal",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000560",
-  "label": "Rick Larsen (D-WA-02)",
-  "scraper": "larsen",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000486",
-  "label": "Ritchie Torres (D-NY-15)",
-  "scraper": "ritchietorres",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S000185",
-  "label": "Robert C. \"Bobby\" Scott (D-VA-03)",
-  "scraper": "bobbyscott",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001226",
-  "label": "Robert Menendez (D-NJ-08)",
-  "scraper": "menendez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "E000301",
-  "label": "Sarah Elfreth (D-MD-03)",
-  "scraper": "elfreth",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001117",
-  "label": "Sean Casten (D-IL-06)",
-  "scraper": "casten",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001223",
-  "label": "Seth Magaziner (D-RI-02)",
-  "scraper": "magaziner",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001196",
-  "label": "Seth Moulton (D-MA-06)",
-  "scraper": "moulton",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000629",
-  "label": "Sharice Davids (D-KS-03)",
-  "scraper": "davids",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001313",
-  "label": "Shontel M. Brown (D-OH-11)",
-  "scraper": "shontelbrown",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "T000488",
-  "label": "Shri Thanedar (D-MI-13)",
-  "scraper": "thanedar",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000610",
-  "label": "Stacey E. Plaskett (D-VI-AL)",
-  "scraper": "plaskett",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "H000874",
-  "label": "Steny H. Hoyer (D-MD-05)",
-  "scraper": "hoyer",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000562",
-  "label": "Stephen F. Lynch (D-MA-08)",
-  "scraper": "lynch",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001068",
-  "label": "Steve Cohen (D-TN-09)",
-  "scraper": "cohen",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "H001066",
-  "label": "Steven Horsford (D-NV-04)",
-  "scraper": "horsford",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001230",
-  "label": "Suhas Subramanyam (D-VA-10)",
-  "scraper": "subramanyam",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000602",
-  "label": "Summer L. Lee (D-PA-12)",
-  "scraper": "summerlee",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000590",
-  "label": "Susie Lee (D-NV-03)",
-  "scraper": "susielee",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000617",
-  "label": "Suzan K. DelBene (D-WA-01)",
-  "scraper": "delbene",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001278",
-  "label": "Suzanne Bonamici (D-OR-01)",
-  "scraper": "bonamici",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000587",
-  "label": "Sylvia R. Garcia (D-TX-29)",
-  "scraper": "sylviagarcia",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000273",
-  "label": "Teresa Leger Fernandez (D-NM-03)",
-  "scraper": "fernandez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "S001201",
-  "label": "Thomas R. Suozzi (D-NY-03)",
-  "scraper": "suozzi",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "K000402",
-  "label": "Timothy M. Kennedy (D-NY-26)",
-  "scraper": "timkennedy",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001125",
-  "label": "Troy A. Carter (D-LA-02)",
-  "scraper": "troycarter",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "H001094",
-  "label": "Val T. Hoyle (D-OR-04)",
-  "scraper": "hoyle",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "F000477",
-  "label": "Valerie P. Foushee (D-NC-04)",
-  "scraper": "foushee",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "E000299",
-  "label": "Veronica Escobar (D-TX-16)",
-  "scraper": "escobar",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "G000581",
-  "label": "Vicente Gonzalez (D-TX-34)",
-  "scraper": "gonzalez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001324",
-  "label": "Wesley Bell (D-MO-01)",
-  "scraper": "bell",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "K000375",
-  "label": "William R. Keating (D-MA-09)",
-  "scraper": "keating",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "C001067",
-  "label": "Yvette D. Clarke (D-NY-09)",
-  "scraper": "clarke",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -1562,6 +22,17 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "S000510",
+  "label": "Adam Smith (D-WA-09)",
+  "scraper": "adamsmith",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
   "bioguide": "G000606",
   "label": "Adelita S. Grijalva (D-AZ-07)",
   "scraper": "grijalva",
@@ -1571,6 +42,50 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "E000297",
+  "label": "Adriano Espaillat (D-NY-13)",
+  "scraper": "espaillat",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 22,
+  "new": 2,
+  "latest_date": "2026-06-12"
+ },
+ {
+  "bioguide": "G000553",
+  "label": "Al Green (D-TX-09)",
+  "scraper": "algreen",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "O000172",
+  "label": "Alexandria Ocasio-Cortez (D-NY-14)",
+  "scraper": "ocasio-cortez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "A000370",
+  "label": "Alma S. Adams (D-NC-12)",
+  "scraper": "adams",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
  },
  {
   "bioguide": "B001287",
@@ -1584,6 +99,127 @@
   "latest_date": "2026-09-23"
  },
  {
+  "bioguide": "M001246",
+  "label": "Analilia Mejia (D-NJ-11)",
+  "scraper": "mejia",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "S001226",
+  "label": "Andrea Salinas (D-OR-06)",
+  "scraper": "salinas",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001072",
+  "label": "Andr\u00e9 Carson (D-IN-07)",
+  "scraper": "carson",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "C001119",
+  "label": "Angie Craig (D-MN-02)",
+  "scraper": "craig",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "M001232",
+  "label": "April McClain Delaney (D-MD-06)",
+  "scraper": "mcclaindelaney",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
+  "bioguide": "P000617",
+  "label": "Ayanna Pressley (D-MA-07)",
+  "scraper": "pressley",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "B001318",
+  "label": "Becca Balint (D-VT-AL)",
+  "scraper": "balint",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2027-07-27"
+ },
+ {
+  "bioguide": "T000193",
+  "label": "Bennie G. Thompson (D-MS-02)",
+  "scraper": "benniethompson",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-11"
+ },
+ {
+  "bioguide": "M001143",
+  "label": "Betty McCollum (D-MN-04)",
+  "scraper": "mccollum",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "F000454",
+  "label": "Bill Foster (D-IL-11)",
+  "scraper": "foster",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-04"
+ },
+ {
+  "bioguide": "W000822",
+  "label": "Bonnie Watson Coleman (D-NJ-12)",
+  "scraper": "watsoncoleman",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
   "bioguide": "S000344",
   "label": "Brad Sherman (D-CA-32)",
   "scraper": "sherman",
@@ -1595,6 +231,28 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "S001190",
+  "label": "Bradley Scott Schneider (D-IL-10)",
+  "scraper": "schneider",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "B001296",
+  "label": "Brendan F. Boyle (D-PA-02)",
+  "scraper": "boyle",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
   "bioguide": "P000620",
   "label": "Brittany Pettersen (D-CO-07)",
   "scraper": "pettersen",
@@ -1604,6 +262,94 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "P000597",
+  "label": "Chellie Pingree (D-ME-01)",
+  "scraper": "pingree",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "P000614",
+  "label": "Chris Pappas (D-NH-01)",
+  "scraper": "pappas",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "H001085",
+  "label": "Chrissy Houlahan (D-PA-06)",
+  "scraper": "houlahan",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001245",
+  "label": "Christian D. Menefee (D-TX-18)",
+  "scraper": "menefee",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "D000530",
+  "label": "Christopher R. Deluzio (D-PA-17)",
+  "scraper": "deluzio",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "F000110",
+  "label": "Cleo Fields (D-LA-06)",
+  "scraper": "fields",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-01"
+ },
+ {
+  "bioguide": "G000599",
+  "label": "Daniel S. Goldman (D-NY-10)",
+  "scraper": "goldman",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "D000096",
+  "label": "Danny K. Davis (D-IL-07)",
+  "scraper": "davis",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-07-15"
  },
  {
   "bioguide": "S001200",
@@ -1628,9 +374,31 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
   "bioguide": "W000797",
   "label": "Debbie Wasserman Schultz (D-FL-25)",
   "scraper": "wassermanschultz",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "R000305",
+  "label": "Deborah K. Ross (D-NC-02)",
+  "scraper": "ross",
   "method": "python-statement",
   "status": "ok",
   "error": null,
@@ -1672,6 +440,50 @@
   "latest_date": "2026-09-21"
  },
  {
+  "bioguide": "T000468",
+  "label": "Dina Titus (D-NV-01)",
+  "scraper": "titus",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "D000230",
+  "label": "Donald G. Davis (D-NC-01)",
+  "scraper": "dondavis",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "N000188",
+  "label": "Donald Norcross (D-NJ-01)",
+  "scraper": "norcross",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "B001292",
+  "label": "Donald S. Beyer, Jr. (D-VA-08)",
+  "scraper": "beyer",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
   "bioguide": "M001163",
   "label": "Doris O. Matsui (D-CA-07)",
   "scraper": "matsui",
@@ -1681,6 +493,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-15"
+ },
+ {
+  "bioguide": "E000296",
+  "label": "Dwight Evans (D-PA-03)",
+  "scraper": "evans",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-14"
  },
  {
   "bioguide": "C001055",
@@ -1705,6 +528,94 @@
   "latest_date": "2026-09-21"
  },
  {
+  "bioguide": "C001061",
+  "label": "Emanuel Cleaver (D-MO-05)",
+  "scraper": "cleaver",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "S001223",
+  "label": "Emilia Strong Sykes (D-OH-13)",
+  "scraper": "sykes",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "R000621",
+  "label": "Emily Randall (D-WA-06)",
+  "scraper": "randall",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-20"
+ },
+ {
+  "bioguide": "S001225",
+  "label": "Eric Sorensen (D-IL-17)",
+  "scraper": "sorensen",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "V000138",
+  "label": "Eugene Simon Vindman (D-VA-07)",
+  "scraper": "vindman",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "B001328",
+  "label": "Everton Blair Jr. (D-GA-13)",
+  "scraper": null,
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 1,
+  "new": 1,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "M001214",
+  "label": "Frank J. Mrvan (D-IN-01)",
+  "scraper": "mrvan",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "P000034",
+  "label": "Frank Pallone, Jr. (D-NJ-06)",
+  "scraper": "pallone",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
   "bioguide": "W000808",
   "label": "Frederica S. Wilson (D-FL-24)",
   "scraper": "wilson",
@@ -1714,6 +625,39 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "A000380",
+  "label": "Gabe Amo (D-RI-01)",
+  "scraper": "amo",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "V000136",
+  "label": "Gabe Vasquez (D-NM-02)",
+  "scraper": "vasquez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "L000606",
+  "label": "George Latimer (D-NY-16)",
+  "scraper": "latimer",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-03-11"
  },
  {
   "bioguide": "W000830",
@@ -1738,6 +682,50 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "I000058",
+  "label": "Glenn Ivey (D-MD-04)",
+  "scraper": "ivey",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "M001188",
+  "label": "Grace Meng (D-NY-06)",
+  "scraper": "meng",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "C001131",
+  "label": "Greg Casar (D-TX-35)",
+  "scraper": "casar",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "L000601",
+  "label": "Greg Landsman (D-OH-01)",
+  "scraper": "landsman",
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-02"
+ },
+ {
   "bioguide": "S001211",
   "label": "Greg Stanton (D-AZ-04)",
   "scraper": "stanton",
@@ -1745,7 +733,51 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "M001137",
+  "label": "Gregory W. Meeks (D-NY-05)",
+  "scraper": "meeks",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-08-20"
+ },
+ {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "J000294",
+  "label": "Hakeem S. Jeffries (D-NY-08)",
+  "scraper": "jeffries",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "S001215",
+  "label": "Haley M. Stevens (D-MI-11)",
+  "scraper": "stevens",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
   "latest_date": "2026-09-29"
  },
  {
@@ -1758,6 +790,50 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "C001063",
+  "label": "Henry Cuellar (D-TX-28)",
+  "scraper": "cuellar",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 30,
+  "new": 0,
+  "latest_date": "2026-08-27"
+ },
+ {
+  "bioguide": "C001136",
+  "label": "Herbert C. Conaway, Jr. (D-NJ-03)",
+  "scraper": "conaway",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-07-24"
+ },
+ {
+  "bioguide": "S001221",
+  "label": "Hillary J. Scholten (D-MI-03)",
+  "scraper": "scholten",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "O000173",
+  "label": "Ilhan Omar (D-MN-05)",
+  "scraper": "omar",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "C001110",
@@ -1782,6 +858,17 @@
   "latest_date": "2026-09-17"
  },
  {
+  "bioguide": "A000148",
+  "label": "Jake Auchincloss (D-MA-04)",
+  "scraper": "auchincloss",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-15"
+ },
+ {
   "bioguide": "H001047",
   "label": "James A. Himes (D-CT-04)",
   "scraper": "himes",
@@ -1791,6 +878,83 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "C000537",
+  "label": "James E. Clyburn (D-SC-06)",
+  "scraper": "clyburn",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-07-14"
+ },
+ {
+  "bioguide": "M000312",
+  "label": "James P. McGovern (D-MA-02)",
+  "scraper": "mcgovern",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "W000831",
+  "label": "James R. Walkinshaw (D-VA-11)",
+  "scraper": "walkinshaw",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "R000606",
+  "label": "Jamie Raskin (D-MD-08)",
+  "scraper": "raskin",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-23"
+ },
+ {
+  "bioguide": "B001326",
+  "label": "Janelle S. Bynum (D-OR-05)",
+  "scraper": "bynum",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S001145",
+  "label": "Janice D. Schakowsky (D-IL-09)",
+  "scraper": "schakowsky",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000592",
+  "label": "Jared F. Golden (D-ME-02)",
+  "scraper": "golden",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
  },
  {
   "bioguide": "H001068",
@@ -1807,12 +971,23 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 16,
+  "new": 0,
+  "latest_date": "2026-07-22"
+ },
+ {
+  "bioguide": "C001130",
+  "label": "Jasmine Crockett (D-TX-30)",
+  "scraper": "crockett",
   "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 10,
   "new": 0,
-  "latest_date": "2026-07-22"
+  "latest_date": "2026-09-24"
  },
  {
   "bioguide": "C001121",
@@ -1824,6 +999,28 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "M001227",
+  "label": "Jennifer L. McClellan (D-VA-04)",
+  "scraper": "mcclellan",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "N000002",
+  "label": "Jerrold Nadler (D-NY-12)",
+  "scraper": "nadler",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "G000586",
@@ -1881,6 +1078,17 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "C001091",
+  "label": "Joaquin Castro (D-TX-20)",
+  "scraper": "castro",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
   "bioguide": "C001069",
   "label": "Joe Courtney (D-CT-02)",
   "scraper": "courtney",
@@ -1911,7 +1119,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-02"
+  "latest_date": "2026-09-25"
  },
  {
   "bioguide": "G000559",
@@ -1925,6 +1133,28 @@
   "latest_date": "2026-09-22"
  },
  {
+  "bioguide": "M001231",
+  "label": "John W. Mannion (D-NY-22)",
+  "scraper": "mannion",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "O000176",
+  "label": "Johnny Olszewski, Jr. (D-MD-02)",
+  "scraper": "olszewski",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
   "bioguide": "J000309",
   "label": "Jonathan L. Jackson (D-IL-01)",
   "scraper": "jonathanjackson",
@@ -1932,8 +1162,30 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-08-17"
+ },
+ {
+  "bioguide": "M001206",
+  "label": "Joseph D. Morelle (D-NY-25)",
+  "scraper": "morelle",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "G000583",
+  "label": "Josh Gottheimer (D-NJ-05)",
+  "scraper": "gottheimer",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-04"
  },
  {
   "bioguide": "H001090",
@@ -1945,6 +1197,28 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "R000622",
+  "label": "Josh Riley (D-NY-19)",
+  "scraper": "riley",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "B001281",
+  "label": "Joyce Beatty (D-OH-03)",
+  "scraper": "beatty",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-08-25"
  },
  {
   "bioguide": "V000130",
@@ -1966,7 +1240,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-01"
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "B001285",
@@ -1976,8 +1250,30 @@
   "status": "ok",
   "error": null,
   "count": 28,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-08-19"
+ },
+ {
+  "bioguide": "J000310",
+  "label": "Julie Johnson (D-TX-32)",
+  "scraper": "juliejohnson",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "C001101",
+  "label": "Katherine M. Clark (D-MA-05)",
+  "scraper": "clark",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "C001066",
@@ -1991,6 +1287,17 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "M001234",
+  "label": "Kelly Morrison (D-MN-03)",
+  "scraper": "morrison",
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 18,
+  "latest_date": "2026-09-29"
+ },
+ {
   "bioguide": "M001225",
   "label": "Kevin Mullin (D-CA-15)",
   "scraper": "kevinmullin",
@@ -2000,6 +1307,50 @@
   "count": 9,
   "new": 0,
   "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "S001216",
+  "label": "Kim Schrier (D-WA-08)",
+  "scraper": "schrier",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "M001237",
+  "label": "Kristen McDonald Rivet (D-MI-08)",
+  "scraper": "mcdonaldrivet",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "M000687",
+  "label": "Kweisi Mfume (D-MD-07)",
+  "scraper": "mfume",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "M001229",
+  "label": "LaMonica McIver (D-NJ-10)",
+  "scraper": "mciver",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "S001231",
@@ -2024,6 +1375,28 @@
   "latest_date": "2026-09-24"
  },
  {
+  "bioguide": "G000602",
+  "label": "Laura Gillen (D-NY-04)",
+  "scraper": "gillen",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "U000040",
+  "label": "Lauren Underwood (D-IL-14)",
+  "scraper": "underwood",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-24"
+ },
+ {
   "bioguide": "S001156",
   "label": "Linda T. S\u00e1nchez (D-CA-38)",
   "scraper": "lindasanchez",
@@ -2035,6 +1408,28 @@
   "latest_date": "2026-09-24"
  },
  {
+  "bioguide": "F000468",
+  "label": "Lizzie Fletcher (D-TX-07)",
+  "scraper": "fletcher",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "D000399",
+  "label": "Lloyd Doggett (D-TX-37)",
+  "scraper": "doggett",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-20"
+ },
+ {
   "bioguide": "F000462",
   "label": "Lois Frankel (D-FL-22)",
   "scraper": "frankel",
@@ -2044,6 +1439,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-09-24"
+ },
+ {
+  "bioguide": "T000482",
+  "label": "Lori Trahan (D-MA-03)",
+  "scraper": "trahan",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "M001208",
@@ -2068,6 +1474,72 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "D000631",
+  "label": "Madeleine Dean (D-PA-04)",
+  "scraper": "dean",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000604",
+  "label": "Maggie Goodlander (D-NH-02)",
+  "scraper": "goodlander",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "V000131",
+  "label": "Marc A. Veasey (D-TX-33)",
+  "scraper": "veasey",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "K000009",
+  "label": "Marcy Kaptur (D-OH-09)",
+  "scraper": "kaptur",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "G000600",
+  "label": "Marie Gluesenkamp Perez (D-WA-03)",
+  "scraper": "gluesenkampperez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S001159",
+  "label": "Marilyn Strickland (D-WA-10)",
+  "scraper": "strickland",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
   "bioguide": "D000623",
   "label": "Mark DeSaulnier (D-CA-10)",
   "scraper": "desaulnier",
@@ -2079,6 +1551,17 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "P000607",
+  "label": "Mark Pocan (D-WI-02)",
+  "scraper": "pocan",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-07-30"
+ },
+ {
   "bioguide": "T000472",
   "label": "Mark Takano (D-CA-39)",
   "scraper": "takano",
@@ -2088,6 +1571,28 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-09-08"
+ },
+ {
+  "bioguide": "S001205",
+  "label": "Mary Gay Scanlon (D-PA-05)",
+  "scraper": "scanlon",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "D000635",
+  "label": "Maxine Dexter (D-OR-03)",
+  "scraper": "dexter",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
  },
  {
   "bioguide": "W000187",
@@ -2110,6 +1615,17 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "S001218",
+  "label": "Melanie A. Stansbury (D-NM-01)",
+  "scraper": "stansbury",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "L000593",
@@ -2145,6 +1661,17 @@
   "latest_date": "2026-09-17"
  },
  {
+  "bioguide": "M001220",
+  "label": "Morgan McGarvey (D-KY-03)",
+  "scraper": "mcgarvey",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 45,
+  "new": 0,
+  "latest_date": "2026-08-14"
+ },
+ {
   "bioguide": "P000197",
   "label": "Nancy Pelosi (D-CA-11)",
   "scraper": "pelosi",
@@ -2167,6 +1694,17 @@
   "latest_date": "2026-07-17"
  },
  {
+  "bioguide": "P000621",
+  "label": "Nellie Pou (D-NJ-09)",
+  "scraper": "pou",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
   "bioguide": "W000788",
   "label": "Nikema Williams (D-GA-05)",
   "scraper": "nikemawilliams",
@@ -2176,6 +1714,17 @@
   "count": 6,
   "new": 0,
   "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "B001315",
+  "label": "Nikki Budzinski (D-IL-13)",
+  "scraper": "budzinski",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-09-17"
  },
  {
   "bioguide": "T000474",
@@ -2189,6 +1738,50 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "V000081",
+  "label": "Nydia M. Vel\u00e1zquez (D-NY-07)",
+  "scraper": "velazquez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "H001103",
+  "label": "Pablo Jos\u00e9 Hern\u00e1ndez (D-PR-AL)",
+  "scraper": "hernandez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "R000579",
+  "label": "Patrick Ryan (D-NY-18)",
+  "scraper": "patryan",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 9,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "T000469",
+  "label": "Paul Tonko (D-NY-20)",
+  "scraper": "tonko",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
   "bioguide": "A000371",
   "label": "Pete Aguilar (D-CA-33)",
   "scraper": "aguilar",
@@ -2196,6 +1789,39 @@
   "status": "ok",
   "error": null,
   "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "J000298",
+  "label": "Pramila Jayapal (D-WA-07)",
+  "scraper": "jayapal",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "K000391",
+  "label": "Raja Krishnamoorthi (D-IL-08)",
+  "scraper": "krishnamoorthi",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "T000481",
+  "label": "Rashida Tlaib (D-MI-12)",
+  "scraper": "tlaib",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-02"
  },
@@ -2211,9 +1837,53 @@
   "latest_date": "2026-10-02"
  },
  {
+  "bioguide": "N000015",
+  "label": "Richard E. Neal (D-MA-01)",
+  "scraper": "neal",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "L000560",
+  "label": "Rick Larsen (D-WA-02)",
+  "scraper": "larsen",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "T000486",
+  "label": "Ritchie Torres (D-NY-15)",
+  "scraper": "ritchietorres",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 16,
+  "new": 4,
+  "latest_date": "2026-09-24"
+ },
+ {
   "bioguide": "K000389",
   "label": "Ro Khanna (D-CA-17)",
   "scraper": "khanna",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "S000185",
+  "label": "Robert C. \"Bobby\" Scott (D-VA-03)",
+  "scraper": "bobbyscott",
   "method": "python-statement",
   "status": "ok",
   "error": null,
@@ -2231,6 +1901,17 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-08-31"
+ },
+ {
+  "bioguide": "M001226",
+  "label": "Robert Menendez (D-NJ-08)",
+  "scraper": "menendez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "K000385",
@@ -2299,6 +1980,17 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "E000301",
+  "label": "Sarah Elfreth (D-MD-03)",
+  "scraper": "elfreth",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
   "bioguide": "M001238",
   "label": "Sarah McBride (D-DE-AL)",
   "scraper": "mcbride",
@@ -2321,6 +2013,50 @@
   "latest_date": "2026-10-02"
  },
  {
+  "bioguide": "C001117",
+  "label": "Sean Casten (D-IL-06)",
+  "scraper": "casten",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-17"
+ },
+ {
+  "bioguide": "M001223",
+  "label": "Seth Magaziner (D-RI-02)",
+  "scraper": "magaziner",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "M001196",
+  "label": "Seth Moulton (D-MA-06)",
+  "scraper": "moulton",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "D000629",
+  "label": "Sharice Davids (D-KS-03)",
+  "scraper": "davids",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
   "bioguide": "F000481",
   "label": "Shomari Figures (D-AL-02)",
   "scraper": "figures",
@@ -2332,9 +2068,152 @@
   "latest_date": "2026-09-24"
  },
  {
+  "bioguide": "B001313",
+  "label": "Shontel M. Brown (D-OH-11)",
+  "scraper": "shontelbrown",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "T000488",
+  "label": "Shri Thanedar (D-MI-13)",
+  "scraper": "thanedar",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "P000610",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "scraper": "plaskett",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "H000874",
+  "label": "Steny H. Hoyer (D-MD-05)",
+  "scraper": "hoyer",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "L000562",
+  "label": "Stephen F. Lynch (D-MA-08)",
+  "scraper": "lynch",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "C001068",
+  "label": "Steve Cohen (D-TN-09)",
+  "scraper": "cohen",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-25"
+ },
+ {
+  "bioguide": "H001066",
+  "label": "Steven Horsford (D-NV-04)",
+  "scraper": "horsford",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "S001230",
+  "label": "Suhas Subramanyam (D-VA-10)",
+  "scraper": "subramanyam",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-29"
+ },
+ {
+  "bioguide": "L000602",
+  "label": "Summer L. Lee (D-PA-12)",
+  "scraper": "summerlee",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "L000590",
+  "label": "Susie Lee (D-NV-03)",
+  "scraper": "susielee",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-16"
+ },
+ {
+  "bioguide": "D000617",
+  "label": "Suzan K. DelBene (D-WA-01)",
+  "scraper": "delbene",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "B001278",
+  "label": "Suzanne Bonamici (D-OR-01)",
+  "scraper": "bonamici",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-22"
+ },
+ {
   "bioguide": "K000400",
   "label": "Sydney Kamlager-Dove (D-CA-37)",
   "scraper": "kamlager-dove",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000587",
+  "label": "Sylvia R. Garcia (D-TX-29)",
+  "scraper": "sylviagarcia",
   "method": "python-statement",
   "status": "ok",
   "error": null,
@@ -2354,6 +2233,17 @@
   "latest_date": "2026-09-22"
  },
  {
+  "bioguide": "L000273",
+  "label": "Teresa Leger Fernandez (D-NM-03)",
+  "scraper": "fernandez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
   "bioguide": "S001185",
   "label": "Terri A. Sewell (D-AL-07)",
   "scraper": "sewell",
@@ -2365,6 +2255,105 @@
   "latest_date": "2026-09-28"
  },
  {
+  "bioguide": "S001201",
+  "label": "Thomas R. Suozzi (D-NY-03)",
+  "scraper": "suozzi",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "K000402",
+  "label": "Timothy M. Kennedy (D-NY-26)",
+  "scraper": "timkennedy",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001125",
+  "label": "Troy A. Carter (D-LA-02)",
+  "scraper": "troycarter",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-28"
+ },
+ {
+  "bioguide": "H001094",
+  "label": "Val T. Hoyle (D-OR-04)",
+  "scraper": "hoyle",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "F000477",
+  "label": "Valerie P. Foushee (D-NC-04)",
+  "scraper": "foushee",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-21"
+ },
+ {
+  "bioguide": "E000299",
+  "label": "Veronica Escobar (D-TX-16)",
+  "scraper": "escobar",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "G000581",
+  "label": "Vicente Gonzalez (D-TX-34)",
+  "scraper": "gonzalez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
+ },
+ {
+  "bioguide": "B001324",
+  "label": "Wesley Bell (D-MO-01)",
+  "scraper": "bell",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "K000375",
+  "label": "William R. Keating (D-MA-09)",
+  "scraper": "keating",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-15"
+ },
+ {
   "bioguide": "A000381",
   "label": "Yassamin Ansari (D-AZ-03)",
   "scraper": "ansari",
@@ -2374,6 +2363,17 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-10-02"
+ },
+ {
+  "bioguide": "C001067",
+  "label": "Yvette D. Clarke (D-NY-09)",
+  "scraper": "clarke",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "L000397",
