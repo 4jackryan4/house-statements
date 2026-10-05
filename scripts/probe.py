@@ -26,7 +26,8 @@ for bid in ids:
     m = members[bid]
     base = (m.get("url") or "").rstrip("/") + "/"
     (out / bid).mkdir(parents=True, exist_ok=True)
-    for n, path in enumerate(PATHS):
+    # Committees: their press release listing first.
+    for n, path in enumerate(([m["press_url"]] if m.get("press_url") else []) + PATHS):
         url = urljoin(base, path)
         try:
             r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
