@@ -1,0 +1,674 @@
+[
+ {
+  "bioguide": "committee-armed-services",
+  "n": 0,
+  "url": "https://democrats-armedservices.house.gov/press-releases",
+  "final_url": "https://democrats-armedservices.house.gov/press-releases",
+  "status": 200,
+  "bytes": 37816
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 1,
+  "url": "https://democrats-armedservices.house.gov/",
+  "final_url": "https://democrats-armedservices.house.gov/",
+  "status": 200,
+  "bytes": 40720
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 2,
+  "url": "https://democrats-armedservices.house.gov/rss.xml",
+  "final_url": "https://democrats-armedservices.house.gov/rss.xml",
+  "status": 404,
+  "bytes": 196
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 3,
+  "url": "https://democrats-armedservices.house.gov/news/rss.aspx",
+  "final_url": "https://democrats-armedservices.house.gov/news/rss.aspx",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 4,
+  "url": "https://democrats-armedservices.house.gov/feed/",
+  "final_url": "https://democrats-armedservices.house.gov/feed/",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 5,
+  "url": "https://democrats-armedservices.house.gov/media/press-releases",
+  "final_url": "https://democrats-armedservices.house.gov/media/press-releases",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 6,
+  "url": "https://democrats-armedservices.house.gov/news/press-releases",
+  "final_url": "https://democrats-armedservices.house.gov/news/press-releases",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 7,
+  "url": "https://democrats-armedservices.house.gov/press-releases",
+  "final_url": "https://democrats-armedservices.house.gov/press-releases",
+  "status": 200,
+  "bytes": 37816
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 8,
+  "url": "https://democrats-armedservices.house.gov/news",
+  "final_url": "https://democrats-armedservices.house.gov/news",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 9,
+  "url": "https://democrats-armedservices.house.gov/media",
+  "final_url": "https://democrats-armedservices.house.gov/media",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 10,
+  "url": "https://democrats-armedservices.house.gov/media-center/press-releases",
+  "final_url": "https://democrats-armedservices.house.gov/media-center/press-releases",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 11,
+  "url": "https://democrats-armedservices.house.gov/newsroom/press-releases",
+  "final_url": "https://democrats-armedservices.house.gov/newsroom/press-releases",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 12,
+  "url": "https://democrats-armedservices.house.gov/press",
+  "final_url": "https://democrats-armedservices.house.gov/press",
+  "status": 404,
+  "bytes": 19294
+ },
+ {
+  "bioguide": "committee-armed-services",
+  "n": 13,
+  "url": "https://democrats-armedservices.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "final_url": "https://democrats-armedservices.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "status": 404,
+  "bytes": 19302
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 0,
+  "url": "https://democrats-foreignaffairs.house.gov/press-releases",
+  "final_url": "https://democrats-foreignaffairs.house.gov/press-releases",
+  "status": 200,
+  "bytes": 57138
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 1,
+  "url": "https://democrats-foreignaffairs.house.gov/",
+  "final_url": "https://democrats-foreignaffairs.house.gov/",
+  "status": 200,
+  "bytes": 54214
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 2,
+  "url": "https://democrats-foreignaffairs.house.gov/rss.xml",
+  "final_url": "https://democrats-foreignaffairs.house.gov/rss.xml",
+  "status": 404,
+  "bytes": 196
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 3,
+  "url": "https://democrats-foreignaffairs.house.gov/news/rss.aspx",
+  "final_url": "https://democrats-foreignaffairs.house.gov/news/rss.aspx",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 4,
+  "url": "https://democrats-foreignaffairs.house.gov/feed/",
+  "final_url": "https://democrats-foreignaffairs.house.gov/feed/",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 5,
+  "url": "https://democrats-foreignaffairs.house.gov/media/press-releases",
+  "final_url": "https://democrats-foreignaffairs.house.gov/media/press-releases",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 6,
+  "url": "https://democrats-foreignaffairs.house.gov/news/press-releases",
+  "final_url": "https://democrats-foreignaffairs.house.gov/press-releases",
+  "status": 200,
+  "bytes": 57138
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 7,
+  "url": "https://democrats-foreignaffairs.house.gov/press-releases",
+  "final_url": "https://democrats-foreignaffairs.house.gov/press-releases",
+  "status": 200,
+  "bytes": 57138
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 8,
+  "url": "https://democrats-foreignaffairs.house.gov/news",
+  "final_url": "https://democrats-foreignaffairs.house.gov/news-dems",
+  "status": 200,
+  "bytes": 61066
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 9,
+  "url": "https://democrats-foreignaffairs.house.gov/media",
+  "final_url": "https://democrats-foreignaffairs.house.gov/media",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 10,
+  "url": "https://democrats-foreignaffairs.house.gov/media-center/press-releases",
+  "final_url": "https://democrats-foreignaffairs.house.gov/media-center/press-releases",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 11,
+  "url": "https://democrats-foreignaffairs.house.gov/newsroom/press-releases",
+  "final_url": "https://democrats-foreignaffairs.house.gov/newsroom/press-releases",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 12,
+  "url": "https://democrats-foreignaffairs.house.gov/press",
+  "final_url": "https://democrats-foreignaffairs.house.gov/press",
+  "status": 404,
+  "bytes": 22599
+ },
+ {
+  "bioguide": "committee-foreign-affairs",
+  "n": 13,
+  "url": "https://democrats-foreignaffairs.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "final_url": "https://democrats-foreignaffairs.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "status": 404,
+  "bytes": 22607
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 0,
+  "url": "https://democrats-homeland.house.gov/news/press-releases",
+  "final_url": "https://democrats-homeland.house.gov/news/press-releases",
+  "status": 200,
+  "bytes": 92691
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 1,
+  "url": "https://democrats-homeland.house.gov/",
+  "final_url": "https://democrats-homeland.house.gov/",
+  "status": 200,
+  "bytes": 94386
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 2,
+  "url": "https://democrats-homeland.house.gov/rss.xml",
+  "final_url": "https://democrats-homeland.house.gov/rss.xml",
+  "status": 410,
+  "bytes": 332
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 3,
+  "url": "https://democrats-homeland.house.gov/news/rss.aspx",
+  "final_url": "https://democrats-homeland.house.gov/news/rss.aspx",
+  "status": 410,
+  "bytes": 338
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 4,
+  "url": "https://democrats-homeland.house.gov/feed/",
+  "final_url": "https://democrats-homeland.house.gov/feed/",
+  "status": 410,
+  "bytes": 329
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 5,
+  "url": "https://democrats-homeland.house.gov/media/press-releases",
+  "final_url": "https://democrats-homeland.house.gov/media/press-releases",
+  "status": 410,
+  "bytes": 345
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 6,
+  "url": "https://democrats-homeland.house.gov/news/press-releases",
+  "final_url": "https://democrats-homeland.house.gov/news/press-releases",
+  "status": 200,
+  "bytes": 92691
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 7,
+  "url": "https://democrats-homeland.house.gov/press-releases",
+  "final_url": "https://democrats-homeland.house.gov/press-releases",
+  "status": 410,
+  "bytes": 339
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 8,
+  "url": "https://democrats-homeland.house.gov/news",
+  "final_url": "https://democrats-homeland.house.gov/news",
+  "status": 200,
+  "bytes": 76571
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 9,
+  "url": "https://democrats-homeland.house.gov/media",
+  "final_url": "https://democrats-homeland.house.gov/media",
+  "status": 410,
+  "bytes": 330
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 10,
+  "url": "https://democrats-homeland.house.gov/media-center/press-releases",
+  "final_url": "https://democrats-homeland.house.gov/media-center/press-releases",
+  "status": 410,
+  "bytes": 352
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 11,
+  "url": "https://democrats-homeland.house.gov/newsroom/press-releases",
+  "final_url": "https://democrats-homeland.house.gov/newsroom/press-releases",
+  "status": 410,
+  "bytes": 348
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 12,
+  "url": "https://democrats-homeland.house.gov/press",
+  "final_url": "https://democrats-homeland.house.gov/press",
+  "status": 410,
+  "bytes": 330
+ },
+ {
+  "bioguide": "committee-homeland-security",
+  "n": 13,
+  "url": "https://democrats-homeland.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "final_url": "https://democrats-homeland.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "status": 410,
+  "bytes": 348
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 0,
+  "url": "https://democrats-naturalresources.house.gov/media/press-releases",
+  "final_url": "https://democrats-naturalresources.house.gov/media/press-releases",
+  "status": 200,
+  "bytes": 90882
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 1,
+  "url": "https://democrats-naturalresources.house.gov/",
+  "final_url": "https://democrats-naturalresources.house.gov/",
+  "status": 200,
+  "bytes": 62210
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 2,
+  "url": "https://democrats-naturalresources.house.gov/rss.xml",
+  "final_url": "https://democrats-naturalresources.house.gov/rss.xml",
+  "status": 410,
+  "bytes": 323
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 3,
+  "url": "https://democrats-naturalresources.house.gov/news/rss.aspx",
+  "final_url": "https://democrats-naturalresources.house.gov/news/rss.aspx",
+  "status": 410,
+  "bytes": 329
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 4,
+  "url": "https://democrats-naturalresources.house.gov/feed/",
+  "final_url": "https://democrats-naturalresources.house.gov/feed/",
+  "status": 410,
+  "bytes": 320
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 5,
+  "url": "https://democrats-naturalresources.house.gov/media/press-releases",
+  "final_url": "https://democrats-naturalresources.house.gov/media/press-releases",
+  "status": 200,
+  "bytes": 90882
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 6,
+  "url": "https://democrats-naturalresources.house.gov/news/press-releases",
+  "final_url": "https://democrats-naturalresources.house.gov/news/press-releases",
+  "status": 410,
+  "bytes": 335
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 7,
+  "url": "https://democrats-naturalresources.house.gov/press-releases",
+  "final_url": "https://democrats-naturalresources.house.gov/press-releases",
+  "status": 410,
+  "bytes": 330
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 8,
+  "url": "https://democrats-naturalresources.house.gov/news",
+  "final_url": "https://democrats-naturalresources.house.gov/news",
+  "status": 410,
+  "bytes": 320
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 9,
+  "url": "https://democrats-naturalresources.house.gov/media",
+  "final_url": "https://democrats-naturalresources.house.gov/media",
+  "status": 200,
+  "bytes": 79535
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 10,
+  "url": "https://democrats-naturalresources.house.gov/media-center/press-releases",
+  "final_url": "https://democrats-naturalresources.house.gov/media-center/press-releases",
+  "status": 410,
+  "bytes": 343
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 11,
+  "url": "https://democrats-naturalresources.house.gov/newsroom/press-releases",
+  "final_url": "https://democrats-naturalresources.house.gov/newsroom/press-releases",
+  "status": 410,
+  "bytes": 339
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 12,
+  "url": "https://democrats-naturalresources.house.gov/press",
+  "final_url": "https://democrats-naturalresources.house.gov/press",
+  "status": 410,
+  "bytes": 321
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "n": 13,
+  "url": "https://democrats-naturalresources.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "final_url": "https://democrats-naturalresources.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "status": 410,
+  "bytes": 339
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 0,
+  "url": "https://democrats-science.house.gov/news/press-releases",
+  "final_url": "https://democrats-science.house.gov/news/press-releases",
+  "status": 200,
+  "bytes": 124072
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 1,
+  "url": "https://democrats-science.house.gov/",
+  "final_url": "https://democrats-science.house.gov/",
+  "status": 200,
+  "bytes": 86870
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 2,
+  "url": "https://democrats-science.house.gov/rss.xml",
+  "final_url": "https://democrats-science.house.gov/rss.xml",
+  "status": 410,
+  "bytes": 329
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 3,
+  "url": "https://democrats-science.house.gov/news/rss.aspx",
+  "final_url": "https://democrats-science.house.gov/news/rss.aspx",
+  "status": 410,
+  "bytes": 335
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 4,
+  "url": "https://democrats-science.house.gov/feed/",
+  "final_url": "https://democrats-science.house.gov/feed/",
+  "status": 410,
+  "bytes": 326
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 5,
+  "url": "https://democrats-science.house.gov/media/press-releases",
+  "final_url": "https://democrats-science.house.gov/media/press-releases",
+  "status": 410,
+  "bytes": 342
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 6,
+  "url": "https://democrats-science.house.gov/news/press-releases",
+  "final_url": "https://democrats-science.house.gov/news/press-releases",
+  "status": 200,
+  "bytes": 124072
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 7,
+  "url": "https://democrats-science.house.gov/press-releases",
+  "final_url": "https://democrats-science.house.gov/press-releases",
+  "status": 410,
+  "bytes": 336
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 8,
+  "url": "https://democrats-science.house.gov/news",
+  "final_url": "https://democrats-science.house.gov/news",
+  "status": 200,
+  "bytes": 71380
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 9,
+  "url": "https://democrats-science.house.gov/media",
+  "final_url": "https://democrats-science.house.gov/media",
+  "status": 410,
+  "bytes": 327
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 10,
+  "url": "https://democrats-science.house.gov/media-center/press-releases",
+  "final_url": "https://democrats-science.house.gov/media-center/press-releases",
+  "status": 410,
+  "bytes": 349
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 11,
+  "url": "https://democrats-science.house.gov/newsroom/press-releases",
+  "final_url": "https://democrats-science.house.gov/newsroom/press-releases",
+  "status": 410,
+  "bytes": 345
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 12,
+  "url": "https://democrats-science.house.gov/press",
+  "final_url": "https://democrats-science.house.gov/press",
+  "status": 410,
+  "bytes": 327
+ },
+ {
+  "bioguide": "committee-science",
+  "n": 13,
+  "url": "https://democrats-science.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "final_url": "https://democrats-science.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "status": 410,
+  "bytes": 345
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 0,
+  "url": "https://democrats-rules.house.gov/media/press-releases",
+  "final_url": "https://democrats-rules.house.gov/media/press-releases",
+  "status": 200,
+  "bytes": 52847
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 1,
+  "url": "https://democrats-rules.house.gov/",
+  "final_url": "https://democrats-rules.house.gov/",
+  "status": 200,
+  "bytes": 46792
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 2,
+  "url": "https://democrats-rules.house.gov/rss.xml",
+  "final_url": "https://democrats-rules.house.gov/rss.xml",
+  "status": 200,
+  "bytes": 92563
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 3,
+  "url": "https://democrats-rules.house.gov/news/rss.aspx",
+  "final_url": "https://democrats-rules.house.gov/news/rss.aspx",
+  "status": 404,
+  "bytes": 31413
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 4,
+  "url": "https://democrats-rules.house.gov/feed/",
+  "final_url": "https://democrats-rules.house.gov/feed/",
+  "status": 404,
+  "bytes": 31405
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 5,
+  "url": "https://democrats-rules.house.gov/media/press-releases",
+  "final_url": "https://democrats-rules.house.gov/media/press-releases",
+  "status": 200,
+  "bytes": 52847
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 6,
+  "url": "https://democrats-rules.house.gov/news/press-releases",
+  "final_url": "https://democrats-rules.house.gov/news/press-releases",
+  "status": 404,
+  "bytes": 31419
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 7,
+  "url": "https://democrats-rules.house.gov/press-releases",
+  "final_url": "https://democrats-rules.house.gov/press-releases",
+  "status": 404,
+  "bytes": 31404
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 8,
+  "url": "https://democrats-rules.house.gov/news",
+  "final_url": "https://democrats-rules.house.gov/media",
+  "status": 200,
+  "bytes": 63732
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 9,
+  "url": "https://democrats-rules.house.gov/media",
+  "final_url": "https://democrats-rules.house.gov/media",
+  "status": 200,
+  "bytes": 63732
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 10,
+  "url": "https://democrats-rules.house.gov/media-center/press-releases",
+  "final_url": "https://democrats-rules.house.gov/media-center/press-releases",
+  "status": 404,
+  "bytes": 31435
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 11,
+  "url": "https://democrats-rules.house.gov/newsroom/press-releases",
+  "final_url": "https://democrats-rules.house.gov/newsroom/press-releases",
+  "status": 404,
+  "bytes": 31427
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 12,
+  "url": "https://democrats-rules.house.gov/press",
+  "final_url": "https://democrats-rules.house.gov/press",
+  "status": 404,
+  "bytes": 31395
+ },
+ {
+  "bioguide": "committee-rules",
+  "n": 13,
+  "url": "https://democrats-rules.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "final_url": "https://democrats-rules.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+  "status": 403,
+  "bytes": 174
+ }
+]
