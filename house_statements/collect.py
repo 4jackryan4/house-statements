@@ -19,7 +19,7 @@ import requests
 from . import store
 from .config import HEALTH_FILE, START_DATE
 from .members import load_members
-from .textfetch import fetch_text
+from .textfetch import fetch_page
 
 
 def utcnow() -> str:
@@ -131,6 +131,8 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str) -> lis
         }
         if item.get("origin"):
             records[sid]["origin"] = item["origin"]
+        if item.get("title_check"):
+            records[sid]["title_check"] = True
         new_ids.append(sid)
     return new_ids
 
@@ -140,12 +142,17 @@ def fill_text(records: dict, ids: list[str], workers: int) -> int:
     filled = 0
 
     def work(sid):
-        return sid, fetch_text(records[sid]["url"], session)
+        return sid, fetch_page(records[sid]["url"], session)
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
         for fut in as_completed([pool.submit(work, sid) for sid in ids]):
-            sid, (text, page_date) = fut.result()
+            sid, page = fut.result()
+            text, page_date = page["text"], page["date"]
             r = records[sid]
+            if r.get("title_check") and page["title"]:
+                if len(page["title"].split()) > len(r["title"].split()):
+                    r["title"] = page["title"]
+                del r["title_check"]
             r["text_attempts"] = r.get("text_attempts", 0) + 1
             if text:
                 r["text"] = text

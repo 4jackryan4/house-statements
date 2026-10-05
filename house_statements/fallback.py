@@ -63,6 +63,11 @@ TEMPLATE_TITLES = {
     "119th united states congress", "119th united states congress convenes",
 }
 SKIP_CATEGORIES = re.compile(r"in the news|news clips?|media coverage|in the media|events?$|newsletters?", re.I)
+# Site pages and test posts that sit inside press-release sections.
+JUNK = re.compile(r"media-kit|press-list|sign-?up|headshot|newsletter|subscri|test post", re.I)
+# Shorter link text is usually a phrase linked from another release's summary; the real title is
+# read from the statement page itself when its text is fetched.
+MIN_WORDS = 5
 MIN_TITLE = 15
 SKIP_TITLES = (
     "read more", "continue reading", "learn more", "full release", "view all", "more news", "upcoming events",
@@ -146,6 +151,9 @@ def _keep(item: dict, host: str) -> bool:
         and len(title) >= MIN_TITLE
         and not title.lower().startswith(SKIP_TITLES)
         and title.lower().strip(" .") not in TEMPLATE_TITLES
+        and not JUNK.search(title)
+        and not JUNK.search(urlsplit(item["url"]).path)
+        and not title.lower().startswith("http")
     )
 
 
@@ -167,7 +175,9 @@ def from_rss(xml: str, source: str) -> list[dict]:
         if categories and all(SKIP_CATEGORIES.search(c) for c in categories):
             continue  # press coverage of the member, not their own statement
         if url and title:
-            items.append({"url": url, "title": title, "date": date, "source": source, "feed": True})
+            items.append(
+                {"url": url, "title": title, "date": date, "source": source, "feed": True, "categories": categories}
+            )
     return items
 
 
@@ -282,7 +292,10 @@ def from_listing(html: str, page_url: str) -> list[dict]:
         date = card_date[url]
         if date is None:
             date = _parse_date(before.get(url, "")[-300:], last=True) if dates_first else _parse_date(after[url][:300])
-        items.append({"url": url, "title": titles[url], "date": date, "source": page_url})
+        item = {"url": url, "title": titles[url], "date": date, "source": page_url}
+        if len(titles[url].split()) < MIN_WORDS:
+            item["title_check"] = True
+        items.append(item)
     return items
 
 
@@ -364,8 +377,11 @@ def _scrape(host: str, session, pages: int, urls: list[str], first=None, press_o
         items = [i for i in _filter(_items_from(r.text, r.url), host) if i["date"]]
         for i in items:
             i["origin"] = url
-        if press_only and items and not items[0].get("feed") and not PRESS_LISTING.search(urlsplit(url).path):
-            continue
+        if press_only:
+            if items and not items[0].get("feed") and not PRESS_LISTING.search(urlsplit(url).path):
+                continue
+            # Feeds of working sites: only posts filed as press releases or statements, when filed at all.
+            items = [i for i in items if not i.get("categories") or any(PRESS_LISTING.search(c) for c in i["categories"])]
         if _recent(items):
             sources.append((items, r))
     if not sources:

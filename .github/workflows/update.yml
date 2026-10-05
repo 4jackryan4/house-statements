@@ -3,7 +3,19 @@ name: Update statements and site
 on:
   schedule:
     - cron: "23 * * * *"   # every hour
+    - cron: "7 9 * * *"    # daily sweep: every site's press page, for statements the scrapers miss
   workflow_dispatch:
+    inputs:
+      sweep:
+        description: "Check every member site with the generic scraper too"
+        type: boolean
+        default: false
+      pages:
+        description: "Listing pages to read per site (more = backfill further back)"
+        default: "1"
+      max_text:
+        description: "Most statement pages to fetch text for"
+        default: "600"
   push:
     branches: [main]
     paths: ["house_statements/**", "web/**", "scripts/**", ".github/workflows/update.yml"]
@@ -66,7 +78,12 @@ jobs:
       - name: Scrape member websites
         # A blocked or broken site shouldn't stop the archive data from publishing.
         continue-on-error: true
-        run: python -m house_statements.collect
+        run: |
+          args="--pages ${{ inputs.pages || 1 }} --max-text ${{ inputs.max_text || 600 }}"
+          if [ "${{ inputs.sweep }}" = "true" ] || [ "${{ github.event.schedule }}" = "7 9 * * *" ]; then
+            args="$args --sweep"
+          fi
+          python -m house_statements.collect $args
 
       - name: Commit new statements
         run: |

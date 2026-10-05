@@ -99,3 +99,13 @@ def test_scrape_site_follows_pages_and_records_origin():
     assert {i["origin"] for i in items} == {"https://smith.house.gov/media/press-releases"}
     known = fallback.scrape_site("https://smith.house.gov", session=session, known=["https://smith.house.gov/media/press-releases"])
     assert len(known) == 2
+
+
+def test_site_pages_and_short_link_text():
+    html = """<html><body>
+<div><a href="/media/press-releases/rep-launches-shipyard-caucus-with-colleagues">Public Shipyard Caucus</a> June 1, 2026</div>
+<div><a href="/media/press-list-sign-up-for-reporters">Press List Sign Up for Reporters</a> June 1, 2026</div>
+<div><a href="/media/press-releases/this-is-a-test-post">This is the fifth test post for testing purposes</a> June 1, 2026</div>
+</body></html>"""
+    items = fallback._filter(fallback.from_listing(html, "https://p.house.gov/media/press-releases"), "p.house.gov")
+    assert [(i["title"], i.get("title_check")) for i in items] == [("Public Shipyard Caucus", True)]
