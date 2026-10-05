@@ -1,0 +1,11 @@
+{
+  "name": "house-statements",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "index": "node scripts/build_index.mjs"
+  },
+  "dependencies": {
+    "pagefind": "1.5.2"
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Members · House Democrats Statements</title>
+<meta name="description" content="Press statements from House Democrats' official websites, grouped by event and searchable by member and content.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="All statements" href="feeds/all.xml">
+<link rel="alternate" type="application/rss+xml" title="Events" href="feeds/events.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4fc4'/%3E%3Cpath d='M9 10h14M9 16h14M9 22h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body data-page="members">
+<header class="top"><div class="wrap">
+  <a class="brand" href="./">House Democrats <span>Statements</span></a>
+  <nav>
+    <a href="./">Search</a>
+    <a href="events.html">Events</a>
+    <a href="members.html" aria-current="page">Members</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<h1>Members</h1>
+<p class="sub">Every House Democrat, by state. Pick a member to see their statements, or subscribe to their RSS feed.</p>
+<div class="toolbar"><input id="member-filter" class="filter-input" type="search" placeholder="Find a member, state, or committee" aria-label="Find a member"></div>
+<div id="member-directory"><p class="loading">Loading…</p></div>
+</main>
+<footer><div class="wrap">
+  <p>Statements are collected from members' official house.gov websites every hour. <span id="built"></span></p>
+  <p>RSS: <a href="feeds/all.xml">all statements</a> · <a href="feeds/events.xml">new events</a> · each member's feed is on the <a href="members.html">Members</a> page.</p>
+  <p>Built on <a href="https://github.com/dwillis/python-statement">python-statement</a> and the <a href="https://github.com/dwillis/congress-press">congress-press</a> archive. <a href="https://github.com/4jackryan4/house-statements">Source</a>.</p>
+</div></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

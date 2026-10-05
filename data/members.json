@@ -1,0 +1,3639 @@
+[
+ {
+  "bioguide": "F000481",
+  "name": "Shomari Figures",
+  "last_name": "Figures",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "AL",
+  "district": "AL-02",
+  "label": "Shomari Figures (D-AL-02)",
+  "url": "https://figures.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "figures"
+ },
+ {
+  "bioguide": "S001185",
+  "name": "Terri A. Sewell",
+  "last_name": "Sewell",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "AL",
+  "district": "AL-07",
+  "label": "Terri A. Sewell (D-AL-07)",
+  "url": "https://sewell.house.gov",
+  "rss_url": "http://sewell.house.gov/rss.xml",
+  "committees": [
+   "House Administration",
+   "Ways and Means"
+  ],
+  "scraper": "sewell"
+ },
+ {
+  "bioguide": "A000381",
+  "name": "Yassamin Ansari",
+  "last_name": "Ansari",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "AZ",
+  "district": "AZ-03",
+  "label": "Yassamin Ansari (D-AZ-03)",
+  "url": "https://ansari.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "ansari"
+ },
+ {
+  "bioguide": "S001211",
+  "name": "Greg Stanton",
+  "last_name": "Stanton",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "AZ",
+  "district": "AZ-04",
+  "label": "Greg Stanton (D-AZ-04)",
+  "url": "https://stanton.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Select Committee on China",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "stanton"
+ },
+ {
+  "bioguide": "G000606",
+  "name": "Adelita S. Grijalva",
+  "last_name": "Grijalva",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "AZ",
+  "district": "AZ-07",
+  "label": "Adelita S. Grijalva (D-AZ-07)",
+  "url": "https://grijalva.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Education and Workforce",
+   "Natural Resources"
+  ],
+  "scraper": "grijalva"
+ },
+ {
+  "bioguide": "H001068",
+  "name": "Jared Huffman",
+  "last_name": "Huffman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-02",
+  "label": "Jared Huffman (D-CA-02)",
+  "url": "https://huffman.house.gov",
+  "rss_url": "http://huffman.house.gov/rss.xml",
+  "committees": [
+   "Natural Resources",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "huffman"
+ },
+ {
+  "bioguide": "T000460",
+  "name": "Mike Thompson",
+  "last_name": "Thompson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-04",
+  "label": "Mike Thompson (D-CA-04)",
+  "url": "https://mikethompson.house.gov",
+  "rss_url": "http://mikethompson.house.gov/news/rss.aspx",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "mikethompson"
+ },
+ {
+  "bioguide": "B001287",
+  "name": "Ami Bera",
+  "last_name": "Bera",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-06",
+  "label": "Ami Bera (D-CA-06)",
+  "url": "https://bera.house.gov",
+  "rss_url": "http://bera.house.gov/rss.xml",
+  "committees": [
+   "Foreign Affairs",
+   "Intelligence"
+  ],
+  "scraper": "bera"
+ },
+ {
+  "bioguide": "M001163",
+  "name": "Doris O. Matsui",
+  "last_name": "Matsui",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-07",
+  "label": "Doris O. Matsui (D-CA-07)",
+  "url": "https://matsui.house.gov",
+  "rss_url": "http://matsui.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "matsui"
+ },
+ {
+  "bioguide": "G000559",
+  "name": "John Garamendi",
+  "last_name": "Garamendi",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-08",
+  "label": "John Garamendi (D-CA-08)",
+  "url": "https://garamendi.house.gov",
+  "rss_url": "http://garamendi.house.gov/rss.xml",
+  "committees": [
+   "Armed Services",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "garamendi"
+ },
+ {
+  "bioguide": "H001090",
+  "name": "Josh Harder",
+  "last_name": "Harder",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-09",
+  "label": "Josh Harder (D-CA-09)",
+  "url": "https://harder.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "harder"
+ },
+ {
+  "bioguide": "D000623",
+  "name": "Mark DeSaulnier",
+  "last_name": "DeSaulnier",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-10",
+  "label": "Mark DeSaulnier (D-CA-10)",
+  "url": "https://desaulnier.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Education and Workforce",
+   "Ethics",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "desaulnier"
+ },
+ {
+  "bioguide": "P000197",
+  "name": "Nancy Pelosi",
+  "last_name": "Pelosi",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-11",
+  "label": "Nancy Pelosi (D-CA-11)",
+  "url": "https://pelosi.house.gov",
+  "rss_url": "http://pelosi.house.gov/atom.xml",
+  "committees": [],
+  "scraper": "pelosi"
+ },
+ {
+  "bioguide": "S001231",
+  "name": "Lateefah Simon",
+  "last_name": "Simon",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-12",
+  "label": "Lateefah Simon (D-CA-12)",
+  "url": "https://simon.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Oversight and Government Reform",
+   "Small Business"
+  ],
+  "scraper": "simon"
+ },
+ {
+  "bioguide": "G000605",
+  "name": "Adam Gray",
+  "last_name": "Gray",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-13",
+  "label": "Adam Gray (D-CA-13)",
+  "url": "https://gray.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Natural Resources"
+  ],
+  "scraper": "gray"
+ },
+ {
+  "bioguide": "W000832",
+  "name": "Aisha Wahab",
+  "last_name": "Wahab",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-14",
+  "label": "Aisha Wahab (D-CA-14)",
+  "url": "https://wahab.house.gov/",
+  "rss_url": null,
+  "committees": [],
+  "scraper": null
+ },
+ {
+  "bioguide": "M001225",
+  "name": "Kevin Mullin",
+  "last_name": "Mullin",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-15",
+  "label": "Kevin Mullin (D-CA-15)",
+  "url": "https://kevinmullin.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "kevinmullin"
+ },
+ {
+  "bioguide": "L000607",
+  "name": "Sam T. Liccardo",
+  "last_name": "Liccardo",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-16",
+  "label": "Sam T. Liccardo (D-CA-16)",
+  "url": "https://liccardo.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "liccardo"
+ },
+ {
+  "bioguide": "K000389",
+  "name": "Ro Khanna",
+  "last_name": "Khanna",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-17",
+  "label": "Ro Khanna (D-CA-17)",
+  "url": "https://khanna.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Oversight and Government Reform",
+   "Select Committee on China"
+  ],
+  "scraper": "khanna"
+ },
+ {
+  "bioguide": "L000397",
+  "name": "Zoe Lofgren",
+  "last_name": "Lofgren",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-18",
+  "label": "Zoe Lofgren (D-CA-18)",
+  "url": "https://lofgren.house.gov",
+  "rss_url": "http://lofgren.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Judiciary",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "lofgren"
+ },
+ {
+  "bioguide": "P000613",
+  "name": "Jimmy Panetta",
+  "last_name": "Panetta",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-19",
+  "label": "Jimmy Panetta (D-CA-19)",
+  "url": "https://panetta.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Ways and Means"
+  ],
+  "scraper": "panetta"
+ },
+ {
+  "bioguide": "C001059",
+  "name": "Jim Costa",
+  "last_name": "Costa",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-21",
+  "label": "Jim Costa (D-CA-21)",
+  "url": "https://costa.house.gov",
+  "rss_url": "http://costa.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Agriculture",
+   "Foreign Affairs"
+  ],
+  "scraper": "costa"
+ },
+ {
+  "bioguide": "C001112",
+  "name": "Salud O. Carbajal",
+  "last_name": "Carbajal",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-24",
+  "label": "Salud O. Carbajal (D-CA-24)",
+  "url": "https://carbajal.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Armed Services",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "carbajal"
+ },
+ {
+  "bioguide": "R000599",
+  "name": "Raul Ruiz",
+  "last_name": "Ruiz",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-25",
+  "label": "Raul Ruiz (D-CA-25)",
+  "url": "https://ruiz.house.gov",
+  "rss_url": "http://ruiz.house.gov/rss.xml",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "ruiz"
+ },
+ {
+  "bioguide": "B001285",
+  "name": "Julia Brownley",
+  "last_name": "Brownley",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-26",
+  "label": "Julia Brownley (D-CA-26)",
+  "url": "https://juliabrownley.house.gov",
+  "rss_url": "http://juliabrownley.house.gov/rss.xml",
+  "committees": [
+   "Natural Resources",
+   "Transportation and Infrastructure",
+   "Veterans' Affairs"
+  ],
+  "scraper": "juliabrownley"
+ },
+ {
+  "bioguide": "W000830",
+  "name": "George Whitesides",
+  "last_name": "Whitesides",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-27",
+  "label": "George Whitesides (D-CA-27)",
+  "url": "https://whitesides.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "whitesides"
+ },
+ {
+  "bioguide": "C001080",
+  "name": "Judy Chu",
+  "last_name": "Chu",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-28",
+  "label": "Judy Chu (D-CA-28)",
+  "url": "https://chu.house.gov",
+  "rss_url": "http://chu.house.gov/rss.xml",
+  "committees": [
+   "Budget",
+   "Ways and Means"
+  ],
+  "scraper": "chu"
+ },
+ {
+  "bioguide": "R000620",
+  "name": "Luz M. Rivas",
+  "last_name": "Rivas",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-29",
+  "label": "Luz M. Rivas (D-CA-29)",
+  "url": "https://rivas.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "rivas"
+ },
+ {
+  "bioguide": "F000483",
+  "name": "Laura Friedman",
+  "last_name": "Friedman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-30",
+  "label": "Laura Friedman (D-CA-30)",
+  "url": "https://friedman.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Science, Space, and Technology",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "friedman"
+ },
+ {
+  "bioguide": "C001123",
+  "name": "Gilbert Ray Cisneros, Jr.",
+  "last_name": "Cisneros",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-31",
+  "label": "Gilbert Ray Cisneros, Jr. (D-CA-31)",
+  "url": "https://cisneros.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Small Business"
+  ],
+  "scraper": "cisneros"
+ },
+ {
+  "bioguide": "S000344",
+  "name": "Brad Sherman",
+  "last_name": "Sherman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-32",
+  "label": "Brad Sherman (D-CA-32)",
+  "url": "https://sherman.house.gov",
+  "rss_url": "http://bradsherman.house.gov/press-releases-and-columns/rss.shtml",
+  "committees": [
+   "Financial Services",
+   "Foreign Affairs"
+  ],
+  "scraper": "sherman"
+ },
+ {
+  "bioguide": "A000371",
+  "name": "Pete Aguilar",
+  "last_name": "Aguilar",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-33",
+  "label": "Pete Aguilar (D-CA-33)",
+  "url": "https://aguilar.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "aguilar"
+ },
+ {
+  "bioguide": "G000585",
+  "name": "Jimmy Gomez",
+  "last_name": "Gomez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-34",
+  "label": "Jimmy Gomez (D-CA-34)",
+  "url": "https://gomez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Intelligence",
+   "Ways and Means"
+  ],
+  "scraper": "gomez"
+ },
+ {
+  "bioguide": "T000474",
+  "name": "Norma J. Torres",
+  "last_name": "Torres",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-35",
+  "label": "Norma J. Torres (D-CA-35)",
+  "url": "https://torres.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "House Administration"
+  ],
+  "scraper": "torres"
+ },
+ {
+  "bioguide": "L000582",
+  "name": "Ted Lieu",
+  "last_name": "Lieu",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-36",
+  "label": "Ted Lieu (D-CA-36)",
+  "url": "https://lieu.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Judiciary"
+  ],
+  "scraper": "lieu"
+ },
+ {
+  "bioguide": "K000400",
+  "name": "Sydney Kamlager-Dove",
+  "last_name": "Kamlager-Dove",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-37",
+  "label": "Sydney Kamlager-Dove (D-CA-37)",
+  "url": "https://kamlager-dove.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Judiciary"
+  ],
+  "scraper": "kamlager-dove"
+ },
+ {
+  "bioguide": "S001156",
+  "name": "Linda T. Sánchez",
+  "last_name": "Sánchez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-38",
+  "label": "Linda T. Sánchez (D-CA-38)",
+  "url": "https://lindasanchez.house.gov",
+  "rss_url": "http://lindasanchez.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "lindasanchez"
+ },
+ {
+  "bioguide": "T000472",
+  "name": "Mark Takano",
+  "last_name": "Takano",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-39",
+  "label": "Mark Takano (D-CA-39)",
+  "url": "https://takano.house.gov",
+  "rss_url": "http://takano.house.gov/rss.xml",
+  "committees": [
+   "Education and Workforce",
+   "Veterans' Affairs"
+  ],
+  "scraper": "takano"
+ },
+ {
+  "bioguide": "G000598",
+  "name": "Robert Garcia",
+  "last_name": "Garcia",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-42",
+  "label": "Robert Garcia (D-CA-42)",
+  "url": "https://robertgarcia.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Oversight and Government Reform",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "robertgarcia"
+ },
+ {
+  "bioguide": "W000187",
+  "name": "Maxine Waters",
+  "last_name": "Waters",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-43",
+  "label": "Maxine Waters (D-CA-43)",
+  "url": "https://waters.house.gov",
+  "rss_url": "http://waters.house.gov/news/rss.aspx",
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "waters"
+ },
+ {
+  "bioguide": "B001300",
+  "name": "Nanette Diaz Barragán",
+  "last_name": "Barragán",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-44",
+  "label": "Nanette Diaz Barragán (D-CA-44)",
+  "url": "https://barragan.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "barragan"
+ },
+ {
+  "bioguide": "T000491",
+  "name": "Derek Tran",
+  "last_name": "Tran",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-45",
+  "label": "Derek Tran (D-CA-45)",
+  "url": "https://tran.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Small Business"
+  ],
+  "scraper": "tran"
+ },
+ {
+  "bioguide": "C001110",
+  "name": "J. Luis Correa",
+  "last_name": "Correa",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-46",
+  "label": "J. Luis Correa (D-CA-46)",
+  "url": "https://correa.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Judiciary"
+  ],
+  "scraper": "correa"
+ },
+ {
+  "bioguide": "M001241",
+  "name": "Dave Min",
+  "last_name": "Min",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-47",
+  "label": "Dave Min (D-CA-47)",
+  "url": "https://min.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "min"
+ },
+ {
+  "bioguide": "L000593",
+  "name": "Mike Levin",
+  "last_name": "Levin",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-49",
+  "label": "Mike Levin (D-CA-49)",
+  "url": "https://levin.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "levin"
+ },
+ {
+  "bioguide": "P000608",
+  "name": "Scott H. Peters",
+  "last_name": "Peters",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-50",
+  "label": "Scott H. Peters (D-CA-50)",
+  "url": "https://scottpeters.house.gov",
+  "rss_url": "http://scottpeters.house.gov/rss.xml",
+  "committees": [
+   "Budget",
+   "Energy and Commerce"
+  ],
+  "scraper": "scottpeters"
+ },
+ {
+  "bioguide": "J000305",
+  "name": "Sara Jacobs",
+  "last_name": "Jacobs",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-51",
+  "label": "Sara Jacobs (D-CA-51)",
+  "url": "https://sarajacobs.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Foreign Affairs"
+  ],
+  "scraper": "sarajacobs"
+ },
+ {
+  "bioguide": "V000130",
+  "name": "Juan Vargas",
+  "last_name": "Vargas",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CA",
+  "district": "CA-52",
+  "label": "Juan Vargas (D-CA-52)",
+  "url": "https://vargas.house.gov",
+  "rss_url": "http://vargas.house.gov/rss.xml",
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "vargas"
+ },
+ {
+  "bioguide": "D000197",
+  "name": "Diana DeGette",
+  "last_name": "DeGette",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CO",
+  "district": "CO-01",
+  "label": "Diana DeGette (D-CO-01)",
+  "url": "https://degette.house.gov",
+  "rss_url": "http://degette.house.gov/index.php?option=com_ninjarsssyndicator&amp;feed_id=1&amp;format=raw",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "degette"
+ },
+ {
+  "bioguide": "N000191",
+  "name": "Joe Neguse",
+  "last_name": "Neguse",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CO",
+  "district": "CO-02",
+  "label": "Joe Neguse (D-CO-02)",
+  "url": "https://neguse.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Judiciary",
+   "Natural Resources",
+   "Rules"
+  ],
+  "scraper": "neguse"
+ },
+ {
+  "bioguide": "C001121",
+  "name": "Jason Crow",
+  "last_name": "Crow",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CO",
+  "district": "CO-06",
+  "label": "Jason Crow (D-CO-06)",
+  "url": "https://crow.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Intelligence"
+  ],
+  "scraper": "crow"
+ },
+ {
+  "bioguide": "P000620",
+  "name": "Brittany Pettersen",
+  "last_name": "Pettersen",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CO",
+  "district": "CO-07",
+  "label": "Brittany Pettersen (D-CO-07)",
+  "url": "https://pettersen.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "pettersen"
+ },
+ {
+  "bioguide": "L000557",
+  "name": "John B. Larson",
+  "last_name": "Larson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CT",
+  "district": "CT-01",
+  "label": "John B. Larson (D-CT-01)",
+  "url": "https://larson.house.gov",
+  "rss_url": "http://www.larson.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "larson"
+ },
+ {
+  "bioguide": "C001069",
+  "name": "Joe Courtney",
+  "last_name": "Courtney",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CT",
+  "district": "CT-02",
+  "label": "Joe Courtney (D-CT-02)",
+  "url": "https://courtney.house.gov",
+  "rss_url": "http://courtney.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Armed Services",
+   "Education and Workforce"
+  ],
+  "scraper": "courtney"
+ },
+ {
+  "bioguide": "D000216",
+  "name": "Rosa L. DeLauro",
+  "last_name": "DeLauro",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CT",
+  "district": "CT-03",
+  "label": "Rosa L. DeLauro (D-CT-03)",
+  "url": "https://delauro.house.gov",
+  "rss_url": "http://delauro.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "delauro"
+ },
+ {
+  "bioguide": "H001047",
+  "name": "James A. Himes",
+  "last_name": "Himes",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CT",
+  "district": "CT-04",
+  "label": "James A. Himes (D-CT-04)",
+  "url": "https://himes.house.gov",
+  "rss_url": "http://himes.house.gov/rss.xml",
+  "committees": [
+   "Financial Services",
+   "Intelligence"
+  ],
+  "scraper": "himes"
+ },
+ {
+  "bioguide": "H001081",
+  "name": "Jahana Hayes",
+  "last_name": "Hayes",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "CT",
+  "district": "CT-05",
+  "label": "Jahana Hayes (D-CT-05)",
+  "url": "https://hayes.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Education and Workforce"
+  ],
+  "scraper": "hayes"
+ },
+ {
+  "bioguide": "N000147",
+  "name": "Eleanor Holmes Norton",
+  "last_name": "Norton",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "DC",
+  "district": "DC-AL",
+  "label": "Eleanor Holmes Norton (D-DC-AL)",
+  "url": "https://norton.house.gov",
+  "rss_url": "http://norton.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Oversight and Government Reform",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "norton"
+ },
+ {
+  "bioguide": "M001238",
+  "name": "Sarah McBride",
+  "last_name": "McBride",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "DE",
+  "district": "DE-AL",
+  "label": "Sarah McBride (D-DE-AL)",
+  "url": "https://mcbride.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "mcbride"
+ },
+ {
+  "bioguide": "S001200",
+  "name": "Darren Soto",
+  "last_name": "Soto",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-09",
+  "label": "Darren Soto (D-FL-09)",
+  "url": "https://soto.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce",
+   "Natural Resources"
+  ],
+  "scraper": "soto"
+ },
+ {
+  "bioguide": "F000476",
+  "name": "Maxwell Frost",
+  "last_name": "Frost",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-10",
+  "label": "Maxwell Frost (D-FL-10)",
+  "url": "https://frost.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Oversight and Government Reform",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "frost"
+ },
+ {
+  "bioguide": "C001066",
+  "name": "Kathy Castor",
+  "last_name": "Castor",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-14",
+  "label": "Kathy Castor (D-FL-14)",
+  "url": "https://castor.house.gov",
+  "rss_url": "http://castor.house.gov/news/rss.aspx",
+  "committees": [
+   "Energy and Commerce",
+   "Select Committee on China"
+  ],
+  "scraper": "castor"
+ },
+ {
+  "bioguide": "F000462",
+  "name": "Lois Frankel",
+  "last_name": "Frankel",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-22",
+  "label": "Lois Frankel (D-FL-22)",
+  "url": "https://frankel.house.gov",
+  "rss_url": "http://frankel.house.gov/rss.xml",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "frankel"
+ },
+ {
+  "bioguide": "M001217",
+  "name": "Jared Moskowitz",
+  "last_name": "Moskowitz",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-23",
+  "label": "Jared Moskowitz (D-FL-23)",
+  "url": "https://moskowitz.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Judiciary",
+   "Select Subcommittee on January 6"
+  ],
+  "scraper": "moskowitz"
+ },
+ {
+  "bioguide": "W000808",
+  "name": "Frederica S. Wilson",
+  "last_name": "Wilson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-24",
+  "label": "Frederica S. Wilson (D-FL-24)",
+  "url": "https://wilson.house.gov",
+  "rss_url": "http://wilson.house.gov/common/rss//index.cfm?rss=49",
+  "committees": [
+   "Education and Workforce",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "wilson"
+ },
+ {
+  "bioguide": "W000797",
+  "name": "Debbie Wasserman Schultz",
+  "last_name": "Wasserman Schultz",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "FL",
+  "district": "FL-25",
+  "label": "Debbie Wasserman Schultz (D-FL-25)",
+  "url": "https://wassermanschultz.house.gov",
+  "rss_url": "http://wassermanschultz.house.gov/atom.xml",
+  "committees": [
+   "Appropriations",
+   "Foreign Affairs"
+  ],
+  "scraper": "wassermanschultz"
+ },
+ {
+  "bioguide": "B000490",
+  "name": "Sanford D. Bishop, Jr.",
+  "last_name": "Bishop",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "GA",
+  "district": "GA-02",
+  "label": "Sanford D. Bishop, Jr. (D-GA-02)",
+  "url": "https://bishop.house.gov",
+  "rss_url": "http://bishop.house.gov/rss.xml",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "bishop"
+ },
+ {
+  "bioguide": "J000288",
+  "name": "Henry C. \"Hank\" Johnson, Jr.",
+  "last_name": "Johnson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "GA",
+  "district": "GA-04",
+  "label": "Henry C. \"Hank\" Johnson, Jr. (D-GA-04)",
+  "url": "https://hankjohnson.house.gov",
+  "rss_url": "http://hankjohnson.house.gov/rss.xml",
+  "committees": [
+   "Judiciary",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "hankjohnson"
+ },
+ {
+  "bioguide": "W000788",
+  "name": "Nikema Williams",
+  "last_name": "Williams",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "GA",
+  "district": "GA-05",
+  "label": "Nikema Williams (D-GA-05)",
+  "url": "https://nikemawilliams.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "nikemawilliams"
+ },
+ {
+  "bioguide": "M001208",
+  "name": "Lucy McBath",
+  "last_name": "McBath",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "GA",
+  "district": "GA-06",
+  "label": "Lucy McBath (D-GA-06)",
+  "url": "https://mcbath.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Education and Workforce",
+   "Judiciary"
+  ],
+  "scraper": "mcbath"
+ },
+ {
+  "bioguide": "B001328",
+  "name": "Everton Blair Jr.",
+  "last_name": "Blair",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "GA",
+  "district": "GA-13",
+  "label": "Everton Blair Jr. (D-GA-13)",
+  "url": "https://blair.house.gov/",
+  "rss_url": null,
+  "committees": [],
+  "scraper": null
+ },
+ {
+  "bioguide": "C001055",
+  "name": "Ed Case",
+  "last_name": "Case",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "HI",
+  "district": "HI-01",
+  "label": "Ed Case (D-HI-01)",
+  "url": "https://case.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "case"
+ },
+ {
+  "bioguide": "T000487",
+  "name": "Jill N. Tokuda",
+  "last_name": "Tokuda",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "HI",
+  "district": "HI-02",
+  "label": "Jill N. Tokuda (D-HI-02)",
+  "url": "https://tokuda.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Armed Services",
+   "Select Committee on China"
+  ],
+  "scraper": "tokuda"
+ },
+ {
+  "bioguide": "J000309",
+  "name": "Jonathan L. Jackson",
+  "last_name": "Jackson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-01",
+  "label": "Jonathan L. Jackson (D-IL-01)",
+  "url": "https://jonathanjackson.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Foreign Affairs"
+  ],
+  "scraper": "jonathanjackson"
+ },
+ {
+  "bioguide": "K000385",
+  "name": "Robin L. Kelly",
+  "last_name": "Kelly",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-02",
+  "label": "Robin L. Kelly (D-IL-02)",
+  "url": "https://robinkelly.house.gov",
+  "rss_url": "http://robinkelly.house.gov/rss.xml",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "robinkelly"
+ },
+ {
+  "bioguide": "R000617",
+  "name": "Delia C. Ramirez",
+  "last_name": "Ramirez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-03",
+  "label": "Delia C. Ramirez (D-IL-03)",
+  "url": "https://ramirez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Veterans' Affairs"
+  ],
+  "scraper": "ramirez"
+ },
+ {
+  "bioguide": "G000586",
+  "name": "Jesús G. \"Chuy\" García",
+  "last_name": "García",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-04",
+  "label": "Jesús G. \"Chuy\" García (D-IL-04)",
+  "url": "https://chuygarcia.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Judiciary",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "chuygarcia"
+ },
+ {
+  "bioguide": "Q000023",
+  "name": "Mike Quigley",
+  "last_name": "Quigley",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-05",
+  "label": "Mike Quigley (D-IL-05)",
+  "url": "https://quigley.house.gov",
+  "rss_url": "http://quigley.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Appropriations",
+   "Intelligence"
+  ],
+  "scraper": "quigley"
+ },
+ {
+  "bioguide": "C001117",
+  "name": "Sean Casten",
+  "last_name": "Casten",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-06",
+  "label": "Sean Casten (D-IL-06)",
+  "url": "https://casten.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "casten"
+ },
+ {
+  "bioguide": "D000096",
+  "name": "Danny K. Davis",
+  "last_name": "Davis",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-07",
+  "label": "Danny K. Davis (D-IL-07)",
+  "url": "https://davis.house.gov",
+  "rss_url": "http://davis.house.gov/index.php?format=feed&type=rss",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "davis"
+ },
+ {
+  "bioguide": "K000391",
+  "name": "Raja Krishnamoorthi",
+  "last_name": "Krishnamoorthi",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-08",
+  "label": "Raja Krishnamoorthi (D-IL-08)",
+  "url": "https://krishnamoorthi.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Intelligence",
+   "Oversight and Government Reform",
+   "Select Committee on China"
+  ],
+  "scraper": "krishnamoorthi"
+ },
+ {
+  "bioguide": "S001145",
+  "name": "Janice D. Schakowsky",
+  "last_name": "Schakowsky",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-09",
+  "label": "Janice D. Schakowsky (D-IL-09)",
+  "url": "https://schakowsky.house.gov",
+  "rss_url": "http://schakowsky.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "schakowsky"
+ },
+ {
+  "bioguide": "S001190",
+  "name": "Bradley Scott Schneider",
+  "last_name": "Schneider",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-10",
+  "label": "Bradley Scott Schneider (D-IL-10)",
+  "url": "https://schneider.house.gov",
+  "rss_url": "http://schneider.house.gov/rss.xml",
+  "committees": [
+   "Foreign Affairs",
+   "Ways and Means"
+  ],
+  "scraper": "schneider"
+ },
+ {
+  "bioguide": "F000454",
+  "name": "Bill Foster",
+  "last_name": "Foster",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-11",
+  "label": "Bill Foster (D-IL-11)",
+  "url": "https://foster.house.gov",
+  "rss_url": "http://foster.house.gov/rss.xml",
+  "committees": [
+   "Financial Services",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "foster"
+ },
+ {
+  "bioguide": "B001315",
+  "name": "Nikki Budzinski",
+  "last_name": "Budzinski",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-13",
+  "label": "Nikki Budzinski (D-IL-13)",
+  "url": "https://budzinski.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Veterans' Affairs"
+  ],
+  "scraper": "budzinski"
+ },
+ {
+  "bioguide": "U000040",
+  "name": "Lauren Underwood",
+  "last_name": "Underwood",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-14",
+  "label": "Lauren Underwood (D-IL-14)",
+  "url": "https://underwood.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "underwood"
+ },
+ {
+  "bioguide": "S001225",
+  "name": "Eric Sorensen",
+  "last_name": "Sorensen",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IL",
+  "district": "IL-17",
+  "label": "Eric Sorensen (D-IL-17)",
+  "url": "https://sorensen.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Armed Services"
+  ],
+  "scraper": "sorensen"
+ },
+ {
+  "bioguide": "M001214",
+  "name": "Frank J. Mrvan",
+  "last_name": "Mrvan",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IN",
+  "district": "IN-01",
+  "label": "Frank J. Mrvan (D-IN-01)",
+  "url": "https://mrvan.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "mrvan"
+ },
+ {
+  "bioguide": "C001072",
+  "name": "André Carson",
+  "last_name": "Carson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "IN",
+  "district": "IN-07",
+  "label": "André Carson (D-IN-07)",
+  "url": "https://carson.house.gov",
+  "rss_url": "http://carson.house.gov/index.php?option=com_bca-rss-syndicator&amp;feed_id=1",
+  "committees": [
+   "Intelligence",
+   "Select Committee on China",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "carson"
+ },
+ {
+  "bioguide": "D000629",
+  "name": "Sharice Davids",
+  "last_name": "Davids",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "KS",
+  "district": "KS-03",
+  "label": "Sharice Davids (D-KS-03)",
+  "url": "https://davids.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "davids"
+ },
+ {
+  "bioguide": "M001220",
+  "name": "Morgan McGarvey",
+  "last_name": "McGarvey",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "KY",
+  "district": "KY-03",
+  "label": "Morgan McGarvey (D-KY-03)",
+  "url": "https://mcgarvey.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Small Business",
+   "Veterans' Affairs"
+  ],
+  "scraper": "mcgarvey"
+ },
+ {
+  "bioguide": "C001125",
+  "name": "Troy A. Carter",
+  "last_name": "Carter",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "LA",
+  "district": "LA-02",
+  "label": "Troy A. Carter (D-LA-02)",
+  "url": "https://troycarter.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce",
+   "Homeland Security"
+  ],
+  "scraper": "troycarter"
+ },
+ {
+  "bioguide": "F000110",
+  "name": "Cleo Fields",
+  "last_name": "Fields",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "LA",
+  "district": "LA-06",
+  "label": "Cleo Fields (D-LA-06)",
+  "url": "https://fields.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "fields"
+ },
+ {
+  "bioguide": "N000015",
+  "name": "Richard E. Neal",
+  "last_name": "Neal",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-01",
+  "label": "Richard E. Neal (D-MA-01)",
+  "url": "https://neal.house.gov",
+  "rss_url": "http://neal.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "neal"
+ },
+ {
+  "bioguide": "M000312",
+  "name": "James P. McGovern",
+  "last_name": "McGovern",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-02",
+  "label": "James P. McGovern (D-MA-02)",
+  "url": "https://mcgovern.house.gov",
+  "rss_url": "http://mcgovern.house.gov/common/rss/?rss=15",
+  "committees": [
+   "Agriculture",
+   "Rules"
+  ],
+  "scraper": "mcgovern"
+ },
+ {
+  "bioguide": "T000482",
+  "name": "Lori Trahan",
+  "last_name": "Trahan",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-03",
+  "label": "Lori Trahan (D-MA-03)",
+  "url": "https://trahan.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "trahan"
+ },
+ {
+  "bioguide": "A000148",
+  "name": "Jake Auchincloss",
+  "last_name": "Auchincloss",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-04",
+  "label": "Jake Auchincloss (D-MA-04)",
+  "url": "https://auchincloss.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "auchincloss"
+ },
+ {
+  "bioguide": "C001101",
+  "name": "Katherine M. Clark",
+  "last_name": "Clark",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-05",
+  "label": "Katherine M. Clark (D-MA-05)",
+  "url": "https://katherineclark.house.gov",
+  "rss_url": null,
+  "committees": [],
+  "scraper": "clark"
+ },
+ {
+  "bioguide": "M001196",
+  "name": "Seth Moulton",
+  "last_name": "Moulton",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-06",
+  "label": "Seth Moulton (D-MA-06)",
+  "url": "https://moulton.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Select Committee on China",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "moulton"
+ },
+ {
+  "bioguide": "P000617",
+  "name": "Ayanna Pressley",
+  "last_name": "Pressley",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-07",
+  "label": "Ayanna Pressley (D-MA-07)",
+  "url": "https://pressley.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "pressley"
+ },
+ {
+  "bioguide": "L000562",
+  "name": "Stephen F. Lynch",
+  "last_name": "Lynch",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-08",
+  "label": "Stephen F. Lynch (D-MA-08)",
+  "url": "https://lynch.house.gov",
+  "rss_url": "http://lynch.house.gov/rss.xml",
+  "committees": [
+   "Financial Services",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "lynch"
+ },
+ {
+  "bioguide": "K000375",
+  "name": "William R. Keating",
+  "last_name": "Keating",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MA",
+  "district": "MA-09",
+  "label": "William R. Keating (D-MA-09)",
+  "url": "https://keating.house.gov",
+  "rss_url": "http://keating.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Armed Services",
+   "Foreign Affairs"
+  ],
+  "scraper": "keating"
+ },
+ {
+  "bioguide": "O000176",
+  "name": "Johnny Olszewski, Jr.",
+  "last_name": "Olszewski",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-02",
+  "label": "Johnny Olszewski, Jr. (D-MD-02)",
+  "url": "https://olszewski.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Small Business"
+  ],
+  "scraper": "olszewski"
+ },
+ {
+  "bioguide": "E000301",
+  "name": "Sarah Elfreth",
+  "last_name": "Elfreth",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-03",
+  "label": "Sarah Elfreth (D-MD-03)",
+  "url": "https://elfreth.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Natural Resources"
+  ],
+  "scraper": "elfreth"
+ },
+ {
+  "bioguide": "I000058",
+  "name": "Glenn Ivey",
+  "last_name": "Ivey",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-04",
+  "label": "Glenn Ivey (D-MD-04)",
+  "url": "https://ivey.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "Ethics"
+  ],
+  "scraper": "ivey"
+ },
+ {
+  "bioguide": "H000874",
+  "name": "Steny H. Hoyer",
+  "last_name": "Hoyer",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-05",
+  "label": "Steny H. Hoyer (D-MD-05)",
+  "url": "https://hoyer.house.gov",
+  "rss_url": "http://hoyer.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "hoyer"
+ },
+ {
+  "bioguide": "M001232",
+  "name": "April McClain Delaney",
+  "last_name": "McClain Delaney",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-06",
+  "label": "April McClain Delaney (D-MD-06)",
+  "url": "https://mcclaindelaney.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "mcclaindelaney"
+ },
+ {
+  "bioguide": "M000687",
+  "name": "Kweisi Mfume",
+  "last_name": "Mfume",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-07",
+  "label": "Kweisi Mfume (D-MD-07)",
+  "url": "https://mfume.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "mfume"
+ },
+ {
+  "bioguide": "R000606",
+  "name": "Jamie Raskin",
+  "last_name": "Raskin",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MD",
+  "district": "MD-08",
+  "label": "Jamie Raskin (D-MD-08)",
+  "url": "https://raskin.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Judiciary"
+  ],
+  "scraper": "raskin"
+ },
+ {
+  "bioguide": "P000597",
+  "name": "Chellie Pingree",
+  "last_name": "Pingree",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "ME",
+  "district": "ME-01",
+  "label": "Chellie Pingree (D-ME-01)",
+  "url": "https://pingree.house.gov",
+  "rss_url": "http://pingree.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Agriculture",
+   "Appropriations"
+  ],
+  "scraper": "pingree"
+ },
+ {
+  "bioguide": "G000592",
+  "name": "Jared F. Golden",
+  "last_name": "Golden",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "ME",
+  "district": "ME-02",
+  "label": "Jared F. Golden (D-ME-02)",
+  "url": "https://golden.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Natural Resources"
+  ],
+  "scraper": "golden"
+ },
+ {
+  "bioguide": "S001221",
+  "name": "Hillary J. Scholten",
+  "last_name": "Scholten",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MI",
+  "district": "MI-03",
+  "label": "Hillary J. Scholten (D-MI-03)",
+  "url": "https://scholten.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Small Business",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "scholten"
+ },
+ {
+  "bioguide": "D000624",
+  "name": "Debbie Dingell",
+  "last_name": "Dingell",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MI",
+  "district": "MI-06",
+  "label": "Debbie Dingell (D-MI-06)",
+  "url": "https://debbiedingell.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce",
+   "Natural Resources"
+  ],
+  "scraper": "debbiedingell"
+ },
+ {
+  "bioguide": "M001237",
+  "name": "Kristen McDonald Rivet",
+  "last_name": "McDonald Rivet",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MI",
+  "district": "MI-08",
+  "label": "Kristen McDonald Rivet (D-MI-08)",
+  "url": "https://mcdonaldrivet.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "mcdonaldrivet"
+ },
+ {
+  "bioguide": "S001215",
+  "name": "Haley M. Stevens",
+  "last_name": "Stevens",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MI",
+  "district": "MI-11",
+  "label": "Haley M. Stevens (D-MI-11)",
+  "url": "https://stevens.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Education and Workforce",
+   "Science, Space, and Technology",
+   "Select Committee on China"
+  ],
+  "scraper": "stevens"
+ },
+ {
+  "bioguide": "T000481",
+  "name": "Rashida Tlaib",
+  "last_name": "Tlaib",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MI",
+  "district": "MI-12",
+  "label": "Rashida Tlaib (D-MI-12)",
+  "url": "https://tlaib.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "tlaib"
+ },
+ {
+  "bioguide": "T000488",
+  "name": "Shri Thanedar",
+  "last_name": "Thanedar",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MI",
+  "district": "MI-13",
+  "label": "Shri Thanedar (D-MI-13)",
+  "url": "https://thanedar.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Homeland Security"
+  ],
+  "scraper": "thanedar"
+ },
+ {
+  "bioguide": "C001119",
+  "name": "Angie Craig",
+  "last_name": "Craig",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MN",
+  "district": "MN-02",
+  "label": "Angie Craig (D-MN-02)",
+  "url": "https://craig.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture"
+  ],
+  "scraper": "craig"
+ },
+ {
+  "bioguide": "M001234",
+  "name": "Kelly Morrison",
+  "last_name": "Morrison",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MN",
+  "district": "MN-03",
+  "label": "Kelly Morrison (D-MN-03)",
+  "url": "https://morrison.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Small Business",
+   "Veterans' Affairs"
+  ],
+  "scraper": "morrison"
+ },
+ {
+  "bioguide": "M001143",
+  "name": "Betty McCollum",
+  "last_name": "McCollum",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MN",
+  "district": "MN-04",
+  "label": "Betty McCollum (D-MN-04)",
+  "url": "https://mccollum.house.gov",
+  "rss_url": "http://mccollum.house.gov/rss.xml",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "mccollum"
+ },
+ {
+  "bioguide": "O000173",
+  "name": "Ilhan Omar",
+  "last_name": "Omar",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MN",
+  "district": "MN-05",
+  "label": "Ilhan Omar (D-MN-05)",
+  "url": "https://omar.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Education and Workforce"
+  ],
+  "scraper": "omar"
+ },
+ {
+  "bioguide": "B001324",
+  "name": "Wesley Bell",
+  "last_name": "Bell",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MO",
+  "district": "MO-01",
+  "label": "Wesley Bell (D-MO-01)",
+  "url": "https://bell.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Foreign Affairs",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "bell"
+ },
+ {
+  "bioguide": "C001061",
+  "name": "Emanuel Cleaver",
+  "last_name": "Cleaver",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MO",
+  "district": "MO-05",
+  "label": "Emanuel Cleaver (D-MO-05)",
+  "url": "https://cleaver.house.gov",
+  "rss_url": "http://cleaver.house.gov/rss.xml",
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "cleaver"
+ },
+ {
+  "bioguide": "T000193",
+  "name": "Bennie G. Thompson",
+  "last_name": "Thompson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "MS",
+  "district": "MS-02",
+  "label": "Bennie G. Thompson (D-MS-02)",
+  "url": "https://benniethompson.house.gov",
+  "rss_url": "http://benniethompson.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Homeland Security"
+  ],
+  "scraper": "benniethompson"
+ },
+ {
+  "bioguide": "D000230",
+  "name": "Donald G. Davis",
+  "last_name": "Davis",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NC",
+  "district": "NC-01",
+  "label": "Donald G. Davis (D-NC-01)",
+  "url": "https://dondavis.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Armed Services"
+  ],
+  "scraper": "dondavis"
+ },
+ {
+  "bioguide": "R000305",
+  "name": "Deborah K. Ross",
+  "last_name": "Ross",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NC",
+  "district": "NC-02",
+  "label": "Deborah K. Ross (D-NC-02)",
+  "url": "https://ross.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Ethics",
+   "Judiciary",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "ross"
+ },
+ {
+  "bioguide": "F000477",
+  "name": "Valerie P. Foushee",
+  "last_name": "Foushee",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NC",
+  "district": "NC-04",
+  "label": "Valerie P. Foushee (D-NC-04)",
+  "url": "https://foushee.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Science, Space, and Technology",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "foushee"
+ },
+ {
+  "bioguide": "A000370",
+  "name": "Alma S. Adams",
+  "last_name": "Adams",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NC",
+  "district": "NC-12",
+  "label": "Alma S. Adams (D-NC-12)",
+  "url": "https://adams.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Education and Workforce"
+  ],
+  "scraper": "adams"
+ },
+ {
+  "bioguide": "P000614",
+  "name": "Chris Pappas",
+  "last_name": "Pappas",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NH",
+  "district": "NH-01",
+  "label": "Chris Pappas (D-NH-01)",
+  "url": "https://pappas.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Transportation and Infrastructure",
+   "Veterans' Affairs"
+  ],
+  "scraper": "pappas"
+ },
+ {
+  "bioguide": "G000604",
+  "name": "Maggie Goodlander",
+  "last_name": "Goodlander",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NH",
+  "district": "NH-02",
+  "label": "Maggie Goodlander (D-NH-02)",
+  "url": "https://goodlander.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Small Business",
+   "Veterans' Affairs"
+  ],
+  "scraper": "goodlander"
+ },
+ {
+  "bioguide": "N000188",
+  "name": "Donald Norcross",
+  "last_name": "Norcross",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-01",
+  "label": "Donald Norcross (D-NJ-01)",
+  "url": "https://norcross.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Education and Workforce"
+  ],
+  "scraper": "norcross"
+ },
+ {
+  "bioguide": "C001136",
+  "name": "Herbert C. Conaway, Jr.",
+  "last_name": "Conaway",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-03",
+  "label": "Herbert C. Conaway, Jr. (D-NJ-03)",
+  "url": "https://conaway.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Veterans' Affairs"
+  ],
+  "scraper": "conaway"
+ },
+ {
+  "bioguide": "G000583",
+  "name": "Josh Gottheimer",
+  "last_name": "Gottheimer",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-05",
+  "label": "Josh Gottheimer (D-NJ-05)",
+  "url": "https://gottheimer.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services",
+   "Intelligence"
+  ],
+  "scraper": "gottheimer"
+ },
+ {
+  "bioguide": "P000034",
+  "name": "Frank Pallone, Jr.",
+  "last_name": "Pallone",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-06",
+  "label": "Frank Pallone, Jr. (D-NJ-06)",
+  "url": "https://pallone.house.gov",
+  "rss_url": "http://pallone.house.gov/rss.xml",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "pallone"
+ },
+ {
+  "bioguide": "M001226",
+  "name": "Robert Menendez",
+  "last_name": "Menendez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-08",
+  "label": "Robert Menendez (D-NJ-08)",
+  "url": "https://menendez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "menendez"
+ },
+ {
+  "bioguide": "P000621",
+  "name": "Nellie Pou",
+  "last_name": "Pou",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-09",
+  "label": "Nellie Pou (D-NJ-09)",
+  "url": "https://pou.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "pou"
+ },
+ {
+  "bioguide": "M001229",
+  "name": "LaMonica McIver",
+  "last_name": "McIver",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-10",
+  "label": "LaMonica McIver (D-NJ-10)",
+  "url": "https://mciver.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Small Business"
+  ],
+  "scraper": "mciver"
+ },
+ {
+  "bioguide": "M001246",
+  "name": "Analilia Mejia",
+  "last_name": "Mejia",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-11",
+  "label": "Analilia Mejia (D-NJ-11)",
+  "url": "https://mejia.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Small Business"
+  ],
+  "scraper": "mejia"
+ },
+ {
+  "bioguide": "W000822",
+  "name": "Bonnie Watson Coleman",
+  "last_name": "Watson Coleman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NJ",
+  "district": "NJ-12",
+  "label": "Bonnie Watson Coleman (D-NJ-12)",
+  "url": "https://watsoncoleman.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "Budget"
+  ],
+  "scraper": "watsoncoleman"
+ },
+ {
+  "bioguide": "S001218",
+  "name": "Melanie A. Stansbury",
+  "last_name": "Stansbury",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NM",
+  "district": "NM-01",
+  "label": "Melanie A. Stansbury (D-NM-01)",
+  "url": "https://stansbury.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "stansbury"
+ },
+ {
+  "bioguide": "V000136",
+  "name": "Gabe Vasquez",
+  "last_name": "Vasquez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NM",
+  "district": "NM-02",
+  "label": "Gabe Vasquez (D-NM-02)",
+  "url": "https://vasquez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Armed Services"
+  ],
+  "scraper": "vasquez"
+ },
+ {
+  "bioguide": "L000273",
+  "name": "Teresa Leger Fernandez",
+  "last_name": "Leger Fernandez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NM",
+  "district": "NM-03",
+  "label": "Teresa Leger Fernandez (D-NM-03)",
+  "url": "https://fernandez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Rules"
+  ],
+  "scraper": "fernandez"
+ },
+ {
+  "bioguide": "T000468",
+  "name": "Dina Titus",
+  "last_name": "Titus",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NV",
+  "district": "NV-01",
+  "label": "Dina Titus (D-NV-01)",
+  "url": "https://titus.house.gov",
+  "rss_url": "http://titus.house.gov/rss.xml",
+  "committees": [
+   "Foreign Affairs",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "titus"
+ },
+ {
+  "bioguide": "L000590",
+  "name": "Susie Lee",
+  "last_name": "Lee",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NV",
+  "district": "NV-03",
+  "label": "Susie Lee (D-NV-03)",
+  "url": "https://susielee.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "Natural Resources"
+  ],
+  "scraper": "susielee"
+ },
+ {
+  "bioguide": "H001066",
+  "name": "Steven Horsford",
+  "last_name": "Horsford",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NV",
+  "district": "NV-04",
+  "label": "Steven Horsford (D-NV-04)",
+  "url": "https://horsford.house.gov",
+  "rss_url": "http://horsford.house.gov/rss.xml",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "horsford"
+ },
+ {
+  "bioguide": "S001201",
+  "name": "Thomas R. Suozzi",
+  "last_name": "Suozzi",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-03",
+  "label": "Thomas R. Suozzi (D-NY-03)",
+  "url": "https://suozzi.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Select Committee on China",
+   "Ways and Means"
+  ],
+  "scraper": "suozzi"
+ },
+ {
+  "bioguide": "G000602",
+  "name": "Laura Gillen",
+  "last_name": "Gillen",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-04",
+  "label": "Laura Gillen (D-NY-04)",
+  "url": "https://gillen.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Science, Space, and Technology",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "gillen"
+ },
+ {
+  "bioguide": "M001137",
+  "name": "Gregory W. Meeks",
+  "last_name": "Meeks",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-05",
+  "label": "Gregory W. Meeks (D-NY-05)",
+  "url": "https://meeks.house.gov",
+  "rss_url": "http://meeks.house.gov/rss.xml",
+  "committees": [
+   "Financial Services",
+   "Foreign Affairs"
+  ],
+  "scraper": "meeks"
+ },
+ {
+  "bioguide": "M001188",
+  "name": "Grace Meng",
+  "last_name": "Meng",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-06",
+  "label": "Grace Meng (D-NY-06)",
+  "url": "https://meng.house.gov",
+  "rss_url": "http://meng.house.gov/rss.xml",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "meng"
+ },
+ {
+  "bioguide": "V000081",
+  "name": "Nydia M. Velázquez",
+  "last_name": "Velázquez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-07",
+  "label": "Nydia M. Velázquez (D-NY-07)",
+  "url": "https://velazquez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services",
+   "Small Business"
+  ],
+  "scraper": "velazquez"
+ },
+ {
+  "bioguide": "J000294",
+  "name": "Hakeem S. Jeffries",
+  "last_name": "Jeffries",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-08",
+  "label": "Hakeem S. Jeffries (D-NY-08)",
+  "url": "https://jeffries.house.gov",
+  "rss_url": "http://jeffries.house.gov/rss.xml",
+  "committees": [],
+  "scraper": "jeffries"
+ },
+ {
+  "bioguide": "C001067",
+  "name": "Yvette D. Clarke",
+  "last_name": "Clarke",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-09",
+  "label": "Yvette D. Clarke (D-NY-09)",
+  "url": "https://clarke.house.gov",
+  "rss_url": "http://clarke.house.gov/news/rss.aspx",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "clarke"
+ },
+ {
+  "bioguide": "G000599",
+  "name": "Daniel S. Goldman",
+  "last_name": "Goldman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-10",
+  "label": "Daniel S. Goldman (D-NY-10)",
+  "url": "https://goldman.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Judiciary"
+  ],
+  "scraper": "goldman"
+ },
+ {
+  "bioguide": "N000002",
+  "name": "Jerrold Nadler",
+  "last_name": "Nadler",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-12",
+  "label": "Jerrold Nadler (D-NY-12)",
+  "url": "https://nadler.house.gov",
+  "rss_url": "http://nadler.house.gov/rss.xml",
+  "committees": [
+   "Judiciary",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "nadler"
+ },
+ {
+  "bioguide": "E000297",
+  "name": "Adriano Espaillat",
+  "last_name": "Espaillat",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-13",
+  "label": "Adriano Espaillat (D-NY-13)",
+  "url": "https://espaillat.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "espaillat"
+ },
+ {
+  "bioguide": "O000172",
+  "name": "Alexandria Ocasio-Cortez",
+  "last_name": "Ocasio-Cortez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-14",
+  "label": "Alexandria Ocasio-Cortez (D-NY-14)",
+  "url": "https://ocasio-cortez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "ocasio-cortez"
+ },
+ {
+  "bioguide": "T000486",
+  "name": "Ritchie Torres",
+  "last_name": "Torres",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-15",
+  "label": "Ritchie Torres (D-NY-15)",
+  "url": "https://ritchietorres.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services",
+   "Select Committee on China"
+  ],
+  "scraper": "ritchietorres"
+ },
+ {
+  "bioguide": "L000606",
+  "name": "George Latimer",
+  "last_name": "Latimer",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-16",
+  "label": "George Latimer (D-NY-16)",
+  "url": "https://latimer.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Small Business"
+  ],
+  "scraper": "latimer"
+ },
+ {
+  "bioguide": "R000579",
+  "name": "Patrick Ryan",
+  "last_name": "Ryan",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-18",
+  "label": "Patrick Ryan (D-NY-18)",
+  "url": "https://patryan.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "patryan"
+ },
+ {
+  "bioguide": "R000622",
+  "name": "Josh Riley",
+  "last_name": "Riley",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-19",
+  "label": "Josh Riley (D-NY-19)",
+  "url": "https://riley.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "riley"
+ },
+ {
+  "bioguide": "T000469",
+  "name": "Paul Tonko",
+  "last_name": "Tonko",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-20",
+  "label": "Paul Tonko (D-NY-20)",
+  "url": "https://tonko.house.gov",
+  "rss_url": "http://tonko.house.gov/rss/press-releases.xml",
+  "committees": [
+   "Budget",
+   "Energy and Commerce"
+  ],
+  "scraper": "tonko"
+ },
+ {
+  "bioguide": "M001231",
+  "name": "John W. Mannion",
+  "last_name": "Mannion",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-22",
+  "label": "John W. Mannion (D-NY-22)",
+  "url": "https://mannion.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Education and Workforce"
+  ],
+  "scraper": "mannion"
+ },
+ {
+  "bioguide": "M001206",
+  "name": "Joseph D. Morelle",
+  "last_name": "Morelle",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-25",
+  "label": "Joseph D. Morelle (D-NY-25)",
+  "url": "https://morelle.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "House Administration"
+  ],
+  "scraper": "morelle"
+ },
+ {
+  "bioguide": "K000402",
+  "name": "Timothy M. Kennedy",
+  "last_name": "Kennedy",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "NY",
+  "district": "NY-26",
+  "label": "Timothy M. Kennedy (D-NY-26)",
+  "url": "https://kennedy.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Veterans' Affairs"
+  ],
+  "scraper": "timkennedy"
+ },
+ {
+  "bioguide": "L000601",
+  "name": "Greg Landsman",
+  "last_name": "Landsman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OH",
+  "district": "OH-01",
+  "label": "Greg Landsman (D-OH-01)",
+  "url": "https://landsman.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "landsman"
+ },
+ {
+  "bioguide": "B001281",
+  "name": "Joyce Beatty",
+  "last_name": "Beatty",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OH",
+  "district": "OH-03",
+  "label": "Joyce Beatty (D-OH-03)",
+  "url": "https://beatty.house.gov",
+  "rss_url": "http://beatty.house.gov/rss.xml",
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "beatty"
+ },
+ {
+  "bioguide": "K000009",
+  "name": "Marcy Kaptur",
+  "last_name": "Kaptur",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OH",
+  "district": "OH-09",
+  "label": "Marcy Kaptur (D-OH-09)",
+  "url": "https://kaptur.house.gov",
+  "rss_url": "http://kaptur.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Appropriations",
+   "Budget"
+  ],
+  "scraper": "kaptur"
+ },
+ {
+  "bioguide": "B001313",
+  "name": "Shontel M. Brown",
+  "last_name": "Brown",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OH",
+  "district": "OH-11",
+  "label": "Shontel M. Brown (D-OH-11)",
+  "url": "https://shontelbrown.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Oversight and Government Reform",
+   "Select Committee on China"
+  ],
+  "scraper": "shontelbrown"
+ },
+ {
+  "bioguide": "S001223",
+  "name": "Emilia Strong Sykes",
+  "last_name": "Sykes",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OH",
+  "district": "OH-13",
+  "label": "Emilia Strong Sykes (D-OH-13)",
+  "url": "https://sykes.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Science, Space, and Technology",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "sykes"
+ },
+ {
+  "bioguide": "B001278",
+  "name": "Suzanne Bonamici",
+  "last_name": "Bonamici",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OR",
+  "district": "OR-01",
+  "label": "Suzanne Bonamici (D-OR-01)",
+  "url": "https://bonamici.house.gov",
+  "rss_url": "http://bonamici.house.gov/rss.xml",
+  "committees": [
+   "Education and Workforce",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "bonamici"
+ },
+ {
+  "bioguide": "D000635",
+  "name": "Maxine Dexter",
+  "last_name": "Dexter",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OR",
+  "district": "OR-03",
+  "label": "Maxine Dexter (D-OR-03)",
+  "url": "https://dexter.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Veterans' Affairs"
+  ],
+  "scraper": "dexter"
+ },
+ {
+  "bioguide": "H001094",
+  "name": "Val T. Hoyle",
+  "last_name": "Hoyle",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OR",
+  "district": "OR-04",
+  "label": "Val T. Hoyle (D-OR-04)",
+  "url": "https://hoyle.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "hoyle"
+ },
+ {
+  "bioguide": "B001326",
+  "name": "Janelle S. Bynum",
+  "last_name": "Bynum",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OR",
+  "district": "OR-05",
+  "label": "Janelle S. Bynum (D-OR-05)",
+  "url": "https://bynum.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "bynum"
+ },
+ {
+  "bioguide": "S001226",
+  "name": "Andrea Salinas",
+  "last_name": "Salinas",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "OR",
+  "district": "OR-06",
+  "label": "Andrea Salinas (D-OR-06)",
+  "url": "https://salinas.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "salinas"
+ },
+ {
+  "bioguide": "B001296",
+  "name": "Brendan F. Boyle",
+  "last_name": "Boyle",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-02",
+  "label": "Brendan F. Boyle (D-PA-02)",
+  "url": "https://boyle.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Ways and Means"
+  ],
+  "scraper": "boyle"
+ },
+ {
+  "bioguide": "E000296",
+  "name": "Dwight Evans",
+  "last_name": "Evans",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-03",
+  "label": "Dwight Evans (D-PA-03)",
+  "url": "https://evans.house.gov",
+  "rss_url": "https://evans.house.gov/rss.xml",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "evans"
+ },
+ {
+  "bioguide": "D000631",
+  "name": "Madeleine Dean",
+  "last_name": "Dean",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-04",
+  "label": "Madeleine Dean (D-PA-04)",
+  "url": "https://dean.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "Foreign Affairs"
+  ],
+  "scraper": "dean"
+ },
+ {
+  "bioguide": "S001205",
+  "name": "Mary Gay Scanlon",
+  "last_name": "Scanlon",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-05",
+  "label": "Mary Gay Scanlon (D-PA-05)",
+  "url": "https://scanlon.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Judiciary",
+   "Rules"
+  ],
+  "scraper": "scanlon"
+ },
+ {
+  "bioguide": "H001085",
+  "name": "Chrissy Houlahan",
+  "last_name": "Houlahan",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-06",
+  "label": "Chrissy Houlahan (D-PA-06)",
+  "url": "https://houlahan.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Intelligence"
+  ],
+  "scraper": "houlahan"
+ },
+ {
+  "bioguide": "L000602",
+  "name": "Summer L. Lee",
+  "last_name": "Lee",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-12",
+  "label": "Summer L. Lee (D-PA-12)",
+  "url": "https://summerlee.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Education and Workforce",
+   "Judiciary"
+  ],
+  "scraper": "summerlee"
+ },
+ {
+  "bioguide": "D000530",
+  "name": "Christopher R. Deluzio",
+  "last_name": "Deluzio",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PA",
+  "district": "PA-17",
+  "label": "Christopher R. Deluzio (D-PA-17)",
+  "url": "https://deluzio.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "deluzio"
+ },
+ {
+  "bioguide": "H001103",
+  "name": "Pablo José Hernández",
+  "last_name": "Hernández Rivera",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "PR",
+  "district": "PR-AL",
+  "label": "Pablo José Hernández (D-PR-AL)",
+  "url": "https://hernandez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Natural Resources"
+  ],
+  "scraper": "hernandez"
+ },
+ {
+  "bioguide": "A000380",
+  "name": "Gabe Amo",
+  "last_name": "Amo",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "RI",
+  "district": "RI-01",
+  "label": "Gabe Amo (D-RI-01)",
+  "url": "https://amo.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Foreign Affairs",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "amo"
+ },
+ {
+  "bioguide": "M001223",
+  "name": "Seth Magaziner",
+  "last_name": "Magaziner",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "RI",
+  "district": "RI-02",
+  "label": "Seth Magaziner (D-RI-02)",
+  "url": "https://magaziner.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Natural Resources"
+  ],
+  "scraper": "magaziner"
+ },
+ {
+  "bioguide": "C000537",
+  "name": "James E. Clyburn",
+  "last_name": "Clyburn",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "SC",
+  "district": "SC-06",
+  "label": "James E. Clyburn (D-SC-06)",
+  "url": "https://clyburn.house.gov",
+  "rss_url": "http://clyburn.house.gov/rss.xml",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "clyburn"
+ },
+ {
+  "bioguide": "C001068",
+  "name": "Steve Cohen",
+  "last_name": "Cohen",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TN",
+  "district": "TN-09",
+  "label": "Steve Cohen (D-TN-09)",
+  "url": "https://cohen.house.gov",
+  "rss_url": "http://cohen.house.gov/rss.xml",
+  "committees": [
+   "Intelligence",
+   "Judiciary"
+  ],
+  "scraper": "cohen"
+ },
+ {
+  "bioguide": "F000468",
+  "name": "Lizzie Fletcher",
+  "last_name": "Fletcher",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-07",
+  "label": "Lizzie Fletcher (D-TX-07)",
+  "url": "https://fletcher.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "fletcher"
+ },
+ {
+  "bioguide": "G000553",
+  "name": "Al Green",
+  "last_name": "Green",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-09",
+  "label": "Al Green (D-TX-09)",
+  "url": "https://algreen.house.gov",
+  "rss_url": "http://algreen.house.gov/rss.xml",
+  "committees": [
+   "Financial Services",
+   "Homeland Security"
+  ],
+  "scraper": "algreen"
+ },
+ {
+  "bioguide": "E000299",
+  "name": "Veronica Escobar",
+  "last_name": "Escobar",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-16",
+  "label": "Veronica Escobar (D-TX-16)",
+  "url": "https://escobar.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations",
+   "Budget"
+  ],
+  "scraper": "escobar"
+ },
+ {
+  "bioguide": "M001245",
+  "name": "Christian D. Menefee",
+  "last_name": "Menefee",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-18",
+  "label": "Christian D. Menefee (D-TX-18)",
+  "url": "https://menefee.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Oversight and Government Reform",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "menefee"
+ },
+ {
+  "bioguide": "C001091",
+  "name": "Joaquin Castro",
+  "last_name": "Castro",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-20",
+  "label": "Joaquin Castro (D-TX-20)",
+  "url": "https://castro.house.gov",
+  "rss_url": "http://castro.house.gov/rss.xml",
+  "committees": [
+   "Foreign Affairs",
+   "Intelligence"
+  ],
+  "scraper": "castro"
+ },
+ {
+  "bioguide": "C001063",
+  "name": "Henry Cuellar",
+  "last_name": "Cuellar",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-28",
+  "label": "Henry Cuellar (D-TX-28)",
+  "url": "https://cuellar.house.gov",
+  "rss_url": "http://cuellar.house.gov/news/rss.aspx",
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "cuellar"
+ },
+ {
+  "bioguide": "G000587",
+  "name": "Sylvia R. Garcia",
+  "last_name": "Garcia",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-29",
+  "label": "Sylvia R. Garcia (D-TX-29)",
+  "url": "https://sylviagarcia.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Ethics",
+   "Financial Services"
+  ],
+  "scraper": "sylviagarcia"
+ },
+ {
+  "bioguide": "C001130",
+  "name": "Jasmine Crockett",
+  "last_name": "Crockett",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-30",
+  "label": "Jasmine Crockett (D-TX-30)",
+  "url": "https://crockett.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Judiciary",
+   "Oversight and Government Reform",
+   "Select Subcommittee on January 6"
+  ],
+  "scraper": "crockett"
+ },
+ {
+  "bioguide": "J000310",
+  "name": "Julie Johnson",
+  "last_name": "Johnson",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-32",
+  "label": "Julie Johnson (D-TX-32)",
+  "url": "https://juliejohnson.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Foreign Affairs",
+   "Homeland Security",
+   "House Administration"
+  ],
+  "scraper": "juliejohnson"
+ },
+ {
+  "bioguide": "V000131",
+  "name": "Marc A. Veasey",
+  "last_name": "Veasey",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-33",
+  "label": "Marc A. Veasey (D-TX-33)",
+  "url": "https://veasey.house.gov",
+  "rss_url": "http://veasey.house.gov/rss.xml",
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "veasey"
+ },
+ {
+  "bioguide": "G000581",
+  "name": "Vicente Gonzalez",
+  "last_name": "Gonzalez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-34",
+  "label": "Vicente Gonzalez (D-TX-34)",
+  "url": "https://gonzalez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Financial Services"
+  ],
+  "scraper": "gonzalez"
+ },
+ {
+  "bioguide": "C001131",
+  "name": "Greg Casar",
+  "last_name": "Casar",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-35",
+  "label": "Greg Casar (D-TX-35)",
+  "url": "https://casar.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Education and Workforce",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "casar"
+ },
+ {
+  "bioguide": "D000399",
+  "name": "Lloyd Doggett",
+  "last_name": "Doggett",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "TX",
+  "district": "TX-37",
+  "label": "Lloyd Doggett (D-TX-37)",
+  "url": "https://doggett.house.gov",
+  "rss_url": "http://doggett.house.gov/index.php/component/ninjarsssyndicator/?feed_id=1&amp;format=raw",
+  "committees": [
+   "Budget",
+   "Ways and Means"
+  ],
+  "scraper": "doggett"
+ },
+ {
+  "bioguide": "S000185",
+  "name": "Robert C. \"Bobby\" Scott",
+  "last_name": "Scott",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VA",
+  "district": "VA-03",
+  "label": "Robert C. \"Bobby\" Scott (D-VA-03)",
+  "url": "https://bobbyscott.house.gov",
+  "rss_url": "http://www.house.gov/index.php?format=feed&amp;type=rss",
+  "committees": [
+   "Budget",
+   "Education and Workforce"
+  ],
+  "scraper": "bobbyscott"
+ },
+ {
+  "bioguide": "M001227",
+  "name": "Jennifer L. McClellan",
+  "last_name": "McClellan",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VA",
+  "district": "VA-04",
+  "label": "Jennifer L. McClellan (D-VA-04)",
+  "url": "https://mcclellan.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "mcclellan"
+ },
+ {
+  "bioguide": "V000138",
+  "name": "Eugene Simon Vindman",
+  "last_name": "Vindman",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VA",
+  "district": "VA-07",
+  "label": "Eugene Simon Vindman (D-VA-07)",
+  "url": "https://vindman.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Agriculture",
+   "Armed Services"
+  ],
+  "scraper": "vindman"
+ },
+ {
+  "bioguide": "B001292",
+  "name": "Donald S. Beyer, Jr.",
+  "last_name": "Beyer",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VA",
+  "district": "VA-08",
+  "label": "Donald S. Beyer, Jr. (D-VA-08)",
+  "url": "https://beyer.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "beyer"
+ },
+ {
+  "bioguide": "S001230",
+  "name": "Suhas Subramanyam",
+  "last_name": "Subramanyam",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VA",
+  "district": "VA-10",
+  "label": "Suhas Subramanyam (D-VA-10)",
+  "url": "https://subramanyam.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Ethics",
+   "Oversight and Government Reform",
+   "Science, Space, and Technology"
+  ],
+  "scraper": "subramanyam"
+ },
+ {
+  "bioguide": "W000831",
+  "name": "James R. Walkinshaw",
+  "last_name": "Walkinshaw",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VA",
+  "district": "VA-11",
+  "label": "James R. Walkinshaw (D-VA-11)",
+  "url": "https://walkinshaw.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Homeland Security",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "walkinshaw"
+ },
+ {
+  "bioguide": "P000610",
+  "name": "Stacey E. Plaskett",
+  "last_name": "Plaskett",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VI",
+  "district": "VI-AL",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "url": "https://plaskett.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Intelligence",
+   "Ways and Means"
+  ],
+  "scraper": "plaskett"
+ },
+ {
+  "bioguide": "B001318",
+  "name": "Becca Balint",
+  "last_name": "Balint",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "VT",
+  "district": "VT-AL",
+  "label": "Becca Balint (D-VT-AL)",
+  "url": "https://balint.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Judiciary"
+  ],
+  "scraper": "balint"
+ },
+ {
+  "bioguide": "D000617",
+  "name": "Suzan K. DelBene",
+  "last_name": "DelBene",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-01",
+  "label": "Suzan K. DelBene (D-WA-01)",
+  "url": "https://delbene.house.gov",
+  "rss_url": "http://delbene.house.gov/rss.xml",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "delbene"
+ },
+ {
+  "bioguide": "L000560",
+  "name": "Rick Larsen",
+  "last_name": "Larsen",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-02",
+  "label": "Rick Larsen (D-WA-02)",
+  "url": "https://larsen.house.gov",
+  "rss_url": "http://larsen.house.gov/rss.xml",
+  "committees": [
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "larsen"
+ },
+ {
+  "bioguide": "G000600",
+  "name": "Marie Gluesenkamp Perez",
+  "last_name": "Gluesenkamp Perez",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-03",
+  "label": "Marie Gluesenkamp Perez (D-WA-03)",
+  "url": "https://gluesenkampperez.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Appropriations"
+  ],
+  "scraper": "gluesenkampperez"
+ },
+ {
+  "bioguide": "R000621",
+  "name": "Emily Randall",
+  "last_name": "Randall",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-06",
+  "label": "Emily Randall (D-WA-06)",
+  "url": "https://randall.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Natural Resources",
+   "Oversight and Government Reform"
+  ],
+  "scraper": "randall"
+ },
+ {
+  "bioguide": "J000298",
+  "name": "Pramila Jayapal",
+  "last_name": "Jayapal",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-07",
+  "label": "Pramila Jayapal (D-WA-07)",
+  "url": "https://jayapal.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Budget",
+   "Foreign Affairs",
+   "Judiciary"
+  ],
+  "scraper": "jayapal"
+ },
+ {
+  "bioguide": "S001216",
+  "name": "Kim Schrier",
+  "last_name": "Schrier",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-08",
+  "label": "Kim Schrier (D-WA-08)",
+  "url": "https://schrier.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Energy and Commerce"
+  ],
+  "scraper": "schrier"
+ },
+ {
+  "bioguide": "S000510",
+  "name": "Adam Smith",
+  "last_name": "Smith",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-09",
+  "label": "Adam Smith (D-WA-09)",
+  "url": "https://adamsmith.house.gov",
+  "rss_url": "http://www.house.gov/news/rss.aspx",
+  "committees": [
+   "Armed Services"
+  ],
+  "scraper": "adamsmith"
+ },
+ {
+  "bioguide": "S001159",
+  "name": "Marilyn Strickland",
+  "last_name": "Strickland",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WA",
+  "district": "WA-10",
+  "label": "Marilyn Strickland (D-WA-10)",
+  "url": "https://strickland.house.gov",
+  "rss_url": null,
+  "committees": [
+   "Armed Services",
+   "Transportation and Infrastructure"
+  ],
+  "scraper": "strickland"
+ },
+ {
+  "bioguide": "P000607",
+  "name": "Mark Pocan",
+  "last_name": "Pocan",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WI",
+  "district": "WI-02",
+  "label": "Mark Pocan (D-WI-02)",
+  "url": "https://pocan.house.gov",
+  "rss_url": "http://pocan.house.gov/rss.xml",
+  "committees": [
+   "Appropriations",
+   "Foreign Affairs"
+  ],
+  "scraper": "pocan"
+ },
+ {
+  "bioguide": "M001160",
+  "name": "Gwen Moore",
+  "last_name": "Moore",
+  "party": "Democrat",
+  "party_letter": "D",
+  "state": "WI",
+  "district": "WI-04",
+  "label": "Gwen Moore (D-WI-04)",
+  "url": "https://gwenmoore.house.gov",
+  "rss_url": "http://gwenmoore.house.gov/common/rss/index.cfm?rss=49",
+  "committees": [
+   "Ways and Means"
+  ],
+  "scraper": "gwenmoore"
+ }
+]

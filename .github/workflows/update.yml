@@ -1,0 +1,92 @@
+name: Update statements and site
+
+on:
+  schedule:
+    - cron: "23 * * * *"   # every hour
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["house_statements/**", "web/**", "scripts/**", ".github/workflows/update.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+env:
+  # dwillis/python-statement: the per-site press release scrapers. Bump to pick up fixes.
+  PYTHON_STATEMENT_REF: 432b04432e359e016a8cea65d8805da92fee1789
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: dwillis/python-statement
+          ref: ${{ env.PYTHON_STATEMENT_REF }}
+          path: .vendor/python-statement
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt ./.vendor/python-statement
+          npm ci
+
+      - name: Test
+        run: python -m pytest -q
+
+      - name: Refresh member list
+        run: python -m house_statements.members
+        env:
+          PYTHON_STATEMENT_DIR: .vendor/python-statement
+
+      - name: Import the congress-press daily archive
+        run: python -m house_statements.import_archive --min-hours 6
+
+      - name: Scrape member websites
+        # A blocked or broken site shouldn't stop the archive data from publishing.
+        continue-on-error: true
+        run: python -m house_statements.collect
+
+      - name: Commit new statements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Update statements $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull -q --rebase origin main
+            git push -q origin HEAD:main
+          fi
+
+      - name: Build site
+        run: |
+          python -m house_statements.build_site
+          node scripts/build_index.mjs
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>House Democrats Statements</title>
+<meta name="description" content="Press statements from House Democrats' official websites, grouped by event and searchable by member and content.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="All statements" href="feeds/all.xml">
+<link rel="alternate" type="application/rss+xml" title="Events" href="feeds/events.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4fc4'/%3E%3Cpath d='M9 10h14M9 16h14M9 22h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body data-page="home">
+<header class="top"><div class="wrap">
+  <a class="brand" href="./">House Democrats <span>Statements</span></a>
+  <nav>
+    <a href="./" aria-current="page">Search</a>
+    <a href="events.html">Events</a>
+    <a href="members.html">Members</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<form id="search" class="search" role="search" autocomplete="off">
+  <label class="visually-hidden" for="q">Search statements</label>
+  <input id="q" type="search" placeholder="Search all statements">
+  <div class="filters">
+    <input id="member-input" list="member-list" placeholder="Filter by member: type a name">
+    <datalist id="member-list"></datalist>
+    <select id="state" aria-label="State"><option value="">All states</option></select>
+    <select id="when" aria-label="Date">
+      <option value="">Any time</option>
+      <option>Past 3 days</option><option>Past week</option><option>Past month</option><option>Past 3 months</option>
+    </select>
+    <div id="member-chips" class="chips"></div>
+  </div>
+</form>
+
+<section id="results" hidden>
+  <div class="results-head">
+    <span id="result-count"></span>
+    <span class="seg" role="group" aria-label="Sort">
+      <button type="button" data-sort="date" aria-pressed="true">Newest</button>
+      <button type="button" data-sort="relevance" aria-pressed="false">Best match</button>
+    </span>
+    <button type="button" id="clear" class="linkish">Clear search</button>
+  </div>
+  <div class="panel"><ol id="result-list" class="statements"></ol></div>
+  <button type="button" id="more" class="more" hidden>Show more</button>
+</section>
+
+<div id="home">
+  <section>
+    <h2>Events</h2>
+    <p class="sub">When several Democrats put out statements on the same thing, they are grouped here automatically. Click one to see every statement.</p>
+    <div id="events" class="events"><p class="loading">Loading…</p></div>
+    <button type="button" id="events-more" class="more" hidden>Show more events</button>
+  </section>
+  <section>
+    <h2>Latest statements</h2>
+    <div class="panel"><ol id="latest" class="statements"></ol></div>
+    <button type="button" id="latest-more" class="more" hidden>Show more</button>
+  </section>
+</div>
+</main>
+<footer><div class="wrap">
+  <p>Statements are collected from members' official house.gov websites every hour. <span id="built"></span></p>
+  <p>RSS: <a href="feeds/all.xml">all statements</a> · <a href="feeds/events.xml">new events</a> · each member's feed is on the <a href="members.html">Members</a> page.</p>
+  <p>Built on <a href="https://github.com/dwillis/python-statement">python-statement</a> and the <a href="https://github.com/dwillis/congress-press">congress-press</a> archive. <a href="https://github.com/4jackryan4/house-statements">Source</a>.</p>
+</div></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
