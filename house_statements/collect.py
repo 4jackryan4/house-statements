@@ -50,12 +50,15 @@ def iso(d) -> str | None:
 def merge_items(records: dict, member: dict, items: list[dict], now: str) -> list[str]:
     """Add unseen items to records; return ids of the new records."""
     new_ids = []
+    tomorrow = (dt.date.fromisoformat(now[:10]) + dt.timedelta(days=1)).isoformat()
     for item in items:
         url = item["url"].strip()
         if url.rstrip("/") == str(item.get("source", "")).rstrip("/"):
             continue  # listing page, not a statement
         sid = store.statement_id(url)
         date = iso(item.get("date"))
+        if date and date > tomorrow:
+            date = None  # a misread listing date; the page itself or first-seen date is used instead
         if sid in records:
             if date and not records[sid].get("date"):
                 records[sid]["date"] = date
@@ -138,6 +141,12 @@ def main(argv=None):
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
     todo = (new_ids + retry)[: args.max_text]
     filled = fill_text(records, todo, workers=8) if todo else 0
+
+    # Repair any future-dated statement left by an earlier misread listing.
+    tomorrow = (dt.date.fromisoformat(now[:10]) + dt.timedelta(days=1)).isoformat()
+    for r in records.values():
+        if r.get("date") and r["date"] > tomorrow:
+            r["date"], r["date_source"] = r["first_seen"][:10], "first_seen"
 
     store.save_all(records)
     health.sort(key=lambda h: (h["status"] == "ok", h["label"]))

@@ -27,3 +27,10 @@ def test_merge_items_adds_new_statements_once():
     items[3]["date"] = dt.date(2026, 10, 3)
     assert collect.merge_items(records, MEMBER, items, "2026-10-05T02:00:00+00:00") == []
     assert records[store.statement_id("https://example.house.gov/news/2")]["date"] == "2026-10-03"
+
+
+def test_future_listing_dates_are_ignored():
+    records = {}
+    items = [{"url": "https://example.house.gov/news/3", "title": "Typo date", "date": dt.date(2027, 7, 27)}]
+    collect.merge_items(records, MEMBER, items, "2026-10-05T01:00:00+00:00")
+    assert records[store.statement_id("https://example.house.gov/news/3")]["date"] is None
