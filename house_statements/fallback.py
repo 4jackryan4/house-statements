@@ -9,7 +9,10 @@ the freshest statements. Listing pages can be followed to older pages for a back
 import datetime as dt
 import json
 import re
+import threading
+import time
 import warnings
+from collections import Counter
 from urllib.parse import urljoin, urlsplit
 
 import requests
@@ -19,12 +22,16 @@ from dateutil import parser as dateparser
 from . import store
 from .config import START_DATE, USER_AGENT
 
-RSS_PATHS = ["rss.xml", "news/rss.aspx", "feed/", "rss/press-releases.xml"]
-LISTING_PATHS = [
-    "media/press-releases", "news/press-releases", "press-releases", "media-center/press-releases",
-    "newsroom/press-releases", "news/documentquery.aspx?DocumentTypeID=27", "news", "media", "press",
-    "newsroom", "media-center", "",
-]
+# Tried only when the homepage links to no press or news page.
+GUESS_PATHS = ["media/press-releases", "news/press-releases", "press-releases", "media-center/press-releases", "news"]
+LISTING_LINK = re.compile(r"press|news|statement", re.I)
+NOT_LISTING = re.compile(r"in-the-news|newsletter|news-clips|subscribe|sign-?up|press-kit|inquir|headshot", re.I)
+MAX_LISTINGS = 4
+# house.gov sits behind one firewall: keep the generic scraper to a few requests a second overall.
+MIN_INTERVAL = 0.25
+_lock = threading.Lock()
+_last = [0.0]
+statuses: Counter = Counter()
 # Paths that look like a single statement page.
 STATEMENT_PATH = re.compile(
     r"documentsingle\.aspx\?documentid=\d+|/(press-releases?|news|media|statements?|posts?|newsroom|"
@@ -59,11 +66,40 @@ warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 
 def _get(url: str, session) -> requests.Response | None:
+    with _lock:
+        wait = _last[0] + MIN_INTERVAL - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        _last[0] = time.monotonic()
     try:
         r = session.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
-    except requests.RequestException:
+    except requests.RequestException as e:
+        statuses[type(e).__name__] += 1
         return None
+    statuses[r.status_code] += 1
     return r if r.ok else None
+
+
+def candidates(home_html: str, home_url: str) -> tuple[list[str], list[str]]:
+    """(feeds, listing pages) that a member's homepage links to."""
+    soup = BeautifulSoup(home_html, "lxml")
+    host = _host(home_url)
+    feeds = []
+    for link in soup.find_all("link", href=True, type=re.compile("rss|atom", re.I)):
+        url = urljoin(home_url, link["href"])
+        if _host(url) == host and "comments" not in url and url not in feeds:
+            feeds.append(url)
+    listings = []
+    for a in soup.find_all("a", href=True):
+        url = urljoin(home_url, a["href"]).split("#")[0]
+        path = urlsplit(url).path
+        depth = len([seg for seg in path.split("/") if seg])
+        if (
+            _host(url) == host and 1 <= depth <= 2 and LISTING_LINK.search(path) and not NOT_LISTING.search(path)
+            and not is_statement_url(url, host) and not ROOT_SLUG.match(path) and url not in listings
+        ):
+            listings.append(url)
+    return feeds, listings[:MAX_LISTINGS]
 
 
 def _parse_date(text: str, last: bool = False):
@@ -296,14 +332,24 @@ def scrape_site(
         found = _scrape(host, session, pages, known)
         if found:
             return found
-    return _scrape(host, session, pages, ([rss_url] if rss_url else []) + [urljoin(base, p) for p in RSS_PATHS + LISTING_PATHS])
+    home = _get(base, session)
+    if home is None:
+        return []
+    feeds, listings = candidates(home.text, home.url)
+    if not listings:
+        listings = [urljoin(base, p) for p in GUESS_PATHS]
+        if not feeds and "wp-content" in home.text:
+            feeds = [urljoin(base, "feed/")]
+    urls = list(dict.fromkeys(([rss_url] if rss_url else []) + feeds + listings))
+    return _scrape(host, session, pages, urls, first=home)
 
 
-def _scrape(host: str, session, pages: int, candidates: list[str]) -> list[dict]:
+def _scrape(host: str, session, pages: int, urls: list[str], first=None) -> list[dict]:
     sources = []  # (items, response)
     tried = set()
-    for url in candidates:
-        r = _get(url, session)
+    for url, r in ([(first.url, first)] if first is not None else []) + [(u, None) for u in urls]:
+        if r is None:
+            r = _get(url, session)
         if r is None or r.url in tried:
             continue
         tried.add(r.url)

@@ -81,12 +81,16 @@ class FakeSession:
         r = R()
         r.url, r.text = url, self.pages.get(url, "")
         r.ok = url in self.pages
+        r.status_code = 200 if r.ok else 404
         return r
 
 
 def test_scrape_site_follows_pages_and_records_origin():
     page2 = FLAT.replace("first-statement-here", "older-one-here").replace("2026", "2025")
+    home = '<html><body><a href="/media/press-releases">Press Releases</a><a href="/media/in-the-news">In the News</a></body></html>'
+    assert fallback.candidates(home, "https://smith.house.gov/") == ([], ["https://smith.house.gov/media/press-releases"])
     session = FakeSession({
+        "https://smith.house.gov/": home,
         "https://smith.house.gov/media/press-releases": CARDS,
         "https://smith.house.gov/media/press-releases?page=1": page2,
     })

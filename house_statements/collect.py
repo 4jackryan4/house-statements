@@ -10,6 +10,7 @@ import datetime as dt
 import json
 import os
 import sys
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
@@ -137,6 +138,22 @@ def fill_text(records: dict, ids: list[str], workers: int) -> int:
     return filled
 
 
+def count_http(counter: Counter) -> None:
+    """Tally the HTTP status of every request this process makes (python-statement swallows errors)."""
+    send = requests.Session.send
+
+    def counted(self, request, **kwargs):
+        try:
+            response = send(self, request, **kwargs)
+        except requests.RequestException as e:
+            counter[type(e).__name__] += 1
+            raise
+        counter[str(response.status_code)] += 1
+        return response
+
+    requests.Session.send = counted
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=12, help="members scraped in parallel")
@@ -154,6 +171,8 @@ def main(argv=None):
     state = store.load_state()
     known = state.setdefault("fallback_sources", {})
     now = utcnow()
+    http = Counter()
+    count_http(http)
 
     health, new_ids = [], []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -181,8 +200,12 @@ def main(argv=None):
                 "latest_date": max(dates) if dates else None,
             })
 
+    counts = {s: sum(1 for h in health if h["status"] == s) for s in ("ok", "empty", "error")}
+    http_summary = dict(sorted(http.items()))
+    print(f"collect: sites {counts}; HTTP responses {http_summary}")
     if args.report:
         report = {
+            "http": http_summary,
             "health": sorted(health, key=lambda h: h["label"]),
             "sources": {b: known[b] for b in sorted(known)},
             "new": [
@@ -207,12 +230,12 @@ def main(argv=None):
             r["date"], r["date_source"] = r["first_seen"][:10], "first_seen"
 
     store.save_all(records)
+    state["last_collect"] = {"at": now, "sites": counts, "http": http_summary}
     store.save_state(state)
     health.sort(key=lambda h: (h["status"] == "ok", h["label"]))
     HEALTH_FILE.write_text(json.dumps(health, indent=1) + "\n")
 
-    counts = {s: sum(1 for h in health if h["status"] == s) for s in ("ok", "empty", "error")}
-    print(f"collect: {len(new_ids)} new statements, text fetched for {filled}/{len(todo)}; sites {counts}")
+    print(f"collect: {len(new_ids)} new statements, text fetched for {filled}/{len(todo)}")
     if members and counts["ok"] == 0:
         print("collect: no member site returned anything; the runner may be blocked", file=sys.stderr)
 

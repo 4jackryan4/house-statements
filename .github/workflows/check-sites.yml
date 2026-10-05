@@ -14,6 +14,10 @@ on:
         default: "60"
 permissions:
   contents: write
+# Never alongside the hourly update: two runs at once can trip house.gov's rate limits.
+concurrency:
+  group: update
+  cancel-in-progress: false
 env:
   PYTHON_STATEMENT_REF: 432b04432e359e016a8cea65d8805da92fee1789
 jobs:
