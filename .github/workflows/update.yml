@@ -41,7 +41,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # Latest main, not the commit that triggered the run, so data committed by the previous
+      # run is included and the commit below can't conflict with it.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/checkout@v4
         with:
@@ -92,7 +96,7 @@ jobs:
           git add data
           if ! git diff --cached --quiet; then
             git commit -q -m "Update statements $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull -q --rebase origin main
+            git pull -q --rebase -X theirs origin main
             git push -q origin HEAD:main
           fi
 
