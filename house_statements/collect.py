@@ -23,20 +23,49 @@ def utcnow() -> str:
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
 
-def scrape_member(member: dict) -> tuple[list[dict], str | None]:
-    """Return (items, error) for one member. Items have url, title, date (date or None)."""
+STALE_DAYS = 30
+
+
+def scrape_member(member: dict) -> tuple[list[dict], str | None, str]:
+    """Return (items, error, method) for one member. Items have url, title, date (date or None).
+
+    Uses the member's python-statement scraper; if there is none, or it returns nothing (new
+    members, redesigned sites), falls back to the generic scraper in fallback.py.
+    """
     from python_statement import Feed, Scraper
 
+    from .fallback import scrape_site
+
+    items, error = [], None
     try:
         if member.get("scraper"):
-            items = Scraper.run_scraper(member["scraper"], 1)
+            items = Scraper.run_scraper(member["scraper"], 1) or []
         elif member.get("rss_url"):
-            items = Feed.from_rss(member["rss_url"])
-        else:
-            return [], "no scraper or RSS feed for this site"
+            items = Feed.from_rss(member["rss_url"]) or []
     except Exception as e:  # one broken site must not stop the run
-        return [], f"{type(e).__name__}: {e}"
-    return [i for i in (items or []) if i and i.get("url") and i.get("title")], None
+        error = f"{type(e).__name__}: {e}"
+    items = [i for i in items if i and i.get("url") and i.get("title")]
+    newest = max((iso(i.get("date")) for i in items if i.get("date")), default=None)
+    stale_before = (dt.date.today() - dt.timedelta(days=STALE_DAYS)).isoformat()
+    if items and newest and newest >= stale_before:
+        return items, None, "python-statement"
+    if items:
+        # The scraper works but its newest item is old: the site may have moved its press page.
+        # Check the generic scraper too and keep both (duplicates are dropped by URL).
+        try:
+            extra = scrape_site(member["url"], member.get("rss_url")) if member.get("url") else []
+        except Exception:
+            extra = []
+        return items + extra, None, "python-statement+fallback" if extra else "python-statement"
+
+    if member.get("url"):
+        try:
+            items = scrape_site(member["url"], member.get("rss_url"))
+        except Exception as e:
+            error = f"fallback {type(e).__name__}: {e}"
+        if items:
+            return items, None, "fallback"
+    return [], error or "no statements found on the site", "none"
 
 
 def iso(d) -> str | None:
@@ -122,7 +151,7 @@ def main(argv=None):
         futures = {pool.submit(scrape_member, m): m for m in members}
         for fut in as_completed(futures):
             m = futures[fut]
-            items, error = fut.result()
+            items, error, method = fut.result()
             added = merge_items(records, m, items, now)
             new_ids.extend(added)
             dates = [iso(i.get("date")) for i in items if i.get("date")]
@@ -130,6 +159,7 @@ def main(argv=None):
                 "bioguide": m["bioguide"],
                 "label": m["label"],
                 "scraper": m.get("scraper"),
+                "method": method,
                 "status": "error" if error else ("ok" if items else "empty"),
                 "error": error,
                 "count": len(items),
