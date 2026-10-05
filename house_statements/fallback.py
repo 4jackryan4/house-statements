@@ -25,7 +25,12 @@ from .config import START_DATE, USER_AGENT
 # Tried only when the homepage links to no press or news page.
 GUESS_PATHS = ["media/press-releases", "news/press-releases", "press-releases", "media-center/press-releases", "news"]
 LISTING_LINK = re.compile(r"press|news|statement", re.I)
-NOT_LISTING = re.compile(r"in-the-news|newsletter|news-clips|subscribe|sign-?up|press-kit|inquir|headshot", re.I)
+NOT_LISTING = re.compile(
+    r"in[-_]the[-_]news|newsletter|news[-_]clips|subscribe|sign-?up|press-kit|inquir|headshot|email|digest", re.I
+)
+# On a sweep of sites whose own scraper works, only press-release pages and feeds are read: general
+# "news" pages there mostly repost press coverage.
+PRESS_LISTING = re.compile(r"press|statement", re.I)
 MAX_LISTINGS = 4
 # house.gov sits behind one firewall: keep the generic scraper to a few requests a second overall.
 MIN_INTERVAL = 0.25
@@ -45,8 +50,9 @@ DATE_TEXT = re.compile(
 )
 # Coverage of the member and site pages that share those paths.
 EXCLUDE_PATH = re.compile(
-    r"/(in-the-news|in-the-media|news-clips|media-mentions|newsletters?|printed-media[^/]*|events?|"
-    r"photos?|videos?|galler(?:y|ies)|services|press-kit)(/|$)",
+    r"/(in[-_]the[-_]news|in[-_]the[-_]media|news[-_]clips|media[-_]mentions|news[-_]articles|[a-z-]*newsletters?|"
+    r"printed-media[^/]*|events?|photos?|videos?|galler(?:y|ies)|services|press-kit|email|[a-z-]*digest|"
+    r"[a-z-]+-update|imo)(/|$)|documentquery\.aspx",
     re.I,
 )
 # WordPress feeds often put posts at the site root: /clyburn-statement-on-the-passing-of-...
@@ -317,7 +323,8 @@ def _recent(items: list[dict]) -> int:
 
 
 def scrape_site(
-    base_url: str, rss_url: str | None = None, session=None, pages: int = 1, known: list[str] | None = None
+    base_url: str, rss_url: str | None = None, session=None, pages: int = 1, known: list[str] | None = None,
+    press_only: bool = False,
 ) -> list[dict]:
     """Recent statements from a member site; with pages > 1, also older listing pages.
 
@@ -328,8 +335,9 @@ def scrape_site(
     session = session or requests.Session()
     base = base_url.rstrip("/") + "/"
     host = _host(base)
+    known = [u for u in known or [] if not NOT_LISTING.search(u)]
     if known:
-        found = _scrape(host, session, pages, known)
+        found = _scrape(host, session, pages, known, press_only=press_only)
         if found:
             return found
     home = _get(base, session)
@@ -341,10 +349,10 @@ def scrape_site(
         if not feeds and "wp-content" in home.text:
             feeds = [urljoin(base, "feed/")]
     urls = list(dict.fromkeys(([rss_url] if rss_url else []) + feeds + listings))
-    return _scrape(host, session, pages, urls, first=home)
+    return _scrape(host, session, pages, urls, first=home, press_only=press_only)
 
 
-def _scrape(host: str, session, pages: int, urls: list[str], first=None) -> list[dict]:
+def _scrape(host: str, session, pages: int, urls: list[str], first=None, press_only: bool = False) -> list[dict]:
     sources = []  # (items, response)
     tried = set()
     for url, r in ([(first.url, first)] if first is not None else []) + [(u, None) for u in urls]:
@@ -356,6 +364,8 @@ def _scrape(host: str, session, pages: int, urls: list[str], first=None) -> list
         items = [i for i in _filter(_items_from(r.text, r.url), host) if i["date"]]
         for i in items:
             i["origin"] = url
+        if press_only and items and not items[0].get("feed") and not PRESS_LISTING.search(urlsplit(url).path):
+            continue
         if _recent(items):
             sources.append((items, r))
     if not sources:

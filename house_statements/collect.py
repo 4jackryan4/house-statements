@@ -9,6 +9,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -60,7 +61,7 @@ def scrape_member(
         return [], error or "no statements found on the site", "none"
 
     try:
-        extra = scrape_site(member["url"], member.get("rss_url"), pages=pages, known=known)
+        extra = scrape_site(member["url"], member.get("rss_url"), pages=pages, known=known, press_only=fresh)
     except Exception as e:
         extra = []
         error = error or f"fallback {type(e).__name__}: {e}"
@@ -81,10 +82,23 @@ def iso(d) -> str | None:
     return str(d)[:10] or None
 
 
+def _title_key(title: str) -> str:
+    return re.sub(r"\W+", " ", (title or "").lower()).strip()
+
+
+def _nearby(date: str, days: int = 3) -> list[str]:
+    d = dt.date.fromisoformat(date)
+    return [(d + dt.timedelta(days=k)).isoformat() for k in range(-days, days + 1)]
+
+
 def merge_items(records: dict, member: dict, items: list[dict], now: str) -> list[str]:
     """Add unseen items to records; return ids of the new records."""
     new_ids = []
     tomorrow = (dt.date.fromisoformat(now[:10]) + dt.timedelta(days=1)).isoformat()
+    # The same release is often reachable at two URLs (e.g. /2026/7/slug and /media/press-releases/slug).
+    seen_titles = {
+        (_title_key(r["title"]), r.get("date")) for r in records.values() if r["bioguide"] == member["bioguide"]
+    }
     for item in items:
         url = item["url"].strip()
         if url.rstrip("/") == str(item.get("source", "")).rstrip("/"):
@@ -99,6 +113,10 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str) -> lis
             continue
         if date and date < START_DATE:
             continue
+        key = _title_key(item["title"])
+        if date and any((key, d) in seen_titles for d in _nearby(date)):
+            continue
+        seen_titles.add((key, date))
         records[sid] = {
             "id": sid,
             "url": url,
@@ -111,6 +129,8 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str) -> lis
             "text": None,
             "text_attempts": 0,
         }
+        if item.get("origin"):
+            records[sid]["origin"] = item["origin"]
         new_ids.append(sid)
     return new_ids
 
@@ -209,7 +229,7 @@ def main(argv=None):
             "health": sorted(health, key=lambda h: h["label"]),
             "sources": {b: known[b] for b in sorted(known)},
             "new": [
-                {k: records[sid].get(k) for k in ("bioguide", "date", "title", "url")} for sid in new_ids
+                {k: records[sid].get(k) for k in ("bioguide", "date", "title", "url", "origin")} for sid in new_ids
             ],
         }
         os.makedirs(os.path.dirname(os.path.abspath(args.report)), exist_ok=True)
