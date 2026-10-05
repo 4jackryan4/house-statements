@@ -12,14 +12,14 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from house_statements.config import HEALTH_FILE, USER_AGENT  # noqa: E402
-from house_statements.members import load_members  # noqa: E402
+from house_statements.members import load_sources  # noqa: E402
 
 PATHS = ["", "rss.xml", "news/rss.aspx", "feed/", "media/press-releases", "news/press-releases", "press-releases",
          "news", "media", "media-center/press-releases", "newsroom/press-releases", "press",
          "news/documentquery.aspx?DocumentTypeID=27"]
 
 ids = sys.argv[1:] or [h["bioguide"] for h in json.loads(HEALTH_FILE.read_text()) if h["status"] != "ok"]
-members = {m["bioguide"]: m for m in load_members()}
+members = {m["bioguide"]: m for m in load_sources()}
 out = Path("probe")
 index = []
 for bid in ids:

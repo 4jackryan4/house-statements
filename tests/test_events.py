@@ -48,3 +48,21 @@ def test_too_few_members_is_not_an_event():
     hurricane = [r for r in _corpus() if "Zelda" in r["title"]][:2]
     found = events.find_events(records + hurricane, MEMBERS)
     assert not any("Zelda" in e["label"] for e in found)
+
+
+def test_committees_join_events_but_do_not_count_as_members():
+    day = "2026-08-03"
+    text = "Statement on the devastating wildfire Ponderosa evacuation across Wexford County and recovery aid."
+    records = _corpus()
+    for i, m in enumerate(MEMBERS[:3]):
+        records.append({"id": f"z{i}", "title": "Statement on Wexford County wildfire evacuation", "text": text,
+                        "bioguide": m["bioguide"], "date": day})
+    for i, c in enumerate(["committee-judiciary", "committee-homeland-security"]):
+        records.append({"id": f"c{i}", "title": "Committee Democrats on Wexford County wildfire evacuation", "text": text,
+                        "bioguide": c, "date": day})
+    # Three members plus two committees is below the four-member threshold.
+    assert not [e for e in events.find_events(records, MEMBERS) if {"c0", "c1"} & set(e["statement_ids"])]
+    records.append({"id": "z3", "title": "Statement on Wexford County wildfire evacuation", "text": text,
+                    "bioguide": MEMBERS[3]["bioguide"], "date": day})
+    fire = [e for e in events.find_events(records, MEMBERS) if "c0" in e["statement_ids"]]
+    assert fire and fire[0]["member_count"] == 4 and fire[0]["committee_count"] == 2

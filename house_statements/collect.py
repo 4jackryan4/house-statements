@@ -18,7 +18,7 @@ import requests
 
 from . import store
 from .config import HEALTH_FILE, START_DATE
-from .members import load_members
+from .members import load_sources
 from .textfetch import fetch_page
 
 
@@ -137,6 +137,11 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str) -> lis
     return new_ids
 
 
+def _seed(source: dict) -> list[str] | None:
+    """Committee sites start from their known press release listing."""
+    return [source["press_url"]] if source.get("press_url") else None
+
+
 def fill_text(records: dict, ids: list[str], workers: int) -> int:
     session = requests.Session()
     filled = 0
@@ -185,15 +190,16 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=12, help="members scraped in parallel")
     parser.add_argument("--max-text", type=int, default=600, help="max pages to fetch text for this run")
-    parser.add_argument("--only", nargs="*", help="limit to these bioguide ids")
+    parser.add_argument("--only", nargs="*", help="limit to these bioguide ids (\"committees\" for all committees)")
     parser.add_argument("--sweep", action="store_true", help="also check every site with the generic scraper")
     parser.add_argument("--pages", type=int, default=1, help="listing pages to read per site (backfill)")
     parser.add_argument("--report", help="dry run: write what would be added to this JSON file, save nothing")
     args = parser.parse_args(argv)
 
-    members = load_members()
+    members = load_sources()
     if args.only:
-        members = [m for m in members if m["bioguide"] in set(args.only)]
+        only = set(args.only)
+        members = [m for m in members if m["bioguide"] in only or ("committees" in only and m.get("kind") == "committee")]
     records = store.load_all()
     state = store.load_state()
     known = state.setdefault("fallback_sources", {})
@@ -204,7 +210,8 @@ def main(argv=None):
     health, new_ids = [], []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
-            pool.submit(scrape_member, m, args.sweep, args.pages, known.get(m["bioguide"])): m for m in members
+            pool.submit(scrape_member, m, args.sweep, args.pages, known.get(m["bioguide"]) or _seed(m)): m
+            for m in members
         }
         for fut in as_completed(futures):
             m = futures[fut]

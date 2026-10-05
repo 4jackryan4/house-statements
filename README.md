@@ -1,7 +1,8 @@
 # House Democrats statements
 
 A website and RSS feeds of every press statement House Democrats post on their official
-house.gov sites. It updates every hour, groups statements about the same event automatically,
+house.gov sites, and every press release from the Democrats on each House committee
+(democrats-judiciary.house.gov and the like). It updates every hour, groups statements about the same event automatically,
 and is searchable by member and by the words in the statement.
 
 **Site:** https://4jackryan4.github.io/house-statements/
@@ -10,7 +11,10 @@ and is searchable by member and by the words in the statement.
   shooting, a storm, a vote), those statements are grouped together. Most statements don't
   belong to an event, and that's fine: they're still in the feed and in search.
 - **Search**: full text of every statement since January 2025, filterable by member, state and date.
-- **RSS**: all statements, new events, and one feed per member.
+- **Committees**: the Democratic sites of 20 standing committees plus the China select committee
+  (`house_statements/committees.py`). They appear in the feed and search labeled by committee, can
+  be filtered with "Committees only", and join events (an event still needs 4 members).
+- **RSS**: all statements, committee statements, new events, and one feed per member and committee.
 
 Everything is free to run: GitHub Actions does the work and GitHub Pages hosts the site.
 Nothing uses a paid API.
@@ -31,6 +35,8 @@ Every hour, `.github/workflows/update.yml`:
    [python-statement](https://github.com/dwillis/python-statement) and fetches the text of new
    statements (`collect.py`). `data/health.json` lists any member site that returned nothing or
    errored, which usually means the site was redesigned and its scraper needs an update upstream.
+   Committee sites are read with our generic scraper (`fallback.py`), starting from the press
+   release page listed in `committees.py`.
 4. Commits new statements to `data/statements/YYYY/YYYY-MM.jsonl`.
 5. Groups statements into events (`events.py`), builds the site and RSS feeds
    (`build_site.py`) and the [Pagefind](https://pagefind.app) search index
