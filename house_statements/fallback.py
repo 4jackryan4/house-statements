@@ -39,7 +39,7 @@ _last = [0.0]
 statuses: Counter = Counter()
 # Paths that look like a single statement page.
 STATEMENT_PATH = re.compile(
-    r"documentsingle\.aspx\?documentid=\d+|/(press-releases?|news|media|statements?|posts?|newsroom|"
+    r"documentsingle\.aspx\?documentid=\d+|/[a-z-]+\?id=[0-9a-f]{8}-[0-9a-f-]{27}$|/(press-releases?|news|media|statements?|posts?|newsroom|"
     r"media-center|press|\d{4}/\d{2})/(?!page/|category/|tag/|feed|press-releases?/?$)[^?#]*[a-z0-9][^?#]{8,}",
     re.I,
 )
@@ -230,6 +230,10 @@ def _stream(root: Tag, host: str, page_url: str):
                 yield ("text", " " + text + " ")
 
 
+def _is_date_el(el) -> bool:
+    return el is not None and bool(re.search(r"date", " ".join(el.get("class") or []), re.I))
+
+
 def from_listing(html: str, page_url: str) -> list[dict]:
     soup = BeautifulSoup(html, "lxml")
     for junk in soup.select("nav, header, footer, script, style, noscript, [role=navigation]"):
@@ -265,6 +269,11 @@ def from_listing(html: str, page_url: str) -> list[dict]:
         if card is not None:
             t = card.find("time", datetime=True)
             card_date[url] = (_parse_date(t["datetime"]) if t else None) or _parse_date(card.get_text(" ", strip=True))
+            # <span class="date">Sept. 4</span><h2><a>Title</a></h2>: the date just before the headline.
+            # (Not when a date also follows the headline: then that one is its date.)
+            prev, nxt = card.find_previous_sibling(), card.find_next_sibling()
+            if not card_date[url] and _is_date_el(prev) and not _is_date_el(nxt):
+                card_date[url] = _parse_date(prev.get_text(" ", strip=True))
 
     # Flat lists (date and headline as siblings): use the date written between this link and the
     # previous one, or, if the page puts dates after headlines, between this link and the next.

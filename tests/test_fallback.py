@@ -109,3 +109,28 @@ def test_site_pages_and_short_link_text():
 </body></html>"""
     items = fallback._filter(fallback.from_listing(html, "https://p.house.gov/media/press-releases"), "p.house.gov")
     assert [(i["title"], i.get("title_check")) for i in items] == [("Public Shipyard Caucus", True)]
+
+
+def test_committee_layouts_date_span_above_headline_and_id_links():
+    html = """<html><body><div id="press">
+      <span class="date black">September 28, 2026</span>
+      <h2 class="title"><a href="/news/press-releases/thompson-statement-on-ice-oversight-this-summer">Thompson Statement on ICE Oversight This Summer</a></h2>
+      <p class="summary">(WASHINGTON) - Today the Ranking Member said ... <a href="/news/press-releases/thompson-statement-on-ice-oversight-this-summer">Continue Reading</a></p>
+      <hr/>
+      <span class="date black">09.25.26</span>
+      <h2 class="title"><a href="/news/press-releases/thompson-on-preparedness-against-terrorism">Thompson on Preparedness Against Terrorism Cuts</a></h2>
+      <p class="summary">A long summary of the statement that mentions nothing about when it was posted at all.</p>
+    </div></body></html>"""
+    items = fallback._filter(fallback.from_listing(html, "https://democrats-homeland.house.gov/news/press-releases"),
+                             "democrats-homeland.house.gov")
+    assert [(i["date"].isoformat(), i["title"][:8]) for i in items] == [("2026-09-28", "Thompson"), ("2026-09-25", "Thompson")]
+
+    table = """<html><body><table><tbody>
+      <tr><td class="recordListDate">9/24/26</td><td><a href="/press-releases?ID=E8A9F5BF-845E-4797-83C0-82BE72092693">Members Demand Answers on Delayed Separation Pay</a>
+        <a href="/press-releases?ID=E8A9F5BF-845E-4797-83C0-82BE72092693#RelatedFiles"><img alt="Files"></a></td></tr>
+      <tr><td class="recordListDate">9/15/26</td><td><a href="/press-releases?ID=332F3E77-BF7D-4F45-9220-504F17B924D8">Smith Statement on CBO Estimate of War Costs</a></td></tr>
+      <tr><td><a href="/press-releases?page=2">2</a></td></tr>
+    </tbody></table></body></html>"""
+    items = fallback._filter(fallback.from_listing(table, "https://democrats-armedservices.house.gov/press-releases"),
+                             "democrats-armedservices.house.gov")
+    assert [i["date"].isoformat() for i in items] == ["2026-09-24", "2026-09-15"]
