@@ -15,6 +15,7 @@ import numpy as np
 from scipy import sparse
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
 
+from .committees import is_committee
 from .config import EVENT_MIN_MEMBERS
 
 JOIN_THRESHOLD = 0.30      # similarity to a group's centroid needed to join it
@@ -239,7 +240,8 @@ def find_events(records: list[dict], members: list[dict]) -> list[dict]:
 
     events = []
     for idx in groups:
-        members_in = {docs[i]["bioguide"] for i in idx}
+        # Committee statements join events but don't count toward the member threshold.
+        members_in = {docs[i]["bioguide"] for i in idx if not is_committee(docs[i]["bioguide"])}
         if len(members_in) < EVENT_MIN_MEMBERS:
             continue
         idx.sort(key=lambda i: (docs[i]["date"], docs[i]["id"]))
@@ -252,6 +254,7 @@ def find_events(records: list[dict], members: list[dict]) -> list[dict]:
             "label": label_for([r["title"] for r in rows], label_index),
             "headline": headline,
             "member_count": len(members_in),
+            "committee_count": len({docs[i]["bioguide"] for i in idx} - members_in),
             "statement_count": len(rows),
             "first": rows[0]["date"],
             "last": rows[-1]["date"],

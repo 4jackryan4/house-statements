@@ -114,5 +114,12 @@ def load_members() -> list[dict]:
     return json.loads(MEMBERS_FILE.read_text())
 
 
+def load_sources() -> list[dict]:
+    """Members plus the committees' Democratic sites (see committees.py)."""
+    from .committees import load_committees
+
+    return load_members() + load_committees()
+
+
 if __name__ == "__main__":
     main()

@@ -16,6 +16,9 @@ on:
       max_text:
         description: "Most statement pages to fetch text for"
         default: "600"
+      only:
+        description: "Only scrape these sources: bioguide ids or committee ids, or \"committees\" (blank = all)"
+        default: ""
   push:
     branches: [main]
     paths: ["house_statements/**", "web/**", "scripts/**", ".github/workflows/update.yml"]
@@ -87,7 +90,8 @@ jobs:
           if [ "${{ inputs.sweep }}" = "true" ] || [ "${{ github.event.schedule }}" = "7 9 * * *" ]; then
             args="$args --sweep"
           fi
-          python -m house_statements.collect $args
+          only="${{ inputs.only }}"
+          python -m house_statements.collect $args ${only:+--only $only}
 
       - name: Commit new statements
         run: |

@@ -54,16 +54,18 @@ function eventHTML(e) {
   const items = (e.statements || []).map((s) => statementHTML(s, { showEvent: false })).join("");
   const memberIds = [...new Set((e.statements || []).map((s) => s.member))];
   const filterLink = `./?${memberIds.map((id) => `member=${encodeURIComponent(id)}`).join("&")}`;
+  const nc = e.committee_count || 0;
+  const committees = nc ? ` + ${nc} committee${nc === 1 ? "" : "s"}` : "";
   return `<details class="event" id="${esc(e.id)}">
     <summary>
       <span class="event-label">${esc(e.label)}</span>
-      <span class="event-meta"><span class="count">${e.member_count} members</span>${fmtRange(e.first, e.last)}${active}</span>
+      <span class="event-meta"><span class="count">${e.member_count} members${committees}</span>${fmtRange(e.first, e.last)}${active}</span>
       <span class="event-headline">${esc(e.headline)}</span>
     </summary>
     <ol class="statements">${items}</ol>
     <div class="event-actions">
       <a href="./?q=${encodeURIComponent(e.label)}">Search for more on “${esc(e.label)}”</a>
-      <a href="${filterLink}">All statements from these ${memberIds.length} members</a>
+      <a href="${filterLink}">All statements from these ${e.member_count} members${committees}</a>
     </div>
   </details>`;
 }
@@ -72,7 +74,7 @@ async function setBuilt() {
   try {
     const b = await getJSON("build.json");
     const when = new Date(b.built_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
-    $("#built").textContent = `Last updated ${when}. ${b.statements.toLocaleString()} statements from ${b.members} members since January 2025.`;
+    $("#built").textContent = `Last updated ${when}. ${b.statements.toLocaleString()} statements from ${b.members} members${b.committees ? ` and ${b.committees} committees` : ""} since January 2025.`;
   } catch {}
 }
 
@@ -86,17 +88,19 @@ async function homePage() {
     members: params.getAll("member").filter((id) => membersById.has(id)),
     st: params.get("state") || "",
     when: params.get("when") || "",
+    type: ["member", "committee"].includes(params.get("type")) ? params.get("type") : "",
     sort: params.get("sort") || "date",
   };
 
   // Filter controls
   $("#member-list").innerHTML = members.map((m) => `<option value="${esc(m.label)}"></option>`).join("");
-  const states = [...new Set(members.map((m) => m.state))].sort();
+  const states = [...new Set(members.map((m) => m.state).filter(Boolean))].sort();
   $("#state").insertAdjacentHTML("beforeend", states.map((s) => `<option>${esc(s)}</option>`).join(""));
   const byLabel = new Map(members.map((m) => [m.label.toLowerCase(), m]));
   $("#q").value = state.q;
   $("#state").value = state.st;
   $("#when").value = state.when;
+  $("#type").value = state.type;
 
   const renderChips = () => {
     $("#member-chips").innerHTML = state.members
@@ -136,11 +140,12 @@ async function homePage() {
   $("#search").addEventListener("submit", (ev) => { ev.preventDefault(); state.q = $("#q").value.trim(); run(); });
   $("#state").addEventListener("change", () => { state.st = $("#state").value; run(); });
   $("#when").addEventListener("change", () => { state.when = $("#when").value; run(); });
+  $("#type").addEventListener("change", () => { state.type = $("#type").value; run(); });
   document.querySelectorAll("[data-sort]").forEach((b) =>
     b.addEventListener("click", () => { state.sort = b.dataset.sort; run(); }));
   $("#clear").addEventListener("click", () => {
-    Object.assign(state, { q: "", members: [], st: "", when: "" });
-    $("#q").value = ""; $("#state").value = ""; $("#when").value = "";
+    Object.assign(state, { q: "", members: [], st: "", when: "", type: "" });
+    $("#q").value = ""; $("#state").value = ""; $("#when").value = ""; $("#type").value = "";
     renderChips(); run();
   });
 
@@ -163,10 +168,11 @@ async function homePage() {
     state.members.forEach((m) => qs.append("member", m));
     if (state.st) qs.set("state", state.st);
     if (state.when) qs.set("when", state.when);
+    if (state.type) qs.set("type", state.type);
     if (state.sort !== "date") qs.set("sort", state.sort);
     history.replaceState(null, "", qs.toString() ? `?${qs}` : location.pathname);
 
-    const searching = state.q || state.members.length || state.st || state.when;
+    const searching = state.q || state.members.length || state.st || state.when || state.type;
     $("#home").hidden = !!searching;
     $("#results").hidden = !searching;
     if (!searching) return;
@@ -182,7 +188,8 @@ async function homePage() {
       const lists = await Promise.all(state.members.map((m) => getJSON(`members/${m}.json`)));
       if (id !== runId) return;
       const rows = lists.flat()
-        .filter((s) => daysAgo(s.date) <= maxAge && (!state.st || membersById.get(s.member)?.state === state.st))
+        .filter((s) => daysAgo(s.date) <= maxAge && (!state.st || membersById.get(s.member)?.state === state.st) &&
+          (!state.type || (membersById.get(s.member)?.kind || "member") === state.type))
         .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
       $("#result-count").textContent = rows.length ? `${rows.length.toLocaleString()} statement${rows.length === 1 ? "" : "s"}` : "No statements match";
       let shown = 0;
@@ -202,6 +209,7 @@ async function homePage() {
     if (state.members.length) filters.member = { any: state.members.map((x) => membersById.get(x).label) };
     if (state.st) filters.state = state.st;
     if (state.when) filters.when = state.when;
+    if (state.type) filters.type = state.type;
     const opts = { filters };
     if (state.sort === "date" || !state.q) opts.sort = { date: "desc" };
     const search = await pf.search(state.q || null, opts);
@@ -299,13 +307,18 @@ async function membersPage() {
     const t = text.trim().toLowerCase();
     const rows = members.filter((m) =>
       !t || m.label.toLowerCase().includes(t) || m.state.toLowerCase() === t || m.committees.some((c) => c.toLowerCase().includes(t)));
+    // Committees first, then members by state.
     const byState = new Map();
-    rows.forEach((m) => { if (!byState.has(m.state)) byState.set(m.state, []); byState.get(m.state).push(m); });
+    rows.forEach((m) => {
+      const key = m.kind === "committee" ? "Committees" : m.state;
+      if (!byState.has(key)) byState.set(key, []);
+      byState.get(key).push(m);
+    });
     box.innerHTML = rows.length ? [...byState].map(([st, ms]) => `<section class="state-block"><h2 class="month">${esc(st)}</h2><div class="member-grid">${
       ms.map((m) => `<div class="member">
         <div class="member-name">${esc(m.name)}</div>
-        <div class="member-sub">${esc(m.district)} · ${m.recent} statement${m.recent === 1 ? "" : "s"} in the last 90 days</div>
-        ${m.committees.length ? `<div class="member-sub">${esc(m.committees.join(", "))}</div>` : ""}
+        <div class="member-sub">${m.district ? `${esc(m.district)} · ` : ""}${m.recent} statement${m.recent === 1 ? "" : "s"} in the last 90 days</div>
+        ${m.committees.length && m.kind !== "committee" ? `<div class="member-sub">${esc(m.committees.join(", "))}</div>` : ""}
         <div class="member-links"><a href="./?member=${esc(m.bioguide)}">Statements</a><a href="feeds/members/${esc(m.bioguide)}.xml">RSS</a>${m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">Website</a>` : ""}</div>
       </div>`).join("")}</div></section>`).join("") : `<p class="empty">No members match “${esc(text)}”.</p>`;
   };

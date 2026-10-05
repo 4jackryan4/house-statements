@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       bioguides:
-        description: "Space-separated bioguide ids (blank = every member)"
+        description: "Space-separated bioguide or committee ids, or \"committees\" (blank = every member and committee)"
         required: false
         default: ""
       pages:
