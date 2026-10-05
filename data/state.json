@@ -555,21 +555,83 @@
     ],
     "W000830": [
       "https://whitesides.house.gov/category/press-releases/"
+    ],
+    "committee-agriculture": [
+      "https://democrats-agriculture.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
+    "committee-appropriations": [
+      "https://democrats-appropriations.house.gov/news/press-releases"
+    ],
+    "committee-armed-services": [
+      "https://democrats-armedservices.house.gov/press-releases"
+    ],
+    "committee-budget": [
+      "https://democrats-budget.house.gov/news/press-releases"
+    ],
+    "committee-china": [
+      "https://democrats-selectcommitteeontheccp.house.gov/media/press-releases"
+    ],
+    "committee-education-workforce": [
+      "https://democrats-edworkforce.house.gov/media/press-releases"
+    ],
+    "committee-energy-commerce": [
+      "https://democrats-energycommerce.house.gov/media/press-releases"
+    ],
+    "committee-financial-services": [
+      "https://democrats-financialservices.house.gov/news/documentquery.aspx?DocumentTypeID=2636"
+    ],
+    "committee-foreign-affairs": [
+      "https://democrats-foreignaffairs.house.gov/press-releases"
+    ],
+    "committee-homeland-security": [
+      "https://democrats-homeland.house.gov/news/press-releases"
+    ],
+    "committee-house-administration": [
+      "https://democrats-cha.house.gov/media/press-releases"
+    ],
+    "committee-intelligence": [
+      "https://democrats-intelligence.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
+    "committee-judiciary": [
+      "https://democrats-judiciary.house.gov/media-center/press-releases"
+    ],
+    "committee-natural-resources": [
+      "https://democrats-naturalresources.house.gov/media/press-releases"
+    ],
+    "committee-oversight": [
+      "https://oversightdemocrats.house.gov/news/press-releases"
+    ],
+    "committee-rules": [
+      "https://democrats-rules.house.gov/media/press-releases"
+    ],
+    "committee-science": [
+      "https://democrats-science.house.gov/news/press-releases"
+    ],
+    "committee-small-business": [
+      "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
+    "committee-transportation": [
+      "https://democrats-transportation.house.gov/news/press-releases"
+    ],
+    "committee-veterans-affairs": [
+      "https://democrats-veterans.house.gov/news/press-releases"
+    ],
+    "committee-ways-and-means": [
+      "https://democrats-waysandmeans.house.gov/media-center/press-releases"
     ]
   },
   "last_collect": {
-    "at": "2026-10-05T18:19:00+00:00",
+    "at": "2026-10-05T18:29:48+00:00",
     "http": {
-      "200": 663,
-      "301": 8,
+      "200": 300,
       "302": 3,
-      "404": 28,
+      "404": 2,
       "410": 1
     },
     "sites": {
       "empty": 0,
       "error": 1,
-      "ok": 216
+      "ok": 237
     }
   }
 }
