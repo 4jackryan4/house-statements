@@ -1,14 +1,57 @@
 {
   "archive_imported_at": "2026-10-05T01:40:23+00:00",
   "fallback_sources": {
+    "A000148": [
+      "https://auchincloss.house.gov/media/press-releases",
+      "https://auchincloss.house.gov/rss/feeds/"
+    ],
+    "A000370": [
+      "https://adams.house.gov/media-center/press-releases"
+    ],
+    "A000371": [
+      "https://aguilar.house.gov/feed/",
+      "https://aguilar.house.gov/press/"
+    ],
+    "A000380": [
+      "https://amo.house.gov/press-releases"
+    ],
+    "A000381": [
+      "https://ansari.house.gov/media/press-releases",
+      "https://ansari.house.gov/rss/feeds/"
+    ],
+    "B000490": [
+      "https://bishop.house.gov/media-center/press-releases"
+    ],
+    "B001278": [
+      "https://bonamici.house.gov/media/press-releases"
+    ],
     "B001281": [
       "https://beatty.house.gov/media-center/press-releases"
     ],
     "B001285": [
       "https://juliabrownley.house.gov/feed/"
     ],
+    "B001287": [
+      "http://bera.house.gov/rss.xml",
+      "https://bera.house.gov/news/press-releases"
+    ],
+    "B001296": [
+      "https://boyle.house.gov/media-center/press-releases"
+    ],
     "B001300": [
       "https://barragan.house.gov/feed/"
+    ],
+    "B001313": [
+      "https://shontelbrown.house.gov/media/press-releases"
+    ],
+    "B001315": [
+      "https://budzinski.house.gov/feed"
+    ],
+    "B001324": [
+      "https://bell.house.gov/media/press-releases"
+    ],
+    "B001326": [
+      "https://bynum.house.gov/media/press-releases"
     ],
     "B001328": [
       "https://blair.house.gov/"
@@ -16,8 +59,61 @@
     "C000537": [
       "https://clyburn.house.gov/feed/"
     ],
+    "C001059": [
+      "https://costa.house.gov/media/press-releases"
+    ],
+    "C001061": [
+      "https://cleaver.house.gov/media-center/press-releases"
+    ],
     "C001063": [
       "https://cuellar.house.gov/news/"
+    ],
+    "C001067": [
+      "https://clarke.house.gov/feed/"
+    ],
+    "C001068": [
+      "https://cohen.house.gov/media-center/press-releases"
+    ],
+    "C001069": [
+      "https://courtney.house.gov/media-center/press-releases"
+    ],
+    "C001072": [
+      "https://carson.house.gov/media/press-releases"
+    ],
+    "C001080": [
+      "https://chu.house.gov/media-center/press-releases"
+    ],
+    "C001091": [
+      "https://castro.house.gov/media-center/press-releases/",
+      "https://castro.house.gov/rss/feeds/"
+    ],
+    "C001101": [
+      "https://katherineclark.house.gov/category/press-releases/"
+    ],
+    "C001110": [
+      "https://correa.house.gov/news/press-releases",
+      "https://correa.house.gov/rss/feeds/"
+    ],
+    "C001117": [
+      "https://casten.house.gov/rss/feeds/"
+    ],
+    "C001119": [
+      "https://craig.house.gov/media/press-releases"
+    ],
+    "C001121": [
+      "https://crow.house.gov/news/press-releases"
+    ],
+    "C001123": [
+      "https://cisneros.house.gov/media/press-releases"
+    ],
+    "C001125": [
+      "https://troycarter.house.gov/media/press-releases"
+    ],
+    "C001130": [
+      "https://crockett.house.gov/media/press-releases"
+    ],
+    "C001131": [
+      "https://casar.house.gov/media/press-releases"
     ],
     "C001136": [
       "https://conaway.house.gov/media/press-releases"
@@ -25,9 +121,39 @@
     "D000096": [
       "https://davis.house.gov/media/press-releases"
     ],
+    "D000197": [
+      "https://degette.house.gov/newsroom/press-releases"
+    ],
+    "D000216": [
+      "https://delauro.house.gov/media-center/press-releases"
+    ],
+    "D000230": [
+      "https://dondavis.house.gov/media/press-releases"
+    ],
+    "D000399": [
+      "https://doggett.house.gov/media/press-releases"
+    ],
+    "D000530": [
+      "https://deluzio.house.gov/media/press-releases"
+    ],
+    "D000623": [
+      "https://desaulnier.house.gov/media-center/press-releases"
+    ],
+    "D000629": [
+      "https://davids.house.gov/media/press-releases"
+    ],
+    "D000635": [
+      "https://dexter.house.gov/media/press-releases"
+    ],
+    "E000296": [
+      "https://evans.house.gov/media/press-releases"
+    ],
     "E000297": [
       "https://espaillat.house.gov/",
       "https://espaillat.house.gov/media/press-releases"
+    ],
+    "E000301": [
+      "https://elfreth.house.gov/media/press-releases"
     ],
     "F000110": [
       "https://fields.house.gov/media/press-releases"
@@ -35,20 +161,174 @@
     "F000454": [
       "https://foster.house.gov/media/press-releases"
     ],
+    "F000476": [
+      "https://frost.house.gov/rss/feeds/"
+    ],
+    "F000477": [
+      "https://foushee.house.gov/media/press-releases",
+      "https://foushee.house.gov/rss/feeds/"
+    ],
+    "F000481": [
+      "https://figures.house.gov/media/press-releases"
+    ],
+    "F000483": [
+      "https://friedman.house.gov/media/press-releases"
+    ],
+    "G000553": [
+      "http://algreen.house.gov/rss.xml",
+      "https://algreen.house.gov/media/press-releases"
+    ],
+    "G000581": [
+      "https://gonzalez.house.gov/media/press-releases"
+    ],
+    "G000583": [
+      "https://gottheimer.house.gov/feed"
+    ],
+    "G000586": [
+      "https://chuygarcia.house.gov/media/press-releases"
+    ],
+    "G000587": [
+      "https://sylviagarcia.house.gov/media/press-releases"
+    ],
+    "G000592": [
+      "https://golden.house.gov/media/press-releases"
+    ],
     "G000598": [
       "https://robertgarcia.house.gov/media/press-releases"
+    ],
+    "G000599": [
+      "https://goldman.house.gov/media/press-releases"
+    ],
+    "G000600": [
+      "https://gluesenkampperez.house.gov/feed"
+    ],
+    "G000602": [
+      "https://gillen.house.gov/media/press-releases"
+    ],
+    "G000604": [
+      "https://goodlander.house.gov/media/press-releases/"
+    ],
+    "G000605": [
+      "https://gray.house.gov/media/press-releases"
+    ],
+    "G000606": [
+      "https://grijalva.house.gov/media/press-releases"
+    ],
+    "H000874": [
+      "https://hoyer.house.gov/media/press-releases"
+    ],
+    "H001047": [
+      "https://himes.house.gov/statements-and-releases/"
+    ],
+    "H001066": [
+      "https://horsford.house.gov/media/press-releases"
+    ],
+    "H001068": [
+      "https://huffman.house.gov/media-center/press-releases",
+      "https://huffman.house.gov/rss/feeds/"
+    ],
+    "H001090": [
+      "https://harder.house.gov/media/press-releases"
+    ],
+    "H001094": [
+      "https://hoyle.house.gov/rss/feeds/"
+    ],
+    "H001103": [
+      "https://hernandez.house.gov/media/press-releases"
+    ],
+    "I000058": [
+      "https://ivey.house.gov/media/press-releases"
+    ],
+    "J000288": [
+      "http://hankjohnson.house.gov/rss.xml",
+      "https://hankjohnson.house.gov/media-center/press-releases"
+    ],
+    "J000294": [
+      "https://jeffries.house.gov/feed/"
+    ],
+    "J000298": [
+      "https://jayapal.house.gov/feed/"
+    ],
+    "J000305": [
+      "https://sarajacobs.house.gov/rss/feeds/"
     ],
     "J000309": [
       "https://jonathanjackson.house.gov/rss.xml"
     ],
+    "J000310": [
+      "https://juliejohnson.house.gov/media/press-releases"
+    ],
+    "K000009": [
+      "https://kaptur.house.gov/media-center/press-releases"
+    ],
+    "K000375": [
+      "https://keating.house.gov/media/press-releases"
+    ],
+    "K000385": [
+      "http://robinkelly.house.gov/rss.xml",
+      "https://robinkelly.house.gov/media-center/press-releases"
+    ],
+    "K000389": [
+      "https://khanna.house.gov/media/press-releases"
+    ],
+    "K000391": [
+      "https://krishnamoorthi.house.gov/media/press-releases"
+    ],
+    "K000400": [
+      "https://kamlager-dove.house.gov/media/press-releases"
+    ],
+    "L000557": [
+      "https://larson.house.gov/media-center/press-releases"
+    ],
+    "L000582": [
+      "https://lieu.house.gov/media-center/press-releases"
+    ],
+    "L000590": [
+      "https://susielee.house.gov/media/press-releases"
+    ],
+    "L000593": [
+      "https://levin.house.gov/rss/feeds/"
+    ],
     "L000601": [
       "https://landsman.house.gov/media/press-releases"
+    ],
+    "L000602": [
+      "https://summerlee.house.gov/newsroom/press-releases"
     ],
     "L000606": [
       "https://latimer.house.gov/media/press-releases"
     ],
+    "L000607": [
+      "https://liccardo.house.gov/media/press-releases"
+    ],
+    "M000687": [
+      "https://mfume.house.gov/media/press-releases"
+    ],
     "M001137": [
       "https://meeks.house.gov/media/press-releases"
+    ],
+    "M001143": [
+      "http://mccollum.house.gov/rss.xml",
+      "https://mccollum.house.gov/media/press-releases"
+    ],
+    "M001163": [
+      "https://matsui.house.gov/media/press-releases"
+    ],
+    "M001188": [
+      "https://meng.house.gov/media-center/press-releases"
+    ],
+    "M001196": [
+      "https://moulton.house.gov/news/press-releases"
+    ],
+    "M001206": [
+      "https://morelle.house.gov/media/press-releases"
+    ],
+    "M001208": [
+      "https://mcbath.house.gov/category/press-releases/",
+      "https://mcbath.house.gov/feed/"
+    ],
+    "M001214": [
+      "https://mrvan.house.gov/media/press-releases"
     ],
     "M001217": [
       "https://moskowitz.house.gov/feed"
@@ -56,31 +336,247 @@
     "M001220": [
       "https://mcgarvey.house.gov/rss/feeds/"
     ],
+    "M001223": [
+      "https://magaziner.house.gov/media/press-releases"
+    ],
+    "M001225": [
+      "https://kevinmullin.house.gov/category/press_release/"
+    ],
+    "M001226": [
+      "https://menendez.house.gov/media/press-releases",
+      "https://menendez.house.gov/rss/feeds/"
+    ],
+    "M001227": [
+      "https://mcclellan.house.gov/category/press-releases/"
+    ],
+    "M001229": [
+      "https://mciver.house.gov/media/press-releases",
+      "https://mciver.house.gov/rss/feeds/"
+    ],
+    "M001231": [
+      "https://mannion.house.gov/media/press-releases"
+    ],
+    "M001232": [
+      "https://mcclaindelaney.house.gov/media/press-releases"
+    ],
     "M001234": [
       "https://morrison.house.gov/rss/feeds/"
     ],
+    "M001237": [
+      "https://mcdonaldrivet.house.gov/media/press-releases"
+    ],
+    "M001238": [
+      "https://mcbride.house.gov/media/press-releases"
+    ],
+    "M001241": [
+      "https://min.house.gov/media/press-releases"
+    ],
+    "M001245": [
+      "https://menefee.house.gov/media/press-releases"
+    ],
+    "M001246": [
+      "https://mejia.house.gov/media/press-releases"
+    ],
+    "N000015": [
+      "https://neal.house.gov/category/press-releases/"
+    ],
+    "N000147": [
+      "https://norton.house.gov/media/press-releases"
+    ],
+    "N000191": [
+      "https://neguse.house.gov/media/press-releases"
+    ],
+    "O000172": [
+      "https://ocasio-cortez.house.gov/media/press-releases"
+    ],
+    "O000173": [
+      "https://omar.house.gov/media/press-releases"
+    ],
+    "O000176": [
+      "https://olszewski.house.gov/media/press-releases"
+    ],
+    "P000034": [
+      "http://pallone.house.gov/rss.xml",
+      "https://pallone.house.gov/media/press-releases"
+    ],
+    "P000197": [
+      "https://pelosi.house.gov/news/press-releases"
+    ],
     "P000607": [
       "https://pocan.house.gov/media-center/press-releases"
+    ],
+    "P000608": [
+      "https://scottpeters.house.gov/press-releases"
+    ],
+    "P000613": [
+      "https://panetta.house.gov/media/press-releases"
+    ],
+    "P000614": [
+      "https://pappas.house.gov/media/press-releases"
+    ],
+    "P000617": [
+      "https://pressley.house.gov/feed/"
+    ],
+    "P000621": [
+      "https://pou.house.gov/media/press-releases"
+    ],
+    "Q000023": [
+      "https://quigley.house.gov/media-center/press-releases"
+    ],
+    "R000305": [
+      "https://ross.house.gov/press-releases"
+    ],
+    "R000579": [
+      "https://patryan.house.gov/media/press-releases"
+    ],
+    "R000599": [
+      "https://ruiz.house.gov/media-center/press-releases"
+    ],
+    "R000617": [
+      "https://ramirez.house.gov/media/press-releases"
+    ],
+    "R000620": [
+      "https://rivas.house.gov/media/press-releases"
+    ],
+    "R000621": [
+      "https://randall.house.gov/media/press-releases"
+    ],
+    "R000622": [
+      "https://riley.house.gov/feed/"
+    ],
+    "S000185": [
+      "https://bobbyscott.house.gov/media-center/press-releases"
+    ],
+    "S000344": [
+      "https://sherman.house.gov/media-center/press-releases"
+    ],
+    "S000510": [
+      "https://adamsmith.house.gov/news/press-releases"
+    ],
+    "S001145": [
+      "https://schakowsky.house.gov/media/press-releases"
+    ],
+    "S001156": [
+      "https://lindasanchez.house.gov/media-center/press-releases"
+    ],
+    "S001159": [
+      "https://strickland.house.gov/category/press_release/"
+    ],
+    "S001190": [
+      "https://schneider.house.gov/media/press-releases"
+    ],
+    "S001200": [
+      "https://soto.house.gov/media/press-releases"
+    ],
+    "S001201": [
+      "https://suozzi.house.gov/media/press-releases"
     ],
     "S001211": [
       "https://stanton.house.gov/media/press-releases",
       "https://stanton.house.gov/rss.xml"
     ],
+    "S001215": [
+      "https://stevens.house.gov/media/press-releases"
+    ],
+    "S001216": [
+      "https://schrier.house.gov/media/press-releases"
+    ],
+    "S001218": [
+      "https://stansbury.house.gov/media/press-releases"
+    ],
+    "S001221": [
+      "https://scholten.house.gov/media/press-releases"
+    ],
+    "S001223": [
+      "https://sykes.house.gov/media/press-releases",
+      "https://sykes.house.gov/rss/feeds/"
+    ],
+    "S001225": [
+      "https://sorensen.house.gov/media/press-releases"
+    ],
+    "S001226": [
+      "https://salinas.house.gov/media/press-releases"
+    ],
+    "S001230": [
+      "https://subramanyam.house.gov/media/press-releases"
+    ],
+    "S001231": [
+      "https://simon.house.gov/media/press-releases"
+    ],
+    "T000193": [
+      "https://benniethompson.house.gov/media/press-releases"
+    ],
+    "T000460": [
+      "https://mikethompson.house.gov/newsroom/press-releases"
+    ],
+    "T000472": [
+      "https://takano.house.gov/rss/feeds/"
+    ],
+    "T000474": [
+      "https://torres.house.gov/rss/feeds/"
+    ],
+    "T000481": [
+      "https://tlaib.house.gov/feed"
+    ],
     "T000486": [
       "https://ritchietorres.house.gov/feed",
       "https://ritchietorres.house.gov/press"
     ],
+    "T000487": [
+      "https://tokuda.house.gov/media/press-releases",
+      "https://tokuda.house.gov/rss/feeds/"
+    ],
+    "T000488": [
+      "https://thanedar.house.gov/rss/feeds/"
+    ],
+    "T000491": [
+      "https://tran.house.gov/media/press-releases"
+    ],
+    "U000040": [
+      "https://underwood.house.gov/media/press-releases"
+    ],
+    "V000081": [
+      "https://velazquez.house.gov/media-center/press-releases"
+    ],
+    "V000130": [
+      "https://vargas.house.gov/media/press-releases"
+    ],
+    "V000131": [
+      "https://veasey.house.gov/media-center/press-releases"
+    ],
+    "V000136": [
+      "https://vasquez.house.gov/media/press-releases"
+    ],
+    "V000138": [
+      "https://vindman.house.gov/category/press-releases",
+      "https://vindman.house.gov/feed/"
+    ],
     "W000187": [
       "https://waters.house.gov/media-center/press-releases"
+    ],
+    "W000788": [
+      "https://nikemawilliams.house.gov/feed"
+    ],
+    "W000808": [
+      "https://wilson.house.gov/media/press-releases"
+    ],
+    "W000822": [
+      "https://watsoncoleman.house.gov/newsroom/press-releases",
+      "https://watsoncoleman.house.gov/rss/feeds/"
+    ],
+    "W000830": [
+      "https://whitesides.house.gov/category/press-releases/"
     ]
   },
   "last_collect": {
-    "at": "2026-10-05T03:43:22+00:00",
+    "at": "2026-10-05T03:46:24+00:00",
     "http": {
-      "200": 280,
+      "200": 3160,
+      "301": 41,
       "302": 3,
-      "404": 2,
-      "410": 1
+      "404": 56,
+      "410": 7,
+      "ConnectionError": 1
     },
     "sites": {
       "empty": 0,
