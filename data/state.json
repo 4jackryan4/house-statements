@@ -1,5 +1,5 @@
 {
-  "archive_imported_at": "2026-10-05T18:18:53+00:00",
+  "archive_imported_at": "2026-10-06T00:51:47+00:00",
   "fallback_sources": {
     "A000148": [
       "https://auchincloss.house.gov/rss/feeds/"
@@ -621,14 +621,17 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-05T19:19:56+00:00",
+    "at": "2026-10-06T00:51:55+00:00",
     "http": {
-      "200": 408
+      "200": 299,
+      "302": 3,
+      "404": 2,
+      "410": 1
     },
     "sites": {
       "empty": 0,
-      "error": 0,
-      "ok": 21
+      "error": 1,
+      "ok": 237
     }
   }
 }
