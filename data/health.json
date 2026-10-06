@@ -370,8 +370,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "F000110",
@@ -623,7 +623,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-05"
  },
  {
@@ -635,7 +635,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-23"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "S001225",
@@ -2086,8 +2086,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-05"
+  "new": 0,
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "D000216",
@@ -2504,8 +2504,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-30"
+  "new": 1,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "F000477",
@@ -2515,8 +2515,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-21"
+  "new": 1,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "E000299",
@@ -2560,7 +2560,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-22"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "B001324",
