@@ -634,8 +634,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "S001225",
@@ -689,7 +689,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1103,10 +1103,10 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 16,
   "new": 0,
   "latest_date": "2026-07-22"
  },
@@ -1910,7 +1910,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-06"
  },
  {
@@ -1928,7 +1928,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1954,7 +1954,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
