@@ -161,7 +161,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -194,7 +194,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -304,7 +304,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -326,7 +326,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -524,7 +524,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-09-10"
  },
  {
@@ -1103,10 +1103,10 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
-  "method": "python-statement+fallback",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 16,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-07-22"
  },
@@ -1184,7 +1184,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1371,7 +1371,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1415,7 +1415,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1591,7 +1591,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1778,7 +1778,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1877,7 +1877,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1909,8 +1909,8 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 0,
+  "count": 22,
+  "new": 1,
   "latest_date": "2026-10-06"
  },
  {
@@ -1928,7 +1928,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1954,8 +1954,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "J000298",
@@ -2427,7 +2427,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -2526,7 +2526,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-05"
  },
  {

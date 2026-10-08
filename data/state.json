@@ -1,5 +1,5 @@
 {
-  "archive_imported_at": "2026-10-07T20:01:03+00:00",
+  "archive_imported_at": "2026-10-08T06:13:37+00:00",
   "fallback_sources": {
     "A000148": [
       "https://auchincloss.house.gov/rss/feeds/"
@@ -605,7 +605,9 @@
       "https://democrats-naturalresources.house.gov/media/press-releases"
     ],
     "committee-oversight": [
-      "https://oversightdemocrats.house.gov/news/press-releases"
+      "https://oversightdemocrats.house.gov/",
+      "https://oversightdemocrats.house.gov/news/press-releases",
+      "https://oversightdemocrats.house.gov/news/reports"
     ],
     "committee-rules": [
       "https://democrats-rules.house.gov/media/press-releases"
@@ -627,12 +629,13 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-08T00:15:37+00:00",
+    "at": "2026-10-08T06:13:44+00:00",
     "http": {
-      "200": 292,
+      "200": 298,
       "302": 3,
       "404": 2,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 1
     },
     "sites": {
       "empty": 0,
