@@ -73,8 +73,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 2,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "O000172",
@@ -140,7 +140,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-06"
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "C001119",
@@ -337,8 +337,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "H001085",
@@ -359,7 +359,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -370,7 +370,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -436,7 +436,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -513,8 +513,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 3,
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "N000188",
@@ -535,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -547,7 +547,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-05"
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "E000296",
@@ -634,7 +634,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -744,8 +744,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "L000606",
@@ -854,7 +854,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -865,8 +865,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "S001215",
@@ -1184,7 +1184,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -1206,8 +1206,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "C001091",
@@ -1250,8 +1250,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "G000559",
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 18,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1459,7 +1459,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -1602,8 +1602,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-28"
+  "new": 1,
+  "latest_date": "2026-10-05"
  },
  {
   "bioguide": "R000620",
@@ -1624,7 +1624,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -1635,8 +1635,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-09-30"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "V000131",
@@ -1668,8 +1668,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "S001159",
@@ -1708,10 +1708,10 @@
   "bioguide": "T000472",
   "label": "Mark Takano (D-CA-39)",
   "scraper": "takano",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 44,
   "new": 0,
   "latest_date": "2026-09-08"
  },
@@ -1800,8 +1800,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-17"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "M001220",
@@ -1888,7 +1888,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -1910,8 +1910,8 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "H001103",
@@ -1928,7 +1928,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1965,7 +1965,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -1976,8 +1976,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "T000481",
@@ -2009,7 +2009,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -2030,9 +2030,9 @@
   "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 16,
-  "new": 0,
-  "latest_date": "2026-09-24"
+  "count": 17,
+  "new": 1,
+  "latest_date": "2026-09-29"
  },
  {
   "bioguide": "K000389",
@@ -2097,8 +2097,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "committee-rules",
@@ -2306,8 +2306,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 2,
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "L000562",
@@ -2328,8 +2328,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "H001066",
@@ -2339,8 +2339,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "S001230",
@@ -2394,8 +2394,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "K000400",
@@ -2460,8 +2460,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-30"
+  "new": 2,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "K000402",
@@ -2493,8 +2493,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "H001094",
