@@ -45,7 +45,7 @@
       "https://budzinski.house.gov/feed"
     ],
     "B001324": [
-      "https://bell.house.gov/media/press-releases"
+      "https://bell.house.gov/"
     ],
     "B001326": [
       "https://bynum.house.gov/media/press-releases"
@@ -629,12 +629,11 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-09T16:06:05+00:00",
+    "at": "2026-10-09T20:09:55+00:00",
     "http": {
-      "200": 648,
-      "301": 8,
+      "200": 297,
       "302": 3,
-      "404": 28,
+      "404": 2,
       "410": 1
     },
     "sites": {
