@@ -326,8 +326,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "P000614",
@@ -689,8 +689,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-10"
  },
  {
   "bioguide": "M001214",
@@ -1928,7 +1928,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
