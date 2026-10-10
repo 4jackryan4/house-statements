@@ -172,7 +172,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -436,7 +436,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -612,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -689,7 +689,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -1492,8 +1492,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "S001231",
@@ -1635,7 +1635,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -1723,7 +1723,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -1822,7 +1822,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -2020,7 +2020,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -2053,7 +2053,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -2306,8 +2306,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "L000562",
@@ -2372,8 +2372,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "D000617",
@@ -2569,7 +2569,7 @@
   "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 9,
   "new": 0,
   "latest_date": "2026-09-30"
  },
@@ -2592,7 +2592,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
