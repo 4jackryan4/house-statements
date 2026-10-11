@@ -85,7 +85,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-08"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "A000370",
@@ -326,7 +326,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -689,7 +689,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-10"
  },
  {
