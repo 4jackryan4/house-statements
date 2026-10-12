@@ -1928,7 +1928,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
