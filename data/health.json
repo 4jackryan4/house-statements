@@ -1833,8 +1833,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 9,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "committee-natural-resources",
@@ -1928,12 +1928,12 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 2,
   "new": 0,
-  "latest_date": "2026-10-11"
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "T000469",
@@ -2569,7 +2569,7 @@
   "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 9,
   "new": 0,
   "latest_date": "2026-09-30"
  },
