@@ -117,8 +117,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-25"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "S001226",
@@ -128,8 +128,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-10"
  },
  {
   "bioguide": "C001072",
@@ -172,7 +172,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -272,7 +272,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-25"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "B001296",
@@ -469,8 +469,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "T000491",
@@ -733,8 +733,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "V000136",
@@ -920,7 +920,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -1096,8 +1096,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "M001217",
@@ -1283,8 +1283,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "J000309",
@@ -1536,8 +1536,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "S001156",
@@ -1548,7 +1548,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-13"
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "F000468",
@@ -1580,8 +1580,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-24"
+  "new": 2,
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "T000482",
@@ -1657,7 +1657,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-13"
  },
  {
@@ -2075,8 +2075,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "K000385",
@@ -2174,7 +2174,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -2372,8 +2372,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "D000617",
@@ -2471,8 +2471,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "committee-transportation",
@@ -2548,8 +2548,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "committee-ways-and-means",
