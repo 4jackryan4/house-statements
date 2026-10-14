@@ -73,7 +73,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -85,7 +85,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-08"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "A000370",
@@ -128,8 +128,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-10"
+  "new": 1,
+  "latest_date": "2026-10-12"
  },
  {
   "bioguide": "C001072",
@@ -194,8 +194,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "B001318",
@@ -260,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -359,7 +359,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -370,7 +370,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -436,7 +436,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -535,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -578,7 +578,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 19,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-09"
  },
@@ -733,8 +733,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "V000136",
@@ -942,8 +942,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "O000173",
@@ -975,7 +975,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1206,7 +1206,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1261,7 +1261,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1305,7 +1305,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1338,8 +1338,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "B001281",
@@ -1437,7 +1437,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1448,8 +1448,8 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "S001216",
@@ -1591,7 +1591,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1855,8 +1855,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "W000788",
@@ -1910,7 +1910,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1921,7 +1921,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1932,7 +1932,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1987,7 +1987,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2306,8 +2306,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "L000562",
@@ -2372,7 +2372,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-13"
  },
  {
@@ -2482,7 +2482,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -2493,7 +2493,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2548,8 +2548,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "committee-ways-and-means",
@@ -2592,8 +2592,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 2,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "C001067",
