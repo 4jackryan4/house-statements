@@ -85,7 +85,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-08"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "A000370",
@@ -194,8 +194,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "B001318",
@@ -260,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -315,7 +315,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -337,7 +337,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -469,8 +469,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "T000491",
@@ -502,8 +502,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "D000230",
@@ -524,7 +524,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -535,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -656,8 +656,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "B001328",
@@ -877,7 +877,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-21"
+  "latest_date": "2026-09-29"
  },
  {
   "bioguide": "J000288",
@@ -921,7 +921,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-24"
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "committee-homeland-security",
@@ -964,7 +964,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -975,8 +975,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "H001081",
@@ -1041,8 +1041,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-12"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "R000606",
@@ -1184,7 +1184,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1206,7 +1206,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1228,7 +1228,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1316,7 +1316,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1470,8 +1470,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "M000687",
@@ -1503,8 +1503,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "F000483",
@@ -1602,8 +1602,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "R000620",
@@ -1668,8 +1668,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "S001159",
@@ -1866,8 +1866,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "B001315",
@@ -1888,7 +1888,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1910,7 +1910,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1976,7 +1976,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2020,19 +2020,19 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "T000486",
   "label": "Ritchie Torres (D-NY-15)",
   "scraper": "ritchietorres",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 17,
-  "new": 0,
-  "latest_date": "2026-09-29"
+  "count": 6,
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "K000389",
@@ -2185,8 +2185,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "P000608",
@@ -2361,7 +2361,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2416,8 +2416,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "L000582",
@@ -2438,8 +2438,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "S001185",
@@ -2592,7 +2592,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2603,8 +2603,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "L000397",
