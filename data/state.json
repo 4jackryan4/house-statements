@@ -1,5 +1,5 @@
 {
-  "archive_imported_at": "2026-10-15T05:56:56+00:00",
+  "archive_imported_at": "2026-10-15T14:07:17+00:00",
   "fallback_sources": {
     "A000148": [
       "https://auchincloss.house.gov/rss/feeds/"
@@ -45,7 +45,7 @@
       "https://budzinski.house.gov/feed"
     ],
     "B001324": [
-      "https://bell.house.gov/"
+      "https://bell.house.gov/media/press-releases"
     ],
     "B001326": [
       "https://bynum.house.gov/media/press-releases"
@@ -629,11 +629,12 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-15T11:38:27+00:00",
+    "at": "2026-10-15T14:07:25+00:00",
     "http": {
-      "200": 295,
+      "200": 650,
+      "301": 8,
       "302": 3,
-      "404": 2,
+      "404": 28,
       "410": 1
     },
     "sites": {
