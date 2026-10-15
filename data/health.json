@@ -85,7 +85,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-13"
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "A000370",
@@ -865,8 +865,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-12"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "S001215",
@@ -1240,7 +1240,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-17"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "L000557",
@@ -2306,7 +2306,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2372,7 +2372,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
