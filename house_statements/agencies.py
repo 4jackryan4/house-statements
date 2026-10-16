@@ -634,7 +634,7 @@ def _listing_items(page_html: str, url: str, pattern, scope: str | None = None) 
 def _listing_pages(start_url: str, pattern, session, pages: int, template: str | None = None, first: int = 0,
                    scope: str | None = None) -> list[dict]:
     """A listing page and, for a backfill, the older pages after it (by "next" links or `template`)."""
-    items, url, seen = [], start_url, set()
+    items, url, seen, empty = [], start_url, set(), 0
     for k in range(max(pages, 1)):
         if url in seen:
             break
@@ -648,7 +648,10 @@ def _listing_pages(start_url: str, pattern, session, pages: int, template: str |
         # Stop once a whole page is older than the start date (one pinned old release doesn't count).
         # Links without a date are kept; the release page dates them when its text is fetched.
         dated = [i["date"] for i in new if i["date"]]
-        if not new or (dated and max(dated).isoformat() < START_DATE):
+        # A numbered page can hold only other offices' links (ATF lists many DOJ releases), so
+        # numbered paging gives up after three such pages in a row rather than one.
+        empty = 0 if new else empty + 1
+        if empty >= (3 if template else 1) or (dated and max(dated).isoformat() < START_DATE):
             break
         url = template.format(page=first + k + 1) if template else fallback.next_page_url(r.text, url)
         if not url:
