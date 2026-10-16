@@ -19,31 +19,23 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from house_statements.config import USER_AGENT  # noqa: E402
 
 CANDIDATES = """
-https://www.state.gov/wp-json/wp/v2/state_press_release?per_page=2
-https://www.state.gov/wp-json/wp/v2/state_briefing?per_page=1
-https://usun.usmission.gov/wp-json/wp/v2/posts?per_page=2
-https://usun.usmission.gov/wp-json/wp/v2/categories?per_page=100
-https://news.va.gov/wp-json/wp/v2/news-releases?per_page=2
-https://www.odni.gov/newsroom/press-releases/
-https://www.odni.gov/wp-json/wp/v2/posts?per_page=2
-https://www.justice.gov/api/v1/press_releases.json?pagesize=2&parameters[component]=5d1f8b1c-0d0c-4d38-9b5e-3c7c5d5b2f6c
-https://www.justice.gov/news/rss?type=press_release&m=1&page=5
-https://www.doi.gov/news
-https://www.usda.gov/about-usda/news/press-releases
-https://www.usda.gov/rss/latest-releases.xml
-https://www.commerce.gov/news/press-releases
-https://www.commerce.gov/feeds/news
-https://www.dol.gov/newsroom/releases/osha/osha20261013
-https://www.dol.gov/newsroom/releases
-https://www.hhs.gov/press-room/index.html
-https://www.hhs.gov/rss/news.xml
-https://www.transportation.gov/newsroom/press-releases
-https://www.ed.gov/about/news/press-release
-https://www.epa.gov/newsreleases/search
-https://www.epa.gov/newsreleases/search/rss
-https://www.war.gov/News/Releases/Release/Article/4626961/readout-of-secretary-of-war-pete-hegseths-meeting-with-the-united-kingdoms-secr/
-https://www.sba.gov/wp-json/wp/v2/types
-https://www.whitehouse.gov/wp-json/wp/v2/types
+https://www.justice.gov/opa/press-releases
+https://www.justice.gov/opa/pr
+https://www.justice.gov/news/press-releases?page=2
+https://www.justice.gov/api/v1/press_releases.json?pagesize=3&parameters[component]=Office%20of%20Public%20Affairs
+https://www.justice.gov/api/v1/press_releases.json?pagesize=3&page=9000
+https://home.treasury.gov/news/press-releases?page=2
+https://home.treasury.gov/news/press-releases?page=150
+https://www.war.gov/News/Releases/?Page=2
+https://www.war.gov/News/Releases/?Page=40
+https://www.hud.gov/news?page=1
+https://legacy.sba.gov/about-sba/sba-newsroom
+https://legacy.sba.gov/about-sba/sba-newsroom/press-releases-media-advisories
+https://www.sba.gov/sba-newsroom/feed/?post_type=news-release
+https://www.sba.gov/wp-json/wp/v2/search?subtype=any&per_page=5&search=announces
+https://www.state.gov/wp-json/wp/v2/state_press_release?page=200
+https://www.dhs.gov/news-releases/press-releases?page=60
+https://www.ed.gov/about/news/press-release?page=40
 """.split()
 
 

@@ -34,6 +34,7 @@ AGENCY_PREFIX = "agency-"
 HONEST_UA = "Mozilla/5.0 (compatible; house-statements/1.0; +https://github.com/4jackryan4/house-statements)"
 MIN_INTERVAL = 0.5  # seconds between requests to the same agency
 WP_PAGE_SIZE = 100
+SHORT_TEXT = 400  # extracted text shorter than this is checked against the page's <article>
 
 # slug, label, homepage, how to read it.
 #   feeds: RSS feeds read every run. "{max}" is filled with how many items to ask for.
@@ -219,7 +220,16 @@ def fetch_page(url: str, source_id: str) -> dict:
     r = get(url, session_for(source_id))
     if r is None:
         return {"text": None, "date": None, "title": None}
-    return extract_page(r.text, url)
+    page = extract_page(r.text, url)
+    if len(page["text"] or "") < SHORT_TEXT:
+        # Some newsrooms (e.g. Interior) confuse the extractor into returning the .gov banner.
+        soup = BeautifulSoup(r.text, "lxml")
+        body = soup.find("article") or soup.find("main")
+        if body is not None:
+            text = html_to_text(str(body))
+            if len(text) > len(page["text"] or ""):
+                page["text"] = text[:40_000]
+    return page
 
 
 # ---------------------------------------------------------------- scraping
@@ -254,9 +264,11 @@ def _wp(agency: dict, session, pages: int) -> list[dict]:
             text = html_to_text((p.get("content") or {}).get("rendered", ""))
             items.append({"url": p["link"], "title": " ".join(title.split()),
                           "date": dt.date.fromisoformat(p["date"][:10]), "text": text or None})
-        if len(posts) < per_page:
+        # Some sites ignore per_page (State and the UN mission return 10), so go on until a page
+        # comes back empty or reaches back past START_DATE.
+        if min(p["date"][:10] for p in posts) < START_DATE:
             break
-    return items
+    return [i for i in items if i["date"].isoformat() >= START_DATE]
 
 
 def _listing_pages(start_url: str, pattern, session, pages: int) -> list[dict]:
