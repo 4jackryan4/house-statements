@@ -86,7 +86,7 @@ jobs:
         # A blocked or broken site shouldn't stop the archive data from publishing.
         continue-on-error: true
         run: |
-          args="--pages ${{ inputs.pages || 1 }} --max-text ${{ inputs.max_text || 600 }}"
+          args="--pages ${{ inputs.pages || 1 }} --max-text ${{ inputs.max_text || 600 }} --minutes 25"
           if [ "${{ inputs.sweep }}" = "true" ] || [ "${{ github.event.schedule }}" = "7 9 * * *" ]; then
             args="$args --sweep"
           fi
