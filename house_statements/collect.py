@@ -98,8 +98,8 @@ def _nearby(date: str, days: int = 3) -> list[str]:
     return [(d + dt.timedelta(days=k)).isoformat() for k in range(-days, days + 1)]
 
 
-def merge_items(records: dict, member: dict, items: list[dict], now: str) -> list[str]:
-    """Add unseen items to records; return ids of the new records."""
+def merge_items(records: dict, member: dict, items: list[dict], now: str, skip=()) -> list[str]:
+    """Add unseen items to records; return ids of the new records. `skip`: ids known to be from before 2025."""
     new_ids = []
     tomorrow = (dt.date.fromisoformat(now[:10]) + dt.timedelta(days=1)).isoformat()
     # The same release is often reachable at two URLs (e.g. /2026/7/slug and /media/press-releases/slug).
@@ -111,12 +111,18 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str) -> lis
         if url.rstrip("/") == str(item.get("source", "")).rstrip("/"):
             continue  # listing page, not a statement
         sid = store.statement_id(url)
+        if sid in skip:
+            continue
         date = iso(item.get("date"))
         if date and date > tomorrow:
             date = None  # a misread listing date; the page itself or first-seen date is used instead
         if sid in records:
             if date and not records[sid].get("date"):
                 records[sid]["date"] = date
+            # A White House office's release also shows in the White House's own listing (and an
+            # OSHA one in the Labor Department's): the more specific source takes it over.
+            if records[sid]["bioguide"] in member.get("claims", ()):
+                records[sid]["bioguide"] = member["bioguide"]
             continue
         if date and date < START_DATE:
             continue
@@ -166,9 +172,9 @@ def _interleave(ids: list[str], records: dict) -> list[str]:
     return house + mixed
 
 
-def fill_text(records: dict, ids: list[str], workers: int) -> int:
+def fill_text(records: dict, ids: list[str], workers: int, old_ids: set | None = None) -> int:
     session = requests.Session()
-    filled = 0
+    filled, old = 0, []
 
     def work(sid):
         r = records[sid]
@@ -194,6 +200,12 @@ def fill_text(records: dict, ids: list[str], workers: int) -> int:
                     r["date"], r["date_source"] = page_date, "page"
                 elif r["text_attempts"] >= 3:
                     r["date"], r["date_source"] = r["first_seen"][:10], "first_seen"
+            if is_agency(r["bioguide"]) and r.get("date_source") == "page" and r["date"] < START_DATE:
+                old.append(sid)  # an undated listing link that turned out to be from before 2025
+    for sid in old:
+        del records[sid]
+    if old_ids is not None:
+        old_ids.update(old)  # remembered, so the next run doesn't fetch them again
     return filled
 
 
@@ -240,6 +252,7 @@ def main(argv=None):
     records = store.load_all()
     state = store.load_state()
     known = state.setdefault("fallback_sources", {})
+    old_links = set(state.get("old_agency_links", []))
     now = utcnow()
     http = Counter()
     count_http(http)
@@ -256,7 +269,7 @@ def main(argv=None):
             origins = sorted({i["origin"] for i in items if i.get("origin")})
             if origins:
                 known[m["bioguide"]] = origins
-            added = merge_items(records, m, items, now)
+            added = merge_items(records, m, items, now, old_links)
             new_ids.extend(added)
             dates = [iso(i.get("date")) for i in items if i.get("date")]
             print(f"collect: {m['label']}: {method}, {len(items)} found, {len(added)} new"
@@ -303,23 +316,25 @@ def main(argv=None):
 
     if args.export:
         # Text in chunks, so a time limit still leaves everything found so far to export.
-        filled = 0
-        for k in range(0, len(new_ids), 200):
+        filled, order = 0, _interleave(new_ids, records)
+        for k in range(0, len(order), 200):
             if args.minutes and time.monotonic() - started > args.minutes * 60:
-                print(f"collect: time's up; {len(new_ids) - k} statements exported without text", flush=True)
+                print(f"collect: time's up; {len(order) - k} statements exported without text", flush=True)
                 break
-            filled += fill_text(records, _interleave(new_ids, records)[k:k + 200], workers=8)
+            filled += fill_text(records, order[k:k + 200], workers=8)
         os.makedirs(os.path.dirname(os.path.abspath(args.export)), exist_ok=True)
         with open(args.export, "w") as f:
-            for sid in new_ids:
+            for sid in (i for i in new_ids if i in records):
                 f.write(json.dumps(records[sid], ensure_ascii=False, sort_keys=True) + "\n")
+        new_ids = [i for i in new_ids if i in records]
         print(f"collect: exported {len(new_ids)} new statements ({filled} with text) to {args.export}")
         return
 
     # Text for new statements first, then retry earlier misses.
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
     todo = _interleave(new_ids + retry, records)[: args.max_text]
-    filled = fill_text(records, todo, workers=8) if todo else 0
+    filled = fill_text(records, todo, workers=8, old_ids=old_links) if todo else 0
+    new_ids = [i for i in new_ids if i in records]
 
     # Repair any future-dated statement left by an earlier misread listing.
     tomorrow = (dt.date.fromisoformat(now[:10]) + dt.timedelta(days=1)).isoformat()
@@ -329,6 +344,7 @@ def main(argv=None):
 
     store.save_all(records)
     state["last_collect"] = {"at": now, "sites": counts, "http": http_summary}
+    state["old_agency_links"] = sorted(old_links)
     store.save_state(state)
     health.sort(key=lambda h: (h["status"] == "ok", h["label"]))
     HEALTH_FILE.write_text(json.dumps(health, indent=1) + "\n")

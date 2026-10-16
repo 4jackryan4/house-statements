@@ -69,6 +69,7 @@ JUNK = re.compile(r"media-kit|press-list|sign-?up|headshot|newsletter|subscri|te
 # read from the statement page itself when its text is fetched.
 MIN_WORDS = 5
 MIN_TITLE = 15
+READ_MORE_ABOUT = re.compile(r"^read more about\s+", re.I)
 SKIP_TITLES = (
     "read more", "continue reading", "learn more", "full release", "view all", "more news", "upcoming events",
 )
@@ -257,6 +258,7 @@ def from_listing(html: str, page_url: str, pattern=None) -> list[dict]:
         if not is_statement_url(url, host, pattern=pattern) or url.rstrip("/") == page_url.rstrip("/"):
             continue
         title = _clean_title(a.get_text(" ", strip=True)) or _clean_title(a.get("title") or a.get("aria-label"))
+        title = READ_MORE_ABOUT.sub("", title)  # "Read more about <the release's title>"
         if url not in titles:
             order.append(url)
             titles[url] = ""

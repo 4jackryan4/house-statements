@@ -12,7 +12,7 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,6 +23,9 @@ jobs:
           if [ "${{ inputs.bioguides }}" = "browser" ]; then
             pip install playwright && python -m playwright install --with-deps chromium
             xvfb-run -a python scripts/probe_browser.py
+          elif [ "${{ inputs.bioguides }}" = "raw" ]; then
+            pip install -r requirements.txt && xvfb-run -a python scripts/probe_raw.py
+          elif [ "${{ inputs.bioguides }}" = "candidates" ]; then pip install python-dateutil pyyaml && python scripts/probe_candidates.py
           elif [ "${{ inputs.bioguides }}" = "agencies" ]; then python scripts/probe_agencies.py
           else python scripts/probe.py ${{ inputs.bioguides }}; fi
       - name: Publish snapshots to the "probe" branch
