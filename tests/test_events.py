@@ -66,3 +66,19 @@ def test_committees_join_events_but_do_not_count_as_members():
                     "bioguide": MEMBERS[3]["bioguide"], "date": day})
     fire = [e for e in events.find_events(records, MEMBERS) if "c0" in e["statement_ids"]]
     assert fire and fire[0]["member_count"] == 4 and fire[0]["committee_count"] == 2
+
+
+def test_agency_releases_join_events_but_never_make_them():
+    records = _corpus()
+    records.append({"id": "a1", "title": "FEMA surges disaster aid after Hurricane Zelda landfall",
+                    "text": "Hurricane Zelda flooding on the Gulf Coast: disaster aid for families.",
+                    "bioguide": "agency-dhs", "date": "2026-09-15"})
+    # Many agencies on one story that no member talks about: not an event.
+    for i in range(8):
+        records.append({"id": f"b{i}", "title": "Treasury sanctions Fictionland shipping network",
+                        "text": "Sanctions on Fictionland shipping network vessels.", "bioguide": f"agency-x{i}",
+                        "date": "2026-09-20"})
+    found = events.find_events(records, MEMBERS)
+    zelda = [e for e in found if "Zelda" in e["label"] or "Zelda" in e["headline"]][0]
+    assert "a1" in zelda["statement_ids"] and zelda["agency_count"] == 1 and zelda["member_count"] == 12
+    assert not any("Fictionland" in e["headline"] for e in found)

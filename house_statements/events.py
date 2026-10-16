@@ -15,6 +15,7 @@ import numpy as np
 from scipy import sparse
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
 
+from .agencies import is_agency
 from .committees import is_committee
 from .config import EVENT_MIN_MEMBERS
 
@@ -218,8 +219,14 @@ def label_for(titles: list[str], label_index) -> str:
 # ---------------------------------------------------------------- entry point
 
 def find_events(records: list[dict], members: list[dict]) -> list[dict]:
-    """Return events (newest first). Each has id, label, headline, member_count, first, last, statement_ids."""
-    docs = sorted((r for r in records if r.get("date")), key=lambda r: (r["date"], r["id"]))
+    """Return events (newest first). Each has id, label, headline, member_count, first, last, statement_ids.
+
+    Events are found among members' and committees' statements. Agency press releases are then
+    added to the events they match (see _attach_agencies) but never form events of their own.
+    """
+    dated = sorted((r for r in records if r.get("date")), key=lambda r: (r["date"], r["id"]))
+    docs = [r for r in dated if not is_agency(r["bioguide"])]
+    agency_docs = [r for r in dated if is_agency(r["bioguide"])]
     if len(docs) < 2:
         return []
     vectorizer = TfidfVectorizer(
@@ -250,6 +257,7 @@ def find_events(records: list[dict], members: list[dict]) -> list[dict]:
         sims = X[idx] @ centroid
         headline = rows[int(np.argmax(sims))]["title"]
         events.append({
+            "_centroid": centroid,
             "id": rows[0]["id"],
             "label": label_for([r["title"] for r in rows], label_index),
             "headline": headline,
@@ -260,5 +268,38 @@ def find_events(records: list[dict], members: list[dict]) -> list[dict]:
             "last": rows[-1]["date"],
             "statement_ids": [r["id"] for r in rows],
         })
+    _attach_agencies(events, agency_docs, vectorizer)
     events.sort(key=lambda e: (e["last"], e["member_count"]), reverse=True)
     return events
+
+
+AGENCY_LEAD_DAYS = 2   # an agency release may come this many days before an event's first member statement
+
+
+def _attach_agencies(events: list[dict], agency_docs: list[dict], vectorizer) -> None:
+    """Add each agency press release to the event it best matches, if any, within the event's dates."""
+    for e in events:
+        centroid = e.pop("_centroid")
+        e["_unit"] = centroid / max(float(np.linalg.norm(centroid)), 1e-9)
+        e["agency_ids"] = []
+    if agency_docs and events:
+        A = vectorizer.transform([_document(r) for r in agency_docs]).tocsr()
+        cents = np.vstack([e["_unit"] for e in events]).astype(np.float32)
+        sims = np.asarray(A @ cents.T)
+        spans = [(_days(e["first"]) - AGENCY_LEAD_DAYS, _days(e["last"]) + WINDOW_DAYS) for e in events]
+        for i, r in enumerate(agency_docs):
+            day = _days(r["date"])
+            best, best_sim = None, JOIN_THRESHOLD
+            for k, (lo, hi) in enumerate(spans):
+                if lo <= day <= hi and sims[i, k] >= best_sim:
+                    best, best_sim = k, sims[i, k]
+            if best is not None:
+                events[best]["agency_ids"].append(r)
+    for e in events:
+        del e["_unit"]
+        added = e.pop("agency_ids")
+        e["agency_count"] = len({r["bioguide"] for r in added})
+        if added:
+            ids = e["statement_ids"] + [r["id"] for r in added]
+            e["statement_ids"] = ids
+            e["statement_count"] = len(ids)

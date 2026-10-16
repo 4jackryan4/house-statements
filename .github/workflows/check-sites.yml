@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       bioguides:
-        description: "Space-separated bioguide or committee ids, or \"committees\" (blank = every member and committee)"
+        description: "Space-separated bioguide or committee ids, \"committees\" or \"agencies\" (blank = every member, committee and agency)"
         required: false
         default: ""
       pages:
@@ -39,7 +39,7 @@ jobs:
       - name: Dry run
         run: |
           only="${{ inputs.bioguides }}"
-          python -m house_statements.collect --sweep --pages "${{ inputs.pages }}" --max-text 0 \
+          xvfb-run -a python -m house_statements.collect --sweep --pages "${{ inputs.pages }}" --max-text 0 \
             --report probe/report.json ${only:+--only $only}
       - name: Publish the report to the "probe" branch
         run: |

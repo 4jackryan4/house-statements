@@ -19,6 +19,7 @@ import requests
 from . import store
 from .config import HEALTH_FILE, START_DATE
 from .members import load_sources
+from .agencies import fetch_page as agency_page, is_agency
 from .textfetch import fetch_page
 
 
@@ -39,6 +40,11 @@ def scrape_member(
     there is no scraper, it returns nothing or only old items (new members, redesigned sites), or
     on a sweep, which checks every site for statements the scrapers miss.
     """
+    if member.get("kind") == "agency":
+        from .agencies import scrape_agency
+
+        return scrape_agency(member, pages)
+
     from python_statement import Feed, Scraper
 
     from .fallback import scrape_site
@@ -124,10 +130,10 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str) -> lis
             "date": date,
             "date_source": "listing" if date else None,
             "bioguide": member["bioguide"],
-            "source": "member-site",
+            "source": "agency-site" if member.get("kind") == "agency" else "member-site",
             "first_seen": now,
-            "text": None,
-            "text_attempts": 0,
+            "text": item.get("text") or None,
+            "text_attempts": 1 if item.get("text") else 0,
         }
         if item.get("origin"):
             records[sid]["origin"] = item["origin"]
@@ -142,12 +148,32 @@ def _seed(source: dict) -> list[str] | None:
     return [source["press_url"]] if source.get("press_url") else None
 
 
+def _interleave(ids: list[str], records: dict) -> list[str]:
+    """Agency pages are fetched one at a time per agency, so take agencies' turns round-robin
+    (after the members' and committees', which keep their order)."""
+    house = [sid for sid in ids if not is_agency(records[sid]["bioguide"])]
+    queues: dict[str, list[str]] = {}
+    for sid in ids:
+        if is_agency(records[sid]["bioguide"]):
+            queues.setdefault(records[sid]["bioguide"], []).append(sid)
+    mixed = []
+    while queues:
+        for b in list(queues):
+            mixed.append(queues[b].pop(0))
+            if not queues[b]:
+                del queues[b]
+    return house + mixed
+
+
 def fill_text(records: dict, ids: list[str], workers: int) -> int:
     session = requests.Session()
     filled = 0
 
     def work(sid):
-        return sid, fetch_page(records[sid]["url"], session)
+        r = records[sid]
+        if is_agency(r["bioguide"]):
+            return sid, agency_page(r["url"], r["bioguide"])
+        return sid, fetch_page(r["url"], session)
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
         for fut in as_completed([pool.submit(work, sid) for sid in ids]):
@@ -190,7 +216,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=12, help="members scraped in parallel")
     parser.add_argument("--max-text", type=int, default=600, help="max pages to fetch text for this run")
-    parser.add_argument("--only", nargs="*", help="limit to these bioguide ids (\"committees\" for all committees)")
+    parser.add_argument("--only", nargs="*",
+                        help="limit to these bioguide ids (\"committees\" or \"agencies\" for all of them)")
     parser.add_argument("--sweep", action="store_true", help="also check every site with the generic scraper")
     parser.add_argument("--pages", type=int, default=1, help="listing pages to read per site (backfill)")
     parser.add_argument("--report", help="dry run: write what would be added to this JSON file, save nothing")
@@ -199,7 +226,8 @@ def main(argv=None):
     members = load_sources()
     if args.only:
         only = set(args.only)
-        members = [m for m in members if m["bioguide"] in only or ("committees" in only and m.get("kind") == "committee")]
+        kinds = {"committees": "committee", "agencies": "agency"}
+        members = [m for m in members if m["bioguide"] in only or any(k in only and m.get("kind") == v for k, v in kinds.items())]
     records = store.load_all()
     state = store.load_state()
     known = state.setdefault("fallback_sources", {})
@@ -238,12 +266,22 @@ def main(argv=None):
     http_summary = dict(sorted(http.items()))
     print(f"collect: sites {counts}; HTTP responses {http_summary}")
     if args.report:
+        # Agencies: check that a couple of release pages per agency yield text (nothing is saved).
+        sample, per = [], Counter()
+        for sid in new_ids:
+            b = records[sid]["bioguide"]
+            if is_agency(b) and not records[sid].get("text") and per[b] < 2:
+                per[b] += 1
+                sample.append(sid)
+        if sample:
+            fill_text(records, sample, workers=8)
         report = {
             "http": http_summary,
             "health": sorted(health, key=lambda h: h["label"]),
             "sources": {b: known[b] for b in sorted(known)},
             "new": [
-                {k: records[sid].get(k) for k in ("bioguide", "date", "title", "url", "origin")} for sid in new_ids
+                {k: records[sid].get(k) for k in ("bioguide", "date", "title", "url", "origin")}
+                | {"text_chars": len(records[sid].get("text") or "")} for sid in new_ids
             ],
         }
         os.makedirs(os.path.dirname(os.path.abspath(args.report)), exist_ok=True)
@@ -254,7 +292,7 @@ def main(argv=None):
 
     # Text for new statements first, then retry earlier misses.
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
-    todo = (new_ids + retry)[: args.max_text]
+    todo = _interleave(new_ids + retry, records)[: args.max_text]
     filled = fill_text(records, todo, workers=8) if todo else 0
 
     # Repair any future-dated statement left by an earlier misread listing.

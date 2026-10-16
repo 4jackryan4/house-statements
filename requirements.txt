@@ -8,3 +8,5 @@ scikit-learn==1.9.1
 scipy>=1.14
 trafilatura==2.3.0
 pytest>=8
+curl_cffi>=0.7
+playwright>=1.45

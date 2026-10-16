@@ -17,7 +17,7 @@ on:
         description: "Most statement pages to fetch text for"
         default: "600"
       only:
-        description: "Only scrape these sources: bioguide ids or committee ids, or \"committees\" (blank = all)"
+        description: "Only scrape these sources: bioguide ids or committee ids, \"committees\" or \"agencies\" (blank = all)"
         default: ""
   push:
     branches: [main]
@@ -91,7 +91,8 @@ jobs:
             args="$args --sweep"
           fi
           only="${{ inputs.only }}"
-          python -m house_statements.collect $args ${only:+--only $only}
+          # A virtual display lets the agency scraper open Chrome for sites with JavaScript challenges.
+          xvfb-run -a python -m house_statements.collect $args ${only:+--only $only}
 
       - name: Commit new statements
         run: |
