@@ -27,7 +27,7 @@ jobs:
       - id: list
         run: |
           # Agency ids straight from agencies.py (no dependencies installed in this job).
-          ids=$(grep -oP '^\s+dict\(slug="\K[a-z]+' house_statements/agencies.py | sed 's/^/agency-/')
+          ids=$(grep -oP '^\s+(dict\(slug=|_wh_office\(|_dvids\()"\K[a-z]+' house_statements/agencies.py | sed 's/^/agency-/')
           wanted="${{ inputs.agencies }}"
           [ -n "$wanted" ] && ids=$(printf '%s\n' $ids | grep -xF -f <(printf '%s\n' $wanted))
           echo "agencies=$(printf '%s\n' $ids | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"

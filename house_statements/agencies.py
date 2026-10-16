@@ -47,6 +47,30 @@ SHORT_TEXT = 400  # extracted text shorter than this is checked against the page
 #     on a backfill, for newsrooms whose listings can't be paged (Treasury, HUD). Missing numbers 404.
 #   paged: listing page URL with a page number ("{page}", counting from `first_page`), read page
 #     by page on a backfill (for sites whose "next" links don't work or that block the listing).
+WH_PATTERN = r"^/(releases|briefings-statements|fact-sheets|presidential-actions|remarks|research|articles)/20\d\d/\d\d/"
+WH, SUB, REG, IND, LEG = ("White House offices", "Agencies within departments", "Independent regulators",
+                          "Independent agencies", "Legislative branch agencies")
+
+
+def _wh_office(slug, label):
+    """A White House office: its news page lists its releases, which are whitehouse.gov posts."""
+    return dict(slug=slug, label=label, url=f"https://www.whitehouse.gov/{slug}/", group=WH,
+                listing=f"https://www.whitehouse.gov/{slug}/news/", scope="main", claims=["whitehouse"],
+                paged=f"https://www.whitehouse.gov/{slug}/news/?query-54-page={{page}}", first_page=2,
+                pattern=WH_PATTERN)
+
+
+def _dvids(slug, label, url, path, group=SUB):
+    """Military newsrooms on the DoD web platform: listing pages numbered with ?Page=N."""
+    return dict(slug=slug, label=label, url=url, group=group, client="chrome", listing=url + path,
+                paged=url + path + "?Page={page}", first_page=2, pattern=r"/Article/\d{6,}/")
+
+
+# Not included because their newsrooms can't be read from GitHub's servers (checked 2026-10-16):
+# Commerce (Cloudflare challenge; listed below, shows as an error), BOP, CDC, Census, USPTO and the
+# Park Service (lists built by JavaScript), BLS (release pages are overwritten each month), SSA,
+# FLRA, MSPB, Peace Corps, AmeriCorps and TVA (403 even to a real browser), USAID (site taken
+# down) and the Library of Congress (bot challenge).
 AGENCIES = [
     dict(slug="state", label="State Department", url="https://www.state.gov",
          wp="https://www.state.gov/wp-json/wp/v2/state_press_release", pattern=r"^/releases/",
@@ -101,8 +125,8 @@ AGENCIES = [
          feeds=["https://www.sba.gov/feed/"], paged_feed="https://www.sba.gov/feed/?paged={page}",
          listing="https://legacy.sba.gov/about-sba/sba-newsroom", pattern=r"^/(sba-newsroom|article)/20\d\d/"),
     dict(slug="omb", label="Office of Management and Budget (OMB)", url="https://www.whitehouse.gov/omb",
-         listing="https://www.whitehouse.gov/omb/news/",
-         pattern=r"^/(releases|briefings-statements|articles|presidential-actions)/20\d\d/\d\d/"),
+         listing="https://www.whitehouse.gov/omb/news/", scope="main", claims=["whitehouse"],
+         pattern=WH_PATTERN),
     dict(slug="ustr", label="U.S. Trade Representative (USTR)", url="https://ustr.gov",
          feeds=["https://ustr.gov/rss.xml"],
          years="https://ustr.gov/about/policy-offices/press-office/press-releases/{year}",
@@ -116,6 +140,197 @@ AGENCIES = [
          wp="https://usun.usmission.gov/wp-json/wp/v2/posts", wp_params={"categories_exclude": "139,141"},
          paged="https://usun.usmission.gov/news/page/{page}/", first_page=1,
          pattern=r"^/[a-z0-9-]{15,}/?$"),
+    # ---- Beyond the cabinet (added at the user's request, October 2026)
+    dict(slug="whitehouse", label="White House", url="https://www.whitehouse.gov", group=WH,
+         feeds=["https://www.whitehouse.gov/news/feed/"], listing="https://www.whitehouse.gov/news/", scope="main",
+         pattern=WH_PATTERN),
+    _wh_office("ostp", "Office of Science and Technology Policy"),
+    _wh_office("ondcp", "Office of National Drug Control Policy"),
+    _wh_office("ceq", "Council on Environmental Quality"),
+
+    dict(slug="fema", label="FEMA", url="https://www.fema.gov", group=SUB,
+         feeds=["https://www.fema.gov/feeds/news.rss"], listing="https://www.fema.gov/about/news-multimedia/press-releases",
+         pattern=r"^/press-release/\d{8}/"),
+    dict(slug="cbp", label="Customs and Border Protection (CBP)", url="https://www.cbp.gov", group=SUB,
+         listing="https://www.cbp.gov/newsroom/national-media-release",
+         paged="https://www.cbp.gov/newsroom/national-media-release?page={page}", first_page=1,
+         pattern=r"^/newsroom/national-media-release/[a-z0-9-]{15,}"),
+    dict(slug="ice", label="Immigration and Customs Enforcement (ICE)", url="https://www.ice.gov", group=SUB,
+         listing="https://www.ice.gov/newsroom", pattern=r"^/news/releases/[a-z0-9-]{10,}"),
+    dict(slug="secretservice", label="Secret Service", url="https://www.secretservice.gov", group=SUB,
+         listing="https://www.secretservice.gov/newsroom/releases", pattern=r"^/newsroom/releases/20\d\d/\d\d/"),
+    dict(slug="tsa", label="TSA", url="https://www.tsa.gov", group=SUB,
+         listing="https://www.tsa.gov/news/press/releases", pattern=r"^/news/press/releases/20\d\d/\d\d/\d\d/"),
+    dict(slug="coastguard", label="Coast Guard", url="https://www.news.uscg.mil", group=SUB, client="chrome",
+         listing="https://www.news.uscg.mil/Press-Releases/", paged="https://www.news.uscg.mil/Press-Releases/?Page={page}",
+         first_page=2, pattern=r"^/Press-Releases/Article/\d{6,}/"),
+    dict(slug="cisa", label="CISA", url="https://www.cisa.gov", group=SUB,
+         feeds=["https://www.cisa.gov/news.xml"], listing="https://www.cisa.gov/news-events/news",
+         pattern=r"^/news-events/news/[a-z0-9-]{15,}"),
+    dict(slug="uscis", label="USCIS", url="https://www.uscis.gov", group=SUB,
+         feeds=["https://www.uscis.gov/news/rss-feed/22984"], listing="https://www.uscis.gov/newsroom/news-releases",
+         pattern=r"^/newsroom/news-releases/[a-z0-9-]{10,}"),
+    dict(slug="fbi", label="FBI", url="https://www.fbi.gov", group=SUB, client="chrome",
+         feeds=["https://www.fbi.gov/news/press-releases/RSS"], listing="https://www.fbi.gov/news/press-releases",
+         paged="https://www.fbi.gov/news/press-releases?page={page}", first_page=2,
+         pattern=r"^/(news/press-releases|contact-us/field-offices/[a-z]+/news)/[a-z0-9-]{15,}"),
+    dict(slug="dea", label="DEA", url="https://www.dea.gov", group=SUB, client="browser",
+         listing="https://www.dea.gov/what-we-do/news/press-releases", pattern=r"^/press-releases/20\d\d/\d\d/\d\d/"),
+    dict(slug="atf", label="ATF", url="https://www.atf.gov", group=SUB, client="chrome",
+         listing="https://www.atf.gov/news/press-releases", pattern=r"^/news/press-releases/[a-z0-9-]{15,}"),
+    dict(slug="usms", label="U.S. Marshals", url="https://www.usmarshals.gov", group=SUB, client="browser",
+         listing="https://www.usmarshals.gov/news", pattern=r"^/news/press-release/[a-z0-9-]{10,}"),
+    # Every U.S. Attorney's office posts on justice.gov; the Justice Department API has them all.
+    dict(slug="usao", label="U.S. Attorneys' Offices", url="https://www.justice.gov/usao", group=SUB,
+         doj_api="https://www.justice.gov/api/v1/press_releases.json", doj_hourly=True, pattern=r"^/usao-[a-z-]+/pr/"),
+    dict(slug="fda", label="FDA", url="https://www.fda.gov", group=SUB,
+         feeds=["https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"],
+         listing="https://www.fda.gov/news-events/fda-newsroom/press-announcements",
+         pattern=r"^/news-events/press-announcements/[a-z0-9-]{15,}"),
+    dict(slug="nih", label="NIH", url="https://www.nih.gov", group=SUB,
+         feeds=["https://www.nih.gov/news-releases/feed.xml"], listing="https://www.nih.gov/news-events/news-releases",
+         pattern=r"^/news-events/news-releases/[a-z0-9-]{10,}"),
+    dict(slug="cms", label="CMS (Medicare and Medicaid)", url="https://www.cms.gov", group=SUB,
+         listing="https://www.cms.gov/about-cms/contact/newsroom",
+         pattern=r"^/newsroom/(press-releases|news-alert|fact-sheets)/[a-z0-9-]{15,}"),
+    dict(slug="irs", label="IRS", url="https://www.irs.gov", group=SUB,
+         listing="https://www.irs.gov/newsroom/news-releases-for-current-month", backfill=['https://www.irs.gov/newsroom/news-releases-for-january-2025', 'https://www.irs.gov/newsroom/news-releases-for-february-2025', 'https://www.irs.gov/newsroom/news-releases-for-march-2025', 'https://www.irs.gov/newsroom/news-releases-for-april-2025', 'https://www.irs.gov/newsroom/news-releases-for-may-2025', 'https://www.irs.gov/newsroom/news-releases-for-june-2025', 'https://www.irs.gov/newsroom/news-releases-for-july-2025', 'https://www.irs.gov/newsroom/news-releases-for-august-2025', 'https://www.irs.gov/newsroom/news-releases-for-september-2025', 'https://www.irs.gov/newsroom/news-releases-for-october-2025', 'https://www.irs.gov/newsroom/news-releases-for-november-2025', 'https://www.irs.gov/newsroom/news-releases-for-december-2025', 'https://www.irs.gov/newsroom/news-releases-for-january-2026', 'https://www.irs.gov/newsroom/news-releases-for-february-2026', 'https://www.irs.gov/newsroom/news-releases-for-march-2026', 'https://www.irs.gov/newsroom/news-releases-for-april-2026', 'https://www.irs.gov/newsroom/news-releases-for-may-2026', 'https://www.irs.gov/newsroom/news-releases-for-june-2026', 'https://www.irs.gov/newsroom/news-releases-for-july-2026', 'https://www.irs.gov/newsroom/news-releases-for-august-2026', 'https://www.irs.gov/newsroom/news-releases-for-september-2026'],
+         pattern=r"^/newsroom/(?!news-releases-for|tax-relief-in|irs-statements-and|working-families)[a-z0-9-]{30,}$"),
+    dict(slug="occ", label="Comptroller of the Currency (OCC)", url="https://www.occ.gov", group=SUB,
+         feeds=["https://www.occ.gov/rss/occ_news.xml"], pattern=r"^/news-issuances/news-releases/20\d\d/",
+         ids=[("https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-{n}.html", 1, 200),
+              ("https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-{n}.html", 1, 200)]),
+    dict(slug="noaa", label="NOAA", url="https://www.noaa.gov", group=SUB,
+         feeds=["https://www.noaa.gov/news-release-feed/rss.xml"], listing="https://www.noaa.gov/news-releases",
+         pattern=r"^/news-release/[a-z0-9-]{10,}"),
+    dict(slug="nws", label="National Weather Service", url="https://www.weather.gov", group=SUB,
+         listing="https://www.weather.gov/news/", pattern=r"^/news/\d{6}-"),
+    dict(slug="faa", label="FAA", url="https://www.faa.gov", group=SUB,
+         feeds=["https://www.faa.gov/newsroom/press_releases/rss"], listing="https://www.faa.gov/newsroom/press_releases",
+         pattern=r"^/newsroom/(?!press_releases|faa-daily|statements$)[a-z0-9-]{15,}$"),
+    dict(slug="nhtsa", label="NHTSA", url="https://www.nhtsa.gov", group=SUB, client="chrome",
+         listing="https://www.nhtsa.gov/press-releases", paged="https://www.nhtsa.gov/press-releases?page={page}",
+         first_page=1, pattern=r"^/press-releases/[a-z0-9-]{10,}"),
+    # OSHA's releases are the Labor Department's /osha/ releases; this source takes them over.
+    dict(slug="osha", label="OSHA", url="https://www.osha.gov", group=SUB, client="chrome", claims=["labor"],
+         feeds=["https://www.dol.gov/rss/releases.xml"], listing="https://www.dol.gov/newsroom/releases",
+         pattern=r"^/newsroom/releases/osha/"),
+    dict(slug="blm", label="Bureau of Land Management", url="https://www.blm.gov", group=SUB,
+         listing="https://www.blm.gov/news", pattern=r"^/press-release/[a-z0-9-]{10,}"),
+    dict(slug="bia", label="Bureau of Indian Affairs", url="https://www.bia.gov", group=SUB,
+         listing="https://www.bia.gov/news", pattern=r"^/news/[a-z0-9-]{20,}"),
+    dict(slug="forestservice", label="Forest Service", url="https://www.fs.usda.gov", group=SUB,
+         listing="https://www.fs.usda.gov/about-agency/newsroom/releases",
+         pattern=r"^/about-agency/newsroom/releases/[a-z0-9-]{10,}"),
+    dict(slug="fsis", label="Food Safety and Inspection Service", url="https://www.fsis.usda.gov", group=SUB,
+         client="browser", listing="https://www.fsis.usda.gov/news-events/news-press-releases",
+         pattern=r"^/news-events/news-press-releases/[a-z0-9-]{10,}"),
+    dict(slug="army", label="Army", url="https://www.army.mil", group=SUB, client="chrome",
+         feeds=["https://www.army.mil/rss/static/1.xml"], pattern=r"^/article/\d+/"),
+    _dvids("navy", "Navy", "https://www.navy.mil", "/Press-Office/Press-Releases/"),
+    _dvids("airforce", "Air Force", "https://www.af.mil", "/News/Press-Releases/"),
+    _dvids("marines", "Marine Corps", "https://www.marines.mil", "/News/Press-Releases/"),
+    _dvids("spaceforce", "Space Force", "https://www.spaceforce.mil", "/News/"),
+    _dvids("nationalguard", "National Guard", "https://www.nationalguard.mil", "/News/Press-Releases/"),
+
+    dict(slug="fed", label="Federal Reserve", url="https://www.federalreserve.gov", group=REG,
+         feeds=["https://www.federalreserve.gov/feeds/press_all.xml"],
+         years="https://www.federalreserve.gov/newsevents/pressreleases/{year}-press.htm",
+         pattern=r"^/newsevents/pressreleases/[a-z]+\d{8}[a-z]\.htm"),
+    dict(slug="sec", label="SEC", url="https://www.sec.gov", group=REG, client="chrome",
+         feeds=["https://www.sec.gov/news/pressreleases.rss"], listing="https://www.sec.gov/newsroom/press-releases",
+         pattern=r"^/newsroom/press-releases/20\d\d-\d+"),
+    dict(slug="ftc", label="FTC", url="https://www.ftc.gov", group=REG, client="chrome",
+         feeds=["https://www.ftc.gov/feeds/press-release.xml"], listing="https://www.ftc.gov/news-events/news/press-releases",
+         pattern=r"^/news-events/news/press-releases/20\d\d/\d\d/"),
+    dict(slug="fcc", label="FCC", url="https://www.fcc.gov", group=REG, client="chrome",
+         listing="https://www.fcc.gov/news-events/headlines", pattern=r"^/document/[a-z0-9-]{10,}"),
+    dict(slug="cfpb", label="CFPB", url="https://www.consumerfinance.gov", group=REG,
+         feeds=["https://www.consumerfinance.gov/about-us/newsroom/feed/"], listing="https://www.consumerfinance.gov/about-us/newsroom/",
+         pattern=r"^/about-us/newsroom/[a-z0-9-]{10,}/?$"),
+    dict(slug="fdic", label="FDIC", url="https://www.fdic.gov", group=REG,
+         listing="https://www.fdic.gov/news/press-releases", pattern=r"^/news/press-releases/20\d\d/"),
+    dict(slug="cftc", label="CFTC", url="https://www.cftc.gov", group=REG,
+         listing="https://www.cftc.gov/PressRoom/PressReleases", pattern=r"^/PressRoom/PressReleases/\d+-\d+"),
+    dict(slug="ferc", label="FERC", url="https://www.ferc.gov", group=REG,
+         listing="https://www.ferc.gov/news-events/news", pattern=r"^/news-events/news/(?!news-releases-headlines)[a-z0-9-]{15,}"),
+    dict(slug="nrc", label="Nuclear Regulatory Commission", url="https://www.nrc.gov", group=REG,
+         years="https://www.nrc.gov/reading-rm/doc-collections/news/{year}/", pattern=r"^/about-nrc/news-releases/20\d\d/"),
+    dict(slug="nlrb", label="NLRB", url="https://www.nlrb.gov", group=REG,
+         feeds=["https://www.nlrb.gov/rss/rssPressReleases.xml"], pattern=r"^/news-outreach/news-story/"),
+    dict(slug="eeoc", label="EEOC", url="https://www.eeoc.gov", group=REG,
+         feeds=["https://www.eeoc.gov/rss/newsroom"], listing="https://www.eeoc.gov/newsroom/search",
+         pattern=r"^/newsroom/(?!search)[a-z0-9-]{15,}"),
+    dict(slug="fec", label="FEC", url="https://www.fec.gov", group=REG,
+         listing="https://www.fec.gov/updates/?update_type=press-release", pattern=r"^/updates/(?!record-archive)[a-z0-9-]{15,}/?$"),
+    dict(slug="cpsc", label="CPSC", url="https://www.cpsc.gov", group=REG,
+         listing="https://www.cpsc.gov/Newsroom/News-Releases", pattern=r"^/Newsroom/News-Releases/20\d\d/"),
+    dict(slug="ntsb", label="NTSB", url="https://www.ntsb.gov", group=REG,
+         listing="https://www.ntsb.gov/news/press-releases/Pages/default.aspx", pattern=r"^/news/press-releases/Pages/NR\d+"),
+    dict(slug="fhfa", label="FHFA", url="https://www.fhfa.gov", group=REG,
+         listing="https://www.fhfa.gov/news/news-release", pattern=r"^/news/news-release/[a-z0-9-]{10,}"),
+    dict(slug="ncua", label="NCUA", url="https://ncua.gov", group=REG,
+         listing="https://ncua.gov/newsroom/press-releases", pattern=r"^/newsroom/press-release/20\d\d/"),
+    dict(slug="fmc", label="Federal Maritime Commission", url="https://www.fmc.gov", group=REG,
+         listing="https://www.fmc.gov/news/", pattern=r"^/articles/[a-z0-9-]{10,}"),
+    dict(slug="stb", label="Surface Transportation Board", url="https://www.stb.gov", group=REG,
+         feeds=["https://www.stb.gov/feed/"], listing="https://www.stb.gov/news-communications/latest-news/",
+         pattern=r"^/news-communications/latest-news/pr-\d+-\d+"),
+    dict(slug="usitc", label="U.S. International Trade Commission", url="https://www.usitc.gov", group=REG,
+         listing="https://www.usitc.gov/news_releases", pattern=r"^/press_room/news_release/20\d\d/"),
+    dict(slug="prc", label="Postal Regulatory Commission", url="https://www.prc.gov", group=REG,
+         listing="https://www.prc.gov/press-releases", pattern=r"^/press-releases/[a-z0-9-]{10,}"),
+
+    dict(slug="nasa", label="NASA", url="https://www.nasa.gov", group=IND,
+         wp="https://www.nasa.gov/wp-json/wp/v2/press-release", pattern=r"^/news-release/"),
+    dict(slug="usps", label="U.S. Postal Service", url="https://about.usps.com", group=IND,
+         feeds=["https://about.usps.com/news/latestnews.rss"], pattern=r"^/newsroom/rssrequest\.htm"),
+    dict(slug="opm", label="Office of Personnel Management", url="https://www.opm.gov", group=IND,
+         listing="https://www.opm.gov/news/news-releases/", pattern=r"^/news/news-releases/[a-z0-9-]{10,}"),
+    dict(slug="gsa", label="General Services Administration", url="https://www.gsa.gov", group=IND,
+         listing="https://www.gsa.gov/about-us/newsroom/news-releases", pattern=r"^/about-(us|gsa)/newsroom/news-releases/[a-z0-9-]{10,}"),
+    dict(slug="nsf", label="National Science Foundation", url="https://www.nsf.gov", group=IND,
+         feeds=["https://www.nsf.gov/rss/rss_www_news.xml"], listing="https://www.nsf.gov/news", pattern=r"^/news/[a-z0-9-]{10,}"),
+    dict(slug="archives", label="National Archives", url="https://www.archives.gov", group=IND,
+         listing="https://www.archives.gov/press/press-releases", pattern=r"^/press/press-releases/(20\d\d/)?nr\d\d-\d+"),
+    dict(slug="exim", label="Export-Import Bank", url="https://www.exim.gov", group=IND,
+         listing="https://www.exim.gov/news", pattern=r"^/news/[a-z0-9-]{15,}"),
+    dict(slug="dfc", label="Development Finance Corporation", url="https://www.dfc.gov", group=IND,
+         feeds=["https://www.dfc.gov/rss.xml"], listing="https://www.dfc.gov/media/press-releases",
+         pattern=r"^/media/press-releases/[a-z0-9-]{10,}"),
+    dict(slug="amtrak", label="Amtrak", url="https://media.amtrak.com", group=IND,
+         wp="https://media.amtrak.com/wp-json/wp/v2/posts", pattern=r"^/20\d\d/\d\d/"),
+    dict(slug="pbgc", label="Pension Benefit Guaranty Corporation", url="https://www.pbgc.gov", group=IND,
+         listing="https://www.pbgc.gov/news", pattern=r"^/news/press/pr\d\d-\d+",
+         ids=[("https://www.pbgc.gov/news/press/pr25-{n:03d}", 1, 80), ("https://www.pbgc.gov/news/press/pr26-{n:03d}", 1, 80)]),
+    dict(slug="eac", label="Election Assistance Commission", url="https://www.eac.gov", group=IND,
+         listing="https://www.eac.gov/news", pattern=r"^/news/20\d\d/\d\d/\d\d/"),
+    dict(slug="osc", label="Office of Special Counsel", url="https://osc.gov", group=IND,
+         listing="https://osc.gov/news", pattern=r"^/news/20\d\d-\d\d-\d\d/"),
+    dict(slug="oge", label="Office of Government Ethics", url="https://www.oge.gov", group=IND,
+         listing="https://www.oge.gov/web/oge.nsf/News%20Releases", pattern=r"(?i)^/web/oge\.nsf/News(%20| )Releases/[0-9A-F]{32}"),
+    dict(slug="usccr", label="U.S. Commission on Civil Rights", url="https://www.usccr.gov", group=IND,
+         listing="https://www.usccr.gov/news", pattern=r"^/news/20\d\d/"),
+    dict(slug="nea", label="National Endowment for the Arts", url="https://www.arts.gov", group=IND,
+         listing="https://www.arts.gov/news/press-releases", pattern=r"^/news/press-releases/20\d\d/"),
+    dict(slug="neh", label="National Endowment for the Humanities", url="https://www.neh.gov", group=IND,
+         listing="https://www.neh.gov/news/press-releases", pattern=r"^/news/[a-z0-9-]{15,}$"),
+    dict(slug="usagm", label="U.S. Agency for Global Media", url="https://www.usagm.gov", group=IND,
+         wp="https://www.usagm.gov/wp-json/wp/v2/posts", pattern=r"^/20\d\d/\d\d/\d\d/"),
+    dict(slug="usip", label="U.S. Institute of Peace", url="https://www.usip.org", group=IND,
+         feeds=["https://www.usip.org/feed/"], pattern=r"^/[a-z0-9-]{8,}/?$"),
+    dict(slug="imls", label="Institute of Museum and Library Services", url="https://www.imls.gov", group=IND,
+         client="browser", listing="https://www.imls.gov/", pattern=r"^/news/[a-z0-9-]{15,}"),
+
+    dict(slug="gao", label="Government Accountability Office", url="https://www.gao.gov", group=LEG, client="chrome",
+         feeds=["https://www.gao.gov/rss/reports.xml"], listing="https://www.gao.gov/press-center",
+         pattern=r"^/(press-release|products)/[a-z0-9-]{6,}"),
+    dict(slug="cbo", label="Congressional Budget Office", url="https://www.cbo.gov", group=LEG, client="browser",
+         feeds=["https://www.cbo.gov/publications/all/rss.xml"], pattern=r"^/publication/\d+",
+         ids=[("https://www.cbo.gov/publication/{n}", 60850, 63200)], max_misses=400),
+    # CRS reports by way of EveryCRSReport.com, which republishes them (congress.gov blocks GitHub's servers).
+    dict(slug="crs", label="Congressional Research Service", url="https://www.everycrsreport.com", group=LEG,
+         feeds=["https://www.everycrsreport.com/rss.xml"], pattern=r"^/reports/[A-Z]+\d+"),
 ]
 
 
@@ -128,6 +343,7 @@ def load_agencies() -> list[dict]:
         "bioguide": AGENCY_PREFIX + a["slug"],
         "kind": "agency",
         "group": a.get("group", CABINET),
+        "claims": [AGENCY_PREFIX + c for c in a.get("claims", [])],
         "name": a["label"],
         "last_name": a["label"],
         "party": "",
@@ -327,7 +543,7 @@ def _numbered(agency: dict, source_id: str, known: set[str], pages: int) -> list
     """Numbered release pages that exist (backfill only). Stops a range after 25 misses in a row."""
     items = []
     for template, first, last in agency["ids"]:
-        misses = 0
+        misses, limit = 0, agency.get("max_misses", 25)
         for n in range(first, last + 1):
             url = template.format(n=n)
             if url in known:
@@ -336,7 +552,7 @@ def _numbered(agency: dict, source_id: str, known: set[str], pages: int) -> list
             page = fetch_page(url, source_id)
             if not page["title"] or not page["date"]:
                 misses += 1
-                if misses >= 25 and n > first + 25:
+                if misses >= limit and n > first + limit:
                     break
                 continue
             misses = 0
@@ -377,9 +593,33 @@ def _doj_api(agency: dict, pattern, session, pages: int) -> list[dict]:
     return [i for i in items if i["date"].isoformat() >= START_DATE]
 
 
-def _listing_pages(start_url: str, pattern, session, pages: int, template: str | None = None, first: int = 0) -> list[dict]:
+def _scoped(page_html: str, scope: str | None) -> str:
+    """Only the part of a listing page inside `scope` (a CSS selector), when the site's header or
+    menus link to featured releases that would otherwise be read as part of every listing."""
+    if not scope:
+        return page_html
+    part = BeautifulSoup(page_html, "lxml").select_one(scope)
+    return str(part) if part is not None else page_html
+
+
+def _listing_items(page_html: str, url: str, pattern, scope: str | None = None) -> list[dict]:
+    """Release links on one listing page, with titles cleaned and dates taken from the address when missing."""
+    raw = fallback._items_from(_scoped(page_html, scope), url, pattern)
+    for i in raw:
+        # "Read more about ..." and bare "Continue reading" links: the release page has the title.
+        i["title"] = LINK_PREFIX.sub("", i["title"]).strip()
+        if len(i["title"]) < fallback.MIN_TITLE or i["title"].lower().startswith(fallback.SKIP_TITLES):
+            i["title"] = "Release " + urlsplit(i["url"]).path.rstrip("/").rsplit("/", 1)[-1]
+            i["title_check"] = True
+    found = fallback._filter(raw, fallback._host(url), pattern)
+    for i in found:
+        i["date"] = i["date"] or _url_date(i["url"])
+    return found
+
+
+def _listing_pages(start_url: str, pattern, session, pages: int, template: str | None = None, first: int = 0,
+                   scope: str | None = None) -> list[dict]:
     """A listing page and, for a backfill, the older pages after it (by "next" links or `template`)."""
-    host = fallback._host(start_url)
     items, url, seen = [], start_url, set()
     for k in range(max(pages, 1)):
         if url in seen:
@@ -388,11 +628,13 @@ def _listing_pages(start_url: str, pattern, session, pages: int, template: str |
         r = get(url, session)
         if r is None:
             break
-        found = [i for i in fallback._filter(fallback._items_from(r.text, url, pattern), host, pattern) if i["date"]]
+        found = _listing_items(r.text, url, pattern, scope)
         new = [i for i in found if i["url"] not in {x["url"] for x in items}]
         items.extend(new)
         # Stop once a whole page is older than the start date (one pinned old release doesn't count).
-        if not new or max(i["date"] for i in new).isoformat() < START_DATE:
+        # Links without a date are kept; the release page dates them when its text is fetched.
+        dated = [i["date"] for i in new if i["date"]]
+        if not new or (dated and max(dated).isoformat() < START_DATE):
             break
         url = template.format(page=first + k + 1) if template else fallback.next_page_url(r.text, url)
         if not url:
@@ -400,7 +642,22 @@ def _listing_pages(start_url: str, pattern, session, pages: int, template: str |
     return items
 
 
-LINK_PREFIX = re.compile(r"^(more|read more|press release)\s*:\s*", re.I)
+URL_DATE = re.compile(r"/(20\d\d)/(\d\d)/(\d\d)/|/(20\d\d)(\d\d)(\d\d)/|/(20\d\d)-(\d\d)-(\d\d)/")
+
+
+def _url_date(url: str):
+    """A date written into a release's address (/2026/10/15/, /20261015/ or /2026-10-15/), if any."""
+    m = URL_DATE.search(url)
+    if not m:
+        return None
+    y, mo, d = [g for g in m.groups() if g]
+    try:
+        return dt.date(int(y), int(mo), int(d))
+    except ValueError:
+        return None
+
+
+LINK_PREFIX = re.compile(r"^((more|read more|press release)\s*:\s*|read more about\s+)", re.I)
 
 
 def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None, str]:
@@ -439,21 +696,23 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
     if agency.get("ids") and backfill:
         items += _numbered(agency, source["bioguide"], {i["url"] for i in items}, pages)
         methods.append("numbered")
-    if agency.get("doj_api") and backfill:
+    if agency.get("doj_api") and (backfill or agency.get("doj_hourly")):
         items += _doj_api(agency, pattern, session, pages)
         methods.append("api")
+    scope = agency.get("scope")
     listings = [agency["listing"]] if agency.get("listing") else []
     if agency.get("years"):
         this_year = dt.date.today().year
         years = range(int(START_DATE[:4]), this_year + 1) if backfill else [this_year]
         listings += [agency["years"].format(year=y) for y in years]
-        listings += agency.get("backfill", []) if backfill else []
+    listings += agency.get("backfill", []) if backfill else []
     for url in listings:
-        items += _listing_pages(url, pattern, session, pages)
+        items += _listing_pages(url, pattern, session, pages, scope=scope)
         methods.append("listing")
     if agency.get("paged") and backfill:
         first = agency.get("first_page", 0)
-        items += _listing_pages(agency["paged"].format(page=first), pattern, session, pages, agency["paged"], first)
+        items += _listing_pages(agency["paged"].format(page=first), pattern, session, pages, agency["paged"], first,
+                                scope=scope)
         methods.append("listing")
 
     skip = re.compile(agency["skip_titles"], re.I) if agency.get("skip_titles") else None

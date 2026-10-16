@@ -14,9 +14,13 @@ and is searchable by member and by the words in the statement.
 - **Committees**: the Democratic sites of 20 standing committees plus the China select committee
   (`house_statements/committees.py`). They appear in the feed and search labeled by committee, can
   be filtered with "Committees only", and join events (an event still needs 4 members).
-- **Cabinet agencies**: press releases from the newsrooms of the 15 executive departments and the
-  cabinet-rank agencies (EPA, SBA, OMB, USTR, ODNI, CIA, U.S. Mission to the UN), listed in
-  `house_statements/agencies.py`. They're kept out of the default view and `all.xml` (which stay
+- **Federal agencies**: press releases from about 100 federal newsrooms, listed in
+  `house_statements/agencies.py` in five groups: the cabinet departments and cabinet-rank agencies,
+  White House offices, agencies within departments (FEMA, FBI, FDA, the military services and
+  others), independent regulators (Fed, SEC, FTC, FCC and others), independent agencies (NASA,
+  USPS, OPM and others) and the legislative branch agencies (GAO, CBO, CRS). A few newsrooms can't
+  be read automatically (Commerce, CDC, Census, SSA and others; see the comments in
+  `agencies.py`). Agencies are kept out of the default view and `all.xml` (which stay
   House Democrats only). Pick "Agencies only" or "Everything" in search, or pick an agency by name.
   Agency releases join events that House Democrats are talking about, but never form events of
   their own. Commerce sits behind a Cloudflare challenge that blocks GitHub's servers, so it shows

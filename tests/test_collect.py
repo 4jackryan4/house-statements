@@ -46,3 +46,15 @@ def test_same_release_at_a_second_url_is_not_added_twice():
              {"url": "https://example.house.gov/media/press-releases/rep-acts-again", "title": "Rep. Example Acts on Floods",
               "date": dt.date(2026, 9, 1)}]
     assert len(collect.merge_items(records, MEMBER, again, "2026-10-05T02:00:00+00:00")) == 1
+
+
+def test_specific_agency_claims_a_release_and_skip_list():
+    labor = {"bioguide": "agency-labor", "kind": "agency"}
+    osha = {"bioguide": "agency-osha", "kind": "agency", "claims": ["agency-labor"]}
+    item = {"url": "https://www.dol.gov/newsroom/releases/osha/osha20261001", "title": "OSHA Cites Employer After Fall", "date": dt.date(2026, 10, 1)}
+    records = {}
+    sid = collect.merge_items(records, labor, [item], "2026-10-05T01:00:00+00:00")[0]
+    assert collect.merge_items(records, osha, [item], "2026-10-05T02:00:00+00:00") == []
+    assert records[sid]["bioguide"] == "agency-osha"
+    other = {"url": "https://www.dol.gov/old", "title": "An Old Release From Years Ago", "date": None}
+    assert collect.merge_items(records, labor, [other], "2026-10-05T02:00:00+00:00", skip={store.statement_id(other["url"])}) == []
