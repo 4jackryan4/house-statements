@@ -169,18 +169,39 @@ def _new_session(client: str, agency: dict):
 
     s = creq.Session(impersonate="chrome")
     if client == "browser":
-        try:
-            ua, cookies = _browser_cookies(agency.get("listing") or agency["url"])
-            s.headers["User-Agent"] = ua
-            for c in cookies:
-                s.cookies.set(c["name"], c["value"], domain=c["domain"])
-        except Exception as e:  # no browser available: plain impersonation may still work
-            print(f"agencies: browser cookies for {agency['slug']} failed: {type(e).__name__}: {e}")
+        _browser_agency[id(s)] = agency
+        _load_cookies(s, agency)
     return s
 
 
+_browser_agency: dict[int, dict] = {}  # browser-client sessions -> their agency
+_refreshes: dict[int, int] = {}
+MAX_REFRESHES = 4
+
+
+def _load_cookies(s, agency: dict) -> bool:
+    for attempt in range(3):
+        try:
+            ua, cookies = _browser_cookies(agency.get("listing") or agency["url"])
+        except Exception as e:  # no browser available: plain impersonation may still work
+            print(f"agencies: browser for {agency['slug']} failed: {type(e).__name__}: {e}", flush=True)
+            continue
+        if cookies is None:
+            print(f"agencies: {agency['slug']} challenge not passed (try {attempt + 1})", flush=True)
+            continue
+        s.headers["User-Agent"] = ua
+        for c in cookies:
+            s.cookies.set(c["name"], c["value"], domain=c["domain"])
+        return True
+    return False
+
+
+CHALLENGE_TITLES = re.compile(r"just a moment|service unavailable|access denied|attention required|^$", re.I)
+
+
 def _browser_cookies(url: str):
-    """Load a page in Chrome so its JavaScript challenge sets cookies; return (UA, cookies)."""
+    """Load a page in Chrome until its JavaScript challenge lets the real page through; return
+    (UA, cookies), or (UA, None) if it never does."""
     import os
 
     from playwright.sync_api import sync_playwright
@@ -189,12 +210,21 @@ def _browser_cookies(url: str):
         # A visible window passes challenges that headless Chrome fails; CI provides one with xvfb-run.
         browser = p.chromium.launch(channel="chrome", headless=not os.environ.get("DISPLAY"),
                                     args=["--disable-blink-features=AutomationControlled"])
-        ctx = browser.new_context(locale="en-US")
+        ctx = browser.new_context(locale="en-US", viewport={"width": 1280, "height": 900})
         page = ctx.new_page()
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
-        page.wait_for_timeout(8000)
+        passed = False
+        for _ in range(30):  # up to about a minute
+            page.wait_for_timeout(2000)
+            try:
+                if not CHALLENGE_TITLES.search(page.title().strip()) and len(page.content()) > 20000:
+                    passed = True
+                    break
+            except Exception:  # navigating mid-check
+                pass
+        page.wait_for_timeout(2000)
         ua = page.evaluate("navigator.userAgent")
-        cookies = ctx.cookies()
+        cookies = ctx.cookies() if passed else None
         browser.close()
     return ua, cookies
 
@@ -210,6 +240,12 @@ def get(url: str, session):
             time.sleep(wait)
         try:
             r = session.get(url, timeout=30)
+            # A JavaScript challenge again (its cookies expired): pass it again and retry once.
+            if r.status_code in (202, 403) and id(session) in _browser_agency \
+                    and _refreshes.get(id(session), 0) < MAX_REFRESHES:
+                _refreshes[id(session)] = _refreshes.get(id(session), 0) + 1
+                if _load_cookies(session, _browser_agency[id(session)]):
+                    r = session.get(url, timeout=30)
         except Exception as e:
             fallback.statuses[type(e).__name__] += 1
             return None
