@@ -23,6 +23,8 @@ jobs:
           if [ "${{ inputs.bioguides }}" = "browser" ]; then
             pip install playwright && python -m playwright install --with-deps chromium
             xvfb-run -a python scripts/probe_browser.py
+          elif [ "${{ inputs.bioguides }}" = "paging" ]; then
+            pip install -r requirements.txt && xvfb-run -a python scripts/probe_paging.py
           elif [ "${{ inputs.bioguides }}" = "agencies" ]; then python scripts/probe_agencies.py
           else python scripts/probe.py ${{ inputs.bioguides }}; fi
       - name: Publish snapshots to the "probe" branch
