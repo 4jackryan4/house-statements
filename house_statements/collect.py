@@ -245,7 +245,7 @@ def main(argv=None):
     parser.add_argument("--export", help="backfill: write the new statements (with text) to this JSONL file "
                                          "instead of saving them; add them later with --merge")
     parser.add_argument("--minutes", type=float, default=0,
-                        help="with --export: stop fetching text after this many minutes and export what's done")
+                        help="stop fetching text after this many minutes (from the start) and save what's done")
     parser.add_argument("--merge", nargs="*", help="add the statements in these --export files to the data")
     parser.add_argument("--union", help="fold the statements in this directory into the data (see union)")
     args = parser.parse_args(argv)
@@ -345,7 +345,10 @@ def main(argv=None):
     # Text for new statements first, then retry earlier misses.
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
     todo = _interleave(new_ids + retry, records)[: args.max_text]
-    filled = fill_text(records, todo, workers=8, old_ids=old_links) if todo else 0
+    # A time limit keeps slow newsrooms (FBI, CFTC) from running the hourly job past its timeout;
+    # pages not reached are retried next run.
+    deadline = started + args.minutes * 60 if args.minutes else 0
+    filled = fill_text(records, todo, workers=8, old_ids=old_links, deadline=deadline) if todo else 0
     new_ids = [i for i in new_ids if i in records]
 
     # Repair any future-dated statement left by an earlier misread listing.

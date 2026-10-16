@@ -70,3 +70,10 @@ def test_union_keeps_statements_committed_meanwhile(tmp_path):
     out = store.load_all(main)
     assert sorted(out) == ["a", "b", "c"]
     assert out["a"]["title"].startswith("Retitled") and out["a"]["text"] == "old text"
+
+
+def test_fill_text_past_its_deadline_leaves_pages_for_later():
+    records = {"a": {"id": "a", "url": "https://x.gov/a", "title": "A Statement About Something", "date": None,
+                     "bioguide": "A000001", "first_seen": "2026-10-05T01:00:00+00:00"}}
+    assert collect.fill_text(records, ["a"], workers=1, deadline=1) == 0
+    assert "text_attempts" not in records["a"]
