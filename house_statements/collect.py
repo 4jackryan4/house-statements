@@ -12,13 +12,14 @@ import os
 import re
 import sys
 import time
+from pathlib import Path
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
 from . import store
-from .config import HEALTH_FILE, START_DATE
+from .config import HEALTH_FILE, START_DATE, STATEMENTS_DIR
 from .members import load_sources
 from .agencies import fetch_page as agency_page, is_agency
 from .textfetch import fetch_page
@@ -246,7 +247,10 @@ def main(argv=None):
     parser.add_argument("--minutes", type=float, default=0,
                         help="with --export: stop fetching text after this many minutes and export what's done")
     parser.add_argument("--merge", nargs="*", help="add the statements in these --export files to the data")
+    parser.add_argument("--union", help="fold the statements in this directory into the data (see union)")
     args = parser.parse_args(argv)
+    if args.union:
+        return union(args.union)
     if args.merge is not None:
         return merge_exports(args.merge)
     started = time.monotonic()
@@ -360,6 +364,24 @@ def main(argv=None):
     print(f"collect: {len(new_ids)} new statements, text fetched for {filled}/{len(todo)}")
     if members and counts["ok"] == 0:
         print("collect: no member site returned anything; the runner may be blocked", file=sys.stderr)
+
+
+def union(directory: str, into: Path = STATEMENTS_DIR) -> None:
+    """Fold a run's statements (a copy of its data/statements) into the latest data, so a commit
+    made in between (a backfill, say) is kept. The run's copy of a statement wins, but keeps the
+    latest data's text and date when it has none."""
+    records = store.load_all(into)
+    added = 0
+    for sid, r in store.load_all(Path(directory)).items():
+        old = records.get(sid)
+        if old is None:
+            added += 1
+        else:
+            r["text"] = r.get("text") or old.get("text")
+            r["date"] = r.get("date") or old.get("date")
+        records[sid] = r
+    store.save_all(records, into)
+    print(f"collect: {added} statements from this run added to the latest data ({len(records)} in all)")
 
 
 def merge_exports(paths: list[str]) -> None:

@@ -99,11 +99,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add data
-          if ! git diff --cached --quiet; then
+          git diff --cached --quiet && exit 0
+          # Fold this run's data into the latest main rather than rebasing onto it: a backfill
+          # committed meanwhile rewrites the same month files, and a rebase would drop its lines.
+          rm -rf "$RUNNER_TEMP/run-data" && cp -r data "$RUNNER_TEMP/run-data"
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python -m house_statements.collect --union "$RUNNER_TEMP/run-data/statements"
+            cp "$RUNNER_TEMP/run-data/"*.json data/
+            git add data
+            git diff --cached --quiet && exit 0
             git commit -q -m "Update statements $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull -q --rebase -X theirs origin main
-            git push -q origin HEAD:main
-          fi
+            git push -q origin HEAD:main && exit 0
+            sleep 20
+          done
+          exit 1
 
       - name: Build site
         run: |

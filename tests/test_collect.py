@@ -58,3 +58,15 @@ def test_specific_agency_claims_a_release_and_skip_list():
     assert records[sid]["bioguide"] == "agency-osha"
     other = {"url": "https://www.dol.gov/old", "title": "An Old Release From Years Ago", "date": None}
     assert collect.merge_items(records, labor, [other], "2026-10-05T02:00:00+00:00", skip={store.statement_id(other["url"])}) == []
+
+
+def test_union_keeps_statements_committed_meanwhile(tmp_path):
+    main, run = tmp_path / "main", tmp_path / "run"
+    rec = lambda i, **kw: {"id": i, "url": f"https://x.gov/{i}", "title": "A Statement About Something",
+                           "date": "2026-10-01", "bioguide": "A000001"} | kw
+    store.save_all({"a": rec("a", text="old text"), "b": rec("b")}, main)  # b came from a backfill meanwhile
+    store.save_all({"a": rec("a", title="Retitled Statement About Something"), "c": rec("c")}, run)
+    collect.union(str(run), main)
+    out = store.load_all(main)
+    assert sorted(out) == ["a", "b", "c"]
+    assert out["a"]["title"].startswith("Retitled") and out["a"]["text"] == "old text"
