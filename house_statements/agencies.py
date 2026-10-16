@@ -42,6 +42,8 @@ SHORT_TEXT = 400  # extracted text shorter than this is checked against the page
 #   paged_feed: an RSS feed with a page number ("{page}"), read page by page on a backfill.
 #   wp: WordPress REST endpoint (posts come with their full text).
 #   years: yearly listing pages ("{year}"), this year's read every run, older ones on a backfill.
+#   ids: (URL template with "{n}", first, last) ranges of numbered release pages, fetched one by one
+#     on a backfill, for newsrooms whose listings can't be paged (Treasury, HUD). Missing numbers 404.
 #   paged: listing page URL with a page number ("{page}", counting from `first_page`), read page
 #     by page on a backfill (for sites whose "next" links don't work or that block the listing).
 AGENCIES = [
@@ -50,7 +52,10 @@ AGENCIES = [
          paged="https://www.state.gov/press-releases/page/{page}/", first_page=1,
          skip_titles=r"^public schedule\b"),
     dict(slug="treasury", label="Treasury Department", url="https://home.treasury.gov",
-         listing="https://home.treasury.gov/news/press-releases", pattern=r"^/news/press-releases/[a-z]+\d+"),
+         listing="https://home.treasury.gov/news/press-releases", pattern=r"^/news/press-releases/[a-z]+\d+",
+         # Releases are numbered by Secretary: jy (Yellen, to Jan 20 2025), sb (Bessent, from Jan 28 2025).
+         ids=[("https://home.treasury.gov/news/press-releases/jy{n:04d}", 2760, 2830),
+              ("https://home.treasury.gov/news/press-releases/sb{n:04d}", 1, 1200)]),
     dict(slug="war", label="Department of War (Defense)", url="https://www.war.gov", client="chrome",
          feeds=["https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=9&Site=945&max={max}"],
          pattern=r"^/News/Releases/Release/Article/\d+"),
@@ -73,8 +78,9 @@ AGENCIES = [
          feeds=["https://www.hhs.gov/rss/news.xml"], listing="https://www.hhs.gov/press-room/index.html",
          pattern=r"^/press-room/(?!index\.html)[a-z0-9-]+\.html$"),
     dict(slug="hud", label="Housing and Urban Development (HUD)", url="https://www.hud.gov",
-         listing="https://www.hud.gov/news", paged="https://www.hud.gov/news?page={page}",
-         pattern=r"^/news/hud-no-\d+-\d+"),
+         listing="https://www.hud.gov/news", pattern=r"^/news/hud-no-\d+-\d+",
+         # The listing only reaches back to February 2025; earlier 2025 releases by number.
+         ids=[("https://www.hud.gov/news/hud-no-25-{n:03d}", 1, 40)]),
     dict(slug="transportation", label="Transportation Department", url="https://www.transportation.gov",
          client="chrome", listing="https://www.transportation.gov/newsroom/press-releases",
          pattern=r"^/briefing-room/(?!dot-events)[a-z0-9-]{20,}"),
@@ -145,11 +151,12 @@ _session_lock = threading.Lock()
 
 def session_for(source_id: str):
     """HTTP session for an agency's pages (shared by listing and text fetches)."""
-    client = AGENCY_BY_ID[source_id].get("client", "plain")
+    agency = AGENCY_BY_ID.get(source_id, {})
+    client = agency.get("client", "plain")
     key = source_id  # one session per agency; get() keeps each agency's requests one at a time
     with _session_lock:
         if key not in _sessions:
-            _sessions[key] = _new_session(client, AGENCY_BY_ID[source_id])
+            _sessions[key] = _new_session(client, agency)
         return _sessions[key]
 
 
@@ -277,9 +284,33 @@ def _wp(agency: dict, session, pages: int) -> list[dict]:
     return [i for i in items if i["date"].isoformat() >= START_DATE]
 
 
+def _numbered(agency: dict, source_id: str, known: set[str], pages: int) -> list[dict]:
+    """Numbered release pages that exist (backfill only). Stops a range after 25 misses in a row."""
+    items = []
+    for template, first, last in agency["ids"]:
+        misses = 0
+        for n in range(first, last + 1):
+            url = template.format(n=n)
+            if url in known:
+                misses = 0
+                continue
+            page = fetch_page(url, source_id)
+            if not page["title"] or not page["date"]:
+                misses += 1
+                if misses >= 25 and n > first + 25:
+                    break
+                continue
+            misses = 0
+            title = re.split(r"\s+[|\u2013\u2014]\s+", page["title"])[0]  # drop " | U.S. Department of ..."
+            items.append({"url": url, "title": title, "date": dt.date.fromisoformat(page["date"]),
+                          "text": page["text"]})
+    return [i for i in items if i["date"].isoformat() >= START_DATE]
+
+
 def _doj_api(agency: dict, pattern, session, pages: int) -> list[dict]:
     """Justice Department API: every DOJ office's releases, oldest first, so read from the end."""
     size = 50
+    session = session_for("plain")  # the API answers plain clients, not the Chrome fingerprint
     r = get(f"{agency['doj_api']}?pagesize=1", session)
     try:
         count = int(r.json()["metadata"]["resultset"]["count"])
@@ -363,6 +394,9 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
             items += found
             if min(i["date"] for i in found).isoformat() < START_DATE:
                 break
+    if agency.get("ids") and backfill:
+        items += _numbered(agency, source["bioguide"], {i["url"] for i in items}, pages)
+        methods.append("numbered")
     if agency.get("doj_api") and backfill:
         items += _doj_api(agency, pattern, session, pages)
         methods.append("api")

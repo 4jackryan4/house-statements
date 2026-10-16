@@ -148,6 +148,23 @@ def _seed(source: dict) -> list[str] | None:
     return [source["press_url"]] if source.get("press_url") else None
 
 
+def _interleave(ids: list[str], records: dict) -> list[str]:
+    """Agency pages are fetched one at a time per agency, so take agencies' turns round-robin
+    (after the members' and committees', which keep their order)."""
+    house = [sid for sid in ids if not is_agency(records[sid]["bioguide"])]
+    queues: dict[str, list[str]] = {}
+    for sid in ids:
+        if is_agency(records[sid]["bioguide"]):
+            queues.setdefault(records[sid]["bioguide"], []).append(sid)
+    mixed = []
+    while queues:
+        for b in list(queues):
+            mixed.append(queues[b].pop(0))
+            if not queues[b]:
+                del queues[b]
+    return house + mixed
+
+
 def fill_text(records: dict, ids: list[str], workers: int) -> int:
     session = requests.Session()
     filled = 0
@@ -275,7 +292,7 @@ def main(argv=None):
 
     # Text for new statements first, then retry earlier misses.
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
-    todo = (new_ids + retry)[: args.max_text]
+    todo = _interleave(new_ids + retry, records)[: args.max_text]
     filled = fill_text(records, todo, workers=8) if todo else 0
 
     # Repair any future-dated statement left by an earlier misread listing.

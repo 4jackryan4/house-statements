@@ -14,7 +14,15 @@ and is searchable by member and by the words in the statement.
 - **Committees**: the Democratic sites of 20 standing committees plus the China select committee
   (`house_statements/committees.py`). They appear in the feed and search labeled by committee, can
   be filtered with "Committees only", and join events (an event still needs 4 members).
-- **RSS**: all statements, committee statements, new events, and one feed per member and committee.
+- **Cabinet agencies**: press releases from the newsrooms of the 15 executive departments and the
+  cabinet-rank agencies (EPA, SBA, OMB, USTR, ODNI, CIA, U.S. Mission to the UN), listed in
+  `house_statements/agencies.py`. They're kept out of the default view and `all.xml` (which stay
+  House Democrats only). Pick "Agencies only" or "Everything" in search, or pick an agency by name.
+  Agency releases join events that House Democrats are talking about, but never form events of
+  their own. Commerce sits behind a Cloudflare challenge that blocks GitHub's servers, so it shows
+  as an error in `data/health.json`.
+- **RSS**: all statements, committee statements, agency press releases, new events, and one feed
+  per member, committee and agency.
 
 Everything is free to run: GitHub Actions does the work and GitHub Pages hosts the site.
 Nothing uses a paid API.
@@ -36,7 +44,10 @@ Every hour, `.github/workflows/update.yml`:
    statements (`collect.py`). `data/health.json` lists any member site that returned nothing or
    errored, which usually means the site was redesigned and its scraper needs an update upstream.
    Committee sites are read with our generic scraper (`fallback.py`), starting from the press
-   release page listed in `committees.py`.
+   release page listed in `committees.py`. Agency newsrooms are read by `agencies.py` from their
+   RSS feeds, listings or WordPress API; several block ordinary scrapers from cloud servers, so
+   it fetches those with a Chrome TLS fingerprint (curl_cffi) or, for JavaScript challenges (EPA,
+   Education), with cookies from Chrome running under `xvfb-run`.
 4. Commits new statements to `data/statements/YYYY/YYYY-MM.jsonl`.
 5. Groups statements into events (`events.py`), builds the site and RSS feeds
    (`build_site.py`) and the [Pagefind](https://pagefind.app) search index
