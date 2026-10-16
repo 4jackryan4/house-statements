@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -40,7 +29,7 @@
   "status": "ok",
   "error": null,
   "count": 1,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -117,7 +106,7 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 100,
+  "new": 1,
   "latest_date": "2026-10-16"
  },
  {
@@ -140,7 +129,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-02"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "A000370",
@@ -172,7 +161,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -260,7 +249,7 @@
   "status": "ok",
   "error": null,
   "count": 40,
-  "new": 39,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -392,7 +381,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 9,
+  "new": 0,
   "latest_date": "2026-09-22"
  },
  {
@@ -403,7 +392,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -414,7 +403,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 24,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -425,7 +414,7 @@
   "status": "ok",
   "error": null,
   "count": 37,
-  "new": 37,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -447,7 +436,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -458,7 +447,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -469,7 +458,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -557,7 +546,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -568,7 +557,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -579,7 +568,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 30,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -590,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 24,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -601,7 +590,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-07-09"
  },
  {
@@ -612,8 +601,19 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "G000599",
@@ -733,7 +733,7 @@
   "status": "ok",
   "error": null,
   "count": 12,
-  "new": 12,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -832,7 +832,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -887,7 +887,7 @@
   "status": "ok",
   "error": null,
   "count": 50,
-  "new": 21,
+  "new": 0,
   "latest_date": "2026-07-01"
  },
  {
@@ -931,7 +931,7 @@
   "status": "ok",
   "error": null,
   "count": 13,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -997,7 +997,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 22,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1008,7 +1008,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 102,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 60,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 59,
-  "new": 54,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1041,7 +1041,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1052,7 +1052,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-05"
  },
  {
@@ -1063,7 +1063,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -1074,7 +1074,7 @@
   "status": "ok",
   "error": null,
   "count": 12,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1085,7 +1085,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 1,
   "latest_date": "2026-10-15"
  },
  {
@@ -1096,7 +1096,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 8,
+  "new": 0,
   "latest_date": "2026-09-30"
  },
  {
@@ -1107,7 +1107,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1118,7 +1118,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1128,9 +1128,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 115,
-  "new": 115,
-  "latest_date": "2026-10-13"
+  "count": 116,
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "committee-financial-services",
@@ -1151,7 +1151,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -1173,7 +1173,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -1239,7 +1239,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -1294,7 +1294,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 35,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1491,9 +1491,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 8,
-  "new": 8,
-  "latest_date": "2026-10-14"
+  "count": 9,
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "O000173",
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1525,7 +1525,7 @@
   "status": "ok",
   "error": null,
   "count": 4,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-09-09"
  },
  {
@@ -1547,8 +1547,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 2,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "C001110",
@@ -1800,7 +1800,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1823,7 +1823,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-17"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "L000557",
@@ -2295,7 +2295,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-09-11"
  },
  {
@@ -2438,7 +2438,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2449,7 +2449,7 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 60,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2460,7 +2460,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2471,7 +2471,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2482,7 +2482,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -2493,7 +2493,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2504,7 +2504,7 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 7,
+  "new": 0,
   "latest_date": "2026-09-21"
  },
  {
@@ -2537,7 +2537,7 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 7,
+  "new": 0,
   "latest_date": "2026-09-09"
  },
  {
@@ -2548,7 +2548,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2559,7 +2559,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 30,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -2570,7 +2570,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-09-10"
  },
  {
@@ -2581,7 +2581,7 @@
   "status": "ok",
   "error": null,
   "count": 16,
-  "new": 15,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -2592,7 +2592,7 @@
   "status": "ok",
   "error": null,
   "count": 132,
-  "new": 17,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -2614,7 +2614,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2669,7 +2669,7 @@
   "status": "ok",
   "error": null,
   "count": 156,
-  "new": 155,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2702,7 +2702,7 @@
   "status": "ok",
   "error": null,
   "count": 180,
-  "new": 33,
+  "new": 0,
   "latest_date": "2026-10-06"
  },
  {
@@ -2713,7 +2713,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-09-25"
  },
  {
@@ -2724,7 +2724,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -2735,7 +2735,7 @@
   "status": "ok",
   "error": null,
   "count": 63,
-  "new": 63,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2746,7 +2746,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -2757,7 +2757,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2812,7 +2812,7 @@
   "status": "ok",
   "error": null,
   "count": 3,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -2834,7 +2834,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 9,
+  "new": 0,
   "latest_date": "2026-07-29"
  },
  {
@@ -2845,8 +2845,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "K000391",
@@ -2999,7 +2999,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -3109,7 +3109,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 15,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -3208,7 +3208,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -3230,8 +3230,8 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 2,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "H000874",
@@ -3307,7 +3307,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-09-24"
  },
  {
@@ -3373,7 +3373,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-08"
  },
  {
@@ -3483,7 +3483,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
   "latest_date": "2026-01-02"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 172,
-  "new": 172,
-  "latest_date": "2026-10-14"
+  "count": 151,
+  "new": 149,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "agency-usccr",
@@ -3505,7 +3505,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-09"
  },
  {
@@ -3516,7 +3516,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 8,
+  "new": 0,
   "latest_date": "2026-06-25"
  },
  {
@@ -3527,7 +3527,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -3538,7 +3538,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 19,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -3560,7 +3560,7 @@
   "status": "ok",
   "error": null,
   "count": 223,
-  "new": 190,
+  "new": 0,
   "latest_date": "2026-10-06"
  },
  {
@@ -3582,7 +3582,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -3593,7 +3593,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 27,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
