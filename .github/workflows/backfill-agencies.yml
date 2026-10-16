@@ -26,14 +26,11 @@ jobs:
           ref: main
       - id: list
         run: |
-          python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, re, sys
-          sys.path.insert(0, ".")
-          from house_statements.agencies import AGENCIES
-          wanted = "${{ inputs.agencies }}".split()
-          ids = [f"agency-{a['slug']}" for a in AGENCIES]
-          print("agencies=" + json.dumps([i for i in ids if not wanted or i in wanted]))
-          PY
+          # Agency ids straight from agencies.py (no dependencies installed in this job).
+          ids=$(grep -oP '^\s+dict\(slug="\K[a-z]+' house_statements/agencies.py | sed 's/^/agency-/')
+          wanted="${{ inputs.agencies }}"
+          [ -n "$wanted" ] && ids=$(printf '%s\n' $ids | grep -xF -f <(printf '%s\n' $wanted))
+          echo "agencies=$(printf '%s\n' $ids | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"
 
   collect:
     needs: plan
@@ -85,9 +82,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           # Re-merge onto the latest main each try, so an hourly commit in between is never overwritten.
+          shopt -s nullglob
+          files=(exports/*.jsonl)
+          [ ${#files[@]} -gt 0 ] || { echo "no exports"; exit 1; }
           for attempt in 1 2 3 4 5; do
             git fetch -q origin main && git reset -q --hard origin/main
-            python -m house_statements.collect --merge exports/*.jsonl
+            python -m house_statements.collect --merge "${files[@]}"
             git add data
             git diff --cached --quiet && { echo "nothing new"; exit 0; }
             git commit -q -m "Backfill agency press releases $(date -u +%Y-%m-%dT%H:%MZ)"
