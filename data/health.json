@@ -260,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 48,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -458,7 +458,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-16"
  },
  {
@@ -502,7 +502,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -711,7 +711,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -733,8 +733,8 @@
   "status": "ok",
   "error": null,
   "count": 12,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "D000197",
@@ -986,7 +986,7 @@
   "status": "ok",
   "error": null,
   "count": 3,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1008,7 +1008,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 3,
   "latest_date": "2026-10-16"
  },
  {
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-16"
  },
  {
@@ -2097,8 +2097,8 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "S001231",
@@ -2405,7 +2405,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -2900,7 +2900,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-16"
  },
  {
@@ -3285,7 +3285,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 180,
+  "count": 151,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "agency-usccr",
