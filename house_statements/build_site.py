@@ -15,6 +15,7 @@ from xml.sax.saxutils import escape
 from . import store
 from .config import ROOT, SITE_DIR, WEB_DIR
 from .events import find_events
+from .agencies import load_agencies
 from .committees import load_committees
 from .members import load_members
 
@@ -68,7 +69,8 @@ def main():
     today = dt.datetime.now(dt.timezone.utc).date()
     members = load_members()
     committees = load_committees()
-    sources = members + committees
+    agencies = load_agencies()
+    sources = members + committees + agencies
     by_bioguide = {m["bioguide"]: m for m in sources}
     records = [r for r in store.load_all().values() if r.get("date") and r["bioguide"] in by_bioguide]
     records.sort(key=lambda r: (r["date"], r.get("first_seen", ""), r["id"]), reverse=True)
@@ -92,12 +94,12 @@ def main():
             counts_90[r["bioguide"]] = counts_90.get(r["bioguide"], 0) + 1
     member_rows = [
         {k: m[k] for k in ("bioguide", "name", "label", "state", "district", "url", "committees")}
-        | {"recent": counts_90.get(m["bioguide"], 0)} | ({"kind": "committee"} if m.get("kind") == "committee" else {})
-        for m in committees + members
+        | {"recent": counts_90.get(m["bioguide"], 0)} | ({"kind": m["kind"]} if m.get("kind") else {})
+        for m in committees + agencies + members
     ]
 
     def event_json(e, with_statements=True):
-        out = {k: e[k] for k in ("id", "label", "headline", "member_count", "committee_count", "statement_count", "first", "last")}
+        out = {k: e[k] for k in ("id", "label", "headline", "member_count", "committee_count", "agency_count", "statement_count", "first", "last")}
         if with_statements:
             rows = sorted((by_id[s] for s in e["statement_ids"]), key=lambda r: (r["date"], r["id"]), reverse=True)
             out["statements"] = [short(r, {}) for r in rows]
@@ -108,10 +110,13 @@ def main():
     write_json("members.json", member_rows)
     write_json("events-recent.json", [event_json(e) for e in events if e["last"] >= recent_cutoff])
     write_json("events.json", [event_json(e) for e in events])
-    write_json("latest.json", [short(r, event_by_statement) for r in records[:LATEST_COUNT]])
+    agency_ids = {a["bioguide"] for a in agencies}
+    house = [r for r in records if r["bioguide"] not in agency_ids]  # House Democrats: members and committees
+    write_json("latest.json", [short(r, event_by_statement) for r in house[:LATEST_COUNT]])
     write_json("build.json", {"built_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
-                              "statements": len(records), "events": len(events), "members": len(members),
-                              "committees": len(committees)})
+                              "statements": len(house), "events": len(events), "members": len(members),
+                              "committees": len(committees), "agencies": len(agencies),
+                              "agency_statements": len(records) - len(house)})
 
     # ---- RSS
     def statement_item(r):
@@ -122,11 +127,14 @@ def main():
 
     rss(SITE_DIR / "feeds" / "all.xml", "House Democrats: all statements", SITE_URL,
         "Latest press statements from House Democrats' official websites.",
-        [statement_item(r) for r in records[:100]])
+        [statement_item(r) for r in house[:100]])
     committee_ids = {c["bioguide"] for c in committees}
     rss(SITE_DIR / "feeds" / "committees.xml", "House Democrats: committee statements", SITE_URL + "?type=committee",
         "Latest press statements from the Democrats on each House committee.",
         [statement_item(r) for r in records if r["bioguide"] in committee_ids][:100])
+    rss(SITE_DIR / "feeds" / "agencies.xml", "Cabinet agencies: press releases", SITE_URL + "?type=agency",
+        "Latest press releases from the cabinet-level federal agencies.",
+        [statement_item(r) for r in records if r["bioguide"] in agency_ids][:100])
     newest_events = sorted(events, key=lambda e: (e["first"], e["member_count"]), reverse=True)[:FEED_COUNT]
     rss(SITE_DIR / "feeds" / "events.xml", "House Democrats: events", SITE_URL + "events.html",
         "A new item each time several House Democrats put out statements on the same event.",
@@ -160,13 +168,13 @@ def main():
                 "meta": meta,
                 "filters": {"member": [m["label"]], "when": when_buckets(r["date"], today),
                             "committee": m["committees"] or ["(none)"],
-                            "type": ["committee" if m.get("kind") == "committee" else "member"]}
+                            "type": [m.get("kind") or "member"]}
                 | ({"state": [m["state"]]} if m["state"] else {}),
                 "sort": {"date": r["date"]},
             }, ensure_ascii=False) + "\n")
 
     print(f"build_site: {len(records)} statements, {len(events)} events, {len(members)} members, "
-          f"{len(committees)} committees -> {SITE_DIR}")
+          f"{len(committees)} committees, {len(agencies)} agencies -> {SITE_DIR}")
 
 
 if __name__ == "__main__":

@@ -22,7 +22,11 @@ def fetch_page(url: str, session: requests.Session | None = None) -> dict:
         resp.raise_for_status()
     except requests.RequestException:
         return {"text": None, "date": None, "title": None}
-    html = resp.text
+    return extract_page(resp.text, url)
+
+
+def extract_page(html: str, url: str) -> dict:
+    """Main text, ISO date and title of a statement page's HTML; any may be None."""
     text = trafilatura.extract(html, url=url, include_comments=False, include_tables=False, favor_precision=True)
     date = title = None
     meta = trafilatura.extract_metadata(html, default_url=url)

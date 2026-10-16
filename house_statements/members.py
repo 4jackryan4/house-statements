@@ -115,10 +115,11 @@ def load_members() -> list[dict]:
 
 
 def load_sources() -> list[dict]:
-    """Members plus the committees' Democratic sites (see committees.py)."""
+    """Members plus the committees' Democratic sites (committees.py) and federal agencies (agencies.py)."""
+    from .agencies import load_agencies
     from .committees import load_committees
 
-    return load_members() + load_committees()
+    return load_members() + load_committees() + load_agencies()
 
 
 if __name__ == "__main__":

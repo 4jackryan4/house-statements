@@ -54,8 +54,8 @@ function eventHTML(e) {
   const items = (e.statements || []).map((s) => statementHTML(s, { showEvent: false })).join("");
   const memberIds = [...new Set((e.statements || []).map((s) => s.member))];
   const filterLink = `./?${memberIds.map((id) => `member=${encodeURIComponent(id)}`).join("&")}`;
-  const nc = e.committee_count || 0;
-  const committees = nc ? ` + ${nc} committee${nc === 1 ? "" : "s"}` : "";
+  const nc = e.committee_count || 0, na = e.agency_count || 0;
+  const committees = (nc ? ` + ${nc} committee${nc === 1 ? "" : "s"}` : "") + (na ? ` + ${na} agenc${na === 1 ? "y" : "ies"}` : "");
   return `<details class="event" id="${esc(e.id)}">
     <summary>
       <span class="event-label">${esc(e.label)}</span>
@@ -74,7 +74,8 @@ async function setBuilt() {
   try {
     const b = await getJSON("build.json");
     const when = new Date(b.built_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
-    $("#built").textContent = `Last updated ${when}. ${b.statements.toLocaleString()} statements from ${b.members} members${b.committees ? ` and ${b.committees} committees` : ""} since January 2025.`;
+    const agencies = b.agencies ? `, plus ${b.agency_statements.toLocaleString()} press releases from ${b.agencies} cabinet agencies` : "";
+    $("#built").textContent = `Last updated ${when}. ${b.statements.toLocaleString()} statements from ${b.members} members${b.committees ? ` and ${b.committees} committees` : ""}${agencies} since January 2025.`;
   } catch {}
 }
 
@@ -88,7 +89,7 @@ async function homePage() {
     members: params.getAll("member").filter((id) => membersById.has(id)),
     st: params.get("state") || "",
     when: params.get("when") || "",
-    type: ["member", "committee"].includes(params.get("type")) ? params.get("type") : "",
+    type: ["member", "committee", "agency", "all"].includes(params.get("type")) ? params.get("type") : "",
     sort: params.get("sort") || "date",
   };
 
@@ -189,7 +190,7 @@ async function homePage() {
       if (id !== runId) return;
       const rows = lists.flat()
         .filter((s) => daysAgo(s.date) <= maxAge && (!state.st || membersById.get(s.member)?.state === state.st) &&
-          (!state.type || (membersById.get(s.member)?.kind || "member") === state.type))
+          (!state.type || state.type === "all" || (membersById.get(s.member)?.kind || "member") === state.type))
         .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
       $("#result-count").textContent = rows.length ? `${rows.length.toLocaleString()} statement${rows.length === 1 ? "" : "s"}` : "No statements match";
       let shown = 0;
@@ -209,7 +210,9 @@ async function homePage() {
     if (state.members.length) filters.member = { any: state.members.map((x) => membersById.get(x).label) };
     if (state.st) filters.state = state.st;
     if (state.when) filters.when = state.when;
-    if (state.type) filters.type = state.type;
+    // Default: House Democrats (members and committees). Agencies only when asked for or picked by name.
+    if (state.type && state.type !== "all") filters.type = state.type;
+    else if (!state.type && !state.members.length) filters.type = { any: ["member", "committee"] };
     const opts = { filters };
     if (state.sort === "date" || !state.q) opts.sort = { date: "desc" };
     const search = await pf.search(state.q || null, opts);
@@ -307,10 +310,10 @@ async function membersPage() {
     const t = text.trim().toLowerCase();
     const rows = members.filter((m) =>
       !t || m.label.toLowerCase().includes(t) || m.state.toLowerCase() === t || m.committees.some((c) => c.toLowerCase().includes(t)));
-    // Committees first, then members by state.
+    // Committees and agencies first, then members by state.
     const byState = new Map();
     rows.forEach((m) => {
-      const key = m.kind === "committee" ? "Committees" : m.state;
+      const key = m.kind === "committee" ? "Committees" : m.kind === "agency" ? "Cabinet agencies" : m.state;
       if (!byState.has(key)) byState.set(key, []);
       byState.get(key).push(m);
     });
