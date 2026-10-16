@@ -219,13 +219,13 @@ def _stream(root: Tag, host: str, page_url: str, pattern=None):
     for node in root.descendants:
         if isinstance(node, Tag):
             if node.name == "a" and node.get("href"):
-                url = urljoin(page_url, node["href"]).split("#")[0]
+                url = urljoin(page_url, node["href"].strip()).split("#")[0]
                 if is_statement_url(url, host, pattern=pattern):
                     yield ("link", url, node)
             elif node.name == "time" and node.get("datetime"):
                 yield ("text", " " + node["datetime"][:10] + " ")
         elif isinstance(node, NavigableString) and not any(
-            p.name == "a" and p.get("href") and is_statement_url(urljoin(page_url, p["href"]), host, pattern=pattern)
+            p.name == "a" and p.get("href") and is_statement_url(urljoin(page_url, p["href"].strip()), host, pattern=pattern)
             for p in node.parents if isinstance(p, Tag) and p.name == "a"
         ):
             text = str(node).strip()
@@ -239,17 +239,21 @@ def _is_date_el(el) -> bool:
 
 def from_listing(html: str, page_url: str, pattern=None) -> list[dict]:
     soup = BeautifulSoup(html, "lxml")
-    for junk in soup.select("nav, header, footer, script, style, noscript, [role=navigation]"):
+    # Agency newsrooms (sources with a URL pattern) often put the listing inside <header> or <nav>
+    # elements (card headlines, unclosed menus); the pattern already keeps menu links out.
+    junk_tags = "script, style, noscript" if pattern else "nav, header, footer, script, style, noscript, [role=navigation]"
+    for junk in soup.select(junk_tags):
         junk.decompose()
     host = _host(page_url)
-    body = soup.body or soup
+    # Some agency pages are malformed enough that the listing ends up outside <body>.
+    body = soup if pattern else (soup.body or soup)
 
     # Each link's own card: the largest ancestor holding no other statement link.
     titles: dict[str, str] = {}
     card_date: dict[str, dt.date | None] = {}
     order: list[str] = []
     for a in body.find_all("a", href=True):
-        url = urljoin(page_url, a["href"]).split("#")[0]
+        url = urljoin(page_url, a["href"].strip()).split("#")[0]
         if not is_statement_url(url, host, pattern=pattern) or url.rstrip("/") == page_url.rstrip("/"):
             continue
         title = _clean_title(a.get_text(" ", strip=True)) or _clean_title(a.get("title") or a.get("aria-label"))
@@ -264,7 +268,7 @@ def from_listing(html: str, page_url: str, pattern=None) -> list[dict]:
         node, card = a, None
         while node.parent is not None and node.parent is not body:
             urls = {
-                urljoin(page_url, x["href"]).split("#")[0] for x in node.parent.find_all("a", href=True)
+                urljoin(page_url, x["href"].strip()).split("#")[0] for x in node.parent.find_all("a", href=True)
             }
             if len({u for u in urls if is_statement_url(u, host, pattern=pattern)} - {url}) > 0:
                 break
