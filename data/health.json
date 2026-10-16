@@ -11,17 +11,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "T000487",
-  "label": "Jill N. Tokuda (D-HI-02)",
-  "scraper": "tokuda",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "G000605",
   "label": "Adam Gray (D-CA-13)",
   "scraper": "gray",
@@ -557,7 +546,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -821,7 +810,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -876,7 +865,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1004,10 +993,10 @@
   "bioguide": "A000148",
   "label": "Jake Auchincloss (D-MA-04)",
   "scraper": "auchincloss",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 45,
   "new": 0,
   "latest_date": "2026-09-15"
  },
@@ -1074,7 +1063,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1103,10 +1092,10 @@
   "bioguide": "H001068",
   "label": "Jared Huffman (D-CA-02)",
   "scraper": "huffman",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -1151,7 +1140,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1175,6 +1164,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-06"
+ },
+ {
+  "bioguide": "T000487",
+  "label": "Jill N. Tokuda (D-HI-02)",
+  "scraper": "tokuda",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-30"
  },
  {
   "bioguide": "C001059",
@@ -1250,7 +1250,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1316,7 +1316,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1382,7 +1382,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1488,10 +1488,10 @@
   "bioguide": "M001229",
   "label": "LaMonica McIver (D-NJ-10)",
   "scraper": "mciver",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-09"
  },
@@ -1547,7 +1547,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1752,10 +1752,10 @@
   "bioguide": "F000476",
   "label": "Maxwell Frost (D-FL-10)",
   "scraper": "frost",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-21"
  },
@@ -1774,10 +1774,10 @@
   "bioguide": "L000593",
   "label": "Mike Levin (D-CA-49)",
   "scraper": "levin",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-07"
  },
@@ -1928,7 +1928,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2071,10 +2071,10 @@
   "bioguide": "M001226",
   "label": "Robert Menendez (D-NJ-08)",
   "scraper": "menendez",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -2203,10 +2203,10 @@
   "bioguide": "C001117",
   "label": "Sean Casten (D-IL-06)",
   "scraper": "casten",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-17"
  },
@@ -2526,7 +2526,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2577,10 +2577,10 @@
   "bioguide": "K000375",
   "label": "William R. Keating (D-MA-09)",
   "scraper": "keating",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-15"
  },
@@ -2588,10 +2588,10 @@
   "bioguide": "A000381",
   "label": "Yassamin Ansari (D-AZ-03)",
   "scraper": "ansari",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-15"
  },
