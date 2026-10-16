@@ -184,7 +184,7 @@ AGENCIES = [
          paged="https://www.dea.gov/what-we-do/news/press-releases?page={page}", first_page=1, pattern=r"^/press-releases/20\d\d/\d\d/\d\d/"),
     dict(slug="atf", label="ATF", url="https://www.atf.gov", group=SUB, client="chrome",
          listing="https://www.atf.gov/news/press-releases",
-         paged="https://www.atf.gov/news/press-releases?page={page}", first_page=1, pattern=r"^/news/press-releases/[a-z0-9-]{15,}"),
+         paged="https://www.atf.gov/news/press-releases?page={page}", first_page=1, max_empty=20, pattern=r"^/news/press-releases/[a-z0-9-]{15,}"),
     dict(slug="usms", label="U.S. Marshals", url="https://www.usmarshals.gov", group=SUB, client="browser",
          listing="https://www.usmarshals.gov/news", pattern=r"^/news/press-release/[a-z0-9-]{10,}"),
     # Every U.S. Attorney's office posts on justice.gov; the Justice Department API has them all.
@@ -632,7 +632,7 @@ def _listing_items(page_html: str, url: str, pattern, scope: str | None = None) 
 
 
 def _listing_pages(start_url: str, pattern, session, pages: int, template: str | None = None, first: int = 0,
-                   scope: str | None = None) -> list[dict]:
+                   scope: str | None = None, max_empty: int = 3) -> list[dict]:
     """A listing page and, for a backfill, the older pages after it (by "next" links or `template`)."""
     items, url, seen, empty = [], start_url, set(), 0
     for k in range(max(pages, 1)):
@@ -649,9 +649,9 @@ def _listing_pages(start_url: str, pattern, session, pages: int, template: str |
         # Links without a date are kept; the release page dates them when its text is fetched.
         dated = [i["date"] for i in new if i["date"]]
         # A numbered page can hold only other offices' links (ATF lists many DOJ releases), so
-        # numbered paging gives up after three such pages in a row rather than one.
+        # numbered paging gives up after `max_empty` such pages in a row rather than one.
         empty = 0 if new else empty + 1
-        if empty >= (3 if template else 1) or (dated and max(dated).isoformat() < START_DATE):
+        if empty >= (max_empty if template else 1) or (dated and max(dated).isoformat() < START_DATE):
             break
         url = template.format(page=first + k + 1) if template else fallback.next_page_url(r.text, url)
         if not url:
@@ -729,7 +729,7 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
     if agency.get("paged") and backfill:
         first = agency.get("first_page", 0)
         items += _listing_pages(agency["paged"].format(page=first), pattern, session, pages, agency["paged"], first,
-                                scope=scope)
+                                scope=scope, max_empty=agency.get("max_empty", 3))
         methods.append("listing")
 
     skip = re.compile(agency["skip_titles"], re.I) if agency.get("skip_titles") else None
