@@ -93,7 +93,8 @@ AGENCIES = [
     dict(slug="dhs", label="Homeland Security (DHS)", url="https://www.dhs.gov",
          listing="https://www.dhs.gov/news-releases/press-releases", pattern=r"^/news/20\d\d/\d\d/\d\d/"),
     dict(slug="epa", label="Environmental Protection Agency (EPA)", url="https://www.epa.gov", client="browser",
-         listing="https://www.epa.gov/newsreleases/search", pattern=r"^/newsreleases/(?!search)[a-z0-9-]{15,}"),
+         listing="https://www.epa.gov/newsreleases/search",
+         paged="https://www.epa.gov/newsreleases/search?page={page}", first_page=1, pattern=r"^/newsreleases/(?!search)[a-z0-9-]{15,}"),
     # SBA is moving sites: 2026 releases are listed on legacy.sba.gov, 2025 ones in www.sba.gov's feed.
     dict(slug="sba", label="Small Business Administration (SBA)", url="https://www.sba.gov", client="chrome",
          feeds=["https://www.sba.gov/feed/"], paged_feed="https://www.sba.gov/feed/?paged={page}",
@@ -419,17 +420,19 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
             items += [i for i in fallback._filter(fallback.from_rss(r.text, url), host, pattern) if i["date"]]
             methods.append("rss")
     if agency.get("paged_feed") and backfill:
-        for page in range(pages):
+        for page in range(1, pages + 1):
             url = agency["paged_feed"].format(page=page)
             r = get(url, session)
             if r is None:
                 break
-            found = [i for i in fallback._filter(fallback.from_rss(r.text, url), host, pattern) if i["date"]]
-            if not found:
+            # The feed mixes in posts that aren't press releases: stop on an empty page, not an unmatched one.
+            entries = [i for i in fallback.from_rss(r.text, url) if i["date"]]
+            if not entries:
                 break
-            items += found
-            if min(i["date"] for i in found).isoformat() < START_DATE:
+            items += fallback._filter(entries, host, pattern)
+            if min(i["date"] for i in entries).isoformat() < START_DATE:
                 break
+        methods.append("rss pages")
     if agency.get("ids") and backfill:
         items += _numbered(agency, source["bioguide"], {i["url"] for i in items}, pages)
         methods.append("numbered")
