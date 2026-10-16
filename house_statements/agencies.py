@@ -42,9 +42,12 @@ SHORT_TEXT = 400  # extracted text shorter than this is checked against the page
 #   paged_feed: an RSS feed with a page number ("{page}"), read page by page on a backfill.
 #   wp: WordPress REST endpoint (posts come with their full text).
 #   years: yearly listing pages ("{year}"), this year's read every run, older ones on a backfill.
+#   paged: listing page URL with a page number ("{page}", counting from `first_page`), read page
+#     by page on a backfill (for sites whose "next" links don't work or that block the listing).
 AGENCIES = [
     dict(slug="state", label="State Department", url="https://www.state.gov",
          wp="https://www.state.gov/wp-json/wp/v2/state_press_release", pattern=r"^/releases/",
+         paged="https://www.state.gov/press-releases/page/{page}/", first_page=1,
          skip_titles=r"^public schedule\b"),
     dict(slug="treasury", label="Treasury Department", url="https://home.treasury.gov",
          listing="https://home.treasury.gov/news/press-releases", pattern=r"^/news/press-releases/[a-z]+\d+"),
@@ -53,7 +56,7 @@ AGENCIES = [
          pattern=r"^/News/Releases/Release/Article/\d+"),
     dict(slug="justice", label="Justice Department", url="https://www.justice.gov", client="chrome",
          feeds=["https://www.justice.gov/news/rss?type=press_release&m=1"],
-         paged_feed="https://www.justice.gov/news/rss?type=press_release&m=1&page={page}", pattern=r"^/opa/pr/"),
+         doj_api="https://www.justice.gov/api/v1/press_releases.json", pattern=r"^/opa/pr/"),
     dict(slug="interior", label="Interior Department", url="https://www.doi.gov",
          listing="https://www.doi.gov/news", pattern=r"^/pressreleases/"),
     dict(slug="agriculture", label="Agriculture Department (USDA)", url="https://www.usda.gov", client="chrome",
@@ -70,7 +73,8 @@ AGENCIES = [
          feeds=["https://www.hhs.gov/rss/news.xml"], listing="https://www.hhs.gov/press-room/index.html",
          pattern=r"^/press-room/(?!index\.html)[a-z0-9-]+\.html$"),
     dict(slug="hud", label="Housing and Urban Development (HUD)", url="https://www.hud.gov",
-         listing="https://www.hud.gov/news", pattern=r"^/news/hud-no-\d+-\d+"),
+         listing="https://www.hud.gov/news", paged="https://www.hud.gov/news?page={page}",
+         pattern=r"^/news/hud-no-\d+-\d+"),
     dict(slug="transportation", label="Transportation Department", url="https://www.transportation.gov",
          client="chrome", listing="https://www.transportation.gov/newsroom/press-releases",
          pattern=r"^/briefing-room/(?!dot-events)[a-z0-9-]{20,}"),
@@ -84,9 +88,10 @@ AGENCIES = [
          listing="https://www.dhs.gov/news-releases/press-releases", pattern=r"^/news/20\d\d/\d\d/\d\d/"),
     dict(slug="epa", label="Environmental Protection Agency (EPA)", url="https://www.epa.gov", client="browser",
          listing="https://www.epa.gov/newsreleases/search", pattern=r"^/newsreleases/(?!search)[a-z0-9-]{15,}"),
+    # SBA is moving sites: 2026 releases are listed on legacy.sba.gov, 2025 ones in www.sba.gov's feed.
     dict(slug="sba", label="Small Business Administration (SBA)", url="https://www.sba.gov", client="chrome",
          feeds=["https://www.sba.gov/feed/"], paged_feed="https://www.sba.gov/feed/?paged={page}",
-         pattern=r"^/(sba-newsroom|article)/20\d\d/"),
+         listing="https://legacy.sba.gov/about-sba/sba-newsroom", pattern=r"^/(sba-newsroom|article)/20\d\d/"),
     dict(slug="omb", label="Office of Management and Budget (OMB)", url="https://www.whitehouse.gov/omb",
          listing="https://www.whitehouse.gov/omb/news/",
          pattern=r"^/(releases|briefings-statements|articles|presidential-actions)/20\d\d/\d\d/"),
@@ -101,6 +106,7 @@ AGENCIES = [
          listing="https://www.cia.gov/stories/press-releases-and-statements/", pattern=r"^/stories/story/"),
     dict(slug="un", label="U.S. Mission to the UN", url="https://usun.usmission.gov",
          wp="https://usun.usmission.gov/wp-json/wp/v2/posts", wp_params={"categories_exclude": "139,141"},
+         paged="https://usun.usmission.gov/news/page/{page}/", first_page=1,
          pattern=r"^/[a-z0-9-]{15,}/?$"),
 ]
 
@@ -271,11 +277,41 @@ def _wp(agency: dict, session, pages: int) -> list[dict]:
     return [i for i in items if i["date"].isoformat() >= START_DATE]
 
 
-def _listing_pages(start_url: str, pattern, session, pages: int) -> list[dict]:
-    """A listing page and, for a backfill, the older pages after it."""
+def _doj_api(agency: dict, pattern, session, pages: int) -> list[dict]:
+    """Justice Department API: every DOJ office's releases, oldest first, so read from the end."""
+    size = 50
+    r = get(f"{agency['doj_api']}?pagesize=1", session)
+    try:
+        count = int(r.json()["metadata"]["resultset"]["count"])
+    except Exception:
+        return []
+    items = []
+    for page in range((count - 1) // size, max((count - 1) // size - pages * 4, -1), -1):
+        r = get(f"{agency['doj_api']}?pagesize={size}&page={page}", session)
+        try:
+            rows = r.json()["results"]
+        except Exception:
+            break
+        dates = []
+        for row in rows:
+            try:
+                date = dt.datetime.fromtimestamp(int(row["date"]), dt.timezone.utc).date()
+            except (KeyError, TypeError, ValueError):
+                continue
+            dates.append(date)
+            if pattern.search(urlsplit(row.get("url") or "").path):
+                items.append({"url": row["url"], "title": " ".join(html.unescape(row.get("title") or "").split()),
+                              "date": date, "text": html_to_text(row.get("body") or "") or None})
+        if dates and max(dates).isoformat() < START_DATE:
+            break
+    return [i for i in items if i["date"].isoformat() >= START_DATE]
+
+
+def _listing_pages(start_url: str, pattern, session, pages: int, template: str | None = None, first: int = 0) -> list[dict]:
+    """A listing page and, for a backfill, the older pages after it (by "next" links or `template`)."""
     host = fallback._host(start_url)
     items, url, seen = [], start_url, set()
-    for _ in range(max(pages, 1)):
+    for k in range(max(pages, 1)):
         if url in seen:
             break
         seen.add(url)
@@ -287,7 +323,7 @@ def _listing_pages(start_url: str, pattern, session, pages: int) -> list[dict]:
         items.extend(new)
         if not new or min(i["date"] for i in new).isoformat() < START_DATE:
             break
-        url = fallback.next_page_url(r.text, url)
+        url = template.format(page=first + k + 1) if template else fallback.next_page_url(r.text, url)
         if not url:
             break
     return items
@@ -327,6 +363,9 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
             items += found
             if min(i["date"] for i in found).isoformat() < START_DATE:
                 break
+    if agency.get("doj_api") and backfill:
+        items += _doj_api(agency, pattern, session, pages)
+        methods.append("api")
     listings = [agency["listing"]] if agency.get("listing") else []
     if agency.get("years"):
         this_year = dt.date.today().year
@@ -335,6 +374,10 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
         listings += agency.get("backfill", []) if backfill else []
     for url in listings:
         items += _listing_pages(url, pattern, session, pages)
+        methods.append("listing")
+    if agency.get("paged") and backfill:
+        first = agency.get("first_page", 0)
+        items += _listing_pages(agency["paged"].format(page=first), pattern, session, pages, agency["paged"], first)
         methods.append("listing")
 
     skip = re.compile(agency["skip_titles"], re.I) if agency.get("skip_titles") else None
