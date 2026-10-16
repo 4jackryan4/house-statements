@@ -11,12 +11,144 @@
   "latest_date": null
  },
  {
+  "bioguide": "P000620",
+  "label": "Brittany Pettersen (D-CO-07)",
+  "scraper": "pettersen",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "P000597",
+  "label": "Chellie Pingree (D-ME-01)",
+  "scraper": "pingree",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
   "scraper": null,
   "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "W000797",
+  "label": "Debbie Wasserman Schultz (D-FL-25)",
+  "scraper": "wassermanschultz",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "C001055",
+  "label": "Ed Case (D-HI-01)",
+  "scraper": "case",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "M000312",
+  "label": "James P. McGovern (D-MA-02)",
+  "scraper": "mcgovern",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "G000585",
+  "label": "Jimmy Gomez (D-CA-34)",
+  "scraper": "gomez",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "C001066",
+  "label": "Kathy Castor (D-FL-14)",
+  "scraper": "castor",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "F000462",
+  "label": "Lois Frankel (D-FL-22)",
+  "scraper": "frankel",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "T000482",
+  "label": "Lori Trahan (D-MA-03)",
+  "scraper": "trahan",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "C001112",
+  "label": "Salud O. Carbajal (D-CA-24)",
+  "scraper": "carbajal",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "D000617",
+  "label": "Suzan K. DelBene (D-WA-01)",
+  "scraper": "delbene",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -223,10 +355,10 @@
   "bioguide": "B001318",
   "label": "Becca Balint (D-VT-AL)",
   "scraper": "balint",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 29,
   "new": 0,
   "latest_date": "2026-10-14"
  },
@@ -308,17 +440,6 @@
   "latest_date": "2026-09-28"
  },
  {
-  "bioguide": "P000620",
-  "label": "Brittany Pettersen (D-CO-07)",
-  "scraper": "pettersen",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
- },
- {
   "bioguide": "committee-budget",
   "label": "Budget Committee Democrats",
   "scraper": null,
@@ -339,17 +460,6 @@
   "count": 12,
   "new": 0,
   "latest_date": "2026-09-11"
- },
- {
-  "bioguide": "P000597",
-  "label": "Chellie Pingree (D-ME-01)",
-  "scraper": "pingree",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "committee-china",
@@ -462,28 +572,6 @@
   "latest_date": "2026-10-13"
  },
  {
-  "bioguide": "D000624",
-  "label": "Debbie Dingell (D-MI-06)",
-  "scraper": "debbiedingell",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-14"
- },
- {
-  "bioguide": "W000797",
-  "label": "Debbie Wasserman Schultz (D-FL-25)",
-  "scraper": "wassermanschultz",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
- },
- {
   "bioguide": "R000305",
   "label": "Deborah K. Ross (D-NC-02)",
   "scraper": "ross",
@@ -542,11 +630,11 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 20,
+  "new": 7,
   "latest_date": "2026-10-15"
  },
  {
@@ -586,7 +674,7 @@
   "bioguide": "B001292",
   "label": "Donald S. Beyer, Jr. (D-VA-08)",
   "scraper": "beyer",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -614,17 +702,6 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-09-14"
- },
- {
-  "bioguide": "C001055",
-  "label": "Ed Case (D-HI-01)",
-  "scraper": "case",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "agency-education",
@@ -993,10 +1070,10 @@
   "bioguide": "C001063",
   "label": "Henry Cuellar (D-TX-28)",
   "scraper": "cuellar",
-  "method": "python-statement+fallback",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 30,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-08-27"
  },
@@ -1155,24 +1232,13 @@
   "latest_date": "2026-07-14"
  },
  {
-  "bioguide": "M000312",
-  "label": "James P. McGovern (D-MA-02)",
-  "scraper": "mcgovern",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
- },
- {
   "bioguide": "W000831",
   "label": "James R. Walkinshaw (D-VA-11)",
   "scraper": "walkinshaw",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-15"
  },
@@ -1279,10 +1345,10 @@
   "bioguide": "N000002",
   "label": "Jerrold Nadler (D-NY-12)",
   "scraper": "nadler",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-02"
  },
@@ -1318,17 +1384,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
- },
- {
-  "bioguide": "G000585",
-  "label": "Jimmy Gomez (D-CA-34)",
-  "scraper": "gomez",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-22"
  },
  {
   "bioguide": "P000613",
@@ -1372,7 +1427,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-17"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "L000557",
@@ -1562,17 +1617,6 @@
   "latest_date": "2026-10-07"
  },
  {
-  "bioguide": "C001066",
-  "label": "Kathy Castor (D-FL-14)",
-  "scraper": "castor",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
- },
- {
   "bioguide": "M001234",
   "label": "Kelly Morrison (D-MN-03)",
   "scraper": "morrison",
@@ -1708,11 +1752,11 @@
   "bioguide": "F000468",
   "label": "Lizzie Fletcher (D-TX-07)",
   "scraper": "fletcher",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 18,
+  "new": 8,
   "latest_date": "2026-10-02"
  },
  {
@@ -1725,28 +1769,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-12"
- },
- {
-  "bioguide": "F000462",
-  "label": "Lois Frankel (D-FL-22)",
-  "scraper": "frankel",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
- },
- {
-  "bioguide": "T000482",
-  "label": "Lori Trahan (D-MA-03)",
-  "scraper": "trahan",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "M001208",
@@ -1873,7 +1895,7 @@
   "bioguide": "S001205",
   "label": "Mary Gay Scanlon (D-PA-05)",
   "scraper": "scanlon",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2104,7 +2126,7 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2181,7 +2203,7 @@
   "bioguide": "L000560",
   "label": "Rick Larsen (D-WA-02)",
   "scraper": "larsen",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2275,17 +2297,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-05-19"
- },
- {
-  "bioguide": "C001112",
-  "label": "Salud O. Carbajal (D-CA-24)",
-  "scraper": "carbajal",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "L000607",
@@ -2467,7 +2478,7 @@
   "bioguide": "P000610",
   "label": "Stacey E. Plaskett (D-VI-AL)",
   "scraper": "plaskett",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2563,17 +2574,6 @@
   "latest_date": "2026-10-14"
  },
  {
-  "bioguide": "D000617",
-  "label": "Suzan K. DelBene (D-WA-01)",
-  "scraper": "delbene",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
- },
- {
   "bioguide": "B001278",
   "label": "Suzanne Bonamici (D-OR-01)",
   "scraper": "bonamici",
@@ -2621,7 +2621,7 @@
   "bioguide": "L000273",
   "label": "Teresa Leger Fernandez (D-NM-03)",
   "scraper": "fernandez",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 15,
@@ -2654,10 +2654,10 @@
   "bioguide": "K000402",
   "label": "Timothy M. Kennedy (D-NY-26)",
   "scraper": "timkennedy",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 22,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -2753,10 +2753,10 @@
   "bioguide": "E000299",
   "label": "Veronica Escobar (D-TX-16)",
   "scraper": "escobar",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 12,
   "new": 0,
   "latest_date": "2026-10-15"
  },

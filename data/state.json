@@ -32,6 +32,9 @@
       "http://bera.house.gov/rss.xml",
       "https://bera.house.gov/news/press-releases"
     ],
+    "B001292": [
+      "https://beyer.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
     "B001296": [
       "https://boyle.house.gov/media-center/press-releases"
     ],
@@ -43,6 +46,11 @@
     ],
     "B001315": [
       "https://budzinski.house.gov/feed"
+    ],
+    "B001318": [
+      "https://balint.house.gov/news",
+      "https://balint.house.gov/news/documentquery.aspx?IssueID=14904",
+      "https://balint.house.gov/news/documentquery.aspx?IssueID=14910"
     ],
     "B001324": [
       "https://bell.house.gov/media/press-releases"
@@ -147,6 +155,9 @@
       "https://espaillat.house.gov/",
       "https://espaillat.house.gov/media/press-releases"
     ],
+    "E000299": [
+      "https://escobar.house.gov/"
+    ],
     "E000301": [
       "https://elfreth.house.gov/media/press-releases"
     ],
@@ -155,6 +166,10 @@
     ],
     "F000454": [
       "https://foster.house.gov/media/press-releases"
+    ],
+    "F000468": [
+      "https://fletcher.house.gov/news/",
+      "https://fletcher.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "F000476": [
       "https://frost.house.gov/rss/feeds/"
@@ -273,8 +288,19 @@
     "K000400": [
       "https://kamlager-dove.house.gov/media/press-releases"
     ],
+    "K000402": [
+      "https://kennedy.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+      "https://kennedy.house.gov/news/documentquery.aspx?IssueID=14891",
+      "https://kennedy.house.gov/news/documentquery.aspx?IssueID=15078"
+    ],
+    "L000273": [
+      "https://fernandez.house.gov/news"
+    ],
     "L000557": [
       "https://larson.house.gov/media-center/press-releases"
+    ],
+    "L000560": [
+      "https://larsen.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "L000582": [
       "https://lieu.house.gov/media-center/press-releases"
@@ -370,6 +396,9 @@
     "M001246": [
       "https://mejia.house.gov/media/press-releases"
     ],
+    "N000002": [
+      "https://nadler.house.gov/news/documentquery.aspx?DocumentTypeID=1753"
+    ],
     "N000015": [
       "https://neal.house.gov/category/press-releases/"
     ],
@@ -403,6 +432,9 @@
     ],
     "P000608": [
       "https://scottpeters.house.gov/press-releases"
+    ],
+    "P000610": [
+      "https://plaskett.house.gov/news/documentquery.aspx?documenttypeid=27"
     ],
     "P000613": [
       "https://panetta.house.gov/media/press-releases"
@@ -470,6 +502,9 @@
     "S001201": [
       "https://suozzi.house.gov/media/press-releases"
     ],
+    "S001205": [
+      "https://scanlon.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
     "S001211": [
       "https://stanton.house.gov/media/press-releases",
       "https://stanton.house.gov/rss.xml"
@@ -506,6 +541,13 @@
     ],
     "T000460": [
       "https://mikethompson.house.gov/newsroom/press-releases"
+    ],
+    "T000468": [
+      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
+      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
+    "T000469": [
+      "https://tonko.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000472": [
       "https://takano.house.gov/rss/feeds/"
@@ -561,6 +603,9 @@
     ],
     "W000830": [
       "https://whitesides.house.gov/category/press-releases/"
+    ],
+    "W000831": [
+      "https://walkinshaw.house.gov/news/"
     ],
     "committee-agriculture": [
       "https://democrats-agriculture.house.gov/news/documentquery.aspx?DocumentTypeID=27"
@@ -629,17 +674,17 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-16T06:28:32+00:00",
+    "at": "2026-10-16T07:04:41+00:00",
     "http": {
-      "200": 309,
-      "302": 3,
+      "200": 325,
       "404": 2,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 70
     },
     "sites": {
       "empty": 0,
-      "error": 2,
-      "ok": 258
+      "error": 14,
+      "ok": 246
     }
   }
 }
