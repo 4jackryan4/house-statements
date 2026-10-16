@@ -47,6 +47,10 @@ SHORT_TEXT = 400  # extracted text shorter than this is checked against the page
 #     on a backfill, for newsrooms whose listings can't be paged (Treasury, HUD). Missing numbers 404.
 #   paged: listing page URL with a page number ("{page}", counting from `first_page`), read page
 #     by page on a backfill (for sites whose "next" links don't work or that block the listing).
+#   scope: CSS selector of the part of a listing page that holds the releases.
+#   claims: other sources whose copy of a release this one takes over (OSHA from Labor).
+#   text_url: (regex, replacement) turning a listed address into the page that has the text.
+#   interval: seconds between requests, for newsrooms that answer 429 at the usual pace.
 WH_PATTERN = r"^/(releases|briefings-statements|fact-sheets|presidential-actions|remarks|research|articles)/20\d\d/\d\d/"
 WH, SUB, REG, IND, LEG = ("White House offices", "Agencies within departments", "Independent regulators",
                           "Independent agencies", "Legislative branch agencies")
@@ -153,7 +157,8 @@ AGENCIES = [
          pattern=r"^/press-release/\d{8}/"),
     dict(slug="cbp", label="Customs and Border Protection (CBP)", url="https://www.cbp.gov", group=SUB,
          listing="https://www.cbp.gov/newsroom/national-media-release",
-         paged="https://www.cbp.gov/newsroom/national-media-release?page={page}", first_page=1,
+         paged="https://www.cbp.gov/newsroom/national-media-release?combine=&field_date_release_value=All"
+               "&field_newsroom_type_target_id_1=81&page={page}", first_page=1,
          pattern=r"^/newsroom/national-media-release/[a-z0-9-]{15,}"),
     dict(slug="ice", label="Immigration and Customs Enforcement (ICE)", url="https://www.ice.gov", group=SUB,
          listing="https://www.ice.gov/newsroom", pattern=r"^/news/releases/[a-z0-9-]{10,}"),
@@ -175,9 +180,11 @@ AGENCIES = [
          paged="https://www.fbi.gov/news/press-releases?page={page}", first_page=2,
          pattern=r"^/(news/press-releases|contact-us/field-offices/[a-z]+/news)/[a-z0-9-]{15,}"),
     dict(slug="dea", label="DEA", url="https://www.dea.gov", group=SUB, client="browser",
-         listing="https://www.dea.gov/what-we-do/news/press-releases", pattern=r"^/press-releases/20\d\d/\d\d/\d\d/"),
+         listing="https://www.dea.gov/what-we-do/news/press-releases",
+         paged="https://www.dea.gov/what-we-do/news/press-releases?page={page}", first_page=1, pattern=r"^/press-releases/20\d\d/\d\d/\d\d/"),
     dict(slug="atf", label="ATF", url="https://www.atf.gov", group=SUB, client="chrome",
-         listing="https://www.atf.gov/news/press-releases", pattern=r"^/news/press-releases/[a-z0-9-]{15,}"),
+         listing="https://www.atf.gov/news/press-releases",
+         paged="https://www.atf.gov/news/press-releases?page={page}", first_page=1, pattern=r"^/news/press-releases/[a-z0-9-]{15,}"),
     dict(slug="usms", label="U.S. Marshals", url="https://www.usmarshals.gov", group=SUB, client="browser",
          listing="https://www.usmarshals.gov/news", pattern=r"^/news/press-release/[a-z0-9-]{10,}"),
     # Every U.S. Attorney's office posts on justice.gov; the Justice Department API has them all.
@@ -244,14 +251,15 @@ AGENCIES = [
          feeds=["https://www.ftc.gov/feeds/press-release.xml"], listing="https://www.ftc.gov/news-events/news/press-releases",
          pattern=r"^/news-events/news/press-releases/20\d\d/\d\d/"),
     dict(slug="fcc", label="FCC", url="https://www.fcc.gov", group=REG, client="chrome",
-         listing="https://www.fcc.gov/news-events/headlines", pattern=r"^/document/[a-z0-9-]{10,}"),
+         listing="https://www.fcc.gov/news-events/headlines",
+         paged="https://www.fcc.gov/news-events/headlines?page={page}", first_page=1, pattern=r"^/document/[a-z0-9-]{10,}"),
     dict(slug="cfpb", label="CFPB", url="https://www.consumerfinance.gov", group=REG,
          feeds=["https://www.consumerfinance.gov/about-us/newsroom/feed/"], listing="https://www.consumerfinance.gov/about-us/newsroom/",
          pattern=r"^/about-us/newsroom/[a-z0-9-]{10,}/?$"),
     dict(slug="fdic", label="FDIC", url="https://www.fdic.gov", group=REG,
          listing="https://www.fdic.gov/news/press-releases", pattern=r"^/news/press-releases/20\d\d/"),
     dict(slug="cftc", label="CFTC", url="https://www.cftc.gov", group=REG,
-         listing="https://www.cftc.gov/PressRoom/PressReleases", pattern=r"^/PressRoom/PressReleases/\d+-\d+"),
+         listing="https://www.cftc.gov/PressRoom/PressReleases", interval=3, pattern=r"^/PressRoom/PressReleases/\d+-\d+"),
     dict(slug="ferc", label="FERC", url="https://www.ferc.gov", group=REG,
          listing="https://www.ferc.gov/news-events/news", pattern=r"^/news-events/news/(?!news-releases-headlines)[a-z0-9-]{15,}"),
     dict(slug="nrc", label="Nuclear Regulatory Commission", url="https://www.nrc.gov", group=REG,
@@ -284,7 +292,9 @@ AGENCIES = [
     dict(slug="nasa", label="NASA", url="https://www.nasa.gov", group=IND,
          wp="https://www.nasa.gov/wp-json/wp/v2/press-release", pattern=r"^/news-release/"),
     dict(slug="usps", label="U.S. Postal Service", url="https://about.usps.com", group=IND,
-         feeds=["https://about.usps.com/news/latestnews.rss"], pattern=r"^/newsroom/rssrequest\.htm"),
+         feeds=["https://about.usps.com/news/latestnews.rss"], pattern=r"^/newsroom/rssrequest\.htm",
+         # The feed links to a redirect page; the release itself is at the path in ?nr=.
+         text_url=(r"/newsroom/rssrequest\.htm\?nr=", "/newsroom/")),
     dict(slug="opm", label="Office of Personnel Management", url="https://www.opm.gov", group=IND,
          listing="https://www.opm.gov/news/news-releases/", pattern=r"^/news/news-releases/[a-z0-9-]{10,}"),
     dict(slug="gsa", label="General Services Administration", url="https://www.gsa.gov", group=IND,
@@ -358,6 +368,8 @@ def load_agencies() -> list[dict]:
 
 
 AGENCY_BY_ID = {AGENCY_PREFIX + a["slug"]: a for a in AGENCIES}
+# Newsrooms that answer 429 (too many requests) at the usual pace.
+HOST_INTERVAL = {urlsplit(a["url"]).netloc: a["interval"] for a in AGENCIES if a.get("interval")}
 
 
 # ---------------------------------------------------------------- fetching
@@ -454,7 +466,7 @@ def get(url: str, session):
     with _session_lock:
         lock = _locks.setdefault(host, threading.Lock())
     with lock:
-        wait = _last.get(host, 0) + MIN_INTERVAL - time.monotonic()
+        wait = _last.get(host, 0) + HOST_INTERVAL.get(host, MIN_INTERVAL) - time.monotonic()
         if wait > 0:
             time.sleep(wait)
         try:
@@ -485,10 +497,12 @@ def fetch_page(url: str, source_id: str) -> dict:
     """Text, date and title of one agency press release (see textfetch.fetch_page)."""
     from .textfetch import extract_page
 
-    r = get(url, session_for(source_id))
+    rewrite = AGENCY_BY_ID.get(source_id, {}).get("text_url")
+    fetch_url = re.sub(rewrite[0], rewrite[1], url) if rewrite else url
+    r = get(fetch_url, session_for(source_id))
     if r is None:
         return {"text": None, "date": None, "title": None}
-    page = extract_page(r.text, url)
+    page = extract_page(r.text, fetch_url)
     if len(page["text"] or "") < SHORT_TEXT:
         # Some newsrooms (e.g. Interior) confuse the extractor into returning the .gov banner.
         soup = BeautifulSoup(r.text, "lxml")

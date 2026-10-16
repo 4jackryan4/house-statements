@@ -174,11 +174,14 @@ def _interleave(ids: list[str], records: dict) -> list[str]:
     return house + mixed
 
 
-def fill_text(records: dict, ids: list[str], workers: int, old_ids: set | None = None) -> int:
+def fill_text(records: dict, ids: list[str], workers: int, old_ids: set | None = None, deadline: float = 0) -> int:
+    """Fetch text for `ids`. Past `deadline` (time.monotonic()), pages not yet started are left for later."""
     session = requests.Session()
     filled, old = 0, []
 
     def work(sid):
+        if deadline and time.monotonic() > deadline:
+            return sid, None
         r = records[sid]
         if is_agency(r["bioguide"]):
             return sid, agency_page(r["url"], r["bioguide"])
@@ -187,6 +190,8 @@ def fill_text(records: dict, ids: list[str], workers: int, old_ids: set | None =
     with ThreadPoolExecutor(max_workers=workers) as pool:
         for fut in as_completed([pool.submit(work, sid) for sid in ids]):
             sid, page = fut.result()
+            if page is None:
+                continue
             text, page_date = page["text"], page["date"]
             r = records[sid]
             if r.get("title_check") and page["title"]:
@@ -317,13 +322,12 @@ def main(argv=None):
         return
 
     if args.export:
-        # Text in chunks, so a time limit still leaves everything found so far to export.
+        # Text until the time limit, so everything found so far is still exported.
         filled, order = 0, _interleave(new_ids, records)
-        for k in range(0, len(order), 200):
-            if args.minutes and time.monotonic() - started > args.minutes * 60:
-                print(f"collect: time's up; {len(order) - k} statements exported without text", flush=True)
-                break
-            filled += fill_text(records, order[k:k + 200], workers=8)
+        deadline = started + args.minutes * 60 if args.minutes else 0
+        filled += fill_text(records, order, workers=8, deadline=deadline)
+        if deadline and time.monotonic() > deadline:
+            print("collect: time's up; the rest are exported without text (hourly runs fill it in)", flush=True)
         os.makedirs(os.path.dirname(os.path.abspath(args.export)), exist_ok=True)
         with open(args.export, "w") as f:
             for sid in (i for i in new_ids if i in records):
