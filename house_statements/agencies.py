@@ -389,7 +389,8 @@ def _listing_pages(start_url: str, pattern, session, pages: int, template: str |
         found = [i for i in fallback._filter(fallback._items_from(r.text, url, pattern), host, pattern) if i["date"]]
         new = [i for i in found if i["url"] not in {x["url"] for x in items}]
         items.extend(new)
-        if not new or min(i["date"] for i in new).isoformat() < START_DATE:
+        # Stop once a whole page is older than the start date (one pinned old release doesn't count).
+        if not new or max(i["date"] for i in new).isoformat() < START_DATE:
             break
         url = template.format(page=first + k + 1) if template else fallback.next_page_url(r.text, url)
         if not url:
@@ -430,7 +431,7 @@ def scrape_agency(source: dict, pages: int = 1) -> tuple[list[dict], str | None,
             if not entries:
                 break
             items += fallback._filter(entries, host, pattern)
-            if min(i["date"] for i in entries).isoformat() < START_DATE:
+            if max(i["date"] for i in entries).isoformat() < START_DATE:
                 break
         methods.append("rss pages")
     if agency.get("ids") and backfill:
