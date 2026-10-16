@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -221,7 +222,15 @@ def main(argv=None):
     parser.add_argument("--sweep", action="store_true", help="also check every site with the generic scraper")
     parser.add_argument("--pages", type=int, default=1, help="listing pages to read per site (backfill)")
     parser.add_argument("--report", help="dry run: write what would be added to this JSON file, save nothing")
+    parser.add_argument("--export", help="backfill: write the new statements (with text) to this JSONL file "
+                                         "instead of saving them; add them later with --merge")
+    parser.add_argument("--minutes", type=float, default=0,
+                        help="with --export: stop fetching text after this many minutes and export what's done")
+    parser.add_argument("--merge", nargs="*", help="add the statements in these --export files to the data")
     args = parser.parse_args(argv)
+    if args.merge is not None:
+        return merge_exports(args.merge)
+    started = time.monotonic()
 
     members = load_sources()
     if args.only:
@@ -250,6 +259,8 @@ def main(argv=None):
             added = merge_items(records, m, items, now)
             new_ids.extend(added)
             dates = [iso(i.get("date")) for i in items if i.get("date")]
+            print(f"collect: {m['label']}: {method}, {len(items)} found, {len(added)} new"
+                  + (f", {error}" if error else ""), flush=True)
             health.append({
                 "bioguide": m["bioguide"],
                 "label": m["label"],
@@ -290,6 +301,21 @@ def main(argv=None):
         print(f"collect: dry run, {len(new_ids)} statements would be added; report in {args.report}")
         return
 
+    if args.export:
+        # Text in chunks, so a time limit still leaves everything found so far to export.
+        filled = 0
+        for k in range(0, len(new_ids), 200):
+            if args.minutes and time.monotonic() - started > args.minutes * 60:
+                print(f"collect: time's up; {len(new_ids) - k} statements exported without text", flush=True)
+                break
+            filled += fill_text(records, _interleave(new_ids, records)[k:k + 200], workers=8)
+        os.makedirs(os.path.dirname(os.path.abspath(args.export)), exist_ok=True)
+        with open(args.export, "w") as f:
+            for sid in new_ids:
+                f.write(json.dumps(records[sid], ensure_ascii=False, sort_keys=True) + "\n")
+        print(f"collect: exported {len(new_ids)} new statements ({filled} with text) to {args.export}")
+        return
+
     # Text for new statements first, then retry earlier misses.
     retry = [sid for sid, r in records.items() if not r.get("text") and r.get("text_attempts", 0) < 3 and sid not in new_ids]
     todo = _interleave(new_ids + retry, records)[: args.max_text]
@@ -310,6 +336,33 @@ def main(argv=None):
     print(f"collect: {len(new_ids)} new statements, text fetched for {filled}/{len(todo)}")
     if members and counts["ok"] == 0:
         print("collect: no member site returned anything; the runner may be blocked", file=sys.stderr)
+
+
+def merge_exports(paths: list[str]) -> None:
+    """Add statements from --export files that the data doesn't have yet (or fill in missing text)."""
+    records = store.load_all()
+    seen = {(r["bioguide"], _title_key(r["title"]), r.get("date")) for r in records.values()}
+    added = filled = 0
+    for path in paths:
+        with open(path) as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                r = json.loads(line)
+                old = records.get(r["id"])
+                key = (r["bioguide"], _title_key(r["title"]), r.get("date"))
+                if old is None and key in seen:
+                    continue  # the same release under another URL
+                if old is None:
+                    seen.add(key)
+                    records[r["id"]] = r
+                    added += 1
+                elif not old.get("text") and r.get("text"):
+                    old["text"] = r["text"]
+                    old["date"] = old.get("date") or r.get("date")
+                    filled += 1
+    store.save_all(records)
+    print(f"collect: merged {added} new statements and text for {filled} more from {len(paths)} files")
 
 
 if __name__ == "__main__":

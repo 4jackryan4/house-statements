@@ -1,0 +1,97 @@
+name: Backfill agency press releases
+# Manual: reads each cabinet agency's newsroom back to January 2025, one job per agency in
+# parallel (so no single job runs into the time limit), then adds everything found to the data
+# in one commit. The hourly update builds and publishes the site afterwards.
+on:
+  workflow_dispatch:
+    inputs:
+      agencies:
+        description: "Space-separated agency ids, e.g. agency-state (blank = all)"
+        required: false
+        default: ""
+      pages:
+        description: "Most listing pages to read per agency"
+        required: false
+        default: "400"
+permissions:
+  contents: write
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      agencies: ${{ steps.list.outputs.agencies }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - id: list
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, re, sys
+          sys.path.insert(0, ".")
+          from house_statements.agencies import AGENCIES
+          wanted = "${{ inputs.agencies }}".split()
+          ids = [f"agency-{a['slug']}" for a in AGENCIES]
+          print("agencies=" + json.dumps([i for i in ids if not wanted or i in wanted]))
+          PY
+
+  collect:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        agency: ${{ fromJson(needs.plan.outputs.agencies) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Collect
+        run: |
+          xvfb-run -a python -m house_statements.collect --only ${{ matrix.agency }} --pages "${{ inputs.pages }}" \
+            --max-text 0 --export "out/${{ matrix.agency }}.jsonl" --minutes 130
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.agency }}
+          path: out/
+          retention-days: 7
+
+  merge:
+    needs: collect
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          path: exports
+          merge-multiple: true
+      - name: Add to the data and commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          # Re-merge onto the latest main each try, so an hourly commit in between is never overwritten.
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python -m house_statements.collect --merge exports/*.jsonl
+            git add data
+            git diff --cached --quiet && { echo "nothing new"; exit 0; }
+            git commit -q -m "Backfill agency press releases $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin HEAD:main && exit 0
+            sleep 20
+          done
+          exit 1
