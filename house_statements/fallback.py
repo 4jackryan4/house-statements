@@ -131,8 +131,11 @@ def _host(url: str) -> str:
     return urlsplit(url).netloc.lower().removeprefix("www.")
 
 
-def is_statement_url(url: str, host: str, from_feed: bool = False) -> bool:
+def is_statement_url(url: str, host: str, from_feed: bool = False, pattern: re.Pattern | None = None) -> bool:
     parts = urlsplit(url)
+    if pattern is not None:  # a source with its own statement URL pattern (federal agencies)
+        return parts.scheme in ("http", "https") and _host(url) == host and bool(
+            pattern.search(parts.path + ("?" + parts.query if parts.query else "")))
     if parts.scheme not in ("http", "https") or _host(url) != host or EXCLUDE_PATH.search(parts.path):
         return False
     if from_feed and ROOT_SLUG.match(parts.path):
@@ -144,10 +147,10 @@ def _clean_title(title: str) -> str:
     return " ".join((title or "").split())
 
 
-def _keep(item: dict, host: str) -> bool:
+def _keep(item: dict, host: str, pattern=None) -> bool:
     title = item["title"]
     return (
-        is_statement_url(item["url"], host, from_feed=item.get("feed", False))
+        is_statement_url(item["url"], host, from_feed=item.get("feed", False), pattern=pattern)
         and len(title) >= MIN_TITLE
         and not title.lower().startswith(SKIP_TITLES)
         and title.lower().strip(" .") not in TEMPLATE_TITLES
@@ -211,18 +214,18 @@ def from_next_data(html: str, page_url: str) -> list[dict]:
     return items
 
 
-def _stream(root: Tag, host: str, page_url: str):
+def _stream(root: Tag, host: str, page_url: str, pattern=None):
     """Document-order tokens: ("link", url, a) for statement links and ("text", str) for other text."""
     for node in root.descendants:
         if isinstance(node, Tag):
             if node.name == "a" and node.get("href"):
                 url = urljoin(page_url, node["href"]).split("#")[0]
-                if is_statement_url(url, host):
+                if is_statement_url(url, host, pattern=pattern):
                     yield ("link", url, node)
             elif node.name == "time" and node.get("datetime"):
                 yield ("text", " " + node["datetime"][:10] + " ")
         elif isinstance(node, NavigableString) and not any(
-            p.name == "a" and p.get("href") and is_statement_url(urljoin(page_url, p["href"]), host)
+            p.name == "a" and p.get("href") and is_statement_url(urljoin(page_url, p["href"]), host, pattern=pattern)
             for p in node.parents if isinstance(p, Tag) and p.name == "a"
         ):
             text = str(node).strip()
@@ -234,7 +237,7 @@ def _is_date_el(el) -> bool:
     return el is not None and bool(re.search(r"date", " ".join(el.get("class") or []), re.I))
 
 
-def from_listing(html: str, page_url: str) -> list[dict]:
+def from_listing(html: str, page_url: str, pattern=None) -> list[dict]:
     soup = BeautifulSoup(html, "lxml")
     for junk in soup.select("nav, header, footer, script, style, noscript, [role=navigation]"):
         junk.decompose()
@@ -247,7 +250,7 @@ def from_listing(html: str, page_url: str) -> list[dict]:
     order: list[str] = []
     for a in body.find_all("a", href=True):
         url = urljoin(page_url, a["href"]).split("#")[0]
-        if not is_statement_url(url, host) or url.rstrip("/") == page_url.rstrip("/"):
+        if not is_statement_url(url, host, pattern=pattern) or url.rstrip("/") == page_url.rstrip("/"):
             continue
         title = _clean_title(a.get_text(" ", strip=True)) or _clean_title(a.get("title") or a.get("aria-label"))
         if url not in titles:
@@ -263,7 +266,7 @@ def from_listing(html: str, page_url: str) -> list[dict]:
             urls = {
                 urljoin(page_url, x["href"]).split("#")[0] for x in node.parent.find_all("a", href=True)
             }
-            if len({u for u in urls if is_statement_url(u, host)} - {url}) > 0:
+            if len({u for u in urls if is_statement_url(u, host, pattern=pattern)} - {url}) > 0:
                 break
             node = card = node.parent
         if card is not None:
@@ -280,7 +283,7 @@ def from_listing(html: str, page_url: str) -> list[dict]:
     segments: dict[str, list[str]] = {u: [] for u in order}
     before: dict[str, str] = {}
     current, buf = None, []
-    for tok in _stream(body, host, page_url):
+    for tok in _stream(body, host, page_url, pattern):
         if tok[0] == "link":
             url = tok[1]
             if url == current:
@@ -322,18 +325,18 @@ def next_page_url(html: str, page_url: str) -> str | None:
     return None
 
 
-def _items_from(text: str, url: str) -> list[dict]:
+def _items_from(text: str, url: str, pattern=None) -> list[dict]:
     head = text[:2000]
     if "<rss" in head or "<feed" in head or "<rdf" in head:
         return from_rss(text, url)
-    return from_next_data(text, url) + from_listing(text, url)
+    return from_next_data(text, url) + from_listing(text, url, pattern)
 
 
-def _filter(items: list[dict], host: str) -> list[dict]:
+def _filter(items: list[dict], host: str, pattern=None) -> list[dict]:
     seen, out = set(), []
     for i in items:
         i["url"] = i["url"].strip()
-        if i["url"] in seen or not _keep(i, host):
+        if i["url"] in seen or not _keep(i, host, pattern):
             continue
         seen.add(i["url"])
         out.append(i)
@@ -374,7 +377,9 @@ def scrape_site(
     return _scrape(host, session, pages, urls, first=home, press_only=press_only)
 
 
-def _scrape(host: str, session, pages: int, urls: list[str], first=None, press_only: bool = False) -> list[dict]:
+def _scrape(
+    host: str, session, pages: int, urls: list[str], first=None, press_only: bool = False, pattern=None
+) -> list[dict]:
     sources = []  # (items, response)
     tried = set()
     for url, r in ([(first.url, first)] if first is not None else []) + [(u, None) for u in urls]:
@@ -383,7 +388,7 @@ def _scrape(host: str, session, pages: int, urls: list[str], first=None, press_o
         if r is None or r.url in tried:
             continue
         tried.add(r.url)
-        items = [i for i in _filter(_items_from(r.text, r.url), host) if i["date"]]
+        items = [i for i in _filter(_items_from(r.text, r.url, pattern), host, pattern) if i["date"]]
         for i in items:
             i["origin"] = url
         if press_only:
@@ -424,7 +429,7 @@ def _scrape(host: str, session, pages: int, urls: list[str], first=None, press_o
         page = _get(nxt, session)
         if page is None:
             break
-        more = [i for i in _filter(_items_from(page.text, page.url), host) if i["date"]]
+        more = [i for i in _filter(_items_from(page.text, page.url, pattern), host, pattern) if i["date"]]
         for i in more:
             i["origin"] = main[0][0]["origin"]
         if not add(more):
@@ -432,3 +437,13 @@ def _scrape(host: str, session, pages: int, urls: list[str], first=None, press_o
         if max(i["date"] for i in more).isoformat() < START_DATE:
             break
     return found
+
+
+def scrape_listings(urls: list[str], pattern: re.Pattern, session=None, pages: int = 1) -> list[dict]:
+    """Statements from known feeds and listing pages whose statement links match `pattern`.
+
+    For sources with a fixed newsroom (federal agencies): no homepage discovery. The listing page
+    that yields the most recent statements is followed to older pages, as in scrape_site.
+    """
+    session = session or requests.Session()
+    return _scrape(_host(urls[0]), session, pages, urls, pattern=pattern)
