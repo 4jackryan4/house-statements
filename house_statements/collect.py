@@ -98,7 +98,7 @@ def _nearby(date: str, days: int = 3) -> list[str]:
     return [(d + dt.timedelta(days=k)).isoformat() for k in range(-days, days + 1)]
 
 
-def merge_items(records: dict, member: dict, items: list[dict], now: str, skip=()) -> list[str]:
+def merge_items(records: dict, member: dict, items: list[dict], now: str, skip=(), claimed=None) -> list[str]:
     """Add unseen items to records; return ids of the new records. `skip`: ids known to be from before 2025."""
     new_ids = []
     tomorrow = (dt.date.fromisoformat(now[:10]) + dt.timedelta(days=1)).isoformat()
@@ -122,6 +122,8 @@ def merge_items(records: dict, member: dict, items: list[dict], now: str, skip=(
             # A White House office's release also shows in the White House's own listing (and an
             # OSHA one in the Labor Department's): the more specific source takes it over.
             if records[sid]["bioguide"] in member.get("claims", ()):
+                if claimed is not None:
+                    claimed.append((sid, records[sid]["bioguide"]))
                 records[sid]["bioguide"] = member["bioguide"]
             continue
         if date and date < START_DATE:
@@ -257,7 +259,7 @@ def main(argv=None):
     http = Counter()
     count_http(http)
 
-    health, new_ids = [], []
+    health, new_ids, claimed = [], [], []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
             pool.submit(scrape_member, m, args.sweep, args.pages, known.get(m["bioguide"]) or _seed(m)): m
@@ -269,7 +271,7 @@ def main(argv=None):
             origins = sorted({i["origin"] for i in items if i.get("origin")})
             if origins:
                 known[m["bioguide"]] = origins
-            added = merge_items(records, m, items, now, old_links)
+            added = merge_items(records, m, items, now, old_links, claimed)
             new_ids.extend(added)
             dates = [iso(i.get("date")) for i in items if i.get("date")]
             print(f"collect: {m['label']}: {method}, {len(items)} found, {len(added)} new"
@@ -326,8 +328,10 @@ def main(argv=None):
         with open(args.export, "w") as f:
             for sid in (i for i in new_ids if i in records):
                 f.write(json.dumps(records[sid], ensure_ascii=False, sort_keys=True) + "\n")
+            for sid, prev in claimed:
+                f.write(json.dumps(records[sid] | {"claimed": prev}, ensure_ascii=False, sort_keys=True) + "\n")
         new_ids = [i for i in new_ids if i in records]
-        print(f"collect: exported {len(new_ids)} new statements ({filled} with text) to {args.export}")
+        print(f"collect: exported {len(new_ids)} new statements ({filled} with text) and {len(claimed)} taken over to {args.export}")
         return
 
     # Text for new statements first, then retry earlier misses.
@@ -358,14 +362,20 @@ def merge_exports(paths: list[str]) -> None:
     """Add statements from --export files that the data doesn't have yet (or fill in missing text)."""
     records = store.load_all()
     seen = {(r["bioguide"], _title_key(r["title"]), r.get("date")) for r in records.values()}
-    added = filled = 0
+    added = filled = claimed = 0
     for path in paths:
         with open(path) as f:
             for line in f:
                 if not line.strip():
                     continue
                 r = json.loads(line)
-                old = records.get(r["id"])
+                old, prev = records.get(r["id"]), r.pop("claimed", None)
+                if old and prev:
+                    # A more specific source taking over a release (OSHA from Labor, say).
+                    if old["bioguide"] == prev:
+                        old["bioguide"] = r["bioguide"]
+                        claimed += 1
+                    continue
                 key = (r["bioguide"], _title_key(r["title"]), r.get("date"))
                 if old is None and key in seen:
                     continue  # the same release under another URL
@@ -378,7 +388,8 @@ def merge_exports(paths: list[str]) -> None:
                     old["date"] = old.get("date") or r.get("date")
                     filled += 1
     store.save_all(records)
-    print(f"collect: merged {added} new statements and text for {filled} more from {len(paths)} files")
+    print(f"collect: merged {added} new statements and text for {filled} more from {len(paths)} files; "
+          f"{claimed} moved to a more specific source")
 
 
 if __name__ == "__main__":
