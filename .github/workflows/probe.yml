@@ -20,7 +20,11 @@ jobs:
           python-version: "3.12"
       - run: pip install requests beautifulsoup4 lxml curl_cffi
       - run: |
-          if [ "${{ inputs.bioguides }}" = "agencies" ]; then python scripts/probe_agencies.py
+          if [ "${{ inputs.bioguides }}" = "browser" ]; then
+            pip install playwright && python -m playwright install --with-deps chromium
+            python scripts/probe_browser.py https://www.epa.gov/newsreleases/search https://www.ed.gov/about/news/press-release \
+              https://www.commerce.gov/news/press-releases https://www.epa.gov/newsreleases/search/rss
+          elif [ "${{ inputs.bioguides }}" = "agencies" ]; then python scripts/probe_agencies.py
           else python scripts/probe.py ${{ inputs.bioguides }}; fi
       - name: Publish snapshots to the "probe" branch
         run: |
