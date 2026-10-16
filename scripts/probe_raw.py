@@ -3,6 +3,7 @@
 Writes probe/raw/<slug>-<n>.html and probe/raw/index.json. Each URL is fetched with Chrome
 impersonation, then a plain client; slugs in BROWSER also get real-Chrome cookies first.
 """
+import gzip
 import json
 import re
 import sys
@@ -26,7 +27,8 @@ index = []
 
 def save(slug, n, url, client, r):
     body = r.text if r is not None else ""
-    (out / f"{slug}-{n}.html").write_text(body[:600_000])
+    # Gzipped: pages embed third-party keys that GitHub's secret scanning refuses to accept.
+    (out / f"{slug}-{n}.html.gz").write_bytes(gzip.compress(body[:600_000].encode()))
     row = {"slug": slug, "n": n, "url": url, "client": client,
            "status": r.status_code if r is not None else None, "bytes": len(body)}
     index.append(row)
