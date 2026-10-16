@@ -11,6 +11,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-commerce",
+  "label": "Commerce Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "G000605",
   "label": "Adam Gray (D-CA-13)",
   "scraper": "gray",
@@ -66,6 +77,17 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-14"
+ },
+ {
   "bioguide": "G000553",
   "label": "Al Green (D-TX-09)",
   "scraper": "algreen",
@@ -85,7 +107,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-08"
+  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "A000370",
@@ -308,6 +330,17 @@
   "latest_date": "2026-10-14"
  },
  {
+  "bioguide": "agency-cia",
+  "label": "CIA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 12,
+  "new": 12,
+  "latest_date": "2026-09-11"
+ },
+ {
   "bioguide": "P000597",
   "label": "Chellie Pingree (D-ME-01)",
   "scraper": "pingree",
@@ -473,6 +506,17 @@
   "latest_date": "2026-10-15"
  },
  {
+  "bioguide": "agency-war",
+  "label": "Department of War (Defense)",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 30,
+  "new": 30,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "T000491",
   "label": "Derek Tran (D-CA-45)",
   "scraper": "tran",
@@ -504,6 +548,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-odni",
+  "label": "Director of National Intelligence (ODNI)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 8,
+  "latest_date": "2026-08-03"
  },
  {
   "bioguide": "D000230",
@@ -568,8 +623,19 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-30"
+  "new": 1,
+  "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-education",
+  "label": "Education Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "committee-education-workforce",
@@ -627,6 +693,17 @@
   "latest_date": "2026-10-05"
  },
  {
+  "bioguide": "agency-energy",
+  "label": "Energy Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 11,
+  "new": 11,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "committee-energy-commerce",
   "label": "Energy and Commerce Committee Democrats",
   "scraper": null,
@@ -636,6 +713,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-08"
+ },
+ {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 14,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "S001225",
@@ -880,6 +968,17 @@
   "latest_date": "2026-09-29"
  },
  {
+  "bioguide": "agency-hhs",
+  "label": "Health and Human Services (HHS)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 11,
+  "new": 11,
+  "latest_date": "2026-10-14"
+ },
+ {
   "bioguide": "J000288",
   "label": "Henry C. \"Hank\" Johnson, Jr. (D-GA-04)",
   "scraper": "hankjohnson",
@@ -924,6 +1023,17 @@
   "latest_date": "2026-10-08"
  },
  {
+  "bioguide": "agency-dhs",
+  "label": "Homeland Security (DHS)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "committee-homeland-security",
   "label": "Homeland Security Committee Democrats",
   "scraper": null,
@@ -946,6 +1056,17 @@
   "latest_date": "2026-10-13"
  },
  {
+  "bioguide": "agency-hud",
+  "label": "Housing and Urban Development (HUD)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 212,
+  "new": 206,
+  "latest_date": "2026-10-14"
+ },
+ {
   "bioguide": "O000173",
   "label": "Ilhan Omar (D-MN-05)",
   "scraper": "omar",
@@ -966,6 +1087,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-14"
+ },
+ {
+  "bioguide": "agency-interior",
+  "label": "Interior Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "C001110",
@@ -1240,7 +1372,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-13"
+  "latest_date": "2026-09-17"
  },
  {
   "bioguide": "L000557",
@@ -1408,6 +1540,17 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 25,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "C001101",
   "label": "Katherine M. Clark (D-MA-05)",
   "scraper": "clark",
@@ -1494,6 +1637,17 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-10-09"
+ },
+ {
+  "bioguide": "agency-labor",
+  "label": "Labor Department",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 19,
+  "new": 19,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "S001231",
@@ -1903,6 +2057,17 @@
   "latest_date": "2026-10-09"
  },
  {
+  "bioguide": "agency-omb",
+  "label": "Office of Management and Budget (OMB)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 9,
+  "new": 9,
+  "latest_date": "2026-09-25"
+ },
+ {
   "bioguide": "committee-oversight",
   "label": "Oversight Committee Democrats",
   "scraper": null,
@@ -2277,6 +2442,17 @@
   "latest_date": "2026-09-16"
  },
  {
+  "bioguide": "agency-sba",
+  "label": "Small Business Administration (SBA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 20,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "committee-small-business",
   "label": "Small Business Committee Democrats",
   "scraper": null,
@@ -2297,6 +2473,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-12"
+ },
+ {
+  "bioguide": "agency-state",
+  "label": "State Department",
+  "scraper": null,
+  "method": "wordpress",
+  "status": "ok",
+  "error": null,
+  "count": 7,
+  "new": 7,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "H000874",
@@ -2486,6 +2673,28 @@
   "latest_date": "2026-10-13"
  },
  {
+  "bioguide": "agency-transportation",
+  "label": "Transportation Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-treasury",
+  "label": "Treasury Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "C001125",
   "label": "Troy A. Carter (D-LA-02)",
   "scraper": "troycarter",
@@ -2495,6 +2704,28 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-14"
+ },
+ {
+  "bioguide": "agency-un",
+  "label": "U.S. Mission to the UN",
+  "scraper": null,
+  "method": "wordpress",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 10,
+  "latest_date": "2026-10-13"
+ },
+ {
+  "bioguide": "agency-ustr",
+  "label": "U.S. Trade Representative (USTR)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 131,
+  "new": 131,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "H001094",
@@ -2527,6 +2758,17 @@
   "error": null,
   "count": 10,
   "new": 0,
+  "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-va",
+  "label": "Veterans Affairs (VA)",
+  "scraper": null,
+  "method": "wordpress",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 20,
   "latest_date": "2026-10-15"
  },
  {
