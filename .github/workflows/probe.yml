@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests beautifulsoup4 lxml
+      - run: pip install requests beautifulsoup4 lxml curl_cffi
       - run: |
           if [ "${{ inputs.bioguides }}" = "agencies" ]; then python scripts/probe_agencies.py
           else python scripts/probe.py ${{ inputs.bioguides }}; fi
