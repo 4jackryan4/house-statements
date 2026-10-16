@@ -95,6 +95,7 @@ def main():
     member_rows = [
         {k: m[k] for k in ("bioguide", "name", "label", "state", "district", "url", "committees")}
         | {"recent": counts_90.get(m["bioguide"], 0)} | ({"kind": m["kind"]} if m.get("kind") else {})
+        | ({"group": m["group"]} if m.get("group") else {})
         for m in committees + agencies + members
     ]
 
@@ -132,8 +133,8 @@ def main():
     rss(SITE_DIR / "feeds" / "committees.xml", "House Democrats: committee statements", SITE_URL + "?type=committee",
         "Latest press statements from the Democrats on each House committee.",
         [statement_item(r) for r in records if r["bioguide"] in committee_ids][:100])
-    rss(SITE_DIR / "feeds" / "agencies.xml", "Cabinet agencies: press releases", SITE_URL + "?type=agency",
-        "Latest press releases from the cabinet-level federal agencies.",
+    rss(SITE_DIR / "feeds" / "agencies.xml", "Federal agencies: press releases", SITE_URL + "?type=agency",
+        "Latest press releases from federal agencies.",
         [statement_item(r) for r in records if r["bioguide"] in agency_ids][:100])
     newest_events = sorted(events, key=lambda e: (e["first"], e["member_count"]), reverse=True)[:FEED_COUNT]
     rss(SITE_DIR / "feeds" / "events.xml", "House Democrats: events", SITE_URL + "events.html",

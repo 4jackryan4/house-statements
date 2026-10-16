@@ -74,7 +74,7 @@ async function setBuilt() {
   try {
     const b = await getJSON("build.json");
     const when = new Date(b.built_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
-    const agencies = b.agencies ? `, plus ${b.agency_statements.toLocaleString()} press releases from ${b.agencies} cabinet agencies` : "";
+    const agencies = b.agencies ? `, plus ${b.agency_statements.toLocaleString()} press releases from ${b.agencies} federal agencies` : "";
     $("#built").textContent = `Last updated ${when}. ${b.statements.toLocaleString()} statements from ${b.members} members${b.committees ? ` and ${b.committees} committees` : ""}${agencies} since January 2025.`;
   } catch {}
 }
@@ -313,7 +313,7 @@ async function membersPage() {
     // Committees and agencies first, then members by state.
     const byState = new Map();
     rows.forEach((m) => {
-      const key = m.kind === "committee" ? "Committees" : m.kind === "agency" ? "Cabinet agencies" : m.state;
+      const key = m.kind === "committee" ? "Committees" : m.kind === "agency" ? (m.group || "Cabinet agencies") : m.state;
       if (!byState.has(key)) byState.set(key, []);
       byState.get(key).push(m);
     });

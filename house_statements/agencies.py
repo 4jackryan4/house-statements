@@ -31,6 +31,7 @@ from . import fallback, store
 from .config import START_DATE
 
 AGENCY_PREFIX = "agency-"
+CABINET = "Cabinet agencies"
 HONEST_UA = "Mozilla/5.0 (compatible; house-statements/1.0; +https://github.com/4jackryan4/house-statements)"
 MIN_INTERVAL = 0.5  # seconds between requests to the same agency
 WP_PAGE_SIZE = 100
@@ -126,6 +127,7 @@ def load_agencies() -> list[dict]:
     return [{
         "bioguide": AGENCY_PREFIX + a["slug"],
         "kind": "agency",
+        "group": a.get("group", CABINET),
         "name": a["label"],
         "last_name": a["label"],
         "party": "",
