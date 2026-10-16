@@ -84,7 +84,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -107,7 +107,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-02"
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "A000370",
@@ -337,7 +337,7 @@
   "status": "ok",
   "error": null,
   "count": 12,
-  "new": 12,
+  "new": 0,
   "latest_date": "2026-09-11"
  },
  {
@@ -513,7 +513,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 30,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -557,7 +557,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 8,
+  "new": 0,
   "latest_date": "2026-08-03"
  },
  {
@@ -623,7 +623,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -634,7 +634,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -700,7 +700,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -722,7 +722,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 14,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -975,7 +975,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 11,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1063,7 +1063,7 @@
   "status": "ok",
   "error": null,
   "count": 212,
-  "new": 206,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -1096,7 +1096,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1372,7 +1372,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-17"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "L000557",
@@ -1547,7 +1547,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 25,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1646,7 +1646,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 19,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -2064,7 +2064,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 9,
+  "new": 0,
   "latest_date": "2026-09-25"
  },
  {
@@ -2093,7 +2093,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2449,7 +2449,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2482,7 +2482,7 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 7,
+  "new": 0,
   "latest_date": "2026-10-14"
  },
  {
@@ -2680,7 +2680,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2691,7 +2691,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -2713,7 +2713,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 10,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -2724,7 +2724,7 @@
   "status": "ok",
   "error": null,
   "count": 131,
-  "new": 131,
+  "new": 0,
   "latest_date": "2026-10-13"
  },
  {
@@ -2768,7 +2768,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 20,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
