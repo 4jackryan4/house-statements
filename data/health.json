@@ -22,6 +22,28 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-usms",
+  "label": "U.S. Marshals",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -106,7 +128,7 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -248,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 40,
-  "new": 0,
+  "count": 48,
+  "new": 8,
   "latest_date": "2026-10-16"
  },
  {
@@ -260,8 +282,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "B001318",
@@ -359,8 +381,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "committee-budget",
@@ -447,8 +469,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 2,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-cpsc",
@@ -469,8 +491,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "committee-china",
@@ -568,7 +590,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-16"
  },
  {
@@ -603,17 +625,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 10,
-  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "G000599",
@@ -722,8 +733,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-12"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-dfc",
@@ -920,8 +931,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "agency-energy",
@@ -1019,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-15"
  },
  {
@@ -1030,8 +1041,8 @@
   "status": "ok",
   "error": null,
   "count": 59,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-fda",
@@ -1074,8 +1085,8 @@
   "status": "ok",
   "error": null,
   "count": 12,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-ferc",
@@ -1085,7 +1096,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1129,7 +1140,7 @@
   "status": "ok",
   "error": null,
   "count": 116,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1162,8 +1173,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-forestservice",
@@ -1294,7 +1305,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 0,
+  "new": 7,
   "latest_date": "2026-10-16"
  },
  {
@@ -1393,8 +1404,8 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "J000288",
@@ -1448,7 +1459,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1492,7 +1503,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1547,7 +1558,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1767,8 +1778,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "G000585",
@@ -1954,8 +1965,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-12"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "C001080",
@@ -1998,8 +2009,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "C001101",
@@ -2240,8 +2251,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "V000131",
@@ -2449,8 +2460,8 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-nhtsa",
@@ -2779,8 +2790,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "R000579",
@@ -2845,7 +2856,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -2900,8 +2911,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "T000486",
@@ -3186,7 +3197,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-15"
  },
  {
@@ -3230,7 +3241,7 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -3406,8 +3417,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-28"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "S001201",
@@ -3450,8 +3461,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-treasury",
@@ -3493,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 151,
-  "new": 149,
-  "latest_date": "2026-10-15"
+  "count": 180,
+  "new": 29,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-usccr",
@@ -3527,19 +3538,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
- },
- {
-  "bioguide": "agency-usms",
-  "label": "U.S. Marshals",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 19,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-un",
@@ -3681,8 +3681,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "K000375",
