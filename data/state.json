@@ -1,5 +1,5 @@
 {
-  "archive_imported_at": "2026-10-17T12:55:40+00:00",
+  "archive_imported_at": "2026-10-17T19:28:57+00:00",
   "fallback_sources": {
     "A000148": [
       "https://auchincloss.house.gov/rss/feeds/"
@@ -53,7 +53,7 @@
       "https://balint.house.gov/news/documentquery.aspx?IssueID=14910"
     ],
     "B001324": [
-      "https://bell.house.gov/media/press-releases"
+      "https://bell.house.gov/"
     ],
     "B001326": [
       "https://bynum.house.gov/media/press-releases"
@@ -676,9 +676,9 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-17T17:18:16+00:00",
+    "at": "2026-10-17T19:29:12+00:00",
     "http": {
-      "200": 400,
+      "200": 402,
       "301": 1,
       "302": 3,
       "404": 2,
@@ -686,8 +686,8 @@
     },
     "sites": {
       "empty": 0,
-      "error": 2,
-      "ok": 337
+      "error": 3,
+      "ok": 336
     }
   },
   "old_agency_links": [
