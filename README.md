@@ -55,7 +55,8 @@ Every hour, `.github/workflows/update.yml`:
 4. Commits new statements to `data/statements/YYYY/YYYY-MM.jsonl`.
 5. Groups statements into events (`events.py`), builds the site and RSS feeds
    (`build_site.py`) and the [Pagefind](https://pagefind.app) search index
-   (`scripts/build_index.mjs`), and publishes to GitHub Pages.
+   (`scripts/build_index.mjs`, split into a recent index plus one per older quarter so it fits in a
+   runner's memory and only the recent part is rebuilt each run), and publishes to GitHub Pages.
 
 ### Event grouping
 

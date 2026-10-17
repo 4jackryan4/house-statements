@@ -200,15 +200,28 @@ async function tabPage() {
   document.querySelectorAll("button[data-view]").forEach((b) =>
     b.addEventListener("click", () => { state.view = b.dataset.view; showView(); run(); }));
 
-  // Pagefind loads lazily, the first time a search is needed.
-  let pagefind;
+  // Pagefind loads lazily, the first time a search is needed. The index is split into a recent one
+  // and one per older quarter (newest first), each searched separately and the results combined.
+  let indexes;
   const getPagefind = async () => {
-    if (!pagefind) {
-      pagefind = await import("./pagefind/pagefind.js");
-      await pagefind.options({ excerptLength: 28 });
-      await pagefind.init();
+    if (!indexes) {
+      indexes = (async () => {
+        const names = await (await fetch("pagefind/indexes.json")).json();
+        return Promise.all(names.map(async (name) => {
+          const pf = await import(`./pagefind/${name}/pagefind.js`);
+          await pf.options({ excerptLength: 28 });
+          await pf.init();
+          return pf;
+        }));
+      })();
     }
-    return pagefind;
+    return indexes;
+  };
+  const searchAll = async (term, opts) => {
+    const parts = await Promise.all((await getPagefind()).map((pf) => pf.search(term, opts)));
+    // By date, the indexes' own date order joined newest index first; by relevance, by score.
+    const results = parts.flatMap((p) => p.results);
+    return opts.sort ? results : results.sort((a, b) => b.score - a.score);
   };
 
   let runId = 0;
@@ -256,7 +269,6 @@ async function tabPage() {
       return;
     }
 
-    const pf = await getPagefind();
     const filters = {};
     if (state.members.length) filters.member = { any: state.members.map((x) => membersById.get(x).label) };
     if (state.st) filters.state = state.st;
@@ -264,14 +276,14 @@ async function tabPage() {
     if (state.type !== "all") filters.type = state.type;
     const opts = { filters };
     if (state.sort === "date" || !state.q) opts.sort = { date: "desc" };
-    const search = await pf.search(state.q || null, opts);
-    if (id !== runId || !search) return;
+    const results = await searchAll(state.q || null, opts);
+    if (id !== runId) return;
 
-    const n = search.results.length;
+    const n = results.length;
     $("#result-count").textContent = n ? `${n.toLocaleString()} statement${n === 1 ? "" : "s"}` : "No statements match";
     let shown = 0;
     const showMore = async () => {
-      const slice = search.results.slice(shown, shown + PAGE_SIZE);
+      const slice = results.slice(shown, shown + PAGE_SIZE);
       shown += slice.length;
       const rows = await Promise.all(slice.map((r) => r.data()));
       if (id !== runId) return;
