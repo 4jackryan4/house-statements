@@ -113,7 +113,11 @@ def main():
     write_json("events.json", [event_json(e) for e in events])
     agency_ids = {a["bioguide"] for a in agencies}
     house = [r for r in records if r["bioguide"] not in agency_ids]  # House Democrats: members and committees
-    write_json("latest.json", [short(r, event_by_statement) for r in house[:LATEST_COUNT]])
+    committee_ids = {c["bioguide"] for c in committees}
+    # One "latest" list per tab: members, committees, agencies.
+    for kind, ids in (("committee", committee_ids), ("agency", agency_ids)):
+        write_json(f"latest-{kind}.json", [short(r, event_by_statement) for r in records if r["bioguide"] in ids][:LATEST_COUNT])
+    write_json("latest-member.json", [short(r, event_by_statement) for r in house if r["bioguide"] not in committee_ids][:LATEST_COUNT])
     write_json("build.json", {"built_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
                               "statements": len(house), "events": len(events), "members": len(members),
                               "committees": len(committees), "agencies": len(agencies),
@@ -129,11 +133,10 @@ def main():
     rss(SITE_DIR / "feeds" / "all.xml", "House Democrats: all statements", SITE_URL,
         "Latest press statements from House Democrats' official websites.",
         [statement_item(r) for r in house[:100]])
-    committee_ids = {c["bioguide"] for c in committees}
-    rss(SITE_DIR / "feeds" / "committees.xml", "House Democrats: committee statements", SITE_URL + "?type=committee",
+    rss(SITE_DIR / "feeds" / "committees.xml", "House Democrats: committee statements", SITE_URL + "committees.html",
         "Latest press statements from the Democrats on each House committee.",
         [statement_item(r) for r in records if r["bioguide"] in committee_ids][:100])
-    rss(SITE_DIR / "feeds" / "agencies.xml", "Federal agencies: press releases", SITE_URL + "?type=agency",
+    rss(SITE_DIR / "feeds" / "agencies.xml", "Federal agencies: press releases", SITE_URL + "agencies.html",
         "Latest press releases from federal agencies.",
         [statement_item(r) for r in records if r["bioguide"] in agency_ids][:100])
     newest_events = sorted(events, key=lambda e: (e["first"], e["member_count"]), reverse=True)[:FEED_COUNT]

@@ -1,4 +1,4 @@
-// Front end for all three pages. Data comes from ./data/*.json (built hourly) and the
+// Front end for the Members, Committees and Agencies tabs and the event archive. Data comes from ./data/*.json (built hourly) and the
 // Pagefind index in ./pagefind/ (full-text search with member/state/date filters).
 
 const PAGE_SIZE = 20;
@@ -33,10 +33,19 @@ async function loadMembers() {
   return rows;
 }
 
+// Each kind of source has its own tab.
+const TAB_FOR = { member: "./", committee: "committees.html", agency: "agencies.html" };
+const kindOf = (id) => membersById.get(id)?.kind || "member";
+const tabLink = (ids, extra = "") => {
+  const kinds = new Set(ids.map(kindOf));
+  const qs = ids.map((id) => `member=${encodeURIComponent(id)}`).join("&");
+  return `${TAB_FOR[kinds.size === 1 ? [...kinds][0] : "member"]}?${qs}${kinds.size > 1 ? "&type=all" : ""}${extra}`;
+};
+
 // One statement row. `s` has title, url, date, member (bioguide), optional event, excerpt.
 function statementHTML(s, { showEvent = true } = {}) {
   const m = membersById.get(s.member);
-  const who = m ? `<a class="who" href="./?member=${esc(m.bioguide)}">${esc(m.label)}</a>` : "";
+  const who = m ? `<a class="who" href="${tabLink([m.bioguide])}">${esc(m.label)}</a>` : "";
   let ev = "";
   if (showEvent && s.event) {
     const label = s.eventLabel;
@@ -53,7 +62,7 @@ function eventHTML(e) {
   const active = daysAgo(e.last) <= 2 ? `<span class="live">Active</span>` : "";
   const items = (e.statements || []).map((s) => statementHTML(s, { showEvent: false })).join("");
   const memberIds = [...new Set((e.statements || []).map((s) => s.member))];
-  const filterLink = `./?${memberIds.map((id) => `member=${encodeURIComponent(id)}`).join("&")}`;
+  const filterLink = tabLink(memberIds);
   const nc = e.committee_count || 0, na = e.agency_count || 0;
   const committees = (nc ? ` + ${nc} committee${nc === 1 ? "" : "s"}` : "") + (na ? ` + ${na} agenc${na === 1 ? "y" : "ies"}` : "");
   return `<details class="event" id="${esc(e.id)}">
@@ -79,27 +88,61 @@ async function setBuilt() {
   } catch {}
 }
 
-/* ------------------------------------------------------------------ search page */
+/* ------------------------------------------------------------------ tabs */
 
-async function homePage() {
-  const members = await loadMembers();
+// The directory of one kind of source: members by state, agencies by group, committees in one list.
+function directoryHTML(rows, text) {
+  const groups = new Map();
+  rows.forEach((m) => {
+    const key = m.kind === "committee" ? "" : m.kind === "agency" ? (m.group || "Cabinet agencies") : m.state;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(m);
+  });
+  if (!rows.length) return `<p class="empty">Nothing matches “${esc(text)}”.</p>`;
+  return [...groups].map(([g, ms]) => `<section class="state-block">${g ? `<h2 class="month">${esc(g)}</h2>` : ""}<div class="member-grid">${
+    ms.map((m) => `<div class="member">
+      <div class="member-name">${esc(m.name)}</div>
+      <div class="member-sub">${m.district ? `${esc(m.district)} · ` : ""}${m.recent} statement${m.recent === 1 ? "" : "s"} in the last 90 days</div>
+      ${m.committees.length && m.kind !== "committee" ? `<div class="member-sub">${esc(m.committees.join(", "))}</div>` : ""}
+      <div class="member-links"><a href="${tabLink([m.bioguide])}">Statements</a><a href="feeds/members/${esc(m.bioguide)}.xml">RSS</a>${m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">Website</a>` : ""}</div>
+    </div>`).join("")}</div></section>`).join("");
+}
+
+async function tabPage() {
+  const kind = document.body.dataset.kind;
+  const all = await loadMembers();
   const params = new URLSearchParams(location.search);
+
+  // Old links (?type=committee or ?type=agency on the search page) go to that tab.
+  const legacy = params.get("type");
+  if (legacy && legacy !== kind && TAB_FOR[legacy]) {
+    params.delete("type");
+    location.replace(`${TAB_FOR[legacy]}${params.toString() ? `?${params}` : ""}`);
+    return;
+  }
+
+  const views = [...document.querySelectorAll("[data-view]")].filter((el) => el.tagName === "BUTTON").map((b) => b.dataset.view);
   const state = {
     q: params.get("q") || "",
     members: params.getAll("member").filter((id) => membersById.has(id)),
     st: params.get("state") || "",
     when: params.get("when") || "",
-    type: ["member", "committee", "agency", "all"].includes(params.get("type")) ? params.get("type") : "",
+    type: params.get("type") === "all" ? "all" : kind,
     sort: params.get("sort") || "date",
+    view: views.includes(params.get("view")) ? params.get("view") : views[0],
   };
+  if (state.members.some((id) => kindOf(id) !== kind)) state.type = "all";
 
-  // Filter controls
-  $("#member-list").innerHTML = members.map((m) => `<option value="${esc(m.label)}"></option>`).join("");
-  const states = [...new Set(members.map((m) => m.state).filter(Boolean))].sort();
-  $("#state").insertAdjacentHTML("beforeend", states.map((s) => `<option>${esc(s)}</option>`).join(""));
-  const byLabel = new Map(members.map((m) => [m.label.toLowerCase(), m]));
+  // Filter controls. The name list follows the scope: this tab's sources, or everything.
+  const pickable = () => (state.type === "all" ? all : all.filter((m) => (m.kind || "member") === kind));
+  const fillNames = () => { $("#member-list").innerHTML = pickable().map((m) => `<option value="${esc(m.label)}"></option>`).join(""); };
+  fillNames();
+  if ($("#state")) {
+    const states = [...new Set(all.filter((m) => !m.kind).map((m) => m.state).filter(Boolean))].sort();
+    $("#state").insertAdjacentHTML("beforeend", states.map((s) => `<option>${esc(s)}</option>`).join(""));
+    $("#state").value = state.st;
+  } else state.st = "";
   $("#q").value = state.q;
-  $("#state").value = state.st;
   $("#when").value = state.when;
   $("#type").value = state.type;
 
@@ -114,9 +157,10 @@ async function homePage() {
     const input = $("#member-input");
     const text = input.value.trim().toLowerCase();
     if (!text) return;
-    let m = byLabel.get(text);
+    const choices = pickable();
+    let m = choices.find((x) => x.label.toLowerCase() === text);
     if (!m) {
-      const matches = members.filter((x) => x.label.toLowerCase().includes(text));
+      const matches = choices.filter((x) => x.label.toLowerCase().includes(text));
       if (matches.length === 1) m = matches[0];
     }
     if (m && !state.members.includes(m.bioguide)) {
@@ -139,16 +183,22 @@ async function homePage() {
   let timer;
   $("#q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = $("#q").value.trim(); run(); }, 250); });
   $("#search").addEventListener("submit", (ev) => { ev.preventDefault(); state.q = $("#q").value.trim(); run(); });
-  $("#state").addEventListener("change", () => { state.st = $("#state").value; run(); });
+  $("#state")?.addEventListener("change", () => { state.st = $("#state").value; run(); });
   $("#when").addEventListener("change", () => { state.when = $("#when").value; run(); });
-  $("#type").addEventListener("change", () => { state.type = $("#type").value; run(); });
+  $("#type").addEventListener("change", () => {
+    state.type = $("#type").value;
+    if (state.type !== "all") state.members = state.members.filter((id) => kindOf(id) === kind);
+    fillNames(); renderChips(); run();
+  });
   document.querySelectorAll("[data-sort]").forEach((b) =>
     b.addEventListener("click", () => { state.sort = b.dataset.sort; run(); }));
   $("#clear").addEventListener("click", () => {
-    Object.assign(state, { q: "", members: [], st: "", when: "", type: "" });
-    $("#q").value = ""; $("#state").value = ""; $("#when").value = ""; $("#type").value = "";
-    renderChips(); run();
+    Object.assign(state, { q: "", members: [], st: "", when: "", type: kind });
+    $("#q").value = ""; if ($("#state")) $("#state").value = ""; $("#when").value = ""; $("#type").value = kind;
+    fillNames(); renderChips(); run();
   });
+  document.querySelectorAll("button[data-view]").forEach((b) =>
+    b.addEventListener("click", () => { state.view = b.dataset.view; showView(); run(); }));
 
   // Pagefind loads lazily, the first time a search is needed.
   let pagefind;
@@ -169,11 +219,12 @@ async function homePage() {
     state.members.forEach((m) => qs.append("member", m));
     if (state.st) qs.set("state", state.st);
     if (state.when) qs.set("when", state.when);
-    if (state.type) qs.set("type", state.type);
+    if (state.type === "all") qs.set("type", "all");
     if (state.sort !== "date") qs.set("sort", state.sort);
+    if (state.view !== views[0]) qs.set("view", state.view);
     history.replaceState(null, "", qs.toString() ? `?${qs}` : location.pathname);
 
-    const searching = state.q || state.members.length || state.st || state.when || state.type;
+    const searching = state.q || state.members.length || state.st || state.when || state.type === "all";
     $("#home").hidden = !!searching;
     $("#results").hidden = !searching;
     if (!searching) return;
@@ -183,14 +234,14 @@ async function homePage() {
     $("#result-list").innerHTML = "";
     $("#more").hidden = true;
 
-    // Member filter without search words: use the per-member lists (instant) instead of the index.
+    // Name filter without search words: use the per-source lists (instant) instead of the index.
     if (!state.q && state.members.length) {
       const maxAge = { "Past 3 days": 3, "Past week": 7, "Past month": 31, "Past 3 months": 92 }[state.when] ?? Infinity;
       const lists = await Promise.all(state.members.map((m) => getJSON(`members/${m}.json`)));
       if (id !== runId) return;
       const rows = lists.flat()
         .filter((s) => daysAgo(s.date) <= maxAge && (!state.st || membersById.get(s.member)?.state === state.st) &&
-          (!state.type || state.type === "all" || (membersById.get(s.member)?.kind || "member") === state.type))
+          (state.type === "all" || kindOf(s.member) === state.type))
         .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
       $("#result-count").textContent = rows.length ? `${rows.length.toLocaleString()} statement${rows.length === 1 ? "" : "s"}` : "No statements match";
       let shown = 0;
@@ -210,9 +261,7 @@ async function homePage() {
     if (state.members.length) filters.member = { any: state.members.map((x) => membersById.get(x).label) };
     if (state.st) filters.state = state.st;
     if (state.when) filters.when = state.when;
-    // Default: House Democrats (members and committees). Agencies only when asked for or picked by name.
-    if (state.type && state.type !== "all") filters.type = state.type;
-    else if (!state.type && !state.members.length) filters.type = { any: ["member", "committee"] };
+    if (state.type !== "all") filters.type = state.type;
     const opts = { filters };
     if (state.sort === "date" || !state.q) opts.sort = { date: "desc" };
     const search = await pf.search(state.q || null, opts);
@@ -237,33 +286,62 @@ async function homePage() {
     await showMore();
   }
 
-  // Home: recent events and the latest statements.
-  const [events, latest] = await Promise.all([getJSON("events-recent.json"), getJSON("latest.json")]);
-  const eventsById = new Map(events.map((e) => [e.id, e]));
-  // Bigger and more recent events first: member count, halved for every week since the last statement.
-  const weight = (e) => e.member_count * Math.pow(0.5, daysAgo(e.last) / 7);
-  events.sort((a, b) => weight(b) - weight(a));
-  let evShown = 0;
-  const moreEvents = () => {
-    const slice = events.slice(evShown, evShown + 8);
-    if (evShown === 0) $("#events").innerHTML = slice.length ? "" : `<p class="empty">No events in the last few weeks.</p>`;
-    evShown += slice.length;
-    $("#events").insertAdjacentHTML("beforeend", slice.map(eventHTML).join(""));
-    $("#events-more").hidden = evShown >= events.length;
+  // Views when nothing is searched: events (Members tab only), latest, and the directory.
+  // Each view's data loads the first time it is shown.
+  const loaded = new Set();
+  const loaders = {
+    async events() {
+      const events = await getJSON("events-recent.json");
+      // Bigger and more recent events first: member count, halved for every week since the last statement.
+      const weight = (e) => e.member_count * Math.pow(0.5, daysAgo(e.last) / 7);
+      events.sort((a, b) => weight(b) - weight(a));
+      let evShown = 0;
+      const moreEvents = () => {
+        const slice = events.slice(evShown, evShown + 8);
+        if (evShown === 0) $("#events").innerHTML = slice.length ? "" : `<p class="empty">No events in the last few weeks.</p>`;
+        evShown += slice.length;
+        $("#events").insertAdjacentHTML("beforeend", slice.map(eventHTML).join(""));
+        $("#events-more").hidden = evShown >= events.length;
+      };
+      $("#events-more").onclick = moreEvents;
+      moreEvents();
+    },
+    async latest() {
+      const latest = await getJSON(`latest-${kind}.json`);
+      let latestShown = 0;
+      const moreLatest = () => {
+        const slice = latest.slice(latestShown, latestShown + 25);
+        latestShown += slice.length;
+        $("#latest").insertAdjacentHTML("beforeend", slice.map((s) => statementHTML(s)).join(""));
+        $("#latest-more").hidden = latestShown >= latest.length;
+      };
+      $("#latest-more").onclick = moreLatest;
+      moreLatest();
+    },
+    async browse() {
+      const rows = all.filter((m) => (m.kind || "member") === kind);
+      const render = (text) => {
+        const t = text.trim().toLowerCase();
+        const match = rows.filter((m) =>
+          !t || m.label.toLowerCase().includes(t) || m.state.toLowerCase() === t || m.committees.some((c) => c.toLowerCase().includes(t)));
+        $("#member-directory").innerHTML = directoryHTML(match, text);
+      };
+      render("");
+      $("#member-filter").addEventListener("input", (ev) => render(ev.target.value));
+    },
   };
-  $("#events-more").onclick = moreEvents;
-  moreEvents();
-
-  let latestShown = 0;
-  const moreLatest = () => {
-    const slice = latest.slice(latestShown, latestShown + 25);
-    latestShown += slice.length;
-    $("#latest").insertAdjacentHTML("beforeend", slice.map((s) => statementHTML(s)).join(""));
-    $("#latest-more").hidden = latestShown >= latest.length;
-  };
-  $("#latest-more").onclick = moreLatest;
-  moreLatest();
-
+  function showView() {
+    document.querySelectorAll("button[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
+    document.querySelectorAll("section[data-view]").forEach((s) => { s.hidden = s.dataset.view !== state.view; });
+    if (!loaded.has(state.view)) {
+      loaded.add(state.view);
+      loaders[state.view]().catch((err) => {
+        console.error(err);
+        document.querySelector(`section[data-view="${state.view}"]`).insertAdjacentHTML("beforeend", `<p class="empty">Something went wrong loading this.</p>`);
+      });
+    }
+  }
+  showView();
   run();
 }
 
@@ -301,39 +379,11 @@ async function eventsPage() {
   window.addEventListener("hashchange", openTarget);
 }
 
-/* ------------------------------------------------------------------ members page */
-
-async function membersPage() {
-  const members = await loadMembers();
-  const box = $("#member-directory");
-  const render = (text) => {
-    const t = text.trim().toLowerCase();
-    const rows = members.filter((m) =>
-      !t || m.label.toLowerCase().includes(t) || m.state.toLowerCase() === t || m.committees.some((c) => c.toLowerCase().includes(t)));
-    // Committees and agencies first, then members by state.
-    const byState = new Map();
-    rows.forEach((m) => {
-      const key = m.kind === "committee" ? "Committees" : m.kind === "agency" ? (m.group || "Cabinet agencies") : m.state;
-      if (!byState.has(key)) byState.set(key, []);
-      byState.get(key).push(m);
-    });
-    box.innerHTML = rows.length ? [...byState].map(([st, ms]) => `<section class="state-block"><h2 class="month">${esc(st)}</h2><div class="member-grid">${
-      ms.map((m) => `<div class="member">
-        <div class="member-name">${esc(m.name)}</div>
-        <div class="member-sub">${m.district ? `${esc(m.district)} · ` : ""}${m.recent} statement${m.recent === 1 ? "" : "s"} in the last 90 days</div>
-        ${m.committees.length && m.kind !== "committee" ? `<div class="member-sub">${esc(m.committees.join(", "))}</div>` : ""}
-        <div class="member-links"><a href="./?member=${esc(m.bioguide)}">Statements</a><a href="feeds/members/${esc(m.bioguide)}.xml">RSS</a>${m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">Website</a>` : ""}</div>
-      </div>`).join("")}</div></section>`).join("") : `<p class="empty">No members match “${esc(text)}”.</p>`;
-  };
-  render("");
-  $("#member-filter").addEventListener("input", (ev) => render(ev.target.value));
-}
-
 /* ------------------------------------------------------------------ boot */
 
 setBuilt();
 const page = document.body.dataset.page;
-const pages = { home: homePage, events: eventsPage, members: membersPage };
+const pages = { tab: tabPage, events: eventsPage };
 pages[page]?.().catch((err) => {
   console.error(err);
   const target = document.querySelector(".loading") || document.querySelector("main");
