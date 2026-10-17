@@ -535,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-17"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-16"
  },
  {
@@ -2632,10 +2632,10 @@
   "bioguide": "W000788",
   "label": "Nikema Williams (D-GA-05)",
   "scraper": "nikemawilliams",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-15"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 151,
+  "count": 147,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-usccr",
