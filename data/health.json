@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-16"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -799,8 +799,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "M001163",
@@ -1162,8 +1162,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-17"
  },
  {
   "bioguide": "agency-forestservice",
@@ -3229,8 +3229,8 @@
   "method": "wordpress",
   "status": "ok",
   "error": null,
-  "count": 7,
-  "new": 0,
+  "count": 8,
+  "new": 2,
   "latest_date": "2026-10-16"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 172,
+  "count": 147,
   "new": 0,
-  "latest_date": "2026-10-14"
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-usccr",
@@ -3659,14 +3659,14 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-17"
  },
  {
   "bioguide": "B001324",
   "label": "Wesley Bell (D-MO-01)",
   "scraper": "bell",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
