@@ -1,11 +1,12 @@
 """Build the static website into site/.
 
 Writes the page shells and assets, the JSON the pages load (events, latest statements, members),
-RSS feeds, and build/records.jsonl, which scripts/build_index.mjs turns into the Pagefind
-full-text search index.
+RSS feeds, and the search records in build/records/, which scripts/build_index.mjs turns into the
+Pagefind full-text search index.
 """
 
 import datetime as dt
+import hashlib
 import json
 import os
 import shutil
@@ -20,7 +21,7 @@ from .committees import load_committees
 from .members import load_members
 
 SITE_URL = os.environ.get("SITE_URL", "https://4jackryan4.github.io/house-statements/").rstrip("/") + "/"
-RECORDS_FILE = ROOT / "build" / "records.jsonl"
+RECORDS_DIR = ROOT / "build" / "records"
 RECENT_EVENT_DAYS = 45
 LATEST_COUNT = 300
 FEED_COUNT = 50
@@ -34,6 +35,24 @@ def when_buckets(date: str, today: dt.date) -> list[str]:
             out.append(label)
     out.append(date[:4])
     return out
+
+
+def search_bucket(date: str, cutoff: str) -> str:
+    """Which search index a statement goes in: "recent", or the calendar quarter for older ones.
+
+    One index of everything needs more memory than a GitHub runner has, and the quarters before the
+    cutoff never change day to day (their only date filter is the year), so they are reused from the
+    previous run unless a statement in them changed.
+    """
+    if date >= cutoff:
+        return "recent"
+    return f"{date[:4]}-q{(int(date[5:7]) - 1) // 3 + 1}"
+
+
+def search_cutoff(today: dt.date) -> str:
+    """Start of the quarter holding the day 100 days ago: everything with a "Past ..." filter is newer."""
+    d = today - dt.timedelta(days=100)
+    return dt.date(d.year, (d.month - 1) // 3 * 3 + 1, 1).isoformat()
 
 
 def short(r: dict, event_by_statement: dict) -> dict:
@@ -156,26 +175,34 @@ def main():
         rss(SITE_DIR / "feeds" / "members" / f"{m['bioguide']}.xml", f"{m['label']}: statements",
             m.get("url") or SITE_URL, f"Press statements from {m['name']}.", [statement_item(r) for r in rows])
 
-    # ---- search records for Pagefind
-    RECORDS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with RECORDS_FILE.open("w") as f:
-        for r in records:
-            m = by_bioguide[r["bioguide"]]
-            ev = event_by_statement.get(r["id"])
-            meta = {"title": r["title"], "member": m["label"], "bioguide": m["bioguide"], "date": r["date"]}
-            if ev:
-                meta |= {"event": ev["label"], "event_id": ev["id"], "event_members": str(ev["member_count"])}
-            f.write(json.dumps({
-                "url": r["url"],
-                "content": f"{r['title']}\n\n{r.get('text') or ''}",
-                "language": "en",
-                "meta": meta,
-                "filters": {"member": [m["label"]], "when": when_buckets(r["date"], today),
-                            "committee": m["committees"] or ["(none)"],
-                            "type": [m.get("kind") or "member"]}
-                | ({"state": [m["state"]]} if m["state"] else {}),
-                "sort": {"date": r["date"]},
-            }, ensure_ascii=False) + "\n")
+    # ---- search records for Pagefind, one file per index (see search_bucket)
+    shutil.rmtree(RECORDS_DIR, ignore_errors=True)
+    RECORDS_DIR.mkdir(parents=True)
+    cutoff = search_cutoff(today)
+    buckets: dict[str, list[str]] = {}
+    for r in records:
+        m = by_bioguide[r["bioguide"]]
+        ev = event_by_statement.get(r["id"])
+        meta = {"title": r["title"], "member": m["label"], "bioguide": m["bioguide"], "date": r["date"]}
+        if ev:
+            meta |= {"event": ev["label"], "event_id": ev["id"], "event_members": str(ev["member_count"])}
+        buckets.setdefault(search_bucket(r["date"], cutoff), []).append(json.dumps({
+            "url": r["url"],
+            "content": f"{r['title']}\n\n{r.get('text') or ''}",
+            "language": "en",
+            "meta": meta,
+            "filters": {"member": [m["label"]], "when": when_buckets(r["date"], today),
+                        "committee": m["committees"] or ["(none)"],
+                        "type": [m.get("kind") or "member"]}
+            | ({"state": [m["state"]]} if m["state"] else {}),
+            "sort": {"date": r["date"]},
+        }, ensure_ascii=False) + "\n")
+    index_list = []
+    for name, lines in buckets.items():  # records are newest first, so the buckets are too
+        body = "".join(lines)
+        (RECORDS_DIR / f"{name}.jsonl").write_text(body)
+        index_list.append({"name": name, "count": len(lines), "hash": hashlib.sha256(body.encode()).hexdigest()})
+    (RECORDS_DIR / "indexes.json").write_text(json.dumps(index_list, indent=1))
 
     print(f"build_site: {len(records)} statements, {len(events)} events, {len(members)} members, "
           f"{len(committees)} committees, {len(agencies)} agencies -> {SITE_DIR}")

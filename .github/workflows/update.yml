@@ -2,7 +2,9 @@ name: Update statements and site
 
 on:
   schedule:
-    - cron: "23 * * * *"   # every hour
+    # Each run starts the next one itself, 20 minutes after it started (see the last step), because
+    # GitHub often skips or delays scheduled runs. The hourly schedule restarts that chain if it stops.
+    - cron: "23 * * * *"
     - cron: "7 9 * * *"    # daily sweep: every site's press page, for statements the scrapers miss
   workflow_dispatch:
     inputs:
@@ -19,11 +21,16 @@ on:
       only:
         description: "Only scrape these sources: bioguide ids or committee ids, \"committees\" or \"agencies\" (blank = all)"
         default: ""
+      chained:
+        description: "Started by the previous run: wait until 20 minutes after it started"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["house_statements/**", "web/**", "scripts/**", ".github/workflows/update.yml"]
 
 permissions:
+  actions: write   # to start the next run
   contents: write
   pages: write
   id-token: write
@@ -35,15 +42,29 @@ concurrency:
 env:
   # dwillis/python-statement: the per-site press release scrapers. Bump to pick up fixes.
   PYTHON_STATEMENT_REF: 432b04432e359e016a8cea65d8805da92fee1789
+  INTERVAL_MINUTES: 20
+  GH_TOKEN: ${{ github.token }}
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 60
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # Space scheduled and chained runs INTERVAL_MINUTES apart. A skipped or cancelled run loses
+      # nothing: every run reads the sites' latest listings and adds whatever isn't on the site yet.
+      - name: Wait for the next slot
+        if: github.event_name == 'schedule' || inputs.chained
+        run: |
+          prev=$(gh run list -R "$GITHUB_REPOSITORY" -w update.yml -L 20 --json databaseId,startedAt,status,conclusion \
+            -q "[.[] | select(.databaseId != $GITHUB_RUN_ID and .status == \"completed\" and .conclusion != \"cancelled\" and .conclusion != \"skipped\")][0].startedAt")
+          [ -n "$prev" ] || exit 0
+          wait=$(( $(date -d "$prev" +%s) + INTERVAL_MINUTES * 60 - $(date +%s) ))
+          [ "$wait" -gt $(( INTERVAL_MINUTES * 60 )) ] && wait=$(( INTERVAL_MINUTES * 60 ))
+          if [ "$wait" -gt 0 ]; then echo "Previous run started $prev; waiting ${wait}s"; sleep "$wait"; fi
+
       # Latest main, not the commit that triggered the run, so data committed by the previous
       # run is included and the commit below can't conflict with it.
       - uses: actions/checkout@v4
@@ -115,10 +136,24 @@ jobs:
           done
           exit 1
 
+      # Search indexes for older quarters, from the last run that changed them (build_index.mjs).
+      - id: index-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: build/pagefind-cache
+          key: pagefind-none
+          restore-keys: pagefind-
+
       - name: Build site
         run: |
           python -m house_statements.build_site
           node scripts/build_index.mjs
+
+      - if: steps.index-cache.outputs.cache-matched-key != format('pagefind-{0}', hashFiles('build/pagefind-key.txt'))
+        uses: actions/cache/save@v4
+        with:
+          path: build/pagefind-cache
+          key: pagefind-${{ hashFiles('build/pagefind-key.txt') }}
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -126,3 +161,8 @@ jobs:
           path: site
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      # Not when cancelled, so cancelling a run stops the chain (the hourly schedule restarts it).
+      - name: Start the next run
+        if: success() || failure()
+        run: gh workflow run update.yml -R "$GITHUB_REPOSITORY" --ref main -f chained=true
