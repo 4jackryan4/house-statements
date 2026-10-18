@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -13,17 +24,6 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -99,17 +99,6 @@
   "latest_date": "2026-10-01"
  },
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
   "bioguide": "agency-airforce",
   "label": "Air Force",
   "scraper": null,
@@ -128,7 +117,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-18"
  },
  {
@@ -259,9 +248,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 1,
-  "new": 0,
-  "latest_date": "2026-10-17"
+  "count": 2,
+  "new": 1,
+  "latest_date": "2026-10-18"
  },
  {
   "bioguide": "P000617",
@@ -607,6 +596,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3230,8 +3230,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-17"
  },
  {
   "bioguide": "H000874",
@@ -3241,8 +3241,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-18"
  },
  {
   "bioguide": "L000562",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 147,
+  "count": 99,
   "new": 0,
   "latest_date": "2026-10-16"
  },
