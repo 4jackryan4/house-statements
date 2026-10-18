@@ -259,7 +259,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 26,
+  "count": 14,
   "new": 0,
   "latest_date": "2026-10-17"
  },
@@ -711,8 +711,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-18"
  },
  {
   "bioguide": "T000491",
@@ -1073,9 +1073,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 12,
+  "count": 11,
   "new": 1,
-  "latest_date": "2026-10-17"
+  "latest_date": "2026-10-18"
  },
  {
   "bioguide": "agency-ferc",
@@ -1125,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 114,
+  "count": 116,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 147,
+  "count": 116,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -3549,7 +3549,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
