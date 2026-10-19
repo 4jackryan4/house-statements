@@ -22,6 +22,72 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nlrb",
+  "label": "NLRB",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nationalguard",
+  "label": "National Guard",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -546,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -596,17 +662,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -946,17 +1001,6 @@
   "latest_date": "2026-10-08"
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-21"
- },
- {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1164,17 +1208,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-18"
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "M001214",
@@ -2464,28 +2497,6 @@
   "latest_date": "2026-10-15"
  },
  {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
- },
- {
-  "bioguide": "agency-nlrb",
-  "label": "NLRB",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
- },
- {
   "bioguide": "agency-noaa",
   "label": "NOAA",
   "scraper": null,
@@ -2561,17 +2572,6 @@
   "count": 30,
   "new": 0,
   "latest_date": "2026-10-09"
- },
- {
-  "bioguide": "agency-nationalguard",
-  "label": "National Guard",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-10"
  },
  {
   "bioguide": "agency-nsf",
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
