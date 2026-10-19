@@ -39,7 +39,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 2,
+  "count": 1,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -118,7 +118,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000553",
@@ -259,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 11,
-  "new": 0,
+  "count": 16,
+  "new": 6,
   "latest_date": "2026-10-19"
  },
  {
@@ -1073,8 +1073,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 11,
-  "new": 0,
+  "count": 12,
+  "new": 1,
   "latest_date": "2026-12-01"
  },
  {
@@ -1085,7 +1085,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1195,7 +1195,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1899,7 +1899,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2482,7 +2482,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2999,8 +2999,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "C001112",
@@ -3010,8 +3010,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "L000607",
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 168,
-  "new": 0,
+  "count": 176,
+  "new": 3,
   "latest_date": "2026-10-19"
  },
  {
@@ -3680,7 +3680,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
+  "count": 30,
   "new": 0,
   "latest_date": "2026-10-19"
  },
