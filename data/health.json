@@ -11,8 +11,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-commerce",
-  "label": "Commerce Department",
+  "bioguide": "agency-bia",
+  "label": "Bureau of Indian Affairs",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -22,8 +22,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
+  "bioguide": "agency-commerce",
+  "label": "Commerce Department",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -385,17 +385,6 @@
   "latest_date": "2026-10-14"
  },
  {
-  "bioguide": "agency-bia",
-  "label": "Bureau of Indian Affairs",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 9,
-  "new": 0,
-  "latest_date": "2026-09-22"
- },
- {
   "bioguide": "agency-blm",
   "label": "Bureau of Land Management",
   "scraper": null,
@@ -607,6 +596,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -831,7 +831,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 25,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 147,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "count": 149,
+  "new": 2,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
