@@ -689,7 +689,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1073,9 +1073,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 12,
-  "new": 0,
-  "latest_date": "2026-12-01"
+  "count": 11,
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-ferc",
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
-  "new": 1,
+  "count": 181,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
