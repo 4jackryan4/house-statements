@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-va",
-  "label": "Veterans Affairs (VA)",
-  "scraper": null,
-  "method": "wordpress",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1136,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "rss+listing",
+  "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 116,
+  "count": 114,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -3628,6 +3617,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-va",
+  "label": "Veterans Affairs (VA)",
+  "scraper": null,
+  "method": "wordpress",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "committee-veterans-affairs",
