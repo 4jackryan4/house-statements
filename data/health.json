@@ -39,8 +39,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 1,
-  "new": 0,
+  "count": 2,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -259,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 7,
-  "new": 0,
+  "count": 8,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -711,7 +711,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -953,7 +953,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1008,8 +1008,8 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-fbi",
@@ -1040,9 +1040,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "count": 21,
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-fdic",
@@ -1228,8 +1228,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-gsa",
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2053,7 +2053,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -2075,8 +2075,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-24"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "M001229",
@@ -2273,7 +2273,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2394,7 +2394,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-07"
  },
  {
@@ -2614,7 +2614,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2690,7 +2690,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 7,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -3087,8 +3087,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "C001117",
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -3285,8 +3285,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "L000602",
@@ -3450,8 +3450,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-treasury",
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 165,
-  "new": 7,
+  "count": 168,
+  "new": 3,
   "latest_date": "2026-10-19"
  },
  {
@@ -3604,7 +3604,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
