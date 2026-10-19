@@ -33,10 +33,10 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
+  "bioguide": "agency-nasa",
+  "label": "NASA",
   "scraper": null,
-  "method": "listing",
+  "method": "wordpress",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
@@ -1459,8 +1459,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "committee-homeland-security",
@@ -1910,7 +1910,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2442,17 +2442,6 @@
   "latest_date": "2026-08-14"
  },
  {
-  "bioguide": "agency-nasa",
-  "label": "NASA",
-  "scraper": null,
-  "method": "wordpress",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
   "bioguide": "agency-ncua",
   "label": "NCUA",
   "scraper": null,
@@ -2704,6 +2693,17 @@
   "count": 7,
   "new": 0,
   "latest_date": "2026-10-13"
+ },
+ {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 180,
+  "new": 0,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "agency-omb",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 147,
+  "count": 149,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
