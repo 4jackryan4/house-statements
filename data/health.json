@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -106,8 +117,8 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000553",
@@ -248,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 8,
-  "new": 0,
+  "count": 11,
+  "new": 3,
   "latest_date": "2026-10-19"
  },
  {
@@ -605,17 +616,6 @@
   "latest_date": "2026-10-16"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -931,7 +931,7 @@
   "status": "ok",
   "error": null,
   "count": 13,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1008,7 +1008,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -1074,7 +1074,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-12-01"
  },
  {
@@ -1284,7 +1284,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-24"
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "agency-gao",
@@ -1613,7 +1613,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -3021,8 +3021,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "B000490",
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "committee-small-business",
@@ -3461,8 +3461,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "C001125",
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 168,
-  "new": 0,
+  "count": 169,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
