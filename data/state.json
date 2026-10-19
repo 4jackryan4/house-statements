@@ -145,6 +145,9 @@
     "D000629": [
       "https://davids.house.gov/media/press-releases"
     ],
+    "D000631": [
+      "https://dean.house.gov/newsroom"
+    ],
     "D000635": [
       "https://dexter.house.gov/media/press-releases"
     ],
@@ -227,7 +230,7 @@
       "https://hoyer.house.gov/media/press-releases"
     ],
     "H001047": [
-      "https://himes.house.gov/statements-and-releases/"
+      "https://himes.house.gov/feed/"
     ],
     "H001066": [
       "https://horsford.house.gov/media/press-releases"
@@ -427,6 +430,10 @@
     "P000197": [
       "https://pelosi.house.gov/news/press-releases"
     ],
+    "P000597": [
+      "https://pingree.house.gov/news/",
+      "https://pingree.house.gov/news/documentquery.aspx?DocumentTypeID=26"
+    ],
     "P000607": [
       "https://pocan.house.gov/media-center/press-releases"
     ],
@@ -604,7 +611,8 @@
       "https://watsoncoleman.house.gov/rss/feeds/"
     ],
     "W000830": [
-      "https://whitesides.house.gov/category/press-releases/"
+      "https://whitesides.house.gov/category/press-releases/",
+      "https://whitesides.house.gov/newsroom/"
     ],
     "W000831": [
       "https://walkinshaw.house.gov/news/"
@@ -676,20 +684,20 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-19T09:26:42+00:00",
+    "at": "2026-10-19T09:43:46+00:00",
     "http": {
-      "200": 399,
-      "301": 1,
-      "302": 3,
-      "403": 3,
-      "404": 2,
+      "200": 407,
+      "301": 2,
+      "302": 1,
+      "404": 6,
       "410": 1,
-      "ConnectTimeout": 1
+      "ConnectionError": 1,
+      "ReadTimeout": 17
     },
     "sites": {
       "empty": 0,
-      "error": 8,
-      "ok": 331
+      "error": 5,
+      "ok": 334
     }
   },
   "old_agency_links": [
