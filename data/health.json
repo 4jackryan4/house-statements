@@ -931,8 +931,8 @@
   "status": "ok",
   "error": null,
   "count": 13,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "committee-energy-commerce",
@@ -1008,7 +1008,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 3,
+  "new": 1,
   "latest_date": "2026-10-16"
  },
  {
@@ -1073,9 +1073,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "count": 11,
+  "new": 2,
+  "latest_date": "2026-12-01"
  },
  {
   "bioguide": "agency-ferc",
@@ -1283,8 +1283,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-09"
+  "new": 0,
+  "latest_date": "2026-09-24"
  },
  {
   "bioguide": "agency-gao",
@@ -1613,8 +1613,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "W000831",
@@ -1998,8 +1998,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "C001101",
