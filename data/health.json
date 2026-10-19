@@ -84,8 +84,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 3,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "E000297",
@@ -1338,7 +1338,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 182,
   "new": 0,
   "latest_date": "2026-10-19"
  },
