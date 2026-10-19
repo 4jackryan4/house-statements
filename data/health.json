@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -110,6 +99,17 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
   "bioguide": "agency-airforce",
   "label": "Air Force",
   "scraper": null,
@@ -118,7 +118,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000553",
@@ -128,7 +128,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -259,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 16,
-  "new": 0,
+  "count": 17,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -425,7 +425,7 @@
   "status": "ok",
   "error": null,
   "count": 37,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -777,8 +777,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "N000188",
@@ -2306,8 +2306,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "P000607",
@@ -2735,7 +2735,7 @@
   "status": "ok",
   "error": null,
   "count": 65,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -2867,7 +2867,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 177,
-  "new": 1,
+  "count": 179,
+  "new": 2,
   "latest_date": "2026-10-19"
  },
  {
@@ -3570,9 +3570,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 131,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "count": 132,
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-uscis",
@@ -3582,7 +3582,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
