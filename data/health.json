@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -259,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 17,
-  "new": 0,
+  "count": 19,
+  "new": 2,
   "latest_date": "2026-10-19"
  },
  {
@@ -946,17 +957,6 @@
   "latest_date": "2026-10-08"
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-28"
- },
- {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1587,12 +1587,12 @@
   "bioguide": "H001047",
   "label": "James A. Himes (D-CT-04)",
   "scraper": "himes",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-17"
+  "count": 10,
+  "new": 2,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "C000537",
@@ -1822,8 +1822,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "L000557",
@@ -1899,7 +1899,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -2416,8 +2416,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "M001220",
@@ -2823,8 +2823,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-prc",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 176,
+  "count": 173,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -3714,8 +3714,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "L000397",
