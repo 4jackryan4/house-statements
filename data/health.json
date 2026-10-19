@@ -22,6 +22,28 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-va",
+  "label": "Veterans Affairs (VA)",
+  "scraper": null,
+  "method": "wordpress",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -248,7 +270,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 8,
+  "count": 11,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -392,8 +414,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-cfpb",
@@ -596,17 +618,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -1040,7 +1051,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -1119,7 +1130,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-fed",
@@ -2097,7 +2108,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -2416,8 +2427,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "M001220",
@@ -2690,7 +2701,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 5,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -3450,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -3493,8 +3504,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 172,
-  "new": 3,
+  "count": 173,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -3619,17 +3630,6 @@
   "latest_date": "2026-10-16"
  },
  {
-  "bioguide": "agency-va",
-  "label": "Veterans Affairs (VA)",
-  "scraper": null,
-  "method": "wordpress",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-15"
- },
- {
   "bioguide": "committee-veterans-affairs",
   "label": "Veterans' Affairs Committee Democrats",
   "scraper": null,
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
+  "count": 31,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
