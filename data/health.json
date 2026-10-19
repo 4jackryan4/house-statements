@@ -33,28 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "D000624",
-  "label": "Debbie Dingell (D-MI-06)",
-  "scraper": "debbiedingell",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -289,7 +267,7 @@
   "bioguide": "P000617",
   "label": "Ayanna Pressley (D-MA-07)",
   "scraper": "pressley",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 8,
@@ -502,7 +480,7 @@
   "status": "ok",
   "error": null,
   "count": 23,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -682,6 +660,17 @@
   "latest_date": "2026-10-13"
  },
  {
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
   "bioguide": "W000797",
   "label": "Debbie Wasserman Schultz (D-FL-25)",
   "scraper": "wassermanschultz",
@@ -696,10 +685,10 @@
   "bioguide": "R000305",
   "label": "Deborah K. Ross (D-NC-02)",
   "scraper": "ross",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 1,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-01"
  },
@@ -1272,7 +1261,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-05"
  },
  {
@@ -1598,10 +1587,10 @@
   "bioguide": "H001047",
   "label": "James A. Himes (D-CT-04)",
   "scraper": "himes",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-17"
  },
@@ -1785,12 +1774,12 @@
   "bioguide": "G000585",
   "label": "Jimmy Gomez (D-CA-34)",
   "scraper": "gomez",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-22"
+  "count": 34,
+  "new": 12,
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "P000613",
@@ -2049,7 +2038,7 @@
   "bioguide": "M001225",
   "label": "Kevin Mullin (D-CA-15)",
   "scraper": "kevinmullin",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 9,
@@ -2236,10 +2225,10 @@
   "bioguide": "D000631",
   "label": "Madeleine Dean (D-PA-04)",
   "scraper": "dean",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 5,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-07"
  },
@@ -2335,10 +2324,10 @@
   "bioguide": "T000472",
   "label": "Mark Takano (D-CA-39)",
   "scraper": "takano",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 24,
+  "count": 44,
   "new": 0,
   "latest_date": "2026-09-08"
  },
@@ -2434,10 +2423,10 @@
   "bioguide": "M001220",
   "label": "Morgan McGarvey (D-KY-03)",
   "scraper": "mcgarvey",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 45,
   "new": 0,
   "latest_date": "2026-08-14"
  },
@@ -2654,10 +2643,10 @@
   "bioguide": "B001315",
   "label": "Nikki Budzinski (D-IL-13)",
   "scraper": "budzinski",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-07"
  },
@@ -2704,6 +2693,17 @@
   "count": 7,
   "new": 0,
   "latest_date": "2026-10-13"
+ },
+ {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 180,
+  "new": 0,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "agency-omb",
@@ -2885,7 +2885,7 @@
   "bioguide": "N000015",
   "label": "Richard E. Neal (D-MA-01)",
   "scraper": "neal",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 20,
@@ -3215,7 +3215,7 @@
   "bioguide": "P000610",
   "label": "Stacey E. Plaskett (D-VI-AL)",
   "scraper": "plaskett",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,

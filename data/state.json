@@ -196,6 +196,11 @@
     "G000583": [
       "https://gottheimer.house.gov/feed"
     ],
+    "G000585": [
+      "https://gomez.house.gov/news",
+      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
+      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=30"
+    ],
     "G000586": [
       "https://chuygarcia.house.gov/media/press-releases"
     ],
@@ -684,20 +689,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-19T09:43:46+00:00",
+    "at": "2026-10-19T10:01:52+00:00",
     "http": {
-      "200": 407,
-      "301": 2,
-      "302": 1,
-      "404": 6,
+      "200": 409,
+      "301": 1,
+      "302": 2,
+      "404": 2,
       "410": 1,
-      "ConnectionError": 1,
-      "ReadTimeout": 17
+      "ReadTimeout": 4
     },
     "sites": {
       "empty": 0,
-      "error": 5,
-      "ok": 334
+      "error": 3,
+      "ok": 336
     }
   },
   "old_agency_links": [
