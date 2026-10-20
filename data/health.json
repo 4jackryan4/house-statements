@@ -260,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 28,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -623,7 +623,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1018,9 +1018,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 61,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "count": 62,
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-fcc",
@@ -1125,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 114,
+  "count": 116,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -1713,7 +1713,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001227",
@@ -1954,8 +1954,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001080",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
