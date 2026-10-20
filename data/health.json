@@ -843,8 +843,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001055",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1073,8 +1073,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 11,
-  "new": 0,
+  "count": 10,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1624,8 +1624,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "R000606",
@@ -1712,8 +1712,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001227",
@@ -1723,8 +1723,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "N000002",
@@ -1756,8 +1756,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-30"
+  "new": 1,
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "C001059",
@@ -2580,9 +2580,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 16,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "count": 17,
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-nws",
@@ -2999,7 +2999,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3560,7 +3560,7 @@
   "status": "ok",
   "error": null,
   "count": 224,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 1,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
