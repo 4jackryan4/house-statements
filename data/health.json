@@ -1125,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 114,
+  "count": 116,
   "new": 0,
   "latest_date": "2026-10-16"
  },
