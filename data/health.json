@@ -11,6 +11,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-cftc",
+  "label": "CFTC",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
   "scraper": null,
@@ -270,8 +281,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 33,
-  "new": 0,
+  "count": 40,
+  "new": 7,
   "latest_date": "2026-10-20"
  },
  {
@@ -427,17 +438,6 @@
   "count": 24,
   "new": 0,
   "latest_date": "2026-10-14"
- },
- {
-  "bioguide": "agency-cftc",
-  "label": "CFTC",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 37,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-cia",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 1,
+  "new": 3,
   "latest_date": "2026-10-20"
  },
  {
@@ -1899,8 +1899,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "H001090",
@@ -2119,7 +2119,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -2603,8 +2603,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "agency-navy",
@@ -2955,7 +2955,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3142,7 +3142,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
