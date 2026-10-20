@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-airforce",
+  "label": "Air Force",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -117,17 +128,6 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
- },
- {
-  "bioguide": "agency-airforce",
-  "label": "Air Force",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 100,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 46,
-  "new": 0,
+  "count": 49,
+  "new": 3,
   "latest_date": "2026-10-20"
  },
  {
@@ -842,8 +842,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 24,
-  "new": 0,
+  "count": 25,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1029,9 +1029,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 61,
+  "count": 62,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-fda",
@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -1073,7 +1073,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 17,
+  "count": 18,
   "new": 0,
   "latest_date": "2026-10-25"
  },
@@ -1394,7 +1394,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "J000288",
@@ -1470,8 +1470,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-hud",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
