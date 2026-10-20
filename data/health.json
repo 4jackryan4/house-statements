@@ -1018,8 +1018,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
-  "new": 5,
+  "count": 62,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 172,
-  "new": 3,
+  "count": 173,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
+  "count": 31,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
