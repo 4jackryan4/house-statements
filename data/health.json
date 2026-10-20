@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-epa",
   "label": "Environmental Protection Agency (EPA)",
   "scraper": null,
@@ -271,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 26,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -625,6 +614,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 3,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000599",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -1074,8 +1074,8 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-ferc",
