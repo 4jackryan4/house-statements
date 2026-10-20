@@ -150,8 +150,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "A000370",
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 50,
-  "new": 3,
+  "count": 49,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -333,10 +333,10 @@
   "bioguide": "W000822",
   "label": "Bonnie Watson Coleman (D-NJ-12)",
   "scraper": "watsoncoleman",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-05"
  },
@@ -1074,7 +1074,7 @@
   "status": "ok",
   "error": null,
   "count": 18,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-25"
  },
  {
@@ -1415,8 +1415,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 3,
-  "latest_date": "2026-09-24"
+  "new": 8,
+  "latest_date": "2026-09-27"
  },
  {
   "bioguide": "C001136",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -2324,10 +2324,10 @@
   "bioguide": "T000472",
   "label": "Mark Takano (D-CA-39)",
   "scraper": "takano",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 24,
+  "count": 44,
   "new": 0,
   "latest_date": "2026-09-08"
  },
@@ -2416,7 +2416,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 167,
-  "new": 27,
-  "latest_date": "2026-10-20"
+  "count": 183,
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
