@@ -48,9 +48,8 @@
       "https://budzinski.house.gov/feed"
     ],
     "B001318": [
-      "https://balint.house.gov/news",
-      "https://balint.house.gov/news/documentquery.aspx?IssueID=14904",
-      "https://balint.house.gov/news/documentquery.aspx?IssueID=14910"
+      "https://balint.house.gov/news/documentquery.aspx?DocumentTypeID=27",
+      "https://balint.house.gov/news/documentquery.aspx?IssueID=14904"
     ],
     "B001324": [
       "https://bell.house.gov/media/press-releases"
@@ -63,6 +62,10 @@
     ],
     "C000537": [
       "https://clyburn.house.gov/feed/"
+    ],
+    "C001055": [
+      "https://case.house.gov/",
+      "https://case.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "C001059": [
       "https://costa.house.gov/media/press-releases"
@@ -96,6 +99,9 @@
     ],
     "C001110": [
       "https://correa.house.gov/rss/feeds/"
+    ],
+    "C001112": [
+      "https://carbajal.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "C001117": [
       "https://casten.house.gov/rss/feeds/"
@@ -139,8 +145,14 @@
     "D000530": [
       "https://deluzio.house.gov/media/press-releases"
     ],
+    "D000617": [
+      "https://delbene.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
     "D000623": [
       "https://desaulnier.house.gov/media-center/press-releases"
+    ],
+    "D000624": [
+      "https://debbiedingell.house.gov/news/"
     ],
     "D000629": [
       "https://davids.house.gov/media/press-releases"
@@ -170,6 +182,9 @@
     "F000454": [
       "https://foster.house.gov/media/press-releases"
     ],
+    "F000462": [
+      "https://frankel.house.gov/news/"
+    ],
     "F000468": [
       "https://fletcher.house.gov/news/",
       "https://fletcher.house.gov/news/documentquery.aspx?DocumentTypeID=27"
@@ -197,8 +212,9 @@
       "https://gottheimer.house.gov/feed"
     ],
     "G000585": [
-      "https://gomez.house.gov/news",
+      "https://gomez.house.gov/",
       "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
+      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=27",
       "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=30"
     ],
     "G000586": [
@@ -298,11 +314,10 @@
     ],
     "K000402": [
       "https://kennedy.house.gov/news/documentquery.aspx?DocumentTypeID=27",
-      "https://kennedy.house.gov/news/documentquery.aspx?IssueID=14891",
-      "https://kennedy.house.gov/news/documentquery.aspx?IssueID=15078"
+      "https://kennedy.house.gov/news/documentquery.aspx?IssueID=14891"
     ],
     "L000273": [
-      "https://fernandez.house.gov/news"
+      "https://fernandez.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "L000557": [
       "https://larson.house.gov/media-center/press-releases"
@@ -330,6 +345,9 @@
     ],
     "L000607": [
       "https://liccardo.house.gov/media/press-releases"
+    ],
+    "M000312": [
+      "https://mcgovern.house.gov/news/documentquery.aspx?DocumentTypeID=2472"
     ],
     "M000687": [
       "https://mfume.house.gov/media/press-releases"
@@ -457,6 +475,10 @@
     "P000617": [
       "https://pressley.house.gov/feed/"
     ],
+    "P000620": [
+      "https://pettersen.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
+      "https://pettersen.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+    ],
     "P000621": [
       "https://pou.house.gov/media/press-releases"
     ],
@@ -558,7 +580,6 @@
       "https://mikethompson.house.gov/newsroom/press-releases"
     ],
     "T000468": [
-      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
       "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000469": [
@@ -572,6 +593,9 @@
     ],
     "T000481": [
       "https://tlaib.house.gov/feed"
+    ],
+    "T000482": [
+      "https://trahan.house.gov/news/"
     ],
     "T000486": [
       "https://ritchietorres.house.gov/press"
@@ -608,6 +632,10 @@
     ],
     "W000788": [
       "https://nikemawilliams.house.gov/feed"
+    ],
+    "W000797": [
+      "https://wassermanschultz.house.gov/news/",
+      "https://wassermanschultz.house.gov/news/documentquery.aspx?DocumentTypeID=1951"
     ],
     "W000808": [
       "https://wilson.house.gov/media/press-releases"
@@ -689,18 +717,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-20T06:44:01+00:00",
+    "at": "2026-10-20T07:01:33+00:00",
     "http": {
-      "200": 402,
+      "200": 433,
       "301": 1,
-      "302": 3,
       "404": 2,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 57
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 5,
+      "ok": 334
     }
   },
   "old_agency_links": [
