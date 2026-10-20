@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-epa",
   "label": "Environmental Protection Agency (EPA)",
   "scraper": null,
@@ -282,8 +293,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "T000193",
@@ -614,17 +625,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000599",
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 1,
   "latest_date": "2026-10-20"
  },
@@ -1040,8 +1040,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 0,
+  "count": 21,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1151,8 +1151,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "committee-foreign-affairs",
@@ -1514,8 +1514,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-imls",
@@ -1954,8 +1954,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-20"
+  "new": 0,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "C001080",
@@ -2900,8 +2900,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "T000486",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "count": 169,
+  "new": 5,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
