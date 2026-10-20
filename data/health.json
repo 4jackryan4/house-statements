@@ -44,6 +44,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -535,8 +546,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "D000530",
@@ -876,8 +887,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "N000147",
@@ -986,8 +997,8 @@
   "status": "ok",
   "error": null,
   "count": 3,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-exim",
@@ -1042,7 +1053,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-fdic",
@@ -1712,8 +1723,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "M001227",
@@ -1888,8 +1899,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "G000583",
@@ -2695,17 +2706,6 @@
   "latest_date": "2026-10-13"
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 180,
-  "new": 0,
-  "latest_date": "2026-10-06"
- },
- {
   "bioguide": "agency-omb",
   "label": "Office of Management and Budget (OMB)",
   "scraper": null,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "count": 164,
+  "new": 6,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
@@ -3582,7 +3582,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3670,7 +3670,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-09"
  },
  {
