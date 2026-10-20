@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -13,6 +24,17 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -97,17 +119,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-01"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-airforce",
@@ -227,8 +238,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001232",
@@ -259,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 50,
-  "new": 0,
+  "count": 51,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -403,7 +414,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -614,17 +625,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "G000599",
@@ -1073,9 +1073,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 18,
-  "new": 0,
-  "latest_date": "2026-10-25"
+  "count": 19,
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-ferc",
@@ -2108,8 +2108,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "F000483",
@@ -2317,7 +2317,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -2955,7 +2955,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 139,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
