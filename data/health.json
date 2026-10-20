@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -13,17 +24,6 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -108,17 +108,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-01"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-airforce",
@@ -627,6 +616,17 @@
   "latest_date": "2026-10-16"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1041,7 +1041,7 @@
   "status": "ok",
   "error": null,
   "count": 21,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -2449,8 +2449,8 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-nhtsa",
