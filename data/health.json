@@ -183,7 +183,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -227,7 +227,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 28,
-  "new": 0,
+  "count": 33,
+  "new": 4,
   "latest_date": "2026-10-20"
  },
  {
@@ -568,7 +568,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -876,7 +876,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -1173,8 +1173,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001214",
@@ -1257,10 +1257,10 @@
   "bioguide": "W000830",
   "label": "George Whitesides (D-CA-27)",
   "scraper": "whitesides",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 22,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-05"
  },
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1917,10 +1917,10 @@
   "bioguide": "R000622",
   "label": "Josh Riley (D-NY-19)",
   "scraper": "riley",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -2005,7 +2005,7 @@
   "bioguide": "C001101",
   "label": "Katherine M. Clark (D-MA-05)",
   "scraper": "clark",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 20,
@@ -2203,7 +2203,7 @@
   "bioguide": "M001208",
   "label": "Lucy McBath (D-GA-06)",
   "scraper": "mcbath",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2423,12 +2423,12 @@
   "bioguide": "M001220",
   "label": "Morgan McGarvey (D-KY-03)",
   "scraper": "mcgarvey",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 45,
-  "new": 0,
-  "latest_date": "2026-08-14"
+  "count": 20,
+  "new": 2,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-nasa",
@@ -2856,7 +2856,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -2885,7 +2885,7 @@
   "bioguide": "N000015",
   "label": "Richard E. Neal (D-MA-01)",
   "scraper": "neal",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 20,
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -3274,7 +3274,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3593,7 +3593,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3680,7 +3680,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
+  "count": 30,
   "new": 0,
   "latest_date": "2026-10-20"
  },
