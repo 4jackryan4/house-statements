@@ -101,7 +101,7 @@
       "https://correa.house.gov/rss/feeds/"
     ],
     "C001112": [
-      "https://carbajal.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://carbajal.house.gov/news"
     ],
     "C001117": [
       "https://casten.house.gov/rss/feeds/"
@@ -580,6 +580,7 @@
       "https://mikethompson.house.gov/newsroom/press-releases"
     ],
     "T000468": [
+      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
       "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000469": [
@@ -717,18 +718,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-21T06:51:12+00:00",
+    "at": "2026-10-21T07:06:31+00:00",
     "http": {
-      "200": 399,
+      "200": 398,
       "301": 1,
-      "302": 3,
+      "302": 1,
       "404": 2,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 39
     },
     "sites": {
       "empty": 0,
-      "error": 3,
-      "ok": 336
+      "error": 9,
+      "ok": 330
     }
   },
   "old_agency_links": [
