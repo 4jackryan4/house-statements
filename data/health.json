@@ -183,7 +183,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -259,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 82,
-  "new": 0,
+  "count": 85,
+  "new": 5,
   "latest_date": "2026-10-21"
  },
  {
@@ -1073,7 +1073,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 17,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -1371,7 +1371,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -1492,7 +1492,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1558,8 +1558,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "H001081",
@@ -1800,7 +1800,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -2416,7 +2416,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -2515,8 +2515,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "B001300",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 134,
+  "count": 182,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
