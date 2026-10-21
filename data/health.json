@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -84,7 +95,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -248,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 79,
-  "new": 0,
+  "count": 82,
+  "new": 3,
   "latest_date": "2026-10-21"
  },
  {
@@ -447,7 +458,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -605,17 +616,6 @@
   "latest_date": "2026-10-16"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -722,7 +722,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -865,8 +865,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "N000147",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -1229,7 +1229,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-gsa",
@@ -1415,7 +1415,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 5,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -1657,8 +1657,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "G000592",
@@ -1888,8 +1888,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "G000583",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -3417,8 +3417,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "K000402",
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 135,
-  "new": 35,
+  "count": 177,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3703,8 +3703,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001067",
