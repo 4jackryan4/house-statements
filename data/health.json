@@ -205,8 +205,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-20"
+  "new": 0,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "C001072",
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 34,
-  "new": 0,
+  "count": 67,
+  "new": 33,
   "latest_date": "2026-10-21"
  },
  {
@@ -964,7 +964,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -2559,8 +2559,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "agency-nationalguard",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 135,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "count": 144,
+  "new": 4,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
@@ -3626,7 +3626,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3670,8 +3670,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-20"
+  "new": 0,
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "agency-whitehouse",
