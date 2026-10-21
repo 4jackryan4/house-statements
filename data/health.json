@@ -205,8 +205,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001072",
@@ -436,7 +436,7 @@
   "status": "ok",
   "error": null,
   "count": 37,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -457,7 +457,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 11,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1284,7 +1284,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-09"
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "agency-gao",
@@ -1294,7 +1294,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -3164,7 +3164,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 140,
-  "new": 5,
-  "latest_date": "2026-10-21"
+  "count": 135,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
@@ -3626,8 +3626,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "committee-veterans-affairs",
@@ -3670,8 +3670,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-whitehouse",
