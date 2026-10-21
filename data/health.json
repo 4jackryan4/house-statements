@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -249,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 36,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -603,17 +614,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "G000599",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 89,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
