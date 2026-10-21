@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -259,9 +248,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 35,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "count": 36,
+  "new": 2,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "P000617",
@@ -614,6 +603,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "G000599",
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
+  "count": 89,
   "new": 0,
   "latest_date": "2026-10-20"
  },
