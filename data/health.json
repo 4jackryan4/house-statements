@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-airforce",
+  "label": "Air Force",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -108,17 +119,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "agency-airforce",
-  "label": "Air Force",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 100,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000553",
@@ -535,8 +535,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-17"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "F000110",
@@ -953,7 +953,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 3,
+  "new": 2,
   "latest_date": "2026-10-20"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 55,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1195,8 +1195,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "W000808",
@@ -3229,8 +3229,8 @@
   "method": "wordpress",
   "status": "ok",
   "error": null,
-  "count": 8,
-  "new": 0,
+  "count": 9,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
