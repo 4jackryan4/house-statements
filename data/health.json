@@ -22,19 +22,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-occ",
-  "label": "Comptroller of the Currency (OCC)",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-education",
-  "label": "Education Department",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -572,6 +561,17 @@
   "latest_date": "2026-10-20"
  },
  {
+  "bioguide": "agency-occ",
+  "label": "Comptroller of the Currency (OCC)",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-14"
+ },
+ {
   "bioguide": "agency-cbo",
   "label": "Congressional Budget Office",
   "scraper": null,
@@ -614,17 +614,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "G000599",
@@ -858,6 +847,17 @@
   "latest_date": "2026-10-16"
  },
  {
+  "bioguide": "agency-education",
+  "label": "Education Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-20"
+ },
+ {
   "bioguide": "committee-education-workforce",
   "label": "Education and Workforce Committee Democrats",
   "scraper": null,
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 61,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -1284,7 +1284,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-14"
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "agency-gao",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 181,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
