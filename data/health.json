@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -271,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 53,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -957,6 +946,17 @@
   "latest_date": "2026-10-08"
  },
  {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 5,
+  "latest_date": "2026-10-28"
+ },
+ {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 61,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
