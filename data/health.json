@@ -33,28 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "M001217",
-  "label": "Jared Moskowitz (D-FL-23)",
-  "scraper": "moskowitz",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001315",
-  "label": "Nikki Budzinski (D-IL-13)",
-  "scraper": "budzinski",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -281,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 71,
-  "new": 0,
+  "count": 73,
+  "new": 2,
   "latest_date": "2026-10-21"
  },
  {
@@ -480,7 +458,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -734,7 +712,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "T000491",
@@ -1019,7 +997,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1040,8 +1018,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 61,
-  "new": 1,
+  "count": 62,
+  "new": 5,
   "latest_date": "2026-10-20"
  },
  {
@@ -1261,8 +1239,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "L000606",
@@ -1705,6 +1683,17 @@
   "latest_date": "2026-10-15"
  },
  {
+  "bioguide": "M001217",
+  "label": "Jared Moskowitz (D-FL-23)",
+  "scraper": "moskowitz",
+  "method": "python-statement+fallback",
+  "status": "ok",
+  "error": null,
+  "count": 12,
+  "new": 0,
+  "latest_date": "2026-07-22"
+ },
+ {
   "bioguide": "C001130",
   "label": "Jasmine Crockett (D-TX-30)",
   "scraper": "crockett",
@@ -1906,10 +1895,10 @@
   "bioguide": "G000583",
   "label": "Josh Gottheimer (D-NJ-05)",
   "scraper": "gottheimer",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2064,8 +2053,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "M001237",
@@ -2108,8 +2097,8 @@
   "status": "ok",
   "error": null,
   "count": 18,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "S001231",
@@ -2280,10 +2269,10 @@
   "bioguide": "G000600",
   "label": "Marie Gluesenkamp Perez (D-WA-03)",
   "scraper": "gluesenkampperez",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 4,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -2643,12 +2632,23 @@
   "bioguide": "W000788",
   "label": "Nikema Williams (D-GA-05)",
   "scraper": "nikemawilliams",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 4,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "B001315",
+  "label": "Nikki Budzinski (D-IL-13)",
+  "scraper": "budzinski",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 0,
+  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "T000474",
@@ -2690,7 +2690,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 5,
+  "count": 4,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -2863,11 +2863,11 @@
   "bioguide": "T000481",
   "label": "Rashida Tlaib (D-MI-12)",
   "scraper": "tlaib",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 5,
-  "new": 1,
+  "count": 6,
+  "new": 0,
   "latest_date": "2026-10-19"
  },
  {
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3461,8 +3461,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "C001125",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 144,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
