@@ -248,7 +248,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 43,
+  "count": 46,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
