@@ -1,30 +1,8 @@
 [
  {
-  "bioguide": "committee-agriculture",
-  "label": "Agriculture Committee Democrats",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "B001318",
-  "label": "Becca Balint (D-VT-AL)",
-  "scraper": "balint",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -44,56 +22,23 @@
   "latest_date": null
  },
  {
-  "bioguide": "D000624",
-  "label": "Debbie Dingell (D-MI-06)",
-  "scraper": "debbiedingell",
-  "method": "none",
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
   "status": "error",
-  "error": "no statements found on the site",
+  "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
   "new": 0,
   "latest_date": null
  },
  {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "none",
+  "bioguide": "agency-nasa",
+  "label": "NASA",
+  "scraper": null,
+  "method": "wordpress",
   "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M000312",
-  "label": "James P. McGovern (D-MA-02)",
-  "scraper": "mcgovern",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000610",
-  "label": "Stacey E. Plaskett (D-VI-AL)",
-  "scraper": "plaskett",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "L000273",
-  "label": "Teresa Leger Fernandez (D-NM-03)",
-  "scraper": "fernandez",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
+  "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -152,6 +97,17 @@
   "count": 22,
   "new": 0,
   "latest_date": "2026-06-12"
+ },
+ {
+  "bioguide": "committee-agriculture",
+  "label": "Agriculture Committee Democrats",
+  "scraper": null,
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "agency-agriculture",
@@ -328,6 +284,17 @@
   "count": 8,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "B001318",
+  "label": "Becca Balint (D-VT-AL)",
+  "scraper": "balint",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "T000193",
@@ -633,9 +600,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 24,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "count": 25,
+  "new": 12,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-ceq",
@@ -658,17 +625,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "G000599",
@@ -713,6 +669,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-13"
+ },
+ {
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "W000797",
@@ -795,10 +762,10 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
  },
@@ -1397,6 +1364,17 @@
   "latest_date": "2026-08-20"
  },
  {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-08"
+ },
+ {
   "bioguide": "J000294",
   "label": "Hakeem S. Jeffries (D-NY-08)",
   "scraper": "jeffries",
@@ -1639,13 +1617,24 @@
   "latest_date": "2026-07-14"
  },
  {
+  "bioguide": "M000312",
+  "label": "James P. McGovern (D-MA-02)",
+  "scraper": "mcgovern",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-19"
+ },
+ {
   "bioguide": "W000831",
   "label": "James R. Walkinshaw (D-VA-11)",
   "scraper": "walkinshaw",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2181,10 +2170,10 @@
   "bioguide": "F000468",
   "label": "Lizzie Fletcher (D-TX-07)",
   "scraper": "fletcher",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 18,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-02"
  },
@@ -2446,17 +2435,6 @@
   "label": "Morgan McGarvey (D-KY-03)",
   "scraper": "mcgarvey",
   "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-nasa",
-  "label": "NASA",
-  "scraper": null,
-  "method": "wordpress",
   "status": "ok",
   "error": null,
   "count": 20,
@@ -2819,7 +2797,7 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3028,10 +3006,10 @@
   "bioguide": "C001112",
   "label": "Salud O. Carbajal (D-CA-24)",
   "scraper": "carbajal",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -3234,6 +3212,17 @@
   "latest_date": "2026-10-15"
  },
  {
+  "bioguide": "P000610",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "scraper": "plaskett",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-12"
+ },
+ {
   "bioguide": "agency-state",
   "label": "State Department",
   "scraper": null,
@@ -3399,6 +3388,17 @@
   "latest_date": "2026-10-07"
  },
  {
+  "bioguide": "L000273",
+  "label": "Teresa Leger Fernandez (D-NM-03)",
+  "scraper": "fernandez",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "S001185",
   "label": "Terri A. Sewell (D-AL-07)",
   "scraper": "sewell",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 167,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
