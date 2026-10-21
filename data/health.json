@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-pbgc",
+  "label": "Pension Benefit Guaranty Corporation",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -260,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 86,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -348,8 +359,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "B001296",
@@ -1646,8 +1657,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "S001145",
@@ -2805,17 +2816,6 @@
   "latest_date": "2026-09-25"
  },
  {
-  "bioguide": "agency-pbgc",
-  "label": "Pension Benefit Guaranty Corporation",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 3,
-  "new": 0,
-  "latest_date": "2026-10-16"
- },
- {
   "bioguide": "A000371",
   "label": "Pete Aguilar (D-CA-33)",
   "scraper": "aguilar",
@@ -3142,7 +3142,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 165,
-  "new": 31,
+  "count": 144,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
