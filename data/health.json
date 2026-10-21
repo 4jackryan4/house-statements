@@ -248,7 +248,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 36,
+  "count": 35,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -557,7 +557,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1284,7 +1284,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-09"
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "agency-gao",
