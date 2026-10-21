@@ -1547,7 +1547,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -2284,8 +2284,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-marines",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 181,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
@@ -3527,8 +3527,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 2,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usms",
@@ -3615,8 +3615,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-va",
@@ -3704,7 +3704,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001067",
