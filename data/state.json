@@ -383,7 +383,7 @@
       "https://mrvan.house.gov/media/press-releases"
     ],
     "M001217": [
-      "https://moskowitz.house.gov/feed"
+      "https://moskowitz.house.gov/"
     ],
     "M001220": [
       "https://mcgarvey.house.gov/rss/feeds/"
@@ -723,19 +723,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-21T16:20:27+00:00",
+    "at": "2026-10-21T16:36:22+00:00",
     "http": {
-      "200": 414,
+      "200": 400,
       "301": 1,
       "302": 3,
-      "404": 2,
+      "404": 7,
       "410": 1,
-      "ReadTimeout": 6
+      "ReadTimeout": 1
     },
     "sites": {
       "empty": 0,
-      "error": 2,
-      "ok": 337
+      "error": 3,
+      "ok": 336
     }
   },
   "old_agency_links": [

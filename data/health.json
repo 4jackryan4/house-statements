@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-nws",
+  "label": "National Weather Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -355,10 +366,10 @@
   "bioguide": "P000620",
   "label": "Brittany Pettersen (D-CO-07)",
   "scraper": "pettersen",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -712,7 +723,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "T000491",
@@ -839,10 +850,10 @@
   "bioguide": "C001055",
   "label": "Ed Case (D-HI-01)",
   "scraper": "case",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 11,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -1689,7 +1700,7 @@
   "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 16,
+  "count": 11,
   "new": 0,
   "latest_date": "2026-07-22"
  },
@@ -1998,8 +2009,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "C001101",
@@ -2016,11 +2027,11 @@
   "bioguide": "C001066",
   "label": "Kathy Castor (D-FL-14)",
   "scraper": "castor",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 34,
-  "new": 4,
+  "count": 10,
+  "new": 0,
   "latest_date": "2026-10-01"
  },
  {
@@ -2159,10 +2170,10 @@
   "bioguide": "F000468",
   "label": "Lizzie Fletcher (D-TX-07)",
   "scraper": "fletcher",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 18,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-02"
  },
@@ -2438,8 +2449,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-ncua",
@@ -2583,17 +2594,6 @@
   "count": 16,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "agency-nws",
-  "label": "National Weather Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 132,
-  "new": 0,
-  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "committee-natural-resources",
@@ -3006,10 +3006,10 @@
   "bioguide": "C001112",
   "label": "Salud O. Carbajal (D-CA-24)",
   "scraper": "carbajal",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
-  "latest_date": "2026-10-21"
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "committee-small-business",
@@ -3428,7 +3428,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-usccr",
@@ -3611,10 +3611,10 @@
   "bioguide": "E000299",
   "label": "Veronica Escobar (D-TX-16)",
   "scraper": "escobar",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 12,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
  },
