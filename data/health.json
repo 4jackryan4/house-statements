@@ -248,7 +248,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 46,
+  "count": 43,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 179,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
