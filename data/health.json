@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-nationalguard",
+  "label": "National Guard",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1029,7 +1040,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 61,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2561,17 +2572,6 @@
   "count": 30,
   "new": 0,
   "latest_date": "2026-10-09"
- },
- {
-  "bioguide": "agency-nationalguard",
-  "label": "National Guard",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-10"
  },
  {
   "bioguide": "agency-nsf",
