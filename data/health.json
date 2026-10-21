@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -13,28 +24,6 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-ftc",
-  "label": "FTC",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -108,17 +97,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-01"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-airforce",
@@ -206,7 +184,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001072",
@@ -271,7 +249,7 @@
   "status": "ok",
   "error": null,
   "count": 67,
-  "new": 33,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -627,6 +605,17 @@
   "latest_date": "2026-10-16"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-20"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -722,8 +711,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "T000491",
@@ -964,7 +953,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1084,9 +1073,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 19,
+  "count": 20,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-ferc",
@@ -1109,6 +1098,17 @@
   "count": 8,
   "new": 0,
   "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "agency-ftc",
+  "label": "FTC",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-fmc",
@@ -2559,7 +2559,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-16"
  },
  {
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 144,
-  "new": 4,
-  "latest_date": "2026-10-21"
+  "count": 181,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
@@ -3670,8 +3670,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-whitehouse",
