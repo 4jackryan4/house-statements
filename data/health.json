@@ -84,8 +84,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-01"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-agriculture",
@@ -546,7 +546,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -612,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -623,8 +623,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "D000096",
@@ -722,8 +722,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-dfc",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 3,
+  "new": 1,
   "latest_date": "2026-10-20"
  },
  {
@@ -1228,8 +1228,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-21"
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-gsa",
@@ -1415,8 +1415,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-09-27"
+  "new": 5,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "C001136",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-21"
  },
  {
@@ -2636,7 +2636,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "count": 135,
+  "new": 35,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
