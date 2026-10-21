@@ -238,7 +238,7 @@
       "https://goldman.house.gov/media/press-releases"
     ],
     "G000600": [
-      "https://gluesenkampperez.house.gov/feed"
+      "https://gluesenkampperez.house.gov/"
     ],
     "G000602": [
       "https://gillen.house.gov/media/press-releases"
@@ -598,7 +598,7 @@
       "https://torres.house.gov/rss/feeds/"
     ],
     "T000481": [
-      "https://tlaib.house.gov/feed"
+      "https://tlaib.house.gov/"
     ],
     "T000482": [
       "https://trahan.house.gov/news/"
@@ -637,7 +637,7 @@
       "https://waters.house.gov/media-center/press-releases"
     ],
     "W000788": [
-      "https://nikemawilliams.house.gov/feed"
+      "https://nikemawilliams.house.gov/"
     ],
     "W000797": [
       "https://wassermanschultz.house.gov/news/",
@@ -723,19 +723,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-21T16:36:22+00:00",
+    "at": "2026-10-21T16:56:06+00:00",
     "http": {
-      "200": 400,
+      "200": 407,
       "301": 1,
       "302": 3,
-      "404": 7,
-      "410": 1,
-      "ReadTimeout": 1
+      "404": 31,
+      "410": 1
     },
     "sites": {
       "empty": 0,
-      "error": 3,
-      "ok": 336
+      "error": 5,
+      "ok": 334
     }
   },
   "old_agency_links": [
