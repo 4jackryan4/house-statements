@@ -76,6 +76,11 @@
     "C001063": [
       "https://cuellar.house.gov/news/"
     ],
+    "C001066": [
+      "https://castor.house.gov/News/DocumentQuery.aspx?DocumentTypeID=818",
+      "https://castor.house.gov/News/DocumentQuery.aspx?DocumentTypeID=822",
+      "https://castor.house.gov/news"
+    ],
     "C001067": [
       "https://clarke.house.gov/feed/"
     ],
@@ -718,13 +723,14 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-21T16:01:24+00:00",
+    "at": "2026-10-21T16:20:27+00:00",
     "http": {
-      "200": 399,
+      "200": 414,
       "301": 1,
       "302": 3,
       "404": 2,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 6
     },
     "sites": {
       "empty": 0,

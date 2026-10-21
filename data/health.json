@@ -355,10 +355,10 @@
   "bioguide": "P000620",
   "label": "Brittany Pettersen (D-CO-07)",
   "scraper": "pettersen",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -839,10 +839,10 @@
   "bioguide": "C001055",
   "label": "Ed Case (D-HI-01)",
   "scraper": "case",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 11,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -1073,9 +1073,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 19,
+  "count": 20,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-ferc",
@@ -2016,11 +2016,11 @@
   "bioguide": "C001066",
   "label": "Kathy Castor (D-FL-14)",
   "scraper": "castor",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 34,
+  "new": 4,
   "latest_date": "2026-10-01"
  },
  {
@@ -2159,10 +2159,10 @@
   "bioguide": "F000468",
   "label": "Lizzie Fletcher (D-TX-07)",
   "scraper": "fletcher",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 18,
   "new": 0,
   "latest_date": "2026-10-02"
  },
@@ -3006,10 +3006,10 @@
   "bioguide": "C001112",
   "label": "Salud O. Carbajal (D-CA-24)",
   "scraper": "carbajal",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "committee-small-business",
@@ -3428,8 +3428,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-13"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "committee-transportation",
@@ -3611,10 +3611,10 @@
   "bioguide": "E000299",
   "label": "Veronica Escobar (D-TX-16)",
   "scraper": "escobar",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 12,
   "new": 0,
   "latest_date": "2026-10-16"
  },
