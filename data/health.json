@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-airforce",
+  "label": "Air Force",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -24,28 +35,6 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-odni",
-  "label": "Director of National Intelligence (ODNI)",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -429,17 +418,6 @@
   "latest_date": "2026-10-20"
  },
  {
-  "bioguide": "agency-airforce",
-  "label": "Air Force",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 100,
-  "new": 0,
-  "latest_date": "2026-10-19"
- },
- {
   "bioguide": "G000553",
   "label": "Al Green (D-TX-09)",
   "scraper": "algreen",
@@ -777,8 +755,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "P000597",
@@ -924,6 +902,17 @@
   "latest_date": "2026-10-16"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-21"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1020,7 +1009,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "T000491",
@@ -1065,6 +1054,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-odni",
+  "label": "Director of National Intelligence (ODNI)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 0,
+  "latest_date": "2026-08-03"
  },
  {
   "bioguide": "D000230",
@@ -1294,7 +1294,7 @@
   "status": "ok",
   "error": null,
   "count": 63,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-20"
  },
  {
@@ -3262,9 +3262,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 11,
+  "count": 1,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": null
  },
  {
   "bioguide": "P000610",
@@ -3537,7 +3537,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 144,
+  "count": 133,
   "new": 0,
   "latest_date": "2026-10-21"
  },
