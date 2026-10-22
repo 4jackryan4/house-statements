@@ -33,26 +33,15 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-odni",
-  "label": "Director of National Intelligence (ODNI)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 3,
+  "count": 2,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "G000605",
@@ -73,8 +62,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
-  "latest_date": "2026-10-22"
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "G000606",
@@ -183,7 +172,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -270,9 +259,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 74,
+  "count": 90,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "P000617",
@@ -381,7 +370,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -590,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -623,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -768,6 +757,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-odni",
+  "label": "Director of National Intelligence (ODNI)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 0,
+  "latest_date": "2026-08-03"
  },
  {
   "bioguide": "D000230",
@@ -942,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -953,7 +953,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1492,7 +1492,7 @@
   "status": "ok",
   "error": null,
   "count": 13,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1690,7 +1690,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1756,7 +1756,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -2823,7 +2823,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -2889,7 +2889,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 144,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "count": 179,
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
@@ -3538,7 +3538,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-07"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 32,
-  "new": 3,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
