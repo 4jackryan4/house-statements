@@ -22,26 +22,15 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 2,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "count": 3,
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "G000605",
@@ -63,7 +52,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "G000606",
@@ -73,8 +62,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "E000297",
@@ -259,9 +248,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 90,
+  "count": 74,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "P000617",
@@ -348,8 +337,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "B001296",
@@ -613,6 +602,17 @@
   "error": null,
   "count": 10,
   "new": 0,
+  "latest_date": "2026-10-22"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -942,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -975,8 +975,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "B001328",
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1073,8 +1073,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 18,
-  "new": 0,
+  "count": 20,
+  "new": 2,
   "latest_date": "2026-10-22"
  },
  {
@@ -1228,8 +1228,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-gsa",
@@ -2108,8 +2108,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "F000483",
@@ -2130,8 +2130,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "U000040",
@@ -2339,8 +2339,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-09"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "D000635",
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
-  "new": 1,
+  "count": 134,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
