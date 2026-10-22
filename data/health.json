@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "committee-education-workforce",
   "label": "Education and Workforce Committee Democrats",
   "scraper": null,
@@ -44,9 +33,42 @@
   "latest_date": null
  },
  {
+  "bioguide": "C001110",
+  "label": "J. Luis Correa (D-CA-46)",
+  "scraper": "correa",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "M001234",
   "label": "Kelly Morrison (D-MN-03)",
   "scraper": "morrison",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "L000593",
+  "label": "Mike Levin (D-CA-49)",
+  "scraper": "levin",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "committee-natural-resources",
+  "label": "Natural Resources Committee Democrats",
+  "scraper": null,
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -69,6 +91,17 @@
   "bioguide": "committee-science",
   "label": "Science Committee Democrats",
   "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "C001117",
+  "label": "Sean Casten (D-IL-06)",
+  "scraper": "casten",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -669,6 +702,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "G000599",
@@ -1503,7 +1547,7 @@
   "status": "ok",
   "error": null,
   "count": 3,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-21"
  },
  {
@@ -1591,17 +1635,6 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
- },
- {
-  "bioguide": "C001110",
-  "label": "J. Luis Correa (D-CA-46)",
-  "scraper": "correa",
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 3,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -1722,8 +1755,8 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 0,
+  "count": 10,
+  "new": 3,
   "latest_date": "2026-10-15"
  },
  {
@@ -1799,7 +1832,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -2420,17 +2453,6 @@
   "latest_date": "2026-09-30"
  },
  {
-  "bioguide": "L000593",
-  "label": "Mike Levin (D-CA-49)",
-  "scraper": "levin",
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 1,
-  "new": 0,
-  "latest_date": "2026-10-07"
- },
- {
   "bioguide": "Q000023",
   "label": "Mike Quigley (D-IL-05)",
   "scraper": "quigley",
@@ -2629,17 +2651,6 @@
   "latest_date": "2026-10-08"
  },
  {
-  "bioguide": "committee-natural-resources",
-  "label": "Natural Resources Committee Democrats",
-  "scraper": null,
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 1,
-  "new": 0,
-  "latest_date": "2026-09-17"
- },
- {
   "bioguide": "agency-navy",
   "label": "Navy",
   "scraper": null,
@@ -2789,9 +2800,9 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 22,
+  "count": 1,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-06-04"
  },
  {
   "bioguide": "H001103",
@@ -3102,17 +3113,6 @@
   "latest_date": "2026-10-19"
  },
  {
-  "bioguide": "C001117",
-  "label": "Sean Casten (D-IL-06)",
-  "scraper": "casten",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-17"
- },
- {
   "bioguide": "agency-secretservice",
   "label": "Secret Service",
   "scraper": null,
@@ -3185,7 +3185,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-16"
  },
@@ -3449,9 +3449,9 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 9,
-  "new": 1,
-  "latest_date": "2026-10-13"
+  "count": 6,
+  "new": 0,
+  "latest_date": "2025-06-26"
  },
  {
   "bioguide": "agency-transportation",
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 133,
+  "count": 177,
   "new": 0,
   "latest_date": "2026-10-21"
  },

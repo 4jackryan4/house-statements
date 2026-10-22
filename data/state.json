@@ -262,7 +262,7 @@
       "https://horsford.house.gov/media/press-releases"
     ],
     "H001068": [
-      "https://huffman.house.gov/media-center/press-releases"
+      "https://huffman.house.gov/news"
     ],
     "H001081": [
       "https://hayes.house.gov/press-releases"
@@ -610,10 +610,10 @@
       "https://ritchietorres.house.gov/press"
     ],
     "T000487": [
-      "https://tokuda.house.gov/rss/feeds/"
+      "https://tokuda.house.gov/media/press-releases"
     ],
     "T000488": [
-      "https://thanedar.house.gov/rss/feeds/"
+      "https://thanedar.house.gov/media/press-releases"
     ],
     "T000491": [
       "https://tran.house.gov/media/press-releases"
@@ -702,8 +702,6 @@
       "https://democrats-naturalresources.house.gov/"
     ],
     "committee-oversight": [
-      "https://oversightdemocrats.house.gov/",
-      "https://oversightdemocrats.house.gov/news/press-releases",
       "https://oversightdemocrats.house.gov/news/reports"
     ],
     "committee-rules": [
@@ -716,7 +714,6 @@
       "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "committee-transportation": [
-      "https://democrats-transportation.house.gov/news",
       "https://democrats-transportation.house.gov/news/op-eds"
     ],
     "committee-veterans-affairs": [
@@ -727,18 +724,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-22T05:43:59+00:00",
+    "at": "2026-10-22T05:59:14+00:00",
     "http": {
-      "200": 480,
+      "200": 481,
       "301": 1,
       "302": 3,
       "404": 2,
-      "410": 4
+      "410": 2
     },
     "sites": {
       "empty": 0,
-      "error": 8,
-      "ok": 331
+      "error": 11,
+      "ok": 328
     }
   },
   "old_agency_links": [
