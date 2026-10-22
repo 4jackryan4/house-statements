@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-airforce",
+  "label": "Air Force",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -24,17 +35,6 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-odni",
-  "label": "Director of National Intelligence (ODNI)",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -418,17 +418,6 @@
   "latest_date": "2026-10-20"
  },
  {
-  "bioguide": "agency-airforce",
-  "label": "Air Force",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 100,
-  "new": 0,
-  "latest_date": "2026-10-19"
- },
- {
   "bioguide": "G000553",
   "label": "Al Green (D-TX-09)",
   "scraper": "algreen",
@@ -567,9 +556,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "P000617",
@@ -855,7 +844,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-occ",
@@ -1020,7 +1009,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-12"
  },
  {
   "bioguide": "T000491",
@@ -1065,6 +1054,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-odni",
+  "label": "Director of National Intelligence (ODNI)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 0,
+  "latest_date": "2026-08-03"
  },
  {
   "bioguide": "D000230",
@@ -2284,7 +2284,7 @@
   "status": "ok",
   "error": null,
   "count": 18,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -2747,7 +2747,7 @@
   "error": null,
   "count": 11,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "P000621",
@@ -3262,9 +3262,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 1,
+  "count": 11,
   "new": 0,
-  "latest_date": null
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "P000610",
@@ -3505,8 +3505,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "C001125",
@@ -3537,7 +3537,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 134,
+  "count": 177,
   "new": 0,
   "latest_date": "2026-10-21"
  },
