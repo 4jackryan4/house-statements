@@ -1008,7 +1008,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3537,7 +3537,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 177,
+  "count": 179,
   "new": 0,
   "latest_date": "2026-10-21"
  },
