@@ -330,6 +330,9 @@
     "L000560": [
       "https://larsen.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
+    "L000562": [
+      "https://lynch.house.gov/newsroom"
+    ],
     "L000582": [
       "https://lieu.house.gov/media-center/press-releases"
     ],
@@ -723,12 +726,12 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-21T23:44:23+00:00",
+    "at": "2026-10-22T00:03:13+00:00",
     "http": {
-      "200": 399,
+      "200": 405,
       "301": 1,
       "302": 3,
-      "404": 2,
+      "404": 4,
       "410": 1
     },
     "sites": {
