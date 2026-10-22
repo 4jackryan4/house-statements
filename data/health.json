@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -272,7 +261,7 @@
   "error": null,
   "count": 8,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "B001318",
@@ -607,6 +596,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-22"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -1074,7 +1074,7 @@
   "status": "ok",
   "error": null,
   "count": 14,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -1217,8 +1217,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "V000136",
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1558,8 +1558,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "H001081",
@@ -1569,8 +1569,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "A000148",
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 168,
-  "new": 4,
-  "latest_date": "2026-10-22"
+  "count": 178,
+  "new": 0,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 34,
-  "new": 3,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3704,7 +3704,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "C001067",
