@@ -22,8 +22,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-nationalguard",
-  "label": "National Guard",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -271,8 +271,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
-  "latest_date": "2026-10-20"
+  "new": 0,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "B001318",
@@ -607,17 +607,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -1029,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1051,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1084,7 +1073,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 13,
+  "count": 14,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1404,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -1525,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -1910,7 +1899,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -2174,7 +2163,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -2572,6 +2561,17 @@
   "count": 30,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-nationalguard",
+  "label": "National Guard",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-09-10"
  },
  {
   "bioguide": "agency-nsf",
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
-  "new": 0,
+  "count": 168,
+  "new": 4,
   "latest_date": "2026-10-22"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 1,
+  "count": 34,
+  "new": 3,
   "latest_date": "2026-10-22"
  },
  {
@@ -3703,8 +3703,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 2,
-  "latest_date": "2026-10-22"
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "C001067",
