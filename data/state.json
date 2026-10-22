@@ -594,7 +594,7 @@
       "https://tonko.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000472": [
-      "https://takano.house.gov/rss/feeds/"
+      "https://takano.house.gov/news"
     ],
     "T000474": [
       "https://torres.house.gov/rss/feeds/"
@@ -723,17 +723,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-22T13:40:18+00:00",
+    "at": "2026-10-22T13:57:17+00:00",
     "http": {
-      "200": 591,
+      "200": 413,
       "301": 1,
       "302": 3,
-      "404": 2
+      "404": 2,
+      "410": 14
     },
     "sites": {
       "empty": 0,
-      "error": 31,
-      "ok": 308
+      "error": 4,
+      "ok": 335
     }
   },
   "old_agency_links": [
