@@ -195,10 +195,10 @@
       "https://fletcher.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "F000476": [
-      "https://frost.house.gov/rss/feeds/"
+      "https://frost.house.gov/"
     ],
     "F000477": [
-      "https://foushee.house.gov/media/press-releases"
+      "https://foushee.house.gov/rss/feeds/"
     ],
     "F000481": [
       "https://figures.house.gov/media/press-releases"
@@ -262,7 +262,7 @@
       "https://horsford.house.gov/media/press-releases"
     ],
     "H001068": [
-      "https://huffman.house.gov/news"
+      "https://huffman.house.gov/"
     ],
     "H001081": [
       "https://hayes.house.gov/press-releases"
@@ -595,7 +595,7 @@
       "https://tonko.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000472": [
-      "https://takano.house.gov/newsroom/press-releases"
+      "https://takano.house.gov/rss/feeds/"
     ],
     "T000474": [
       "https://torres.house.gov/rss/feeds/"
@@ -610,7 +610,7 @@
       "https://ritchietorres.house.gov/press"
     ],
     "T000487": [
-      "https://tokuda.house.gov/media/press-releases"
+      "https://tokuda.house.gov/rss/feeds/"
     ],
     "T000488": [
       "https://thanedar.house.gov/media/press-releases"
@@ -687,7 +687,7 @@
       "https://democrats-foreignaffairs.house.gov/press-releases"
     ],
     "committee-homeland-security": [
-      "https://democrats-homeland.house.gov/"
+      "https://democrats-homeland.house.gov/news/press-releases"
     ],
     "committee-house-administration": [
       "https://democrats-cha.house.gov/media/press-releases"
@@ -708,13 +708,13 @@
       "https://democrats-rules.house.gov/media/press-releases"
     ],
     "committee-science": [
-      "https://democrats-science.house.gov/news/press-releases"
+      "https://democrats-science.house.gov/news"
     ],
     "committee-small-business": [
       "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "committee-transportation": [
-      "https://democrats-transportation.house.gov/news/op-eds"
+      "https://democrats-transportation.house.gov/news"
     ],
     "committee-veterans-affairs": [
       "https://democrats-veterans.house.gov/news/press-releases"
@@ -724,13 +724,13 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-22T05:59:14+00:00",
+    "at": "2026-10-22T06:18:00+00:00",
     "http": {
-      "200": 481,
+      "200": 495,
       "301": 1,
       "302": 3,
       "404": 2,
-      "410": 2
+      "410": 4
     },
     "sites": {
       "empty": 0,

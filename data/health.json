@@ -22,9 +22,20 @@
   "latest_date": null
  },
  {
-  "bioguide": "committee-education-workforce",
-  "label": "Education and Workforce Committee Democrats",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "A000148",
+  "label": "Jake Auchincloss (D-MA-04)",
+  "scraper": "auchincloss",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -33,20 +44,9 @@
   "latest_date": null
  },
  {
-  "bioguide": "C001110",
-  "label": "J. Luis Correa (D-CA-46)",
-  "scraper": "correa",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001234",
-  "label": "Kelly Morrison (D-MN-03)",
-  "scraper": "morrison",
+  "bioguide": "M001229",
+  "label": "LaMonica McIver (D-NJ-10)",
+  "scraper": "mciver",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -77,19 +77,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "T000474",
-  "label": "Norma J. Torres (D-CA-35)",
-  "scraper": "torres",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "committee-science",
-  "label": "Science Committee Democrats",
+  "bioguide": "committee-oversight",
+  "label": "Oversight Committee Democrats",
   "scraper": null,
   "method": "none",
   "status": "error",
@@ -110,9 +99,20 @@
   "latest_date": null
  },
  {
-  "bioguide": "H001094",
-  "label": "Val T. Hoyle (D-OR-04)",
-  "scraper": "hoyle",
+  "bioguide": "T000488",
+  "label": "Shri Thanedar (D-MI-13)",
+  "scraper": "thanedar",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "committee-veterans-affairs",
+  "label": "Veterans' Affairs Committee Democrats",
+  "scraper": null,
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -704,17 +704,6 @@
   "latest_date": "2026-10-16"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -953,6 +942,17 @@
   "status": "ok",
   "error": null,
   "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-21"
+ },
+ {
+  "bioguide": "committee-education-workforce",
+  "label": "Education and Workforce Committee Democrats",
+  "scraper": null,
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -1546,9 +1546,9 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 3,
+  "count": 20,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "committee-house-administration",
@@ -1639,6 +1639,17 @@
   "latest_date": "2026-10-21"
  },
  {
+  "bioguide": "C001110",
+  "label": "J. Luis Correa (D-CA-46)",
+  "scraper": "correa",
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 3,
+  "new": 0,
+  "latest_date": "2026-10-21"
+ },
+ {
   "bioguide": "H001081",
   "label": "Jahana Hayes (D-CT-05)",
   "scraper": "hayes",
@@ -1648,17 +1659,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
- },
- {
-  "bioguide": "A000148",
-  "label": "Jake Auchincloss (D-MA-04)",
-  "scraper": "auchincloss",
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-15"
  },
  {
   "bioguide": "H001047",
@@ -1755,8 +1755,8 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 3,
+  "count": 3,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1832,7 +1832,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 25,
   "new": 0,
   "latest_date": "2026-10-13"
  },
@@ -1873,10 +1873,10 @@
   "bioguide": "C001091",
   "label": "Joaquin Castro (D-TX-20)",
   "scraper": "castro",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -2101,6 +2101,17 @@
   "latest_date": "2026-10-01"
  },
  {
+  "bioguide": "M001234",
+  "label": "Kelly Morrison (D-MN-03)",
+  "scraper": "morrison",
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 0,
+  "latest_date": "2026-10-14"
+ },
+ {
   "bioguide": "M001225",
   "label": "Kevin Mullin (D-CA-15)",
   "scraper": "kevinmullin",
@@ -2143,17 +2154,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "M001229",
-  "label": "LaMonica McIver (D-NJ-10)",
-  "scraper": "mciver",
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 1,
-  "new": 0,
-  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "agency-labor",
@@ -2393,7 +2393,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 19,
+  "count": 24,
   "new": 0,
   "latest_date": "2026-09-08"
  },
@@ -2437,7 +2437,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 1,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -2695,6 +2695,17 @@
   "latest_date": "2026-10-07"
  },
  {
+  "bioguide": "T000474",
+  "label": "Norma J. Torres (D-CA-35)",
+  "scraper": "torres",
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 0,
+  "latest_date": "2026-10-15"
+ },
+ {
   "bioguide": "agency-nrc",
   "label": "Nuclear Regulatory Commission",
   "scraper": null,
@@ -2792,17 +2803,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-14"
- },
- {
-  "bioguide": "committee-oversight",
-  "label": "Oversight Committee Democrats",
-  "scraper": null,
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 1,
-  "new": 0,
-  "latest_date": "2026-06-04"
  },
  {
   "bioguide": "H001103",
@@ -3072,10 +3072,10 @@
   "bioguide": "J000305",
   "label": "Sara Jacobs (D-CA-51)",
   "scraper": "sarajacobs",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -3100,6 +3100,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-09"
+ },
+ {
+  "bioguide": "committee-science",
+  "label": "Science Committee Democrats",
+  "scraper": null,
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 6,
+  "new": 3,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "P000608",
@@ -3177,17 +3188,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-21"
- },
- {
-  "bioguide": "T000488",
-  "label": "Shri Thanedar (D-MI-13)",
-  "scraper": "thanedar",
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-16"
  },
  {
   "bioguide": "agency-sba",
@@ -3451,7 +3451,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2025-06-26"
+  "latest_date": "2026-10-13"
  },
  {
   "bioguide": "agency-transportation",
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 177,
+  "count": 181,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
@@ -3597,13 +3597,24 @@
   "latest_date": "2026-10-20"
  },
  {
+  "bioguide": "H001094",
+  "label": "Val T. Hoyle (D-OR-04)",
+  "scraper": "hoyle",
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 0,
+  "latest_date": "2026-10-20"
+ },
+ {
   "bioguide": "F000477",
   "label": "Valerie P. Foushee (D-NC-04)",
   "scraper": "foushee",
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 25,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -3628,17 +3639,6 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-10-21"
- },
- {
-  "bioguide": "committee-veterans-affairs",
-  "label": "Veterans' Affairs Committee Democrats",
-  "scraper": null,
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-02"
  },
  {
   "bioguide": "G000581",
