@@ -108,7 +108,7 @@
       "https://carbajal.house.gov/news"
     ],
     "C001117": [
-      "https://casten.house.gov/rss/feeds/"
+      "https://casten.house.gov/media/press-releases"
     ],
     "C001119": [
       "https://craig.house.gov/media/press-releases"
@@ -723,9 +723,9 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-22T23:16:18+00:00",
+    "at": "2026-10-22T23:31:00+00:00",
     "http": {
-      "200": 399,
+      "200": 402,
       "301": 1,
       "302": 3,
       "404": 2,

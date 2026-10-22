@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -13,17 +24,6 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -97,17 +97,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-airforce",
@@ -259,9 +248,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 74,
+  "count": 63,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "P000617",
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-22"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-22"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -854,7 +854,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -2351,7 +2351,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "W000187",
@@ -3097,7 +3097,7 @@
   "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 45,
+  "count": 40,
   "new": 0,
   "latest_date": "2026-09-17"
  },
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 168,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3703,7 +3703,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
