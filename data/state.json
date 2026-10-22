@@ -702,7 +702,7 @@
       "https://democrats-naturalresources.house.gov/"
     ],
     "committee-oversight": [
-      "https://oversightdemocrats.house.gov/news/reports"
+      "https://oversightdemocrats.house.gov/news/press-releases"
     ],
     "committee-rules": [
       "https://democrats-rules.house.gov/media/press-releases"
@@ -724,18 +724,17 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-22T06:18:00+00:00",
+    "at": "2026-10-22T06:33:42+00:00",
     "http": {
-      "200": 495,
+      "200": 591,
       "301": 1,
       "302": 3,
-      "404": 2,
-      "410": 4
+      "404": 2
     },
     "sites": {
       "empty": 0,
-      "error": 11,
-      "ok": 328
+      "error": 29,
+      "ok": 310
     }
   },
   "old_agency_links": [
