@@ -2,7 +2,7 @@
   "archive_imported_at": "2026-10-22T03:35:03+00:00",
   "fallback_sources": {
     "A000148": [
-      "https://auchincloss.house.gov/rss/feeds/"
+      "https://auchincloss.house.gov/media/press-releases"
     ],
     "A000370": [
       "https://adams.house.gov/media-center/press-releases"
@@ -103,7 +103,7 @@
       "https://katherineclark.house.gov/category/press-releases/"
     ],
     "C001110": [
-      "https://correa.house.gov/rss/feeds/"
+      "https://correa.house.gov/"
     ],
     "C001112": [
       "https://carbajal.house.gov/news"
@@ -198,7 +198,7 @@
       "https://frost.house.gov/rss/feeds/"
     ],
     "F000477": [
-      "https://foushee.house.gov/rss/feeds/"
+      "https://foushee.house.gov/media/press-releases"
     ],
     "F000481": [
       "https://figures.house.gov/media/press-releases"
@@ -262,7 +262,7 @@
       "https://horsford.house.gov/media/press-releases"
     ],
     "H001068": [
-      "https://huffman.house.gov/rss/feeds/"
+      "https://huffman.house.gov/media-center/press-releases"
     ],
     "H001081": [
       "https://hayes.house.gov/press-releases"
@@ -340,7 +340,7 @@
       "https://susielee.house.gov/media/press-releases"
     ],
     "L000593": [
-      "https://levin.house.gov/rss/feeds/"
+      "https://levin.house.gov/"
     ],
     "L000601": [
       "https://landsman.house.gov/media/press-releases"
@@ -404,7 +404,7 @@
       "https://mcclellan.house.gov/category/press-releases/"
     ],
     "M001229": [
-      "https://mciver.house.gov/rss/feeds/"
+      "https://mciver.house.gov/"
     ],
     "M001231": [
       "https://mannion.house.gov/media/press-releases"
@@ -567,7 +567,7 @@
       "https://scholten.house.gov/media/press-releases"
     ],
     "S001223": [
-      "https://sykes.house.gov/rss/feeds/"
+      "https://sykes.house.gov/"
     ],
     "S001225": [
       "https://sorensen.house.gov/media/press-releases"
@@ -595,7 +595,7 @@
       "https://tonko.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000472": [
-      "https://takano.house.gov/rss/feeds/"
+      "https://takano.house.gov/newsroom/press-releases"
     ],
     "T000474": [
       "https://torres.house.gov/rss/feeds/"
@@ -687,7 +687,7 @@
       "https://democrats-foreignaffairs.house.gov/press-releases"
     ],
     "committee-homeland-security": [
-      "https://democrats-homeland.house.gov/news/press-releases"
+      "https://democrats-homeland.house.gov/"
     ],
     "committee-house-administration": [
       "https://democrats-cha.house.gov/media/press-releases"
@@ -699,7 +699,7 @@
       "https://democrats-judiciary.house.gov/media-center/press-releases"
     ],
     "committee-natural-resources": [
-      "https://democrats-naturalresources.house.gov/media/press-releases"
+      "https://democrats-naturalresources.house.gov/"
     ],
     "committee-oversight": [
       "https://oversightdemocrats.house.gov/",
@@ -716,7 +716,8 @@
       "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "committee-transportation": [
-      "https://democrats-transportation.house.gov/news/press-releases"
+      "https://democrats-transportation.house.gov/news",
+      "https://democrats-transportation.house.gov/news/op-eds"
     ],
     "committee-veterans-affairs": [
       "https://democrats-veterans.house.gov/news/press-releases"
@@ -726,18 +727,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-22T05:24:18+00:00",
+    "at": "2026-10-22T05:43:59+00:00",
     "http": {
-      "200": 402,
+      "200": 480,
       "301": 1,
       "302": 3,
       "404": 2,
-      "410": 1
+      "410": 4
     },
     "sites": {
       "empty": 0,
-      "error": 3,
-      "ok": 336
+      "error": 8,
+      "ok": 331
     }
   },
   "old_agency_links": [
