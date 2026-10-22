@@ -209,6 +209,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "committee-oversight",
+  "label": "Oversight Committee Democrats",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "M001226",
   "label": "Robert Menendez (D-NJ-08)",
   "scraper": "menendez",
@@ -545,7 +556,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 75,
+  "count": 70,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -2871,17 +2882,6 @@
   "latest_date": "2026-10-14"
  },
  {
-  "bioguide": "committee-oversight",
-  "label": "Oversight Committee Democrats",
-  "scraper": null,
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-15"
- },
- {
   "bioguide": "H001103",
   "label": "Pablo Jos\u00e9 Hern\u00e1ndez (D-PR-AL)",
   "scraper": "hernandez",
@@ -3537,7 +3537,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 177,
+  "count": 133,
   "new": 0,
   "latest_date": "2026-10-21"
  },
