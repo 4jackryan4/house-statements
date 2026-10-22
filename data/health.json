@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-odni",
-  "label": "Director of National Intelligence (ODNI)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "committee-education-workforce",
   "label": "Education and Workforce Committee Democrats",
   "scraper": null,
@@ -578,8 +567,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 62,
-  "new": 0,
+  "count": 64,
+  "new": 2,
   "latest_date": "2026-10-22"
  },
  {
@@ -1020,7 +1009,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-10-12"
  },
  {
   "bioguide": "T000491",
@@ -1065,6 +1054,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
+ },
+ {
+  "bioguide": "agency-odni",
+  "label": "Director of National Intelligence (ODNI)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 8,
+  "new": 0,
+  "latest_date": "2026-08-03"
  },
  {
   "bioguide": "D000230",
@@ -1723,8 +1723,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "committee-house-administration",
@@ -3537,9 +3537,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 144,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "count": 137,
+  "new": 3,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
