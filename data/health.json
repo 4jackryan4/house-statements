@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-nationalguard",
+  "label": "National Guard",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -260,8 +271,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "B001318",
@@ -338,7 +349,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "B001296",
@@ -931,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 13,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -976,7 +987,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "B001328",
@@ -1018,7 +1029,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1030,7 +1041,7 @@
   "status": "ok",
   "error": null,
   "count": 48,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1040,7 +1051,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1073,8 +1084,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 14,
-  "new": 3,
+  "count": 13,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1899,7 +1910,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -2163,8 +2174,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-02"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "D000399",
@@ -2561,17 +2572,6 @@
   "count": 30,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-nationalguard",
-  "label": "National Guard",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-10"
  },
  {
   "bioguide": "agency-nsf",
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "committee-small-business",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 164,
-  "new": 67,
+  "count": 179,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -3703,8 +3703,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 2,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "C001067",
