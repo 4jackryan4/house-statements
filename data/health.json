@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -205,8 +194,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "C001119",
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-22"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 4,
+  "latest_date": "2026-10-22"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1074,7 +1074,7 @@
   "status": "ok",
   "error": null,
   "count": 14,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1480,9 +1480,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 213,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "count": 214,
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-irs",
@@ -2845,7 +2845,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 178,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
