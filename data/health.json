@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -92,17 +103,6 @@
   "label": "Agriculture Committee Democrats",
   "scraper": null,
   "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -854,7 +854,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -942,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1712,7 +1712,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-22"
  },
  {
@@ -2043,7 +2043,7 @@
   "error": null,
   "count": 9,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "S001216",
@@ -3142,8 +3142,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "F000481",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 134,
-  "new": 1,
-  "latest_date": "2026-10-22"
+  "count": 135,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-usccr",
