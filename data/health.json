@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-gsa",
+  "label": "General Services Administration",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1018,7 +1029,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1230,17 +1241,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
- },
- {
-  "bioguide": "agency-gsa",
-  "label": "General Services Administration",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "L000606",
@@ -1774,12 +1774,12 @@
   "bioguide": "G000585",
   "label": "Jimmy Gomez (D-CA-34)",
   "scraper": "gomez",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 40,
   "new": 0,
-  "latest_date": "2026-09-22"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "P000613",
@@ -1939,10 +1939,10 @@
   "bioguide": "V000130",
   "label": "Juan Vargas (D-CA-52)",
   "scraper": "vargas",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-22"
  },
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 168,
   "new": 0,
   "latest_date": "2026-10-22"
  },
