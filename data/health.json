@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "committee-agriculture",
-  "label": "Agriculture Committee Democrats",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -28,17 +17,6 @@
   "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -97,6 +75,17 @@
   "count": 22,
   "new": 0,
   "latest_date": "2026-06-12"
+ },
+ {
+  "bioguide": "committee-agriculture",
+  "label": "Agriculture Committee Democrats",
+  "scraper": null,
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-agriculture",
@@ -278,10 +267,10 @@
   "bioguide": "B001318",
   "label": "Becca Balint (D-VT-AL)",
   "scraper": "balint",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -590,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 14,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -674,11 +663,11 @@
   "bioguide": "D000624",
   "label": "Debbie Dingell (D-MI-06)",
   "scraper": "debbiedingell",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 33,
-  "new": 18,
+  "count": 15,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -1029,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1362,6 +1351,17 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-08-20"
+ },
+ {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "J000294",
@@ -3215,7 +3215,7 @@
   "bioguide": "P000610",
   "label": "Stacey E. Plaskett (D-VI-AL)",
   "scraper": "plaskett",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 134,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
