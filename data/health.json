@@ -22,13 +22,24 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 3,
+  "count": 2,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -447,8 +458,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-cpsc",
@@ -596,17 +607,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 134,
+  "count": 178,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
@@ -3680,9 +3680,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "count": 31,
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "K000375",
