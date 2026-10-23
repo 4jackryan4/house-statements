@@ -11,6 +11,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-blm",
+  "label": "Bureau of Land Management",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
   "scraper": null,
@@ -396,17 +407,6 @@
   "latest_date": "2026-10-22"
  },
  {
-  "bioguide": "agency-blm",
-  "label": "Bureau of Land Management",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
   "bioguide": "agency-cfpb",
   "label": "CFPB",
   "scraper": null,
@@ -458,7 +458,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -1018,9 +1018,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "count": 63,
+  "new": 3,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-fcc",
@@ -1029,9 +1029,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 48,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "count": 45,
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-fda",
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -1789,7 +1789,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -2262,7 +2262,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -2350,7 +2350,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -2471,7 +2471,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -2769,7 +2769,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "H001103",
@@ -3087,7 +3087,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
+  "count": 137,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3538,7 +3538,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-07"
  },
  {
