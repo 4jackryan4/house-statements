@@ -601,8 +601,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-dea",
@@ -612,8 +612,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 2,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "G000599",
@@ -711,7 +711,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -866,7 +866,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "N000147",
@@ -953,7 +953,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -1070,10 +1070,10 @@
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1576,12 +1576,12 @@
   "bioguide": "A000148",
   "label": "Jake Auchincloss (D-MA-04)",
   "scraper": "auchincloss",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 40,
-  "new": 0,
-  "latest_date": "2026-09-15"
+  "count": 20,
+  "new": 2,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "H001047",
@@ -1954,7 +1954,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -2262,8 +2262,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "G000600",
@@ -2659,7 +2659,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-nrc",
@@ -2669,7 +2669,7 @@
   "status": "ok",
   "error": null,
   "count": 158,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -2845,8 +2845,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "K000391",
@@ -3121,7 +3121,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-01"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "M001196",
@@ -3296,8 +3296,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-stb",
@@ -3450,8 +3450,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-treasury",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 178,
+  "count": 134,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
