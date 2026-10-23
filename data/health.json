@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-education",
+  "label": "Education Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -847,17 +858,6 @@
   "latest_date": "2026-10-16"
  },
  {
-  "bioguide": "agency-education",
-  "label": "Education Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
   "bioguide": "committee-education-workforce",
   "label": "Education and Workforce Committee Democrats",
   "scraper": null,
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3229,7 +3229,7 @@
   "method": "wordpress",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 8,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3318,7 +3318,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
