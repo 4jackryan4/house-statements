@@ -22,17 +22,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -259,9 +248,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 34,
+  "count": 74,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "P000617",
@@ -722,7 +711,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -876,7 +865,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -1008,8 +997,8 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 1,
-  "latest_date": "2026-10-23"
+  "new": 0,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-faa",
@@ -1029,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1081,10 +1070,10 @@
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
-  "method": "rss+listing",
+  "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1965,7 +1954,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -2669,8 +2658,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
-  "latest_date": "2026-10-23"
+  "new": 0,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-nrc",
@@ -2679,9 +2668,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 157,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "count": 158,
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "V000081",
@@ -2704,6 +2693,17 @@
   "count": 5,
   "new": 0,
   "latest_date": "2026-10-21"
+ },
+ {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 180,
+  "new": 0,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "agency-omb",
@@ -3121,7 +3121,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-01"
  },
  {
   "bioguide": "M001196",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 178,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",
