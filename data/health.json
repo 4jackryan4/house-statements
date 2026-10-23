@@ -11,12 +11,45 @@
   "latest_date": null
  },
  {
+  "bioguide": "B001318",
+  "label": "Becca Balint (D-VT-AL)",
+  "scraper": "balint",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
   "scraper": null,
   "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "M000312",
+  "label": "James P. McGovern (D-MA-02)",
+  "scraper": "mcgovern",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "L000273",
+  "label": "Teresa Leger Fernandez (D-NM-03)",
+  "scraper": "fernandez",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -262,17 +295,6 @@
   "count": 8,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "B001318",
-  "label": "Becca Balint (D-VT-AL)",
-  "scraper": "balint",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "T000193",
@@ -663,7 +685,7 @@
   "bioguide": "D000624",
   "label": "Debbie Dingell (D-MI-06)",
   "scraper": "debbiedingell",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 15,
@@ -751,7 +773,7 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1356,10 +1378,10 @@
   "bioguide": "M001160",
   "label": "Gwen Moore (D-WI-04)",
   "scraper": "gwenmoore",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-08"
  },
@@ -1604,17 +1626,6 @@
   "count": 15,
   "new": 0,
   "latest_date": "2026-07-14"
- },
- {
-  "bioguide": "M000312",
-  "label": "James P. McGovern (D-MA-02)",
-  "scraper": "mcgovern",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "W000831",
@@ -2797,7 +2808,7 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3215,12 +3226,12 @@
   "bioguide": "P000610",
   "label": "Stacey E. Plaskett (D-VI-AL)",
   "scraper": "plaskett",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-state",
@@ -3388,17 +3399,6 @@
   "latest_date": "2026-10-07"
  },
  {
-  "bioguide": "L000273",
-  "label": "Teresa Leger Fernandez (D-NM-03)",
-  "scraper": "fernandez",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-15"
- },
- {
   "bioguide": "S001185",
   "label": "Terri A. Sewell (D-AL-07)",
   "scraper": "sewell",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 168,
+  "count": 178,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usccr",

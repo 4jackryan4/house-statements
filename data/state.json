@@ -366,6 +366,9 @@
       "http://mccollum.house.gov/rss.xml",
       "https://mccollum.house.gov/media/press-releases"
     ],
+    "M001160": [
+      "https://gwenmoore.house.gov/"
+    ],
     "M001163": [
       "https://matsui.house.gov/media/press-releases"
     ],
@@ -587,7 +590,6 @@
       "https://mikethompson.house.gov/newsroom/press-releases"
     ],
     "T000468": [
-      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
       "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000469": [
@@ -723,18 +725,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-23T06:50:02+00:00",
+    "at": "2026-10-23T07:09:59+00:00",
     "http": {
       "200": 404,
       "301": 1,
-      "302": 3,
+      "302": 1,
       "404": 2,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 26
     },
     "sites": {
       "empty": 0,
-      "error": 2,
-      "ok": 337
+      "error": 5,
+      "ok": 334
     }
   },
   "old_agency_links": [
