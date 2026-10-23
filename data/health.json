@@ -22,8 +22,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-nws",
-  "label": "National Weather Service",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -616,17 +616,6 @@
   "latest_date": "2026-10-22"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1029,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -2596,6 +2585,17 @@
   "latest_date": "2026-10-20"
  },
  {
+  "bioguide": "agency-nws",
+  "label": "National Weather Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 132,
+  "new": 0,
+  "latest_date": "2026-10-08"
+ },
+ {
   "bioguide": "committee-natural-resources",
   "label": "Natural Resources Committee Democrats",
   "scraper": null,
@@ -2789,7 +2789,7 @@
   "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-17"
  },
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-22"
  },
  {
@@ -3318,8 +3318,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "D000617",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 168,
+  "count": 179,
   "new": 0,
   "latest_date": "2026-10-22"
  },
