@@ -48,7 +48,7 @@
       "https://budzinski.house.gov/feed"
     ],
     "B001318": [
-      "https://balint.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://balint.house.gov/news"
     ],
     "B001324": [
       "https://bell.house.gov/media/press-releases"
@@ -156,7 +156,9 @@
       "https://desaulnier.house.gov/media-center/press-releases"
     ],
     "D000624": [
-      "https://debbiedingell.house.gov/news/"
+      "https://debbiedingell.house.gov/news/",
+      "https://debbiedingell.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
+      "https://debbiedingell.house.gov/news/documentquery.aspx?DocumentTypeID=26"
     ],
     "D000629": [
       "https://davids.house.gov/media/press-releases"
@@ -725,19 +727,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-23T07:09:59+00:00",
+    "at": "2026-10-23T07:24:30+00:00",
     "http": {
-      "200": 404,
+      "200": 409,
       "301": 1,
-      "302": 1,
+      "302": 2,
       "404": 2,
       "410": 1,
-      "ReadTimeout": 26
+      "ReadTimeout": 11
     },
     "sites": {
       "empty": 0,
-      "error": 5,
-      "ok": 334
+      "error": 4,
+      "ok": 335
     }
   },
   "old_agency_links": [
