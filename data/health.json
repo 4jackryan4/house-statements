@@ -22,19 +22,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-gsa",
-  "label": "General Services Administration",
+  "bioguide": "agency-nws",
+  "label": "National Weather Service",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -627,6 +616,17 @@
   "latest_date": "2026-10-22"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-22"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1029,7 +1029,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1241,6 +1241,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
+ },
+ {
+  "bioguide": "agency-gsa",
+  "label": "General Services Administration",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "L000606",
@@ -2585,17 +2596,6 @@
   "latest_date": "2026-10-20"
  },
  {
-  "bioguide": "agency-nws",
-  "label": "National Weather Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 132,
-  "new": 0,
-  "latest_date": "2026-10-08"
- },
- {
   "bioguide": "committee-natural-resources",
   "label": "Natural Resources Committee Democrats",
   "scraper": null,
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
