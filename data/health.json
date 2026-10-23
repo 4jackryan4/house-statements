@@ -161,7 +161,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -711,8 +711,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "T000491",
@@ -1018,7 +1018,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 63,
+  "count": 62,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 134,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3570,9 +3570,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 134,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "count": 135,
+  "new": 1,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-uscis",
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
