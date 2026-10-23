@@ -22,6 +22,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1018,7 +1029,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 63,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -1164,17 +1175,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-19"
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001214",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 134,
+  "count": 168,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
