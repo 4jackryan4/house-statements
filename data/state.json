@@ -1,5 +1,5 @@
 {
-  "archive_imported_at": "2026-10-24T16:42:42+00:00",
+  "archive_imported_at": "2026-10-24T22:43:50+00:00",
   "fallback_sources": {
     "A000148": [
       "https://auchincloss.house.gov/media/press-releases"
@@ -724,12 +724,12 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-24T22:24:17+00:00",
+    "at": "2026-10-24T22:44:03+00:00",
     "http": {
-      "200": 404,
+      "200": 405,
       "301": 1,
       "302": 3,
-      "404": 4,
+      "404": 3,
       "410": 1
     },
     "sites": {

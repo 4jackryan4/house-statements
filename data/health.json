@@ -33,8 +33,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-pbgc",
-  "label": "Pension Benefit Guaranty Corporation",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -607,17 +607,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -2816,6 +2805,17 @@
   "latest_date": "2026-09-25"
  },
  {
+  "bioguide": "agency-pbgc",
+  "label": "Pension Benefit Guaranty Corporation",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 3,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
   "bioguide": "A000371",
   "label": "Pete Aguilar (D-CA-33)",
   "scraper": "aguilar",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 178,
+  "count": 180,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
