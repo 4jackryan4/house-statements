@@ -44,6 +44,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-usitc",
+  "label": "U.S. International Trade Commission",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -272,7 +283,7 @@
   "error": null,
   "count": 15,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "P000617",
@@ -1018,7 +1029,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 62,
+  "count": 61,
   "new": 0,
   "latest_date": "2026-10-23"
  },
@@ -1074,8 +1085,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-25"
  },
  {
   "bioguide": "agency-ferc",
@@ -1480,9 +1491,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 215,
+  "count": 214,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-irs",
@@ -3493,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 180,
+  "count": 177,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3518,17 +3529,6 @@
   "count": 8,
   "new": 0,
   "latest_date": "2026-06-25"
- },
- {
-  "bioguide": "agency-usitc",
-  "label": "U.S. International Trade Commission",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-usms",
