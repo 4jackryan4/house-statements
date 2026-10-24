@@ -33,8 +33,19 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -270,9 +281,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 70,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "P000617",
@@ -590,8 +601,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 6,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-ceq",
@@ -607,6 +618,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -944,17 +966,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
- },
- {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "S001225",
@@ -2464,17 +2475,6 @@
   "latest_date": "2026-10-23"
  },
  {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
   "bioguide": "agency-nlrb",
   "label": "NLRB",
   "scraper": null,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "count": 178,
+  "new": 45,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-usccr",
