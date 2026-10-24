@@ -1,5 +1,5 @@
 {
-  "archive_imported_at": "2026-10-24T04:33:00+00:00",
+  "archive_imported_at": "2026-10-24T10:33:13+00:00",
   "fallback_sources": {
     "A000148": [
       "https://auchincloss.house.gov/media/press-releases"
@@ -724,19 +724,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-24T10:14:11+00:00",
+    "at": "2026-10-24T10:33:28+00:00",
     "http": {
-      "200": 404,
+      "200": 405,
       "301": 1,
       "302": 3,
       "404": 3,
-      "410": 1,
-      "ConnectionError": 1
+      "410": 1
     },
     "sites": {
       "empty": 0,
-      "error": 5,
-      "ok": 334
+      "error": 4,
+      "ok": 335
     }
   },
   "old_agency_links": [
