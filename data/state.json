@@ -63,7 +63,6 @@
       "https://clyburn.house.gov/feed/"
     ],
     "C001055": [
-      "https://case.house.gov/",
       "https://case.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "C001059": [
@@ -76,8 +75,6 @@
       "https://cuellar.house.gov/news/"
     ],
     "C001066": [
-      "https://castor.house.gov/News/DocumentQuery.aspx?DocumentTypeID=818",
-      "https://castor.house.gov/News/DocumentQuery.aspx?DocumentTypeID=822",
       "https://castor.house.gov/news"
     ],
     "C001067": [
@@ -105,7 +102,7 @@
       "https://correa.house.gov/"
     ],
     "C001112": [
-      "https://carbajal.house.gov/news"
+      "https://carbajal.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "C001117": [
       "https://casten.house.gov/media/press-releases"
@@ -192,7 +189,6 @@
       "https://frankel.house.gov/news/"
     ],
     "F000468": [
-      "https://fletcher.house.gov/news/",
       "https://fletcher.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "F000476": [
@@ -727,18 +723,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-24T04:44:36+00:00",
+    "at": "2026-10-24T05:01:36+00:00",
     "http": {
-      "200": 405,
+      "200": 407,
       "301": 1,
       "302": 3,
       "404": 3,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 24
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 6,
+      "ok": 333
     }
   },
   "old_agency_links": [

@@ -44,6 +44,28 @@
   "latest_date": null
  },
  {
+  "bioguide": "F000462",
+  "label": "Lois Frankel (D-FL-22)",
+  "scraper": "frankel",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "E000299",
+  "label": "Veronica Escobar (D-TX-16)",
+  "scraper": "escobar",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -839,7 +861,7 @@
   "bioguide": "C001055",
   "label": "Ed Case (D-HI-01)",
   "scraper": "case",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1620,12 +1642,12 @@
   "bioguide": "W000831",
   "label": "James R. Walkinshaw (D-VA-11)",
   "scraper": "walkinshaw",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "R000606",
@@ -2016,10 +2038,10 @@
   "bioguide": "C001066",
   "label": "Kathy Castor (D-FL-14)",
   "scraper": "castor",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-01"
  },
@@ -2159,7 +2181,7 @@
   "bioguide": "F000468",
   "label": "Lizzie Fletcher (D-TX-07)",
   "scraper": "fletcher",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2176,17 +2198,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-12"
- },
- {
-  "bioguide": "F000462",
-  "label": "Lois Frankel (D-FL-22)",
-  "scraper": "frankel",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-07"
  },
  {
   "bioguide": "T000482",
@@ -3006,7 +3017,7 @@
   "bioguide": "C001112",
   "label": "Salud O. Carbajal (D-CA-24)",
   "scraper": "carbajal",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3325,7 +3336,7 @@
   "bioguide": "D000617",
   "label": "Suzan K. DelBene (D-WA-01)",
   "scraper": "delbene",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3606,17 +3617,6 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-10-19"
- },
- {
-  "bioguide": "E000299",
-  "label": "Veronica Escobar (D-TX-16)",
-  "scraper": "escobar",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "agency-va",
