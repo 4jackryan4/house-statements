@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "committee-agriculture",
+  "label": "Agriculture Committee Democrats",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -33,8 +44,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -44,12 +55,23 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "listing",
+  "bioguide": "T000468",
+  "label": "Dina Titus (D-NV-01)",
+  "scraper": "titus",
+  "method": "none",
   "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -108,17 +130,6 @@
   "count": 22,
   "new": 0,
   "latest_date": "2026-06-12"
- },
- {
-  "bioguide": "committee-agriculture",
-  "label": "Agriculture Committee Democrats",
-  "scraper": null,
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "agency-agriculture",
@@ -281,9 +292,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 70,
+  "count": 15,
   "new": 0,
-  "latest_date": "2026-10-21"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "P000617",
@@ -601,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -618,17 +629,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -768,17 +768,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-07"
- },
- {
-  "bioguide": "T000468",
-  "label": "Dina Titus (D-NV-01)",
-  "scraper": "titus",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "agency-odni",
@@ -966,6 +955,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
+ },
+ {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "S001225",
@@ -1364,17 +1364,6 @@
   "latest_date": "2026-08-20"
  },
  {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
- },
- {
   "bioguide": "J000294",
   "label": "Hakeem S. Jeffries (D-NY-08)",
   "scraper": "jeffries",
@@ -1620,10 +1609,10 @@
   "bioguide": "M000312",
   "label": "James P. McGovern (D-MA-02)",
   "scraper": "mcgovern",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -2475,6 +2464,17 @@
   "latest_date": "2026-10-23"
  },
  {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
   "bioguide": "agency-nlrb",
   "label": "NLRB",
   "scraper": null,
@@ -3215,11 +3215,11 @@
   "bioguide": "P000610",
   "label": "Stacey E. Plaskett (D-VI-AL)",
   "scraper": "plaskett",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 25,
+  "new": 1,
   "latest_date": "2026-10-22"
  },
  {
@@ -3391,10 +3391,10 @@
   "bioguide": "L000273",
   "label": "Teresa Leger Fernandez (D-NM-03)",
   "scraper": "fernandez",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-15"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 178,
-  "new": 45,
-  "latest_date": "2026-10-23"
+  "count": 179,
+  "new": 0,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",

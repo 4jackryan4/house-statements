@@ -352,7 +352,7 @@
       "https://liccardo.house.gov/media/press-releases"
     ],
     "M000312": [
-      "https://mcgovern.house.gov/news/documentquery.aspx?DocumentTypeID=2472"
+      "https://mcgovern.house.gov/newsroom"
     ],
     "M000687": [
       "https://mfume.house.gov/media/press-releases"
@@ -472,7 +472,8 @@
       "https://scottpeters.house.gov/press-releases"
     ],
     "P000610": [
-      "https://plaskett.house.gov/news/documentquery.aspx?documenttypeid=27"
+      "https://plaskett.house.gov/news",
+      "https://plaskett.house.gov/news/documentquery.aspx?documenttypeid=30"
     ],
     "P000613": [
       "https://panetta.house.gov/media/press-releases"
@@ -723,19 +724,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-24T06:59:29+00:00",
+    "at": "2026-10-24T07:15:16+00:00",
     "http": {
-      "200": 404,
-      "301": 1,
-      "302": 3,
-      "403": 2,
+      "200": 409,
+      "301": 2,
+      "302": 2,
       "404": 3,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 17
     },
     "sites": {
       "empty": 0,
-      "error": 5,
-      "ok": 334
+      "error": 7,
+      "ok": 332
     }
   },
   "old_agency_links": [
