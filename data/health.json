@@ -270,7 +270,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 7,
   "new": 0,
   "latest_date": "2026-10-24"
  },
@@ -557,8 +557,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-25"
  },
  {
   "bioguide": "agency-occ",
