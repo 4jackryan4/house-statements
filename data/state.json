@@ -711,25 +711,25 @@
       "https://democrats-transportation.house.gov/news"
     ],
     "committee-veterans-affairs": [
-      "https://democrats-veterans.house.gov/news/press-releases"
+      "https://democrats-veterans.house.gov/"
     ],
     "committee-ways-and-means": [
       "https://democrats-waysandmeans.house.gov/media-center/press-releases"
     ]
   },
   "last_collect": {
-    "at": "2026-10-25T19:01:35+00:00",
+    "at": "2026-10-25T19:16:03+00:00",
     "http": {
-      "200": 404,
+      "200": 407,
       "301": 1,
       "302": 3,
-      "404": 4,
+      "404": 3,
       "410": 1
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 3,
+      "ok": 336
     }
   },
   "old_agency_links": [
