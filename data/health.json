@@ -259,9 +259,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 5,
-  "new": 0,
-  "latest_date": "2026-10-24"
+  "count": 6,
+  "new": 1,
+  "latest_date": "2026-10-25"
  },
  {
   "bioguide": "P000617",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 178,
+  "count": 168,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
