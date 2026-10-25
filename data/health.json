@@ -33,28 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-25"
  },
  {
@@ -618,6 +596,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -2706,6 +2695,17 @@
   "latest_date": "2026-10-21"
  },
  {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 180,
+  "new": 0,
+  "latest_date": "2026-10-06"
+ },
+ {
   "bioguide": "agency-omb",
   "label": "Office of Management and Budget (OMB)",
   "scraper": null,
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 141,
+  "count": 178,
   "new": 0,
   "latest_date": "2026-10-23"
  },
