@@ -48,7 +48,7 @@
       "https://budzinski.house.gov/feed"
     ],
     "B001318": [
-      "https://balint.house.gov/news"
+      "https://balint.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "B001324": [
       "https://bell.house.gov/media/press-releases"
@@ -153,9 +153,7 @@
       "https://desaulnier.house.gov/media-center/press-releases"
     ],
     "D000624": [
-      "https://debbiedingell.house.gov/news/",
-      "https://debbiedingell.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
-      "https://debbiedingell.house.gov/news/documentquery.aspx?DocumentTypeID=26"
+      "https://debbiedingell.house.gov/news/"
     ],
     "D000629": [
       "https://davids.house.gov/media/press-releases"
@@ -215,9 +213,7 @@
     ],
     "G000585": [
       "https://gomez.house.gov/",
-      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
-      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=27",
-      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=30"
+      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "G000586": [
       "https://chuygarcia.house.gov/media/press-releases"
@@ -315,11 +311,10 @@
       "https://kamlager-dove.house.gov/media/press-releases"
     ],
     "K000402": [
-      "https://kennedy.house.gov/news/documentquery.aspx?DocumentTypeID=27",
-      "https://kennedy.house.gov/news/documentquery.aspx?IssueID=14891"
+      "https://kennedy.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "L000273": [
-      "https://fernandez.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://fernandez.house.gov/news"
     ],
     "L000557": [
       "https://larson.house.gov/media-center/press-releases"
@@ -352,7 +347,7 @@
       "https://liccardo.house.gov/media/press-releases"
     ],
     "M000312": [
-      "https://mcgovern.house.gov/newsroom"
+      "https://mcgovern.house.gov/news/documentquery.aspx?DocumentTypeID=2472"
     ],
     "M000687": [
       "https://mfume.house.gov/media/press-releases"
@@ -462,7 +457,6 @@
       "https://pelosi.house.gov/news/press-releases"
     ],
     "P000597": [
-      "https://pingree.house.gov/news/",
       "https://pingree.house.gov/news/documentquery.aspx?DocumentTypeID=26"
     ],
     "P000607": [
@@ -472,8 +466,7 @@
       "https://scottpeters.house.gov/press-releases"
     ],
     "P000610": [
-      "https://plaskett.house.gov/news",
-      "https://plaskett.house.gov/news/documentquery.aspx?documenttypeid=30"
+      "https://plaskett.house.gov/news"
     ],
     "P000613": [
       "https://panetta.house.gov/media/press-releases"
@@ -485,7 +478,6 @@
       "https://pressley.house.gov/feed/"
     ],
     "P000620": [
-      "https://pettersen.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
       "https://pettersen.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "P000621": [
@@ -726,19 +718,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-25T06:50:41+00:00",
+    "at": "2026-10-25T07:05:47+00:00",
     "http": {
-      "200": 407,
+      "200": 415,
       "301": 1,
-      "302": 3,
-      "404": 2,
+      "404": 3,
       "410": 1,
-      "503": 1
+      "ReadTimeout": 53
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 5,
+      "ok": 334
     }
   },
   "old_agency_links": [
