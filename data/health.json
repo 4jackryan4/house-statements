@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1040,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 42,
+  "count": 41,
   "new": 0,
   "latest_date": "2026-10-23"
  },
@@ -2704,6 +2693,17 @@
   "count": 5,
   "new": 0,
   "latest_date": "2026-10-21"
+ },
+ {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 180,
+  "new": 0,
+  "latest_date": "2026-10-06"
  },
  {
   "bioguide": "agency-omb",
