@@ -1686,7 +1686,7 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 6,
