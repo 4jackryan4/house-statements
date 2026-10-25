@@ -139,7 +139,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-25"
  },
  {
@@ -3241,8 +3241,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
+  "new": 1,
+  "latest_date": "2026-10-25"
  },
  {
   "bioguide": "L000562",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 178,
+  "count": 93,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-usccr",
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 1,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-10-25"
  },
  {
