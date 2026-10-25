@@ -691,11 +691,10 @@
       "https://democrats-judiciary.house.gov/media-center/press-releases"
     ],
     "committee-natural-resources": [
-      "https://democrats-naturalresources.house.gov/media/press-releases"
+      "https://democrats-naturalresources.house.gov/"
     ],
     "committee-oversight": [
       "https://oversightdemocrats.house.gov/",
-      "https://oversightdemocrats.house.gov/news/press-releases",
       "https://oversightdemocrats.house.gov/news/reports"
     ],
     "committee-rules": [
@@ -718,13 +717,14 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-25T19:33:10+00:00",
+    "at": "2026-10-25T19:44:39+00:00",
     "http": {
       "200": 405,
       "301": 1,
       "302": 3,
       "404": 3,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 4
     },
     "sites": {
       "empty": 0,
