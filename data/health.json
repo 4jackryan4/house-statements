@@ -44,6 +44,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-gsa",
+  "label": "General Services Administration",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -129,7 +140,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-10-26"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "G000553",
@@ -139,7 +150,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -524,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -942,8 +953,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-26"
+  "new": 0,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "agency-epa",
@@ -1232,17 +1243,6 @@
   "latest_date": "2026-10-22"
  },
  {
-  "bioguide": "agency-gsa",
-  "label": "General Services Administration",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
- },
- {
   "bioguide": "L000606",
   "label": "George Latimer (D-NY-16)",
   "scraper": "latimer",
@@ -1459,7 +1459,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-15"
  },
  {
@@ -1613,7 +1613,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -1723,7 +1723,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -3362,8 +3362,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-tsa",
@@ -3494,7 +3494,7 @@
   "status": "ok",
   "error": null,
   "count": 184,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-26"
  },
  {
