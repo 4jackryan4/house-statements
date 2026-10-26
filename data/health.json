@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-gsa",
-  "label": "General Services Administration",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -590,8 +579,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-crs",
@@ -723,7 +712,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-26"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "T000491",
@@ -910,7 +899,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-29"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "S001223",
@@ -1118,7 +1107,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -1241,6 +1230,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
+ },
+ {
+  "bioguide": "agency-gsa",
+  "label": "General Services Administration",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "L000606",
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2097,7 +2097,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-26"
  },
  {
@@ -2438,7 +2438,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2614,7 +2614,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-19"
  },
  {
@@ -3286,7 +3286,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-19"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "L000602",
@@ -3407,7 +3407,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "S001201",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 141,
+  "count": 184,
   "new": 0,
   "latest_date": "2026-10-26"
  },
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
