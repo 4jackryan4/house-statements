@@ -1392,8 +1392,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 11,
+  "new": 1,
   "latest_date": "2026-10-26"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 1,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
