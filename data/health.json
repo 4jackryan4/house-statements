@@ -33,6 +33,39 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -605,17 +638,6 @@
   "latest_date": "2026-10-23"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -944,17 +966,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
- },
- {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "S001225",
@@ -1301,10 +1312,10 @@
   "bioguide": "M001188",
   "label": "Grace Meng (D-NY-06)",
   "scraper": "meng",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-25"
  },
@@ -2464,17 +2475,6 @@
   "latest_date": "2026-10-23"
  },
  {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
   "bioguide": "agency-nlrb",
   "label": "NLRB",
   "scraper": null,
@@ -2797,10 +2797,10 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-25"
  },
