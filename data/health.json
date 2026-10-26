@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -35,6 +24,28 @@
  {
   "bioguide": "agency-commerce",
   "label": "Commerce Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-gsa",
+  "label": "General Services Administration",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -108,6 +119,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
+ },
+ {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-24"
  },
  {
   "bioguide": "agency-airforce",
@@ -259,8 +281,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 29,
-  "new": 4,
+  "count": 35,
+  "new": 6,
   "latest_date": "2026-10-26"
  },
  {
@@ -547,7 +569,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-25"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-occ",
@@ -596,17 +618,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -711,7 +722,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -898,8 +909,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-26"
+  "new": 0,
+  "latest_date": "2026-09-29"
  },
  {
   "bioguide": "S001223",
@@ -1107,8 +1118,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-fmc",
@@ -1230,17 +1241,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
- },
- {
-  "bioguide": "agency-gsa",
-  "label": "General Services Administration",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "L000606",
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 2,
   "latest_date": "2026-10-26"
  },
  {
@@ -2438,7 +2438,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-26"
  },
  {
@@ -3285,8 +3285,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-23"
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "L000602",
@@ -3406,8 +3406,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-26"
+  "new": 0,
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "S001201",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 141,
   "new": 0,
   "latest_date": "2026-10-26"
  },
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-26"
  },
  {
