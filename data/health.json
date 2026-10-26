@@ -33,8 +33,19 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
+  "bioguide": "agency-occ",
+  "label": "Comptroller of the Currency (OCC)",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-education",
+  "label": "Education Department",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -561,17 +572,6 @@
   "latest_date": "2026-10-25"
  },
  {
-  "bioguide": "agency-occ",
-  "label": "Comptroller of the Currency (OCC)",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
   "bioguide": "agency-cbo",
   "label": "Congressional Budget Office",
   "scraper": null,
@@ -607,6 +607,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -847,17 +858,6 @@
   "latest_date": "2026-10-16"
  },
  {
-  "bioguide": "agency-education",
-  "label": "Education Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
   "bioguide": "committee-education-workforce",
   "label": "Education and Workforce Committee Democrats",
   "scraper": null,
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 42,
+  "count": 35,
   "new": 0,
   "latest_date": "2026-10-23"
  },
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 141,
+  "count": 178,
   "new": 0,
   "latest_date": "2026-10-23"
  },
