@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -1392,8 +1392,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 11,
-  "new": 1,
+  "count": 10,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2053,8 +2053,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "M001237",
