@@ -1899,8 +1899,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "H001090",
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
-  "new": 0,
+  "count": 138,
+  "new": 1,
   "latest_date": "2026-10-26"
  },
  {
