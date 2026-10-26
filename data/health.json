@@ -360,7 +360,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-28"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "P000620",
@@ -612,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -832,7 +832,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -854,7 +854,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2262,8 +2262,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "G000600",
@@ -2273,8 +2273,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "S001159",
@@ -2779,8 +2779,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "R000579",
@@ -3154,7 +3154,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-24"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "B001313",
@@ -3670,8 +3670,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-whitehouse",
