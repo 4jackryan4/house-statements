@@ -128,8 +128,8 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "G000553",
@@ -1295,7 +1295,7 @@
   "error": null,
   "count": 35,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "M001188",
@@ -2273,7 +2273,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2845,7 +2845,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
