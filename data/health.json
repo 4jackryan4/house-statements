@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 43,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2769,7 +2769,7 @@
   "error": null,
   "count": 5,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "H001103",
