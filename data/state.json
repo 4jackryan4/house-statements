@@ -212,8 +212,7 @@
       "https://gottheimer.house.gov/feed"
     ],
     "G000585": [
-      "https://gomez.house.gov/",
-      "https://gomez.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://gomez.house.gov/"
     ],
     "G000586": [
       "https://chuygarcia.house.gov/media/press-releases"
@@ -478,7 +477,8 @@
       "https://pressley.house.gov/feed/"
     ],
     "P000620": [
-      "https://pettersen.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://pettersen.house.gov/news",
+      "https://pettersen.house.gov/news/documentquery.aspx?DocumentTypeID=1951"
     ],
     "P000621": [
       "https://pou.house.gov/media/press-releases"
@@ -717,18 +717,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-26T06:51:54+00:00",
+    "at": "2026-10-26T07:03:25+00:00",
     "http": {
-      "200": 406,
+      "200": 407,
       "301": 1,
-      "302": 3,
+      "302": 2,
       "404": 3,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 16
     },
     "sites": {
       "empty": 0,
-      "error": 3,
-      "ok": 336
+      "error": 4,
+      "ok": 335
     }
   },
   "old_agency_links": [
