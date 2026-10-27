@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -128,8 +139,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "O000172",
@@ -414,7 +425,7 @@
   "status": "ok",
   "error": null,
   "count": 37,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-27"
  },
  {
@@ -557,8 +568,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-cbo",
@@ -596,17 +607,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-27"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -854,7 +854,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 63,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-26"
  },
  {
@@ -1030,8 +1030,8 @@
   "status": "ok",
   "error": null,
   "count": 42,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-fda",
@@ -1767,8 +1767,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "G000585",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -2504,8 +2504,8 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 0,
-  "latest_date": "2026-09-21"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "P000197",
@@ -3329,8 +3329,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
+  "new": 1,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "B001278",
@@ -3428,8 +3428,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "committee-transportation",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 136,
-  "new": 2,
-  "latest_date": "2026-10-27"
+  "count": 184,
+  "new": 0,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-usccr",
