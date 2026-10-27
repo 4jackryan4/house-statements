@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -270,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 56,
-  "new": 0,
+  "count": 61,
+  "new": 6,
   "latest_date": "2026-10-27"
  },
  {
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-27"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 3,
+  "latest_date": "2026-10-27"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -931,7 +931,7 @@
   "status": "ok",
   "error": null,
   "count": 13,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 42,
+  "count": 41,
   "new": 0,
   "latest_date": "2026-10-27"
  },
@@ -1272,8 +1272,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-06"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "I000058",
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1536,8 +1536,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-interior",
@@ -2405,7 +2405,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-27"
  },
  {
@@ -2768,8 +2768,8 @@
   "status": "ok",
   "error": null,
   "count": 5,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "H001103",
@@ -3648,7 +3648,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-27"
  },
  {
