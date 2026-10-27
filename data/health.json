@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 42,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1392,8 +1392,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 11,
-  "new": 1,
+  "count": 10,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1712,8 +1712,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "M001227",
@@ -1899,7 +1899,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -3109,7 +3109,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
