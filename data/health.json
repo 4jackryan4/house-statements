@@ -55,6 +55,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "G000605",
   "label": "Adam Gray (D-CA-13)",
   "scraper": "gray",
@@ -260,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 46,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -603,17 +614,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-27"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "G000599",
@@ -975,7 +975,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 63,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-26"
  },
  {
@@ -2900,7 +2900,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 167,
-  "new": 4,
+  "count": 169,
+  "new": 2,
   "latest_date": "2026-10-27"
  },
  {
