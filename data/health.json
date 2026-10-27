@@ -1,8 +1,30 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "B001318",
+  "label": "Becca Balint (D-VT-AL)",
+  "scraper": "balint",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -33,12 +55,56 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "method": "none",
   "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "T000468",
+  "label": "Dina Titus (D-NV-01)",
+  "scraper": "titus",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "T000469",
+  "label": "Paul Tonko (D-NY-20)",
+  "scraper": "tonko",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "P000610",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "scraper": "plaskett",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "L000273",
+  "label": "Teresa Leger Fernandez (D-NM-03)",
+  "scraper": "fernandez",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -108,17 +174,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-airforce",
@@ -284,17 +339,6 @@
   "count": 8,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "B001318",
-  "label": "Becca Balint (D-VT-AL)",
-  "scraper": "balint",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "T000193",
@@ -616,6 +660,17 @@
   "latest_date": "2026-10-23"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-26"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -658,17 +713,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "D000624",
-  "label": "Debbie Dingell (D-MI-06)",
-  "scraper": "debbiedingell",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "W000797",
@@ -746,17 +790,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-07"
- },
- {
-  "bioguide": "T000468",
-  "label": "Dina Titus (D-NV-01)",
-  "scraper": "titus",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "agency-odni",
@@ -1356,10 +1389,10 @@
   "bioguide": "M001160",
   "label": "Gwen Moore (D-WI-04)",
   "scraper": "gwenmoore",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-08"
  },
@@ -1609,12 +1642,12 @@
   "bioguide": "M000312",
   "label": "James P. McGovern (D-MA-02)",
   "scraper": "mcgovern",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-26"
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "W000831",
@@ -2794,17 +2827,6 @@
   "latest_date": "2026-10-23"
  },
  {
-  "bioguide": "T000469",
-  "label": "Paul Tonko (D-NY-20)",
-  "scraper": "tonko",
-  "method": "python-statement+fallback",
-  "status": "ok",
-  "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-25"
- },
- {
   "bioguide": "agency-pbgc",
   "label": "Pension Benefit Guaranty Corporation",
   "scraper": null,
@@ -3212,17 +3234,6 @@
   "latest_date": "2026-10-15"
  },
  {
-  "bioguide": "P000610",
-  "label": "Stacey E. Plaskett (D-VI-AL)",
-  "scraper": "plaskett",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
- },
- {
   "bioguide": "agency-state",
   "label": "State Department",
   "scraper": null,
@@ -3386,17 +3397,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-07"
- },
- {
-  "bioguide": "L000273",
-  "label": "Teresa Leger Fernandez (D-NM-03)",
-  "scraper": "fernandez",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "S001185",
