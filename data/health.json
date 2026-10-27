@@ -194,7 +194,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -270,7 +270,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 47,
+  "count": 50,
   "new": 0,
   "latest_date": "2026-10-27"
  },
@@ -425,8 +425,8 @@
   "status": "ok",
   "error": null,
   "count": 37,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-cia",
@@ -712,7 +712,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-26"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "T000491",
@@ -1030,8 +1030,8 @@
   "status": "ok",
   "error": null,
   "count": 42,
-  "new": 1,
-  "latest_date": "2026-10-27"
+  "new": 0,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-fda",
@@ -1152,7 +1152,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-20"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "committee-foreign-affairs",
@@ -1547,8 +1547,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-24"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "C001110",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 176,
-  "new": 7,
-  "latest_date": "2026-10-27"
+  "count": 184,
+  "new": 0,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-usccr",
