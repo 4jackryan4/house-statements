@@ -1,7 +1,7 @@
 [
  {
-  "bioguide": "agency-atf",
-  "label": "ATF",
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -55,6 +55,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-atf",
+  "label": "ATF",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 1,
+  "new": 1,
+  "latest_date": "2026-10-27"
+ },
+ {
   "bioguide": "G000605",
   "label": "Adam Gray (D-CA-13)",
   "scraper": "gray",
@@ -103,17 +114,6 @@
   "label": "Agriculture Committee Democrats",
   "scraper": null,
   "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 46,
-  "new": 0,
+  "count": 47,
+  "new": 1,
   "latest_date": "2026-10-27"
  },
  {
@@ -558,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-26"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-occ",
@@ -1152,7 +1152,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "committee-foreign-affairs",
@@ -2097,8 +2097,8 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "S001231",
@@ -2449,8 +2449,8 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 0,
-  "latest_date": "2026-10-20"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-nhtsa",
@@ -2690,7 +2690,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 5,
+  "count": 4,
   "new": 0,
   "latest_date": "2026-10-21"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 169,
   "new": 0,
-  "latest_date": "2026-10-26"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
