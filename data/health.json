@@ -11,6 +11,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -92,17 +103,6 @@
   "label": "Agriculture Committee Democrats",
   "scraper": null,
   "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -259,9 +259,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 43,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "count": 46,
+  "new": 3,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "P000617",
@@ -975,8 +975,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "B001328",
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1855,7 +1855,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -2031,7 +2031,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -2416,7 +2416,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -2900,8 +2900,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "T000486",
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "committee-small-business",
@@ -3263,7 +3263,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "count": 167,
+  "new": 4,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
@@ -3626,7 +3626,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -3648,7 +3648,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
