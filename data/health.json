@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "P000610",
-  "label": "Stacey E. Plaskett (D-VI-AL)",
-  "scraper": "plaskett",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -601,7 +590,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 7,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
@@ -674,7 +663,7 @@
   "bioguide": "D000624",
   "label": "Debbie Dingell (D-MI-06)",
   "scraper": "debbiedingell",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 15,
@@ -762,7 +751,7 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1620,7 +1609,7 @@
   "bioguide": "M000312",
   "label": "James P. McGovern (D-MA-02)",
   "scraper": "mcgovern",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2808,10 +2797,10 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-25"
  },
@@ -3223,6 +3212,17 @@
   "latest_date": "2026-10-15"
  },
  {
+  "bioguide": "P000610",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "scraper": "plaskett",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-22"
+ },
+ {
   "bioguide": "agency-state",
   "label": "State Department",
   "scraper": null,
@@ -3391,7 +3391,7 @@
   "bioguide": "L000273",
   "label": "Teresa Leger Fernandez (D-NM-03)",
   "scraper": "fernandez",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 15,
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 156,
-  "new": 61,
+  "count": 157,
+  "new": 0,
   "latest_date": "2026-10-26"
  },
  {
