@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-fsis",
   "label": "Food Safety and Inspection Service",
   "scraper": null,
@@ -638,6 +627,17 @@
   "latest_date": "2026-10-27"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-27"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -733,7 +733,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -3230,8 +3230,8 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
-  "latest_date": "2026-10-27"
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "H000874",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 179,
+  "count": 178,
   "new": 0,
   "latest_date": "2026-10-27"
  },
