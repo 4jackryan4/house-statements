@@ -717,19 +717,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-28T03:29:11+00:00",
+    "at": "2026-10-28T03:46:16+00:00",
     "http": {
-      "200": 402,
+      "200": 403,
       "301": 1,
       "302": 3,
       "404": 3,
       "410": 1,
-      "ConnectionError": 2
+      "ConnectionError": 1
     },
     "sites": {
       "empty": 0,
-      "error": 8,
-      "ok": 331
+      "error": 7,
+      "ok": 332
     }
   },
   "old_agency_links": [

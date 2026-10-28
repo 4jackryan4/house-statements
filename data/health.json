@@ -77,17 +77,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-nws",
-  "label": "National Weather Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -303,7 +292,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 56,
+  "count": 48,
   "new": 0,
   "latest_date": "2026-10-27"
  },
@@ -745,7 +734,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "T000491",
@@ -2596,6 +2585,17 @@
   "latest_date": "2026-10-27"
  },
  {
+  "bioguide": "agency-nws",
+  "label": "National Weather Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 132,
+  "new": 0,
+  "latest_date": "2026-10-08"
+ },
+ {
   "bioguide": "committee-natural-resources",
   "label": "Natural Resources Committee Democrats",
   "scraper": null,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 186,
+  "count": 184,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-usccr",
