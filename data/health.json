@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-27"
  },
  {
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-27"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-27"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -811,7 +811,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "E000296",
@@ -942,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -1128,9 +1128,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 116,
-  "new": 0,
-  "latest_date": "2026-10-16"
+  "count": 117,
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "committee-financial-services",
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1789,8 +1789,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-28"
+  "new": 0,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "C001091",
@@ -1954,8 +1954,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "C001080",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -2130,8 +2130,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-28"
+  "new": 0,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "U000040",
@@ -2658,8 +2658,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
-  "latest_date": "2026-10-28"
+  "new": 0,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-nrc",
@@ -3229,7 +3229,7 @@
   "method": "wordpress",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 8,
   "new": 0,
   "latest_date": "2026-10-28"
  },
@@ -3362,8 +3362,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-28"
+  "new": 0,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-tsa",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 186,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-usccr",
