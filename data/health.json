@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -99,17 +110,6 @@
   "latest_date": "2026-10-26"
  },
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
- },
- {
   "bioguide": "agency-airforce",
   "label": "Air Force",
   "scraper": null,
@@ -172,8 +172,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "M001246",
@@ -259,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 50,
-  "new": 0,
+  "count": 52,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -381,8 +381,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-bia",
@@ -711,7 +711,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -811,7 +811,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "E000296",
@@ -942,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 42,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -1129,7 +1129,7 @@
   "status": "ok",
   "error": null,
   "count": 117,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -1790,7 +1790,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "C001091",
@@ -1873,12 +1873,12 @@
   "bioguide": "J000309",
   "label": "Jonathan L. Jackson (D-IL-01)",
   "scraper": "jonathanjackson",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 11,
-  "new": 0,
-  "latest_date": "2026-08-17"
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "M001206",
@@ -1954,7 +1954,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -2131,7 +2131,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-22"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "U000040",
@@ -2659,7 +2659,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-nrc",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 186,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
