@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -270,8 +259,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 40,
-  "new": 0,
+  "count": 44,
+  "new": 4,
   "latest_date": "2026-10-29"
  },
  {
@@ -614,6 +603,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "G000599",
@@ -1679,8 +1679,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
-  "latest_date": "2026-10-29"
+  "new": 0,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "M001217",
@@ -2868,7 +2868,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-24"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "R000599",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-29"
  },
  {
@@ -3395,8 +3395,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-27"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "S001185",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 187,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-usccr",
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
