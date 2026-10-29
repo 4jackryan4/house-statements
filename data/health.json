@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 46,
-  "new": 0,
+  "count": 51,
+  "new": 6,
   "latest_date": "2026-10-29"
  },
  {
@@ -865,7 +865,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -930,7 +930,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 13,
+  "count": 4,
   "new": 0,
   "latest_date": "2026-11-04"
  },
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 0,
+  "new": 4,
   "latest_date": "2026-10-29"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -1162,8 +1162,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-29"
+  "new": 0,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-forestservice",
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -1668,8 +1668,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-29"
+  "new": 0,
+  "latest_date": "2026-10-09"
  },
  {
   "bioguide": "H001068",
@@ -1899,7 +1899,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2274,7 +2274,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "S001159",
@@ -2907,10 +2907,10 @@
   "bioguide": "T000486",
   "label": "Ritchie Torres (D-NY-15)",
   "scraper": "ritchietorres",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 187,
+  "count": 183,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-usccr",
