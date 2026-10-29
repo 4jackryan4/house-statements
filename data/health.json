@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -117,7 +106,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -157,12 +146,12 @@
   "bioguide": "A000370",
   "label": "Alma S. Adams (D-NC-12)",
   "scraper": "adams",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-28"
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "B001287",
@@ -393,7 +382,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-bia",
@@ -614,6 +603,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-27"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "G000599",
@@ -854,8 +854,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "committee-education-workforce",
@@ -1536,7 +1536,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-27"
  },
  {
@@ -2878,8 +2878,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-05"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "N000015",
@@ -3054,8 +3054,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "M001238",
