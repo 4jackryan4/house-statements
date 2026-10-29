@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-neh",
-  "label": "National Endowment for the Humanities",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 53,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -569,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-occ",
@@ -953,7 +942,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -1459,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2563,6 +2552,17 @@
   "latest_date": "2026-10-27"
  },
  {
+  "bioguide": "agency-neh",
+  "label": "National Endowment for the Humanities",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 30,
+  "new": 0,
+  "latest_date": "2026-10-16"
+ },
+ {
   "bioguide": "agency-nationalguard",
   "label": "National Guard",
   "scraper": null,
@@ -2625,7 +2625,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2658,8 +2658,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-nrc",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 154,
+  "count": 186,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
