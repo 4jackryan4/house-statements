@@ -270,7 +270,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 48,
+  "count": 44,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -590,7 +590,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 8,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
