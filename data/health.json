@@ -44,6 +44,72 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-hud",
+  "label": "Housing and Urban Development (HUD)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nlrb",
+  "label": "NLRB",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -946,17 +1012,6 @@
   "latest_date": "2026-10-28"
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-28"
- },
- {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1078,17 +1133,6 @@
   "latest_date": "2026-10-28"
  },
  {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 11,
-  "new": 0,
-  "latest_date": "2026-10-19"
- },
- {
   "bioguide": "agency-fhfa",
   "label": "FHFA",
   "scraper": null,
@@ -1164,17 +1208,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001214",
@@ -1472,17 +1505,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
- },
- {
-  "bioguide": "agency-hud",
-  "label": "Housing and Urban Development (HUD)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 215,
-  "new": 0,
-  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "agency-irs",
@@ -2274,7 +2296,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "S001159",
@@ -2462,28 +2484,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-nlrb",
-  "label": "NLRB",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-noaa",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 173,
   "new": 0,
   "latest_date": "2026-10-28"
  },
