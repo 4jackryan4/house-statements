@@ -44,6 +44,50 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nlrb",
+  "label": "NLRB",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -946,17 +990,6 @@
   "latest_date": "2026-10-28"
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-28"
- },
- {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1164,17 +1197,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "M001214",
@@ -2464,28 +2486,6 @@
   "latest_date": "2026-10-26"
  },
  {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-nlrb",
-  "label": "NLRB",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-19"
- },
- {
   "bioguide": "agency-noaa",
   "label": "NOAA",
   "scraper": null,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 187,
+  "count": 186,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
