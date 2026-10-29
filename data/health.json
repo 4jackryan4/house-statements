@@ -260,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 44,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -601,7 +601,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -612,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -832,8 +832,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "C001055",
@@ -1019,8 +1019,8 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-fcc",
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 31,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-29"
  },
  {
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -2768,8 +2768,8 @@
   "status": "ok",
   "error": null,
   "count": 5,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "H001103",
@@ -2868,7 +2868,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-10-24"
  },
  {
   "bioguide": "R000599",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -3395,7 +3395,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 187,
   "new": 0,
   "latest_date": "2026-10-28"
  },
