@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-neh",
   "label": "National Endowment for the Humanities",
   "scraper": null,
@@ -117,7 +128,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -270,8 +281,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 52,
-  "new": 0,
+  "count": 53,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -558,7 +569,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-occ",
@@ -613,17 +624,6 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-29"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 2,
   "latest_date": "2026-10-29"
  },
  {
@@ -1163,7 +1163,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "committee-foreign-affairs",
@@ -1459,7 +1459,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -2009,7 +2009,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2185,7 +2185,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2273,7 +2273,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2625,8 +2625,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "W000788",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 186,
+  "count": 154,
   "new": 0,
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-usccr",
