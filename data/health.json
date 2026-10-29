@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -146,12 +157,12 @@
   "bioguide": "A000370",
   "label": "Alma S. Adams (D-NC-12)",
   "scraper": "adams",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-28"
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-09-28"
  },
  {
   "bioguide": "B001287",
@@ -259,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 35,
-  "new": 0,
+  "count": 37,
+  "new": 2,
   "latest_date": "2026-10-29"
  },
  {
@@ -605,17 +616,6 @@
   "latest_date": "2026-10-27"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -854,7 +854,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -1074,8 +1074,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-ferc",
@@ -1536,7 +1536,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -1998,8 +1998,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "C001101",
@@ -2878,7 +2878,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -3054,8 +3054,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-10-28"
+  "new": 0,
+  "latest_date": "2026-10-22"
  },
  {
   "bioguide": "M001238",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 186,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
@@ -3626,8 +3626,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-27"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "committee-veterans-affairs",
