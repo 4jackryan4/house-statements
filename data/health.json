@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 52,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -502,8 +502,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "H001085",
@@ -909,8 +909,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 3,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "R000621",
@@ -942,8 +942,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-epa",
@@ -1029,8 +1029,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 39,
-  "new": 7,
+  "count": 38,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -2768,7 +2768,7 @@
   "status": "ok",
   "error": null,
   "count": 5,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-29"
  },
  {
@@ -3241,8 +3241,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-25"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "L000562",
@@ -3406,8 +3406,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "S001201",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
+  "count": 186,
   "new": 0,
   "latest_date": "2026-10-28"
  },
