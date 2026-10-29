@@ -157,10 +157,10 @@
   "bioguide": "A000370",
   "label": "Alma S. Adams (D-NC-12)",
   "scraper": "adams",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-28"
  },
@@ -1125,12 +1125,12 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 114,
+  "count": 117,
   "new": 0,
-  "latest_date": "2026-10-16"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "committee-financial-services",
