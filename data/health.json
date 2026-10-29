@@ -33,30 +33,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-prc",
-  "label": "Postal Regulatory Commission",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -638,17 +616,6 @@
   "latest_date": "2026-10-27"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -975,6 +942,17 @@
   "status": "ok",
   "error": null,
   "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-28"
+ },
+ {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-28"
  },
@@ -2486,6 +2464,17 @@
   "latest_date": "2026-10-26"
  },
  {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
   "bioguide": "agency-nlrb",
   "label": "NLRB",
   "scraper": null,
@@ -2838,6 +2827,17 @@
   "latest_date": "2026-10-22"
  },
  {
+  "bioguide": "agency-prc",
+  "label": "Postal Regulatory Commission",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-07-29"
+ },
+ {
   "bioguide": "J000298",
   "label": "Pramila Jayapal (D-WA-07)",
   "scraper": "jayapal",
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
-  "new": 8,
+  "count": 183,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
