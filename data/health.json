@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 51,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -953,7 +953,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -1029,8 +1029,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 35,
-  "new": 0,
+  "count": 34,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -1107,7 +1107,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -1491,8 +1491,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 14,
-  "new": 0,
+  "count": 15,
+  "new": 1,
   "latest_date": "2026-10-23"
  },
  {
@@ -1669,7 +1669,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-09"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "H001068",
@@ -2262,7 +2262,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-28"
  },
  {
@@ -2274,7 +2274,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "S001159",
@@ -2999,8 +2999,8 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "C001112",
@@ -3094,12 +3094,12 @@
   "bioguide": "C001117",
   "label": "Sean Casten (D-IL-06)",
   "scraper": "casten",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 40,
-  "new": 0,
-  "latest_date": "2026-09-17"
+  "count": 20,
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-secretservice",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "count": 125,
+  "new": 36,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-usccr",
@@ -3582,8 +3582,8 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "H001094",
