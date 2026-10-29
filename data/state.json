@@ -599,7 +599,7 @@
       "https://trahan.house.gov/news/"
     ],
     "T000486": [
-      "https://ritchietorres.house.gov/press"
+      "https://ritchietorres.house.gov/feed"
     ],
     "T000487": [
       "https://tokuda.house.gov/rss/feeds/"
@@ -717,9 +717,9 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-29T17:48:19+00:00",
+    "at": "2026-10-29T18:00:13+00:00",
     "http": {
-      "200": 401,
+      "200": 405,
       "301": 1,
       "302": 3,
       "404": 3,

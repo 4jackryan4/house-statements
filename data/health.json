@@ -260,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 46,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -447,7 +447,7 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -1029,8 +1029,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 0,
+  "count": 33,
+  "new": 2,
   "latest_date": "2026-10-29"
  },
  {
@@ -1107,8 +1107,8 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-fmc",
@@ -1800,7 +1800,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-27"
  },
  {
@@ -2273,8 +2273,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "S001159",
@@ -2328,7 +2328,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -2438,7 +2438,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -2907,10 +2907,10 @@
   "bioguide": "T000486",
   "label": "Ritchie Torres (D-NY-15)",
   "scraper": "ritchietorres",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 9,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3043,7 +3043,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 183,
+  "count": 187,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
@@ -3648,7 +3648,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
