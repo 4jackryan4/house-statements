@@ -44,6 +44,28 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-eeoc",
+  "label": "EEOC",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-education",
+  "label": "Education Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -128,8 +150,8 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 1,
-  "latest_date": "2026-10-30"
+  "new": 0,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "G000553",
@@ -557,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -825,17 +847,6 @@
   "latest_date": "2026-09-14"
  },
  {
-  "bioguide": "agency-eeoc",
-  "label": "EEOC",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 24,
-  "new": 0,
-  "latest_date": "2026-10-29"
- },
- {
   "bioguide": "C001055",
   "label": "Ed Case (D-HI-01)",
   "scraper": "case",
@@ -845,17 +856,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
- },
- {
-  "bioguide": "agency-education",
-  "label": "Education Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "committee-education-workforce",
@@ -1008,7 +1008,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -1029,8 +1029,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 51,
-  "new": 0,
+  "count": 56,
+  "new": 4,
   "latest_date": "2026-10-30"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -1680,7 +1680,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "M001217",
@@ -2042,7 +2042,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -2977,8 +2977,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "committee-rules",
@@ -3010,8 +3010,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "L000607",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
+  "count": 181,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-usccr",
