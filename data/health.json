@@ -33,8 +33,8 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 38,
-  "new": 0,
+  "count": 39,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -458,7 +458,7 @@
   "status": "ok",
   "error": null,
   "count": 7,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -607,17 +607,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-29"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -1029,8 +1018,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 60,
-  "new": 0,
+  "count": 61,
+  "new": 11,
   "latest_date": "2026-10-30"
  },
  {
@@ -1040,8 +1029,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 53,
-  "new": 0,
+  "count": 54,
+  "new": 4,
   "latest_date": "2026-10-30"
  },
  {
@@ -1063,7 +1052,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -1459,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -1491,9 +1480,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 215,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "count": 216,
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-irs",
@@ -2009,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -2704,6 +2693,17 @@
   "count": 2,
   "new": 0,
   "latest_date": "2026-10-21"
+ },
+ {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 181,
+  "new": 0,
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-omb",
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 139,
+  "count": 181,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-usccr",
@@ -3560,7 +3560,7 @@
   "status": "ok",
   "error": null,
   "count": 228,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3660,7 +3660,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "B001324",
