@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 39,
-  "new": 0,
+  "count": 46,
+  "new": 7,
   "latest_date": "2026-10-30"
  },
  {
@@ -579,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -1030,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 57,
-  "new": 4,
+  "new": 3,
   "latest_date": "2026-10-30"
  },
  {
@@ -1261,8 +1261,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "C001123",
@@ -2438,7 +2438,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -2999,7 +2999,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3450,7 +3450,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-30"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
+  "count": 182,
   "new": 0,
   "latest_date": "2026-10-30"
  },
