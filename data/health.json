@@ -44,28 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-eeoc",
-  "label": "EEOC",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-education",
-  "label": "Education Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -151,7 +129,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "G000553",
@@ -847,6 +825,17 @@
   "latest_date": "2026-09-14"
  },
  {
+  "bioguide": "agency-eeoc",
+  "label": "EEOC",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 24,
+  "new": 0,
+  "latest_date": "2026-10-29"
+ },
+ {
   "bioguide": "C001055",
   "label": "Ed Case (D-HI-01)",
   "scraper": "case",
@@ -856,6 +845,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-education",
+  "label": "Education Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "committee-education-workforce",
@@ -1029,8 +1029,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 56,
-  "new": 4,
+  "count": 53,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -2042,7 +2042,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -2625,8 +2625,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-29"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "W000788",
@@ -3010,7 +3010,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3229,8 +3229,8 @@
   "method": "wordpress",
   "status": "ok",
   "error": null,
-  "count": 8,
-  "new": 0,
+  "count": 9,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
+  "count": 182,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-usccr",
