@@ -557,7 +557,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -2394,8 +2394,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-07"
+  "new": 1,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "Q000023",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 6,
   "latest_date": "2026-10-30"
  },
  {
@@ -3495,7 +3495,7 @@
   "error": null,
   "count": 182,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-usccr",
