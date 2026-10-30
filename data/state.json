@@ -407,7 +407,7 @@
       "https://mcclaindelaney.house.gov/media/press-releases"
     ],
     "M001234": [
-      "https://morrison.house.gov/rss/feeds/"
+      "https://morrison.house.gov/news"
     ],
     "M001237": [
       "https://mcdonaldrivet.house.gov/media/press-releases"
@@ -717,9 +717,9 @@
     ]
   },
   "last_collect": {
-    "at": "2026-10-30T02:08:18+00:00",
+    "at": "2026-10-30T02:22:25+00:00",
     "http": {
-      "200": 401,
+      "200": 404,
       "301": 1,
       "302": 3,
       "404": 3,
@@ -727,8 +727,8 @@
     },
     "sites": {
       "empty": 0,
-      "error": 3,
-      "ok": 336
+      "error": 4,
+      "ok": 335
     }
   },
   "old_agency_links": [
