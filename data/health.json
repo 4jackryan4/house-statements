@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -260,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 36,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -601,18 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-29"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-29"
  },
  {
@@ -711,7 +711,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -1052,8 +1052,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-26"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-fec",
@@ -1899,8 +1899,8 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 0,
-  "latest_date": "2026-10-29"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "H001090",
@@ -1954,7 +1954,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -2768,7 +2768,7 @@
   "status": "ok",
   "error": null,
   "count": 5,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3450,8 +3450,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-treasury",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "count": 177,
+  "new": 12,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-usccr",
