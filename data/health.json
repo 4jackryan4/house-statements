@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 54,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-10-29"
  },
  {
@@ -932,7 +932,7 @@
   "error": null,
   "count": 13,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "committee-energy-commerce",
@@ -1378,10 +1378,10 @@
   "bioguide": "S001215",
   "label": "Haley M. Stevens (D-MI-11)",
   "scraper": "stevens",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-29"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
+  "count": 186,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-usccr",
