@@ -205,7 +205,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-23"
  },
  {
@@ -558,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-occ",
@@ -1480,9 +1480,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 215,
+  "count": 216,
   "new": 0,
-  "latest_date": "2026-10-23"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-irs",
@@ -1745,8 +1745,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 2,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "T000487",
@@ -1998,7 +1998,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-10-30"
  },
  {
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -3263,7 +3263,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3351,7 +3351,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
