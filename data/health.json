@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -1983,10 +1983,10 @@
   "bioguide": "J000310",
   "label": "Julie Johnson (D-TX-32)",
   "scraper": "juliejohnson",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-09-30"
  },
@@ -2379,10 +2379,10 @@
   "bioguide": "S001218",
   "label": "Melanie A. Stansbury (D-NM-01)",
   "scraper": "stansbury",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-09-30"
  },
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 161,
+  "count": 182,
   "new": 0,
   "latest_date": "2026-10-30"
  },
