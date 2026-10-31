@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -130,6 +119,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
+ },
+ {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-airforce",
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 57,
+  "count": 52,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 165,
+  "count": 182,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 1,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-10-31"
  },
  {
