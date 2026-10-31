@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-29"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 1,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1125,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "rss+listing",
+  "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 117,
+  "count": 115,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 182,
+  "count": 139,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "agency-usccr",
