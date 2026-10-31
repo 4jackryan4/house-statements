@@ -568,7 +568,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 139,
+  "count": 182,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-usccr",
