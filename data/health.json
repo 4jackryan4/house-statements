@@ -55,17 +55,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-usao",
-  "label": "U.S. Attorneys' Offices",
-  "scraper": null,
-  "method": "api",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -292,7 +281,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 51,
+  "count": 49,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -1136,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 115,
+  "count": 117,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -1657,7 +1646,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3241,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3496,6 +3485,17 @@
   "count": 11,
   "new": 0,
   "latest_date": "2026-01-02"
+ },
+ {
+  "bioguide": "agency-usao",
+  "label": "U.S. Attorneys' Offices",
+  "scraper": null,
+  "method": "api",
+  "status": "ok",
+  "error": null,
+  "count": 161,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-usccr",
