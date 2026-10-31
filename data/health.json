@@ -55,39 +55,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-fda",
-  "label": "FDA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1067,6 +1034,17 @@
   "latest_date": "2026-10-30"
  },
  {
+  "bioguide": "agency-fda",
+  "label": "FDA",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "agency-fdic",
   "label": "FDIC",
   "scraper": null,
@@ -1098,6 +1076,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
+ },
+ {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 11,
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-fhfa",
@@ -1136,10 +1125,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 115,
+  "count": 117,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -2475,6 +2464,17 @@
   "latest_date": "2026-10-30"
  },
  {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
   "bioguide": "agency-nlrb",
   "label": "NLRB",
   "scraper": null,
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 165,
+  "count": 161,
   "new": 0,
   "latest_date": "2026-10-30"
  },
