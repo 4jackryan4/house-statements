@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 139,
+  "count": 165,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-usccr",
@@ -3680,9 +3680,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "count": 31,
+  "new": 1,
+  "latest_date": "2026-10-31"
  },
  {
   "bioguide": "K000375",
