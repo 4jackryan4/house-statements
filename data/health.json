@@ -216,7 +216,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 56,
+  "count": 57,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 164,
-  "new": 3,
+  "count": 161,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
