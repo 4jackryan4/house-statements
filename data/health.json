@@ -685,10 +685,10 @@
   "bioguide": "R000305",
   "label": "Deborah K. Ross (D-NC-02)",
   "scraper": "ross",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 11,
   "new": 0,
   "latest_date": "2026-10-01"
  },
@@ -1422,10 +1422,10 @@
   "bioguide": "C001136",
   "label": "Herbert C. Conaway, Jr. (D-NJ-03)",
   "scraper": "conaway",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-01"
  },
@@ -2016,10 +2016,10 @@
   "bioguide": "C001066",
   "label": "Kathy Castor (D-FL-14)",
   "scraper": "castor",
-  "method": "python-statement",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 25,
   "new": 0,
   "latest_date": "2026-10-01"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 165,
+  "count": 187,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-usccr",
