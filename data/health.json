@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-occ",
-  "label": "Comptroller of the Currency (OCC)",
-  "scraper": null,
-  "method": "rss",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-dea",
   "label": "DEA",
   "scraper": null,
@@ -570,6 +559,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-31"
+ },
+ {
+  "bioguide": "agency-occ",
+  "label": "Comptroller of the Currency (OCC)",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-cbo",
