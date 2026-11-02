@@ -50,7 +50,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 2,
+  "count": 1,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 4,
-  "new": 0,
+  "count": 6,
+  "new": 2,
   "latest_date": "2026-11-02"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -1686,10 +1686,10 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -3208,8 +3208,8 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
-  "latest_date": "2026-11-02"
+  "new": 0,
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "P000610",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 169,
-  "new": 2,
-  "latest_date": "2026-11-02"
+  "count": 166,
+  "new": 0,
+  "latest_date": "2026-10-31"
  },
  {
   "bioguide": "agency-usccr",
