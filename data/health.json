@@ -33,28 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-justice",
-  "label": "Justice Department",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 16,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -627,6 +605,17 @@
   "latest_date": "2026-11-02"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 8,
+  "latest_date": "2026-11-02"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -943,7 +932,7 @@
   "error": null,
   "count": 13,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "committee-energy-commerce",
@@ -1040,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 57,
+  "count": 59,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -1403,8 +1392,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 12,
-  "new": 1,
+  "count": 11,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -2002,6 +1991,17 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "C001101",
   "label": "Katherine M. Clark (D-MA-05)",
   "scraper": "clark",
@@ -2559,7 +2559,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -3087,8 +3087,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-11-02"
+  "new": 0,
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "C001117",
@@ -3570,8 +3570,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 141,
-  "new": 1,
+  "count": 144,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
