@@ -44,39 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-fda",
-  "label": "FDA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1067,6 +1034,17 @@
   "latest_date": "2026-10-30"
  },
  {
+  "bioguide": "agency-fda",
+  "label": "FDA",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "agency-fdic",
   "label": "FDIC",
   "scraper": null,
@@ -1098,6 +1076,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
+ },
+ {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 11,
+  "new": 0,
+  "latest_date": "2026-10-19"
  },
  {
   "bioguide": "agency-fhfa",
@@ -1911,7 +1900,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-11-01"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "H001090",
@@ -2475,6 +2464,17 @@
   "latest_date": "2026-10-30"
  },
  {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
   "bioguide": "agency-nlrb",
   "label": "NLRB",
   "scraper": null,
@@ -2863,10 +2863,10 @@
   "bioguide": "T000481",
   "label": "Rashida Tlaib (D-MI-12)",
   "scraper": "tlaib",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -2907,10 +2907,10 @@
   "bioguide": "T000486",
   "label": "Ritchie Torres (D-NY-15)",
   "scraper": "ritchietorres",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 9,
   "new": 0,
   "latest_date": "2026-10-22"
  },
