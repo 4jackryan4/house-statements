@@ -129,7 +129,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "G000553",
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 6,
-  "new": 0,
+  "count": 8,
+  "new": 2,
   "latest_date": "2026-11-02"
  },
  {
@@ -722,7 +722,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -1051,7 +1051,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-11-02"
  },
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "new": 1,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "committee-small-business",
@@ -3494,7 +3494,7 @@
   "status": "ok",
   "error": null,
   "count": 173,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
