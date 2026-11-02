@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 12,
+  "new": 2,
   "latest_date": "2026-11-02"
  },
  {
@@ -535,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -612,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -1107,7 +1107,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -3297,7 +3297,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-stb",
@@ -3340,7 +3340,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-11-02"
  },
  {
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
-  "new": 2,
+  "count": 131,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
