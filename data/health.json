@@ -205,8 +205,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "C001072",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
-  "new": 0,
+  "count": 152,
+  "new": 9,
   "latest_date": "2026-11-02"
  },
  {
