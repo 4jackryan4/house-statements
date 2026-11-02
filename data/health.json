@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-gsa",
   "label": "General Services Administration",
   "scraper": null,
@@ -140,7 +129,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "G000553",
@@ -627,6 +616,17 @@
   "latest_date": "2026-10-29"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -722,8 +722,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "new": 1,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "T000491",
@@ -843,7 +843,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -876,8 +876,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
-  "latest_date": "2026-11-02"
+  "new": 0,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "N000147",
@@ -1051,7 +1051,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-11-02"
  },
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 171,
-  "new": 0,
+  "count": 173,
+  "new": 2,
   "latest_date": "2026-11-02"
  },
  {
