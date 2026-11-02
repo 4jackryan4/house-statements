@@ -63,6 +63,7 @@
       "https://clyburn.house.gov/feed/"
     ],
     "C001055": [
+      "https://case.house.gov/",
       "https://case.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "C001059": [
@@ -187,6 +188,8 @@
       "https://frankel.house.gov/news/"
     ],
     "F000468": [
+      "https://fletcher.house.gov/news/",
+      "https://fletcher.house.gov/news/documentquery.aspx?DocumentTypeID=26",
       "https://fletcher.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "F000476": [
@@ -319,7 +322,7 @@
       "https://larson.house.gov/media-center/press-releases"
     ],
     "L000560": [
-      "https://larsen.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://larsen.house.gov/news/"
     ],
     "L000562": [
       "https://lynch.house.gov/newsroom"
@@ -716,18 +719,18 @@
     ]
   },
   "last_collect": {
-    "at": "2026-11-02T07:44:46+00:00",
+    "at": "2026-11-02T08:00:17+00:00",
     "http": {
-      "200": 408,
+      "200": 402,
       "301": 1,
-      "302": 3,
-      "404": 3,
-      "410": 1
+      "404": 5,
+      "410": 1,
+      "ReadTimeout": 89
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 19,
+      "ok": 320
     }
   },
   "old_agency_links": [
