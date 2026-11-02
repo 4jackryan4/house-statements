@@ -316,7 +316,7 @@
       "https://kennedy.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "L000273": [
-      "https://fernandez.house.gov/news"
+      "https://fernandez.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "L000557": [
       "https://larson.house.gov/media-center/press-releases"
@@ -584,7 +584,7 @@
       "https://mikethompson.house.gov/newsroom/press-releases"
     ],
     "T000468": [
-      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://titus.house.gov/news/"
     ],
     "T000469": [
       "https://tonko.house.gov/news/documentquery.aspx?DocumentTypeID=27"
@@ -719,18 +719,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-11-02T08:00:17+00:00",
+    "at": "2026-11-02T08:16:49+00:00",
     "http": {
-      "200": 402,
+      "200": 408,
       "301": 1,
-      "404": 5,
+      "302": 1,
+      "404": 3,
       "410": 1,
-      "ReadTimeout": 89
+      "ReadTimeout": 29
     },
     "sites": {
       "empty": 0,
-      "error": 19,
-      "ok": 320
+      "error": 6,
+      "ok": 333
     }
   },
   "old_agency_links": [
