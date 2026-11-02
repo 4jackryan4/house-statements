@@ -270,9 +270,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 1,
-  "new": 0,
-  "latest_date": "2026-10-31"
+  "count": 2,
+  "new": 1,
+  "latest_date": "2026-11-01"
  },
  {
   "bioguide": "P000617",
@@ -1228,7 +1228,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-01"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 165,
+  "count": 164,
   "new": 0,
   "latest_date": "2026-10-30"
  },
