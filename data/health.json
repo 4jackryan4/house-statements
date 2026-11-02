@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -616,6 +605,17 @@
   "latest_date": "2026-10-29"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1029,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 57,
+  "count": 51,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -1895,10 +1895,10 @@
   "bioguide": "G000583",
   "label": "Josh Gottheimer (D-NJ-05)",
   "scraper": "gottheimer",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-11-01"
  },
@@ -2863,10 +2863,10 @@
   "bioguide": "T000481",
   "label": "Rashida Tlaib (D-MI-12)",
   "scraper": "tlaib",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 9,
   "new": 0,
   "latest_date": "2026-10-29"
  },
