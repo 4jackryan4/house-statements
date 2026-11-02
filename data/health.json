@@ -206,7 +206,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "C001072",
@@ -1075,7 +1075,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "agency-ferc",
@@ -1393,7 +1393,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-02"
  },
  {
@@ -1514,7 +1514,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-02"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 1,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
