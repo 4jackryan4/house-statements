@@ -2643,10 +2643,10 @@
   "bioguide": "B001315",
   "label": "Nikki Budzinski (D-IL-13)",
   "scraper": "budzinski",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-30"
  },
