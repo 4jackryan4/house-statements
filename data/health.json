@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-hud",
-  "label": "Housing and Urban Development (HUD)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -723,7 +712,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "T000491",
@@ -1096,7 +1085,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -1483,6 +1472,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-20"
+ },
+ {
+  "bioguide": "agency-hud",
+  "label": "Housing and Urban Development (HUD)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 216,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-irs",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-02"
  },
  {
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 143,
+  "count": 173,
   "new": 0,
   "latest_date": "2026-11-02"
  },
