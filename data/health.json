@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 60,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-01"
  },
  {
@@ -1041,7 +1041,7 @@
   "status": "ok",
   "error": null,
   "count": 21,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -1448,8 +1448,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "new": 1,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "committee-homeland-security",
@@ -3208,8 +3208,8 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "P000610",
@@ -3230,8 +3230,8 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
-  "latest_date": "2026-10-31"
+  "new": 1,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "H000874",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 166,
-  "new": 0,
-  "latest_date": "2026-10-31"
+  "count": 169,
+  "new": 2,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
