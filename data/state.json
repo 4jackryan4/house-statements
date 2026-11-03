@@ -585,7 +585,6 @@
       "https://mikethompson.house.gov/newsroom/press-releases"
     ],
     "T000468": [
-      "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
       "https://titus.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "T000469": [
@@ -721,18 +720,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-11-03T08:00:42+00:00",
+    "at": "2026-11-03T08:13:02+00:00",
     "http": {
-      "200": 435,
+      "200": 407,
       "301": 1,
-      "404": 5,
+      "302": 1,
+      "404": 3,
       "410": 1,
-      "ReadTimeout": 68
+      "ReadTimeout": 7
     },
     "sites": {
       "empty": 0,
-      "error": 6,
-      "ok": 333
+      "error": 4,
+      "ok": 335
     }
   },
   "old_agency_links": [
