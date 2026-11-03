@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -282,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 23,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -590,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -2706,6 +2695,17 @@
   "latest_date": "2026-10-21"
  },
  {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 181,
+  "new": 0,
+  "latest_date": "2026-10-27"
+ },
+ {
   "bioguide": "agency-omb",
   "label": "Office of Management and Budget (OMB)",
   "scraper": null,
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
-  "new": 0,
-  "latest_date": "2026-11-02"
+  "count": 172,
+  "new": 17,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-usccr",
