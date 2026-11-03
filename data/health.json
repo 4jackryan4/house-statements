@@ -558,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-01"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-occ",
@@ -1900,7 +1900,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-11-01"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "H001090",
@@ -2269,10 +2269,10 @@
   "bioguide": "G000600",
   "label": "Marie Gluesenkamp Perez (D-WA-03)",
   "scraper": "gluesenkampperez",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -2863,10 +2863,10 @@
   "bioguide": "T000481",
   "label": "Rashida Tlaib (D-MI-12)",
   "scraper": "tlaib",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 9,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -2907,10 +2907,10 @@
   "bioguide": "T000486",
   "label": "Ritchie Torres (D-NY-15)",
   "scraper": "ritchietorres",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 9,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-22"
  },
