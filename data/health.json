@@ -44,6 +44,50 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nlrb",
+  "label": "NLRB",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -766,7 +810,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -944,17 +988,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
- },
- {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "S001225",
@@ -1164,17 +1197,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "M001214",
@@ -1998,7 +2020,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
@@ -2462,28 +2484,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-23"
- },
- {
-  "bioguide": "agency-nlrb",
-  "label": "NLRB",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-noaa",
@@ -3186,8 +3186,8 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
-  "latest_date": "2026-11-02"
+  "new": 1,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "committee-small-business",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 174,
-  "new": 2,
-  "latest_date": "2026-11-03"
+  "count": 181,
+  "new": 0,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
