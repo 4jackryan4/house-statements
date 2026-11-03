@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
@@ -558,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-01"
  },
  {
   "bioguide": "agency-occ",
@@ -3186,7 +3186,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-02"
  },
  {
