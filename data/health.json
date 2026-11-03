@@ -33,10 +33,10 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
   "scraper": null,
-  "method": "listing",
+  "method": "none",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
@@ -616,6 +616,17 @@
   "latest_date": "2026-11-02"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-02"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -832,7 +843,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -953,7 +964,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -1019,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -1989,17 +2000,6 @@
   "count": 21,
   "new": 0,
   "latest_date": "2026-09-30"
- },
- {
-  "bioguide": "agency-justice",
-  "label": "Justice Department",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 25,
-  "new": 0,
-  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "C001101",
@@ -3241,8 +3241,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-11-02"
+  "new": 0,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "L000562",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 174,
-  "new": 1,
-  "latest_date": "2026-11-03"
+  "count": 173,
+  "new": 0,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
