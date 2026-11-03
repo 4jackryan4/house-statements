@@ -33,17 +33,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-justice",
-  "label": "Justice Department",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -271,7 +260,7 @@
   "status": "ok",
   "error": null,
   "count": 22,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
@@ -2002,6 +1991,17 @@
   "latest_date": "2026-09-30"
  },
  {
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 0,
+  "latest_date": "2026-11-03"
+ },
+ {
   "bioguide": "C001101",
   "label": "Katherine M. Clark (D-MA-05)",
   "scraper": "clark",
@@ -3242,7 +3242,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "L000562",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
-  "new": 0,
-  "latest_date": "2026-11-02"
+  "count": 178,
+  "new": 3,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-usccr",
