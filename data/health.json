@@ -578,8 +578,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 25,
-  "new": 0,
+  "count": 24,
+  "new": 1,
   "latest_date": "2026-10-30"
  },
  {
@@ -1686,10 +1686,10 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-22"
  },
