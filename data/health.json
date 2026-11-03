@@ -44,6 +44,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -1686,10 +1697,10 @@
   "bioguide": "M001217",
   "label": "Jared Moskowitz (D-FL-23)",
   "scraper": "moskowitz",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-22"
  },
@@ -2632,10 +2643,10 @@
   "bioguide": "W000788",
   "label": "Nikema Williams (D-GA-05)",
   "scraper": "nikemawilliams",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-28"
  },
@@ -2693,17 +2704,6 @@
   "count": 2,
   "new": 0,
   "latest_date": "2026-10-21"
- },
- {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 181,
-  "new": 0,
-  "latest_date": "2026-10-27"
  },
  {
   "bioguide": "agency-omb",
@@ -2786,7 +2786,7 @@
   "bioguide": "R000579",
   "label": "Patrick Ryan (D-NY-18)",
   "scraper": "patryan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
+  "count": 173,
   "new": 0,
   "latest_date": "2026-11-02"
  },
