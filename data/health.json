@@ -128,7 +128,7 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -557,7 +557,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -1822,7 +1822,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -2845,7 +2845,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -3494,8 +3494,8 @@
   "status": "ok",
   "error": null,
   "count": 181,
-  "new": 0,
-  "latest_date": "2026-11-02"
+  "new": 7,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-usccr",
@@ -3527,7 +3527,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
@@ -3680,7 +3680,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 32,
+  "count": 31,
   "new": 2,
   "latest_date": "2026-11-03"
  },
