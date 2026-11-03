@@ -44,28 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-education",
-  "label": "Education Department",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-va",
-  "label": "Veterans Affairs (VA)",
-  "scraper": null,
-  "method": "wordpress",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -150,7 +128,7 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -580,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-occ",
@@ -601,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -678,8 +656,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-11-03"
+  "new": 0,
+  "latest_date": "2026-10-28"
  },
  {
   "bioguide": "D000624",
@@ -867,6 +845,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
+ },
+ {
+  "bioguide": "agency-education",
+  "label": "Education Department",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "committee-education-workforce",
@@ -1162,7 +1151,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -3241,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -3504,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 141,
-  "new": 8,
-  "latest_date": "2026-11-03"
+  "count": 173,
+  "new": 0,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
@@ -3549,7 +3538,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-28"
  },
  {
@@ -3628,6 +3617,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-21"
+ },
+ {
+  "bioguide": "agency-va",
+  "label": "Veterans Affairs (VA)",
+  "scraper": null,
+  "method": "wordpress",
+  "status": "ok",
+  "error": null,
+  "count": 20,
+  "new": 0,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "committee-veterans-affairs",
