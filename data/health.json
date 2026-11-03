@@ -44,6 +44,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-war",
+  "label": "Department of War (Defense)",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -702,17 +713,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
- },
- {
-  "bioguide": "agency-war",
-  "label": "Department of War (Defense)",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 30,
-  "new": 0,
-  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "T000491",
