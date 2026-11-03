@@ -44,17 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-justice",
-  "label": "Justice Department",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -569,7 +558,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-03"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-occ",
@@ -2000,6 +1989,17 @@
   "count": 21,
   "new": 0,
   "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 1,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "C001101",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 155,
-  "new": 14,
-  "latest_date": "2026-11-03"
+  "count": 181,
+  "new": 0,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
