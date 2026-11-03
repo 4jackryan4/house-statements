@@ -44,6 +44,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -270,8 +281,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 24,
-  "new": 0,
+  "count": 25,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
@@ -293,8 +304,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-27"
+  "new": 1,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "T000193",
@@ -1019,7 +1030,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
@@ -1125,10 +1136,10 @@
   "bioguide": "agency-fed",
   "label": "Federal Reserve",
   "scraper": null,
-  "method": "listing",
+  "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 115,
+  "count": 117,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -1989,17 +2000,6 @@
   "count": 21,
   "new": 0,
   "latest_date": "2026-09-30"
- },
- {
-  "bioguide": "agency-justice",
-  "label": "Justice Department",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 25,
-  "new": 0,
-  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "C001101",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
-  "new": 0,
-  "latest_date": "2026-11-02"
+  "count": 144,
+  "new": 5,
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-usccr",
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
+  "count": 31,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
