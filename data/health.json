@@ -44,10 +44,10 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-war",
-  "label": "Department of War (Defense)",
+  "bioguide": "agency-marines",
+  "label": "Marine Corps",
   "scraper": null,
-  "method": "none",
+  "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
@@ -713,6 +713,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
+ },
+ {
+  "bioguide": "agency-war",
+  "label": "Department of War (Defense)",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 30,
+  "new": 0,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "T000491",
@@ -2286,17 +2297,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-21"
- },
- {
-  "bioguide": "agency-marines",
-  "label": "Marine Corps",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-09-11"
  },
  {
   "bioguide": "D000623",
