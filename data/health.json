@@ -359,7 +359,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -392,7 +392,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -1085,7 +1085,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3208,7 +3208,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
+  "count": 182,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-usccr",
