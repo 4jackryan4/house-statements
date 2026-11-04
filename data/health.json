@@ -44,28 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -292,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 17,
-  "new": 0,
+  "count": 18,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -734,7 +712,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "T000491",
@@ -1096,6 +1074,17 @@
   "status": "ok",
   "error": null,
   "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-02"
+ },
+ {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 11,
   "new": 0,
   "latest_date": "2026-11-02"
  },
@@ -1502,9 +1491,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-23"
+  "count": 16,
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "O000173",
@@ -2473,6 +2462,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-nlrb",
@@ -3472,8 +3472,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-11-04"
+  "new": 0,
+  "latest_date": "2026-11-01"
  },
  {
   "bioguide": "agency-usagm",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
+  "count": 180,
   "new": 0,
   "latest_date": "2026-11-02"
  },
