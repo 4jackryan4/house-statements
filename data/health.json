@@ -66,6 +66,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
@@ -205,8 +216,8 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 0,
-  "latest_date": "2026-11-03"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "G000553",
@@ -347,7 +358,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 18,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-11-04"
  },
@@ -669,17 +680,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-07-09"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "G000599",
@@ -1535,8 +1535,8 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 16,
-  "new": 0,
+  "count": 17,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -3252,7 +3252,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
+  "count": 184,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usccr",
@@ -3659,7 +3659,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
