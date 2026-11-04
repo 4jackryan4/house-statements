@@ -358,8 +358,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 29,
-  "new": 0,
+  "count": 30,
+  "new": 3,
   "latest_date": "2026-11-04"
  },
  {
@@ -535,7 +535,7 @@
   "status": "ok",
   "error": null,
   "count": 6,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 144,
+  "count": 173,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
