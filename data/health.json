@@ -359,7 +359,7 @@
   "status": "ok",
   "error": null,
   "count": 29,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -534,9 +534,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 7,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "count": 6,
+  "new": 6,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-cpsc",
@@ -3208,7 +3208,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3637,7 +3637,7 @@
   "status": "ok",
   "error": null,
   "count": 2,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
