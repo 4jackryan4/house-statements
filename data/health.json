@@ -77,6 +77,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-dhs",
   "label": "Homeland Security (DHS)",
   "scraper": null,
@@ -90,6 +101,17 @@
  {
   "bioguide": "agency-ice",
   "label": "Immigration and Customs Enforcement (ICE)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -216,8 +238,8 @@
   "status": "ok",
   "error": null,
   "count": 100,
-  "new": 0,
-  "latest_date": "2026-11-03"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "G000553",
@@ -359,7 +381,7 @@
   "status": "ok",
   "error": null,
   "count": 27,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -568,7 +590,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -656,7 +678,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -777,7 +799,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -1131,17 +1153,6 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-10-01"
- },
- {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 11,
-  "new": 0,
-  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-fhfa",
@@ -1514,7 +1525,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-10-30"
  },
  {
@@ -2075,7 +2086,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -2495,17 +2506,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-nlrb",
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 180,
+  "count": 173,
   "new": 0,
   "latest_date": "2026-11-02"
  },
