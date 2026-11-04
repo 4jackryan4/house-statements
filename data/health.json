@@ -55,17 +55,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-fsis",
-  "label": "Food Safety and Inspection Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-forestservice",
   "label": "Forest Service",
   "scraper": null,
@@ -292,7 +281,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 22,
+  "count": 21,
   "new": 0,
   "latest_date": "2026-11-03"
  },
@@ -1162,6 +1151,17 @@
   "status": "ok",
   "error": null,
   "count": 25,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
+  "bioguide": "agency-fsis",
+  "label": "Food Safety and Inspection Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 6,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 181,
+  "count": 180,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-03"
  },
  {
   "bioguide": "agency-usccr",
