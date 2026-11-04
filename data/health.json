@@ -425,8 +425,8 @@
   "status": "ok",
   "error": null,
   "count": 37,
-  "new": 0,
-  "latest_date": "2026-11-03"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-cia",
@@ -953,8 +953,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-11-03"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "S001225",
@@ -3077,7 +3077,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "P000608",
@@ -3493,7 +3493,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 171,
+  "count": 154,
   "new": 0,
   "latest_date": "2026-11-03"
  },
