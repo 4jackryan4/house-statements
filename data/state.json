@@ -154,7 +154,9 @@
       "https://desaulnier.house.gov/media-center/press-releases"
     ],
     "D000624": [
-      "https://debbiedingell.house.gov/news/"
+      "https://debbiedingell.house.gov/news/",
+      "https://debbiedingell.house.gov/news/documentquery.aspx?DocumentTypeID=1951",
+      "https://debbiedingell.house.gov/news/documentquery.aspx?DocumentTypeID=26"
     ],
     "D000629": [
       "https://davids.house.gov/media/press-releases"
@@ -720,18 +722,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-11-04T07:56:32+00:00",
+    "at": "2026-11-04T08:16:20+00:00",
     "http": {
-      "200": 408,
+      "200": 410,
       "301": 1,
-      "302": 3,
+      "302": 1,
       "404": 3,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 9
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 5,
+      "ok": 334
     }
   },
   "old_agency_links": [
