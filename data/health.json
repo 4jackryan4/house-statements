@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -103,17 +92,6 @@
   "label": "Immigration and Customs Enforcement (ICE)",
   "scraper": null,
   "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-justice",
-  "label": "Justice Department",
-  "scraper": null,
-  "method": "none",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
@@ -218,6 +196,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
+ },
+ {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-airforce",
@@ -646,7 +635,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-03"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-occ",
@@ -2033,6 +2022,17 @@
   "count": 21,
   "new": 0,
   "latest_date": "2026-09-30"
+ },
+ {
+  "bioguide": "agency-justice",
+  "label": "Justice Department",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 25,
+  "new": 0,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "C001101",
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 191,
-  "new": 1,
-  "latest_date": "2026-11-04"
+  "count": 180,
+  "new": 0,
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 31,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
