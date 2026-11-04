@@ -358,8 +358,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 2,
+  "count": 18,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -656,8 +656,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-11-03"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-crs",
@@ -777,7 +777,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -865,7 +865,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -887,7 +887,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -1085,7 +1085,7 @@
   "status": "ok",
   "error": null,
   "count": 61,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-03"
  },
  {
@@ -2471,7 +2471,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3208,7 +3208,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3472,7 +3472,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 173,
+  "count": 184,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usccr",
@@ -3539,7 +3539,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-03"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usms",
@@ -3570,8 +3570,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 229,
-  "new": 0,
+  "count": 230,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
