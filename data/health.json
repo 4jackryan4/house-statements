@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -185,17 +196,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-airforce",
@@ -624,7 +624,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-05"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-occ",
@@ -678,7 +678,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-11-05"
  },
  {
@@ -1272,8 +1272,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-27"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "V000136",
@@ -1448,8 +1448,8 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "J000288",
@@ -2042,7 +2042,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 7,
   "latest_date": "2026-11-05"
  },
  {
@@ -2504,8 +2504,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-nlrb",
@@ -3252,7 +3252,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 143,
+  "count": 184,
   "new": 0,
-  "latest_date": "2026-11-05"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usccr",
