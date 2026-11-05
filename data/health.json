@@ -77,6 +77,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-dhs",
   "label": "Homeland Security (DHS)",
   "scraper": null,
@@ -817,7 +828,7 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1408,17 +1419,6 @@
   "latest_date": "2026-08-20"
  },
  {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-08"
- },
- {
   "bioguide": "J000294",
   "label": "Hakeem S. Jeffries (D-NY-08)",
   "scraper": "jeffries",
@@ -1642,7 +1642,7 @@
   "bioguide": "M000312",
   "label": "James P. McGovern (D-MA-02)",
   "scraper": "mcgovern",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2830,7 +2830,7 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3402,10 +3402,10 @@
   "bioguide": "L000273",
   "label": "Teresa Leger Fernandez (D-NM-03)",
   "scraper": "fernandez",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
  },
