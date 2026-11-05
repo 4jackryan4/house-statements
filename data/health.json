@@ -77,17 +77,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-dhs",
   "label": "Homeland Security (DHS)",
   "scraper": null,
@@ -369,9 +358,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 34,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "count": 35,
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "P000617",
@@ -828,7 +817,7 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -1419,6 +1408,17 @@
   "latest_date": "2026-08-20"
  },
  {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-08"
+ },
+ {
   "bioguide": "J000294",
   "label": "Hakeem S. Jeffries (D-NY-08)",
   "scraper": "jeffries",
@@ -1642,7 +1642,7 @@
   "bioguide": "M000312",
   "label": "James P. McGovern (D-MA-02)",
   "scraper": "mcgovern",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -2830,7 +2830,7 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3402,10 +3402,10 @@
   "bioguide": "L000273",
   "label": "Teresa Leger Fernandez (D-NM-03)",
   "scraper": "fernandez",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 142,
+  "count": 191,
   "new": 0,
   "latest_date": "2026-11-04"
  },
