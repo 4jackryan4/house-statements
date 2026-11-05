@@ -55,17 +55,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
@@ -426,7 +415,7 @@
   "error": null,
   "count": 20,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "S000344",
@@ -680,6 +669,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-07-09"
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "G000599",
@@ -975,8 +975,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-29"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "R000621",
@@ -1074,7 +1074,7 @@
   "status": "ok",
   "error": null,
   "count": 102,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-05"
  },
  {
@@ -1085,8 +1085,8 @@
   "status": "ok",
   "error": null,
   "count": 62,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-fcc",
@@ -1118,8 +1118,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-fec",
@@ -1349,7 +1349,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-11-05"
  },
  {
@@ -3395,8 +3395,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "L000273",
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 180,
+  "count": 178,
   "new": 0,
-  "latest_date": "2026-11-02"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usccr",
