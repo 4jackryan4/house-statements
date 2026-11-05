@@ -55,17 +55,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
@@ -358,7 +347,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 42,
+  "count": 38,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -682,6 +671,17 @@
   "latest_date": "2026-07-09"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 2,
+  "latest_date": "2026-11-04"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -777,8 +777,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "T000491",
@@ -898,8 +898,8 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "C001055",
@@ -1019,7 +1019,7 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -1096,7 +1096,7 @@
   "status": "ok",
   "error": null,
   "count": 59,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -1998,8 +1998,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
-  "latest_date": "2026-11-05"
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "B001285",
@@ -2031,7 +2031,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -2548,7 +2548,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 96,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "count": 149,
+  "new": 15,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-usccr",
@@ -3680,9 +3680,9 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "count": 31,
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "K000375",
