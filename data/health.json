@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -57,6 +46,17 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-dea",
+  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "error",
@@ -196,6 +196,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
+ },
+ {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-airforce",
@@ -348,7 +359,7 @@
   "status": "ok",
   "error": null,
   "count": 42,
-  "new": 4,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -669,17 +680,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-07-09"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "G000599",
@@ -1019,8 +1019,8 @@
   "status": "ok",
   "error": null,
   "count": 15,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "S001225",
@@ -1184,7 +1184,7 @@
   "status": "ok",
   "error": null,
   "count": 117,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -1998,8 +1998,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "B001285",
@@ -2031,7 +2031,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-05"
  },
  {
@@ -2526,7 +2526,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -2548,8 +2548,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "B001300",
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 191,
+  "count": 96,
   "new": 0,
   "latest_date": "2026-11-04"
  },
