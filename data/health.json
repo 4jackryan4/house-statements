@@ -55,6 +55,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
@@ -161,8 +172,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-22"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "E000297",
@@ -347,7 +358,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 38,
+  "count": 42,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -671,17 +682,6 @@
   "latest_date": "2026-07-09"
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 2,
-  "latest_date": "2026-11-04"
- },
- {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -777,8 +777,8 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
-  "latest_date": "2026-11-05"
+  "new": 0,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "T000491",
@@ -898,7 +898,7 @@
   "status": "ok",
   "error": null,
   "count": 24,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -1096,7 +1096,7 @@
   "status": "ok",
   "error": null,
   "count": 59,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-04"
  },
  {
@@ -1535,9 +1535,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 17,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "count": 18,
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "O000173",
@@ -1999,7 +1999,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-30"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "B001285",
@@ -2031,7 +2031,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,8 +3504,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 149,
-  "new": 15,
+  "count": 189,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 31,
-  "new": 1,
+  "count": 30,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
