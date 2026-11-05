@@ -217,7 +217,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-11-05"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "G000553",
@@ -359,7 +359,7 @@
   "status": "ok",
   "error": null,
   "count": 48,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -634,8 +634,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-occ",
@@ -1580,7 +1580,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-05"
  },
  {
@@ -2042,7 +2042,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 189,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-usccr",
@@ -3549,7 +3549,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-03"
  },
  {
