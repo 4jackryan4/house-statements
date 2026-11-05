@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -209,6 +198,17 @@
   "latest_date": "2026-10-26"
  },
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
+ },
+ {
   "bioguide": "agency-airforce",
   "label": "Air Force",
   "scraper": null,
@@ -217,7 +217,7 @@
   "error": null,
   "count": 100,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "G000553",
@@ -358,7 +358,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 46,
+  "count": 45,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -645,8 +645,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-04"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-cbo",
@@ -1118,7 +1118,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-05"
  },
  {
@@ -1580,8 +1580,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-28"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "C001110",
@@ -1855,7 +1855,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -2031,7 +2031,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3252,7 +3252,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 189,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-usccr",
