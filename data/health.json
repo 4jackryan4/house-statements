@@ -358,9 +358,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 35,
-  "new": 1,
-  "latest_date": "2026-11-05"
+  "count": 34,
+  "new": 0,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "P000617",
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 191,
+  "count": 184,
   "new": 0,
   "latest_date": "2026-11-04"
  },
