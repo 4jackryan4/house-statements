@@ -55,17 +55,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-fema",
   "label": "FEMA",
   "scraper": null,
@@ -682,6 +671,17 @@
   "latest_date": "2026-07-09"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-04"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -1217,8 +1217,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-29"
+  "new": 1,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-forestservice",
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 180,
-  "new": 0,
-  "latest_date": "2026-11-02"
+  "count": 133,
+  "new": 2,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usccr",
