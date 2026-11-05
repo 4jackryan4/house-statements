@@ -88,17 +88,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-secretservice",
   "label": "Secret Service",
   "scraper": null,
@@ -2739,6 +2728,17 @@
   "latest_date": "2026-10-21"
  },
  {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 181,
+  "new": 0,
+  "latest_date": "2026-10-27"
+ },
+ {
   "bioguide": "agency-omb",
   "label": "Office of Management and Budget (OMB)",
   "scraper": null,
@@ -3252,7 +3252,7 @@
   "status": "ok",
   "error": null,
   "count": 8,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-04"
  },
  {
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 131,
   "new": 0,
   "latest_date": "2026-11-04"
  },
