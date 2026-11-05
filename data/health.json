@@ -140,7 +140,7 @@
   "error": null,
   "count": 1,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "G000605",
@@ -172,7 +172,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -778,7 +778,7 @@
   "error": null,
   "count": 30,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "T000491",
@@ -821,8 +821,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-15"
+  "new": 1,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-odni",
@@ -1536,7 +1536,7 @@
   "status": "ok",
   "error": null,
   "count": 18,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -2031,7 +2031,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
