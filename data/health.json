@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 58,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -1040,8 +1040,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
-  "new": 1,
+  "count": 20,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -1448,7 +1448,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3241,7 +3241,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3680,8 +3680,8 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 30,
-  "new": 0,
+  "count": 32,
+  "new": 2,
   "latest_date": "2026-11-05"
  },
  {
