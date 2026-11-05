@@ -655,9 +655,9 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 24,
-  "new": 0,
-  "latest_date": "2026-11-03"
+  "count": 25,
+  "new": 9,
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-ceq",
@@ -2302,10 +2302,10 @@
   "bioguide": "G000600",
   "label": "Marie Gluesenkamp Perez (D-WA-03)",
   "scraper": "gluesenkampperez",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-29"
  },
@@ -3504,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 142,
   "new": 0,
   "latest_date": "2026-11-04"
  },
