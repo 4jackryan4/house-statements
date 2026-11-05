@@ -410,10 +410,10 @@
   "bioguide": "F000454",
   "label": "Bill Foster (D-IL-11)",
   "scraper": "foster",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 20,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -425,8 +425,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
-  "latest_date": "2026-11-04"
+  "new": 0,
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "S000344",
@@ -1349,7 +1349,7 @@
   "status": "ok",
   "error": null,
   "count": 35,
-  "new": 3,
+  "new": 0,
   "latest_date": "2026-11-05"
  },
  {
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-05"
  },
  {
@@ -3504,9 +3504,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 157,
+  "count": 180,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-02"
  },
  {
   "bioguide": "agency-usccr",
