@@ -51,7 +51,7 @@
       "https://balint.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "B001324": [
-      "https://bell.house.gov/media/press-releases"
+      "https://bell.house.gov/"
     ],
     "B001326": [
       "https://bynum.house.gov/media/press-releases"
@@ -722,9 +722,9 @@
     ]
   },
   "last_collect": {
-    "at": "2026-11-05T00:04:22+00:00",
+    "at": "2026-11-05T00:16:43+00:00",
     "http": {
-      "200": 396,
+      "200": 399,
       "301": 1,
       "302": 3,
       "403": 11,
@@ -733,8 +733,8 @@
     },
     "sites": {
       "empty": 0,
-      "error": 13,
-      "ok": 326
+      "error": 11,
+      "ok": 328
     }
   },
   "old_agency_links": [
