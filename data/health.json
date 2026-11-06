@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 51,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-06"
  },
  {
@@ -865,7 +865,7 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -1085,7 +1085,7 @@
   "status": "ok",
   "error": null,
   "count": 11,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -1107,7 +1107,7 @@
   "status": "ok",
   "error": null,
   "count": 19,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -1943,8 +1943,8 @@
   "status": "ok",
   "error": null,
   "count": 20,
-  "new": 0,
-  "latest_date": "2026-09-22"
+  "new": 1,
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "committee-judiciary",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 189,
+  "count": 186,
   "new": 0,
-  "latest_date": "2026-11-05"
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "agency-usccr",
@@ -3660,7 +3660,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-06"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "B001324",
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-06"
  },
  {
