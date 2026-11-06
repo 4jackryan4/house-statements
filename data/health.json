@@ -1,5 +1,16 @@
 [
  {
+  "bioguide": "agency-agriculture",
+  "label": "Agriculture Department (USDA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -51,7 +62,7 @@
   "status": "ok",
   "error": null,
   "count": 1,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -108,17 +119,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "agency-agriculture",
-  "label": "Agriculture Department (USDA)",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-airforce",
@@ -270,8 +270,8 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 48,
-  "new": 1,
+  "count": 47,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -579,7 +579,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -1040,7 +1040,7 @@
   "method": "rss+listing",
   "status": "ok",
   "error": null,
-  "count": 21,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -1295,7 +1295,7 @@
   "error": null,
   "count": 35,
   "new": 0,
-  "latest_date": "2026-11-06"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "M001188",
@@ -2725,7 +2725,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-07"
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "agency-opm",
@@ -3143,7 +3143,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-28"
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "F000481",
@@ -3230,7 +3230,7 @@
   "status": "ok",
   "error": null,
   "count": 9,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 138,
-  "new": 0,
+  "count": 118,
+  "new": 28,
   "latest_date": "2026-11-06"
  },
  {
