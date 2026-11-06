@@ -1,16 +1,5 @@
 [
  {
-  "bioguide": "committee-agriculture",
-  "label": "Agriculture Committee Democrats",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
@@ -39,61 +28,6 @@
   "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "D000624",
-  "label": "Debbie Dingell (D-MI-06)",
-  "scraper": "debbiedingell",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "M000312",
-  "label": "James P. McGovern (D-MA-02)",
-  "scraper": "mcgovern",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "F000462",
-  "label": "Lois Frankel (D-FL-22)",
-  "scraper": "frankel",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "P000610",
-  "label": "Stacey E. Plaskett (D-VI-AL)",
-  "scraper": "plaskett",
-  "method": "none",
-  "status": "error",
-  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -152,6 +86,17 @@
   "count": 22,
   "new": 0,
   "latest_date": "2026-06-12"
+ },
+ {
+  "bioguide": "committee-agriculture",
+  "label": "Agriculture Committee Democrats",
+  "scraper": null,
+  "method": "fallback",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-agriculture",
@@ -314,7 +259,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 45,
+  "count": 43,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -333,7 +278,7 @@
   "bioguide": "B001318",
   "label": "Becca Balint (D-VT-AL)",
   "scraper": "balint",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -421,12 +366,12 @@
   "bioguide": "P000620",
   "label": "Brittany Pettersen (D-CO-07)",
   "scraper": "pettersen",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-06"
+  "latest_date": "2026-10-23"
  },
  {
   "bioguide": "committee-budget",
@@ -520,12 +465,12 @@
   "bioguide": "P000597",
   "label": "Chellie Pingree (D-ME-01)",
   "scraper": "pingree",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "committee-china",
@@ -660,6 +605,17 @@
   "latest_date": "2026-11-05"
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-05"
+ },
+ {
   "bioguide": "G000599",
   "label": "Daniel S. Goldman (D-NY-10)",
   "scraper": "goldman",
@@ -704,13 +660,24 @@
   "latest_date": "2026-11-03"
  },
  {
+  "bioguide": "D000624",
+  "label": "Debbie Dingell (D-MI-06)",
+  "scraper": "debbiedingell",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-10-23"
+ },
+ {
   "bioguide": "W000797",
   "label": "Debbie Wasserman Schultz (D-FL-25)",
   "scraper": "wassermanschultz",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -784,12 +751,12 @@
   "bioguide": "T000468",
   "label": "Dina Titus (D-NV-01)",
   "scraper": "titus",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-odni",
@@ -828,7 +795,7 @@
   "bioguide": "B001292",
   "label": "Donald S. Beyer, Jr. (D-VA-08)",
   "scraper": "beyer",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -872,10 +839,10 @@
   "bioguide": "C001055",
   "label": "Ed Case (D-HI-01)",
   "scraper": "case",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 2,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-16"
  },
@@ -1062,7 +1029,7 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 60,
+  "count": 59,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -1394,7 +1361,7 @@
   "error": null,
   "count": 6,
   "new": 0,
-  "latest_date": "2026-11-05"
+  "latest_date": "2026-10-08"
  },
  {
   "bioguide": "J000294",
@@ -1444,7 +1411,7 @@
   "bioguide": "C001063",
   "label": "Henry Cuellar (D-TX-28)",
   "scraper": "cuellar",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 15,
@@ -1639,15 +1606,26 @@
   "latest_date": "2026-07-14"
  },
  {
-  "bioguide": "W000831",
-  "label": "James R. Walkinshaw (D-VA-11)",
-  "scraper": "walkinshaw",
-  "method": "fallback",
+  "bioguide": "M000312",
+  "label": "James P. McGovern (D-MA-02)",
+  "scraper": "mcgovern",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-09-21"
+  "latest_date": "2026-10-26"
+ },
+ {
+  "bioguide": "W000831",
+  "label": "James R. Walkinshaw (D-VA-11)",
+  "scraper": "walkinshaw",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-20"
  },
  {
   "bioguide": "R000606",
@@ -1796,10 +1774,10 @@
   "bioguide": "G000585",
   "label": "Jimmy Gomez (D-CA-34)",
   "scraper": "gomez",
-  "method": "fallback",
+  "method": "python-statement+fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 20,
   "new": 0,
   "latest_date": "2026-10-01"
  },
@@ -2200,13 +2178,24 @@
   "latest_date": "2026-11-05"
  },
  {
+  "bioguide": "F000462",
+  "label": "Lois Frankel (D-FL-22)",
+  "scraper": "frankel",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-07"
+ },
+ {
   "bioguide": "T000482",
   "label": "Lori Trahan (D-MA-03)",
   "scraper": "trahan",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 15,
+  "count": 10,
   "new": 0,
   "latest_date": "2026-10-14"
  },
@@ -2808,7 +2797,7 @@
   "bioguide": "T000469",
   "label": "Paul Tonko (D-NY-20)",
   "scraper": "tonko",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3223,6 +3212,17 @@
   "latest_date": "2026-11-05"
  },
  {
+  "bioguide": "P000610",
+  "label": "Stacey E. Plaskett (D-VI-AL)",
+  "scraper": "plaskett",
+  "method": "python-statement",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-28"
+ },
+ {
   "bioguide": "agency-state",
   "label": "State Department",
   "scraper": null,
@@ -3325,7 +3325,7 @@
   "bioguide": "D000617",
   "label": "Suzan K. DelBene (D-WA-01)",
   "scraper": "delbene",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
   "count": 10,
@@ -3396,7 +3396,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-10-29"
+  "latest_date": "2026-10-15"
  },
  {
   "bioguide": "S001185",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 189,
+  "count": 184,
   "new": 0,
-  "latest_date": "2026-11-05"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "agency-usccr",
