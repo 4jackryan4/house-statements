@@ -33,6 +33,17 @@
   "latest_date": null
  },
  {
+  "bioguide": "agency-dea",
+  "label": "DEA",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -259,7 +270,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 43,
+  "count": 45,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -596,17 +607,6 @@
  {
   "bioguide": "agency-cbp",
   "label": "Customs and Border Protection (CBP)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-05"
- },
- {
-  "bioguide": "agency-dea",
-  "label": "DEA",
   "scraper": null,
   "method": "listing",
   "status": "ok",
@@ -1356,12 +1356,12 @@
   "bioguide": "M001160",
   "label": "Gwen Moore (D-WI-04)",
   "scraper": "gwenmoore",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 6,
+  "count": 10,
   "new": 0,
-  "latest_date": "2026-10-08"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "J000294",
@@ -3391,12 +3391,12 @@
   "bioguide": "L000273",
   "label": "Teresa Leger Fernandez (D-NM-03)",
   "scraper": "fernandez",
-  "method": "fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-10-29"
  },
  {
   "bioguide": "S001185",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 184,
+  "count": 187,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-usccr",
