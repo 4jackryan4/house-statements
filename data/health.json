@@ -271,7 +271,7 @@
   "status": "ok",
   "error": null,
   "count": 51,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -612,8 +612,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-05"
+  "new": 1,
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "G000599",
@@ -1480,9 +1480,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 216,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "count": 217,
+  "new": 1,
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "agency-irs",
@@ -1745,7 +1745,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 2,
   "latest_date": "2026-11-06"
  },
  {
@@ -1939,11 +1939,11 @@
   "bioguide": "V000130",
   "label": "Juan Vargas (D-CA-52)",
   "scraper": "vargas",
-  "method": "python-statement+fallback",
+  "method": "python-statement",
   "status": "ok",
   "error": null,
-  "count": 20,
-  "new": 1,
+  "count": 10,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -2218,8 +2218,8 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
+  "new": 1,
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "D000631",
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
+  "new": 1,
   "latest_date": "2026-11-06"
  },
  {
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 186,
+  "count": 187,
   "new": 0,
-  "latest_date": "2026-11-06"
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-usccr",
@@ -3681,7 +3681,7 @@
   "status": "ok",
   "error": null,
   "count": 30,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
