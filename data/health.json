@@ -612,7 +612,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -1480,9 +1480,9 @@
   "method": "listing",
   "status": "ok",
   "error": null,
-  "count": 217,
-  "new": 1,
-  "latest_date": "2026-11-06"
+  "count": 216,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "agency-irs",
@@ -1745,7 +1745,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 2,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -2218,7 +2218,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -3461,7 +3461,7 @@
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 1,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
