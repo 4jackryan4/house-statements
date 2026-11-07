@@ -44,72 +44,6 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-hud",
-  "label": "Housing and Urban Development (HUD)",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "listing",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
-  "bioguide": "agency-nlrb",
-  "label": "NLRB",
-  "scraper": null,
-  "method": "none",
-  "status": "error",
-  "error": "no press releases found (blocked or page layout changed)",
-  "count": 0,
-  "new": 0,
-  "latest_date": null
- },
- {
   "bioguide": "agency-atf",
   "label": "ATF",
   "scraper": null,
@@ -336,7 +270,7 @@
   "method": "rss",
   "status": "ok",
   "error": null,
-  "count": 41,
+  "count": 37,
   "new": 0,
   "latest_date": "2026-11-06"
  },
@@ -1012,6 +946,17 @@
   "latest_date": "2026-11-04"
  },
  {
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 15,
+  "new": 0,
+  "latest_date": "2026-11-05"
+ },
+ {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1133,6 +1078,17 @@
   "latest_date": "2026-11-11"
  },
  {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 11,
+  "new": 0,
+  "latest_date": "2026-11-06"
+ },
+ {
   "bioguide": "agency-fhfa",
   "label": "FHFA",
   "scraper": null,
@@ -1208,6 +1164,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-11-04"
+ },
+ {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "M001214",
@@ -1505,6 +1472,17 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
+ },
+ {
+  "bioguide": "agency-hud",
+  "label": "Housing and Urban Development (HUD)",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 217,
+  "new": 0,
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "agency-irs",
@@ -2484,6 +2462,28 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-11-05"
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "rss+listing",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-05"
+ },
+ {
+  "bioguide": "agency-nlrb",
+  "label": "NLRB",
+  "scraper": null,
+  "method": "rss",
+  "status": "ok",
+  "error": null,
+  "count": 10,
+  "new": 0,
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "agency-noaa",
@@ -3493,9 +3493,9 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 159,
-  "new": 20,
-  "latest_date": "2026-11-06"
+  "count": 189,
+  "new": 0,
+  "latest_date": "2026-11-05"
  },
  {
   "bioguide": "agency-usccr",
@@ -3660,7 +3660,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-04"
+  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "B001324",
