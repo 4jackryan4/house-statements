@@ -1,8 +1,30 @@
 [
  {
+  "bioguide": "committee-agriculture",
+  "label": "Agriculture Committee Democrats",
+  "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
   "bioguide": "W000832",
   "label": "Aisha Wahab (D-CA-14)",
   "scraper": null,
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "B001318",
+  "label": "Becca Balint (D-VT-AL)",
+  "scraper": "balint",
   "method": "none",
   "status": "error",
   "error": "no statements found on the site",
@@ -17,6 +39,17 @@
   "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "P000597",
+  "label": "Chellie Pingree (D-ME-01)",
+  "scraper": "pingree",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -39,6 +72,94 @@
   "method": "listing",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "M001160",
+  "label": "Gwen Moore (D-WI-04)",
+  "scraper": "gwenmoore",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "C001063",
+  "label": "Henry Cuellar (D-TX-28)",
+  "scraper": "cuellar",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "N000002",
+  "label": "Jerrold Nadler (D-NY-12)",
+  "scraper": "nadler",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "F000468",
+  "label": "Lizzie Fletcher (D-TX-07)",
+  "scraper": "fletcher",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "T000482",
+  "label": "Lori Trahan (D-MA-03)",
+  "scraper": "trahan",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "S001205",
+  "label": "Mary Gay Scanlon (D-PA-05)",
+  "scraper": "scanlon",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "K000402",
+  "label": "Timothy M. Kennedy (D-NY-26)",
+  "scraper": "timkennedy",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "E000299",
+  "label": "Veronica Escobar (D-TX-16)",
+  "scraper": "escobar",
+  "method": "none",
+  "status": "error",
+  "error": "no statements found on the site",
   "count": 0,
   "new": 0,
   "latest_date": null
@@ -97,17 +218,6 @@
   "count": 22,
   "new": 0,
   "latest_date": "2026-06-12"
- },
- {
-  "bioguide": "committee-agriculture",
-  "label": "Agriculture Committee Democrats",
-  "scraper": null,
-  "method": "fallback",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-26"
  },
  {
   "bioguide": "agency-agriculture",
@@ -286,17 +396,6 @@
   "latest_date": "2026-11-05"
  },
  {
-  "bioguide": "B001318",
-  "label": "Becca Balint (D-VT-AL)",
-  "scraper": "balint",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-03"
- },
- {
   "bioguide": "T000193",
   "label": "Bennie G. Thompson (D-MS-02)",
   "scraper": "benniethompson",
@@ -471,17 +570,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-11-05"
- },
- {
-  "bioguide": "P000597",
-  "label": "Chellie Pingree (D-ME-01)",
-  "scraper": "pingree",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-16"
  },
  {
   "bioguide": "committee-china",
@@ -674,10 +762,10 @@
   "bioguide": "W000797",
   "label": "Debbie Wasserman Schultz (D-FL-25)",
   "scraper": "wassermanschultz",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 25,
   "new": 0,
   "latest_date": "2026-10-19"
  },
@@ -795,12 +883,12 @@
   "bioguide": "B001292",
   "label": "Donald S. Beyer, Jr. (D-VA-08)",
   "scraper": "beyer",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
   "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-06"
+  "new": 10,
+  "latest_date": "2026-09-28"
  },
  {
   "bioguide": "M001163",
@@ -1139,7 +1227,7 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 25,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -1353,17 +1441,6 @@
   "latest_date": "2026-08-20"
  },
  {
-  "bioguide": "M001160",
-  "label": "Gwen Moore (D-WI-04)",
-  "scraper": "gwenmoore",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-05"
- },
- {
   "bioguide": "J000294",
   "label": "Hakeem S. Jeffries (D-NY-08)",
   "scraper": "jeffries",
@@ -1406,17 +1483,6 @@
   "count": 22,
   "new": 0,
   "latest_date": "2026-10-07"
- },
- {
-  "bioguide": "C001063",
-  "label": "Henry Cuellar (D-TX-28)",
-  "scraper": "cuellar",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-21"
  },
  {
   "bioguide": "C001136",
@@ -1620,10 +1686,10 @@
   "bioguide": "W000831",
   "label": "James R. Walkinshaw (D-VA-11)",
   "scraper": "walkinshaw",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 24,
   "new": 0,
   "latest_date": "2026-10-20"
  },
@@ -1725,17 +1791,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-26"
- },
- {
-  "bioguide": "N000002",
-  "label": "Jerrold Nadler (D-NY-12)",
-  "scraper": "nadler",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "G000586",
@@ -2156,17 +2211,6 @@
   "latest_date": "2026-10-29"
  },
  {
-  "bioguide": "F000468",
-  "label": "Lizzie Fletcher (D-TX-07)",
-  "scraper": "fletcher",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
- },
- {
   "bioguide": "D000399",
   "label": "Lloyd Doggett (D-TX-37)",
   "scraper": "doggett",
@@ -2187,17 +2231,6 @@
   "count": 25,
   "new": 0,
   "latest_date": "2026-10-07"
- },
- {
-  "bioguide": "T000482",
-  "label": "Lori Trahan (D-MA-03)",
-  "scraper": "trahan",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-14"
  },
  {
   "bioguide": "M001208",
@@ -2330,17 +2363,6 @@
   "count": 20,
   "new": 0,
   "latest_date": "2026-10-29"
- },
- {
-  "bioguide": "S001205",
-  "label": "Mary Gay Scanlon (D-PA-05)",
-  "scraper": "scanlon",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "D000635",
@@ -2896,10 +2918,10 @@
   "bioguide": "L000560",
   "label": "Rick Larsen (D-WA-02)",
   "scraper": "larsen",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-30"
  },
@@ -3196,8 +3218,8 @@
   "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
-  "new": 0,
+  "count": 30,
+  "new": 6,
   "latest_date": "2026-10-02"
  },
  {
@@ -3215,10 +3237,10 @@
   "bioguide": "P000610",
   "label": "Stacey E. Plaskett (D-VI-AL)",
   "scraper": "plaskett",
-  "method": "python-statement",
+  "method": "fallback",
   "status": "ok",
   "error": null,
-  "count": 10,
+  "count": 15,
   "new": 0,
   "latest_date": "2026-10-28"
  },
@@ -3421,17 +3443,6 @@
   "latest_date": "2026-10-21"
  },
  {
-  "bioguide": "K000402",
-  "label": "Timothy M. Kennedy (D-NY-26)",
-  "scraper": "timkennedy",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-05"
- },
- {
   "bioguide": "committee-transportation",
   "label": "Transportation Committee Democrats",
   "scraper": null,
@@ -3493,7 +3504,7 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 189,
+  "count": 187,
   "new": 0,
   "latest_date": "2026-11-05"
  },
@@ -3608,17 +3619,6 @@
   "latest_date": "2026-10-19"
  },
  {
-  "bioguide": "E000299",
-  "label": "Veronica Escobar (D-TX-16)",
-  "scraper": "escobar",
-  "method": "python-statement",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-21"
- },
- {
   "bioguide": "agency-va",
   "label": "Veterans Affairs (VA)",
   "scraper": null,
@@ -3660,7 +3660,7 @@
   "error": null,
   "count": 10,
   "new": 0,
-  "latest_date": "2026-11-06"
+  "latest_date": "2026-11-04"
  },
  {
   "bioguide": "B001324",

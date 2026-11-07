@@ -33,7 +33,7 @@
       "https://bera.house.gov/news/press-releases"
     ],
     "B001292": [
-      "https://beyer.house.gov/news/documentquery.aspx?DocumentTypeID=27"
+      "https://beyer.house.gov/news/documentquery.aspx?DocumentTypeID=26"
     ],
     "B001296": [
       "https://boyle.house.gov/media-center/press-releases"
@@ -470,7 +470,7 @@
       "https://scottpeters.house.gov/press-releases"
     ],
     "P000610": [
-      "https://plaskett.house.gov/news/documentquery.aspx?documenttypeid=27"
+      "https://plaskett.house.gov/news"
     ],
     "P000613": [
       "https://panetta.house.gov/media/press-releases"
@@ -652,6 +652,7 @@
       "https://whitesides.house.gov/category/press-releases/"
     ],
     "W000831": [
+      "https://walkinshaw.house.gov/news",
       "https://walkinshaw.house.gov/news/documentquery.aspx?DocumentTypeID=1951"
     ],
     "committee-agriculture": [
@@ -676,7 +677,7 @@
       "https://democrats-energycommerce.house.gov/media/press-releases"
     ],
     "committee-financial-services": [
-      "https://democrats-financialservices.house.gov/newsroom/documentquery.aspx?DocumentTypeID=2636"
+      "https://democrats-financialservices.house.gov/news/"
     ],
     "committee-foreign-affairs": [
       "https://democrats-foreignaffairs.house.gov/press-releases"
@@ -707,6 +708,8 @@
       "https://democrats-science.house.gov/news"
     ],
     "committee-small-business": [
+      "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=1952",
+      "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=1953",
       "https://democrats-smallbusiness.house.gov/news/documentquery.aspx?DocumentTypeID=27"
     ],
     "committee-transportation": [
@@ -720,18 +723,19 @@
     ]
   },
   "last_collect": {
-    "at": "2026-11-07T07:40:20+00:00",
+    "at": "2026-11-07T08:00:06+00:00",
     "http": {
-      "200": 417,
+      "200": 423,
       "301": 1,
-      "302": 3,
+      "302": 2,
       "404": 3,
-      "410": 1
+      "410": 1,
+      "ReadTimeout": 62
     },
     "sites": {
       "empty": 0,
-      "error": 4,
-      "ok": 335
+      "error": 15,
+      "ok": 324
     }
   },
   "old_agency_links": [
