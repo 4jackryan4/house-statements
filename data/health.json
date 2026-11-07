@@ -44,10 +44,65 @@
   "latest_date": null
  },
  {
-  "bioguide": "agency-oge",
-  "label": "Office of Government Ethics",
+  "bioguide": "agency-epa",
+  "label": "Environmental Protection Agency (EPA)",
   "scraper": null,
   "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-ferc",
+  "label": "FERC",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-forestservice",
+  "label": "Forest Service",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-hud",
+  "label": "Housing and Urban Development (HUD)",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nih",
+  "label": "NIH",
+  "scraper": null,
+  "method": "listing",
+  "status": "error",
+  "error": "no press releases found (blocked or page layout changed)",
+  "count": 0,
+  "new": 0,
+  "latest_date": null
+ },
+ {
+  "bioguide": "agency-nlrb",
+  "label": "NLRB",
+  "scraper": null,
+  "method": "none",
   "status": "error",
   "error": "no press releases found (blocked or page layout changed)",
   "count": 0,
@@ -601,7 +656,7 @@
   "status": "ok",
   "error": null,
   "count": 25,
-  "new": 6,
+  "new": 0,
   "latest_date": "2026-11-06"
  },
  {
@@ -957,17 +1012,6 @@
   "latest_date": "2026-11-04"
  },
  {
-  "bioguide": "agency-epa",
-  "label": "Environmental Protection Agency (EPA)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 15,
-  "new": 0,
-  "latest_date": "2026-11-05"
- },
- {
   "bioguide": "S001225",
   "label": "Eric Sorensen (D-IL-17)",
   "scraper": "sorensen",
@@ -1089,17 +1133,6 @@
   "latest_date": "2026-11-11"
  },
  {
-  "bioguide": "agency-ferc",
-  "label": "FERC",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 11,
-  "new": 0,
-  "latest_date": "2026-11-06"
- },
- {
   "bioguide": "agency-fhfa",
   "label": "FHFA",
   "scraper": null,
@@ -1175,17 +1208,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-11-04"
- },
- {
-  "bioguide": "agency-forestservice",
-  "label": "Forest Service",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-10-30"
  },
  {
   "bioguide": "M001214",
@@ -1483,17 +1505,6 @@
   "count": 10,
   "new": 0,
   "latest_date": "2026-10-30"
- },
- {
-  "bioguide": "agency-hud",
-  "label": "Housing and Urban Development (HUD)",
-  "scraper": null,
-  "method": "listing",
-  "status": "ok",
-  "error": null,
-  "count": 217,
-  "new": 0,
-  "latest_date": "2026-11-06"
  },
  {
   "bioguide": "agency-irs",
@@ -2475,28 +2486,6 @@
   "latest_date": "2026-11-05"
  },
  {
-  "bioguide": "agency-nih",
-  "label": "NIH",
-  "scraper": null,
-  "method": "rss+listing",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-05"
- },
- {
-  "bioguide": "agency-nlrb",
-  "label": "NLRB",
-  "scraper": null,
-  "method": "rss",
-  "status": "ok",
-  "error": null,
-  "count": 10,
-  "new": 0,
-  "latest_date": "2026-11-06"
- },
- {
   "bioguide": "agency-noaa",
   "label": "NOAA",
   "scraper": null,
@@ -2702,6 +2691,17 @@
   "status": "ok",
   "error": null,
   "count": 1,
+  "new": 0,
+  "latest_date": "2026-11-06"
+ },
+ {
+  "bioguide": "agency-oge",
+  "label": "Office of Government Ethics",
+  "scraper": null,
+  "method": "listing",
+  "status": "ok",
+  "error": null,
+  "count": 182,
   "new": 0,
   "latest_date": "2026-11-06"
  },
@@ -3493,8 +3493,8 @@
   "method": "api",
   "status": "ok",
   "error": null,
-  "count": 186,
-  "new": 0,
+  "count": 159,
+  "new": 20,
   "latest_date": "2026-11-06"
  },
  {
